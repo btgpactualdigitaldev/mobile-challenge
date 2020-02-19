@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Mobile Challenge</string>
+    <string name="title_currencies">Currencies</string>
+    <string name="search_hint">Search</string>
+    <string name="label_amount">Quantidade</string>
+    <string name="label_from">DE</string>
+    <string name="label_change">mudar</string>
+    <string name="label_to">Para</string>
+    <string name="hint_from">Selecione a moeda de origem</string>
+    <string name="hint_to">Selecione a moeda de destino</string>
+    <string name="label_result">Resultado</string>
+    <string name="hint_amount">Digite o valor para converter</string>
+    <string name="label_converter">Converter</string>
+    <string name="title_converter">Converter</string>
+    <string name="error_invalid_amount">Valor inválido</string>
+</resources>

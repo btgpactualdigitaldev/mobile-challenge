@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/main_toolbar"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintGuide_begin="16dp"
+                android:orientation="vertical"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintGuide_end="16dp"
+                android:orientation="vertical"/>
+
+
+
+            <TextView
+                android:id="@+id/amountTextView"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/label_amount"
+                app:layout_constraintStart_toStartOf="@id/guideStart"
+                app:layout_constraintEnd_toStartOf="@id/amountEditText"
+                app:layout_constraintTop_toTopOf="@id/amountEditText"
+                app:layout_constraintBottom_toBottomOf="@id/amountEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/amountEditText"
+                android:lines="1"
+                android:inputType="numberDecimal"
+                android:hint="@string/hint_amount"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintTop_toBottomOf="@id/main_toolbar"
+                app:layout_constraintStart_toEndOf="@id/amountTextView"
+                app:layout_constraintEnd_toEndOf="@id/guideEnd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/fromTextView"
+                android:text="@string/label_from"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="sans-serif-condensed"
+                android:padding="8dp"
+                android:background="@color/colorSeparator"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/amountEditText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/currencyFromTextView"
+
+                app:autoSizeTextType="uniform"
+                android:layout_marginTop="16dp"
+                android:lines="1"
+                android:padding="8dp"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="@string/hint_from"
+                app:layout_constraintStart_toStartOf="@id/guideStart"
+                app:layout_constraintTop_toBottomOf="@id/fromTextView"
+                app:layout_constraintEnd_toStartOf="@id/changeCurrencyFromTextView"
+                android:layout_width="0dp"
+                android:layout_marginEnd="16dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/changeCurrencyFromTextView"
+                android:background="?attr/selectableItemBackground"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/colorAccent"
+                android:padding="8dp"
+                app:layout_constraintTop_toTopOf="@id/currencyFromTextView"
+                app:layout_constraintBottom_toBottomOf="@id/currencyFromTextView"
+                app:layout_constraintEnd_toEndOf="@id/guideEnd"
+                android:text="@string/label_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+                android:id="@+id/toTextView"
+                android:background="@color/colorSeparator"
+                android:text="@string/label_to"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="sans-serif-condensed"
+                android:padding="8dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/currencyFromTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/currencyToTextView"
+                app:autoSizeTextType="uniform"
+                android:layout_marginTop="16dp"
+                android:lines="1"
+                android:padding="8dp"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="@string/hint_to"
+                app:layout_constraintStart_toStartOf="@id/guideStart"
+                app:layout_constraintTop_toBottomOf="@id/toTextView"
+                app:layout_constraintEnd_toStartOf="@id/changeCurrencyToTextView"
+                android:layout_width="0dp"
+                android:layout_marginEnd="16dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/changeCurrencyToTextView"
+                android:background="?attr/selectableItemBackground"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/colorAccent"
+                android:padding="8dp"
+                app:layout_constraintTop_toTopOf="@id/currencyToTextView"
+                app:layout_constraintBottom_toBottomOf="@id/currencyToTextView"
+                app:layout_constraintEnd_toEndOf="@id/guideEnd"
+                android:text="@string/label_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/resultTextView"
+                android:background="@color/colorSeparator"
+                android:text="@string/label_result"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="sans-serif-condensed"
+                android:padding="8dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/currencyToTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+
+            <Button
+                android:id="@+id/converterButton"
+                app:layout_constraintEnd_toEndOf="@id/guideEnd"
+                app:layout_constraintTop_toBottomOf="@id/resultTextView"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/label_converter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/resultGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids="valueOriginTextView,valueResultTextView"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@id/guideStart"
+                app:layout_constraintTop_toBottomOf="@id/resultTextView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="@dimen/progressBarSize"
+                android:layout_height="@dimen/progressBarSize"/>
+
+            <TextView
+                android:id="@+id/valueOriginTextView"
+                app:autoSizeTextType="uniform"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-light"
+                android:textSize="20sp"
+                android:lines="1"
+                tools:text="10000 BRL ="
+                app:layout_constraintTop_toBottomOf="@id/resultTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/guideStart"
+                app:layout_constraintEnd_toStartOf="@id/converterButton"/>
+
+
+            <TextView
+                android:id="@+id/valueResultTextView"
+                app:autoSizeTextType="uniform"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textSize="22sp"
+                android:textColor="#2196F3"
+                android:lines="1"
+                tools:text="10000 USD"
+                app:layout_constraintTop_toBottomOf="@id/valueOriginTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/guideStart"
+                app:layout_constraintEnd_toStartOf="@id/converterButton"/>
+
+
+
+
+
+
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+</layout>

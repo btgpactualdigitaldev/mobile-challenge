@@ -1,0 +1,42 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    def globalConfiguration = rootProject.extensions.getByName("ext")
+
+    compileSdkVersion globalConfiguration["compileSDK"]
+
+    defaultConfig {
+        minSdkVersion globalConfiguration["minSDK"]
+        targetSdkVersion globalConfiguration["targetSDK"]
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+
+}
+
+androidExtensions {
+    experimental = true
+}
+
+
+
+
+dependencies {
+
+    def dependencies = rootProject.ext.dependencies
+
+    implementation dependencies.kotlin
+    implementation dependencies.rxKotlin
+    implementation dependencies.rxAndroid
+    implementation dependencies.koin
+
+}
+
