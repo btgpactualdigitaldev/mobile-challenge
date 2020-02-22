@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (5.0.0)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - Moya
+  - Toast-Swift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Moya
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  Alamofire: 58ff2bfb8daaacaa233d5c36e37b10a5248f59b1
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: 2ebd540bcd742a0f3a6b6ba5da11f44670eea544
+
+COCOAPODS: 1.8.4
