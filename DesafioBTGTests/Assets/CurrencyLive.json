@@ -1,0 +1,10 @@
+{
+    "success": true,
+    "terms": "https://currencylayer.com/terms",
+    "privacy": "https://currencylayer.com/privacy",
+    "timestamp": 1582214946,
+    "source": "USD",
+    "quotes": {
+        "USDBRL": 4.394102
+    }
+}

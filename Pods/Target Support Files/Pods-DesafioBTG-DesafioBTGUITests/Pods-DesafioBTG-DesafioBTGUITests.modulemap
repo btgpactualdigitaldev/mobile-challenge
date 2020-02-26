@@ -1,0 +1,6 @@
+framework module Pods_DesafioBTG_DesafioBTGUITests {
+  umbrella header "Pods-DesafioBTG-DesafioBTGUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

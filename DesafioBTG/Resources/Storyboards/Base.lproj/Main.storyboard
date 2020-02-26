@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fhI-jp-OST">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Conversão-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController restorationIdentifier="ConversionViewController" storyboardIdentifier="ConversionViewController" id="BYZ-38-t0r" customClass="ConversionViewController" customModule="DesafioBTG" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1I-1G-IZp">
+                                <rect key="frame" x="40" y="208.5" width="334" height="82"/>
+                                <string key="text">Bem vindo ao Conversor de Moedas do Banco BTG, para conversões entre moedas de varios países com base em dados diários fornecidos por Currencylayer.</string>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <color key="textColor" red="0.078431372550000003" green="0.2666666667" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eR-N4-Num">
+                                <rect key="frame" x="68" y="350.5" width="100" height="38"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="HTy-JE-db3"/>
+                                    <constraint firstAttribute="height" constant="38" id="cxH-h6-EIG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="17"/>
+                                <inset key="titleEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
+                                <state key="normal" title="MOEDA">
+                                    <color key="titleColor" red="0.078431372550000003" green="0.2666666667" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.078431372549019607" green="0.26666666666666666" blue="0.45490196078431372" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="6f6-NG-d0V" kind="show" identifier="SelectSourceCurrency" id="a3s-G6-MM8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQw-xT-Fjf">
+                                <rect key="frame" x="246" y="350.5" width="100" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Vpe-G4-CSN"/>
+                                    <constraint firstAttribute="height" constant="38" id="ccS-8l-YLP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="17"/>
+                                <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="4" maxY="0.0"/>
+                                <state key="normal" title="MOEDA">
+                                    <color key="titleColor" red="0.078431372550000003" green="0.2666666667" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.078431372550000003" green="0.2666666667" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="6f6-NG-d0V" kind="show" identifier="SelectToCurrency" id="uFW-gn-0Sj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5Y-44-76C">
+                                <rect key="frame" x="188" y="350.5" width="38" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="UhL-RR-y9V"/>
+                                    <constraint firstAttribute="width" constant="38" id="aK4-W2-ehq"/>
+                                </constraints>
+                                <state key="normal" image="arrow.left.and.right" catalog="system"/>
+                                <connections>
+                                    <action selector="reverseButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lUD-DR-IQ5"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$ 0,00" textAlignment="right" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="6ah-aM-tJU">
+                                <rect key="frame" x="117" y="428.5" width="180" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="G0l-Tj-HYH"/>
+                                    <constraint firstAttribute="height" constant="34" id="U8b-ny-G0I"/>
+                                </constraints>
+                                <color key="textColor" red="0.078431372550000003" green="0.2666666667" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="decimalPad" keyboardAppearance="alert" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSb-G6-vBt">
+                                <rect key="frame" x="157" y="482.5" width="100" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="F9c-1z-nXP"/>
+                                    <constraint firstAttribute="width" constant="100" id="XF0-Lw-Ck2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="18"/>
+                                <state key="normal" title="Converter">
+                                    <color key="titleColor" red="0.078431372550000003" green="0.2666666667" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.078431372550000003" green="0.2666666667" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="converterButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="If0-dD-oHL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQh-nj-9jC">
+                                <rect key="frame" x="207" y="580.5" width="0.0" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="IqR-ry-fZY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <color key="textColor" red="0.078431372550000003" green="0.2666666667" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="g9k-dl-OKO">
+                                <rect key="frame" x="197" y="582" width="20" height="20"/>
+                                <color key="color" red="0.078431372550000003" green="0.2666666667" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="I1I-1G-IZp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="0I4-kd-Lyw"/>
+                            <constraint firstItem="g9k-dl-OKO" firstAttribute="top" secondItem="qQh-nj-9jC" secondAttribute="bottom" constant="-20.5" id="Eam-id-5Vm"/>
+                            <constraint firstItem="qQh-nj-9jC" firstAttribute="top" secondItem="tSb-G6-vBt" secondAttribute="bottom" constant="60" id="Euo-Rg-na8"/>
+                            <constraint firstItem="eQw-xT-Fjf" firstAttribute="centerY" secondItem="x5Y-44-76C" secondAttribute="centerY" id="F9R-so-OeE"/>
+                            <constraint firstItem="eQw-xT-Fjf" firstAttribute="leading" secondItem="x5Y-44-76C" secondAttribute="trailing" constant="20" id="IHy-Sd-0Gq"/>
+                            <constraint firstItem="8eR-N4-Num" firstAttribute="centerY" secondItem="x5Y-44-76C" secondAttribute="centerY" id="IS5-le-qa6"/>
+                            <constraint firstItem="g9k-dl-OKO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IkJ-IS-s71"/>
+                            <constraint firstItem="x5Y-44-76C" firstAttribute="top" secondItem="I1I-1G-IZp" secondAttribute="bottom" constant="60" id="JT7-US-WzQ"/>
+                            <constraint firstItem="qQh-nj-9jC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QEx-bh-yTQ"/>
+                            <constraint firstItem="x5Y-44-76C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T3g-yw-qR5"/>
+                            <constraint firstItem="tSb-G6-vBt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bPF-7r-fv2"/>
+                            <constraint firstItem="6ah-aM-tJU" firstAttribute="top" secondItem="x5Y-44-76C" secondAttribute="bottom" constant="40" id="ckP-0M-jTI"/>
+                            <constraint firstItem="I1I-1G-IZp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="dUH-hl-zmO"/>
+                            <constraint firstItem="tSb-G6-vBt" firstAttribute="top" secondItem="6ah-aM-tJU" secondAttribute="bottom" constant="20" id="kRZ-xi-Re3"/>
+                            <constraint firstItem="6ah-aM-tJU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kbU-Os-JNQ"/>
+                            <constraint firstItem="I1I-1G-IZp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mPn-ce-sM7"/>
+                            <constraint firstAttribute="trailing" secondItem="I1I-1G-IZp" secondAttribute="trailing" constant="40" id="mQT-5Q-Dmq"/>
+                            <constraint firstItem="x5Y-44-76C" firstAttribute="leading" secondItem="8eR-N4-Num" secondAttribute="trailing" constant="20" id="uq1-N7-S7F"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Conversão" id="Kcq-HB-bt0"/>
+                    <connections>
+                        <outlet property="convertedActivityIndicator" destination="g9k-dl-OKO" id="Vgq-Hm-aUK"/>
+                        <outlet property="convertedValueLabel" destination="qQh-nj-9jC" id="8aa-cE-TAV"/>
+                        <outlet property="converterButton" destination="tSb-G6-vBt" id="THq-dG-3Zd"/>
+                        <outlet property="reverseButton" destination="x5Y-44-76C" id="dgc-R1-81W"/>
+                        <outlet property="sourceButton" destination="8eR-N4-Num" id="9Xu-Gm-24K"/>
+                        <outlet property="toButton" destination="eQw-xT-Fjf" id="Gf8-zs-mSU"/>
+                        <outlet property="valueTextField" destination="6ah-aM-tJU" id="e73-AP-fuc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="599" y="215"/>
+        </scene>
+        <!--Listagem de Moedas-->
+        <scene sceneID="fZf-ni-qbY">
+            <objects>
+                <viewController restorationIdentifier="CoinListingViewController" storyboardIdentifier="CoinListingViewController" id="6f6-NG-d0V" customClass="CoinListingViewController" customModule="DesafioBTG" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uPx-cF-HAG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="7bV-Tx-Djd">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                                <color key="color" red="0.078431372550000003" green="0.2666666667" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aKD-Ru-23l">
+                                <rect key="frame" x="0.0" y="148.5" width="414" height="713.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="separatorColor" red="0.078431372550000003" green="0.2666666667" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7bV-Tx-Djd" firstAttribute="centerY" secondItem="uPx-cF-HAG" secondAttribute="centerY" id="75E-Do-8uu"/>
+                            <constraint firstItem="7bV-Tx-Djd" firstAttribute="centerX" secondItem="uPx-cF-HAG" secondAttribute="centerX" id="Jzd-4E-cL3"/>
+                            <constraint firstItem="aKD-Ru-23l" firstAttribute="top" secondItem="JCi-uW-J1X" secondAttribute="top" id="Ook-dA-kHr"/>
+                            <constraint firstItem="aKD-Ru-23l" firstAttribute="leading" secondItem="JCi-uW-J1X" secondAttribute="leading" id="RF8-m3-gb0"/>
+                            <constraint firstItem="JCi-uW-J1X" firstAttribute="bottom" secondItem="aKD-Ru-23l" secondAttribute="bottom" id="ZTD-xS-tbz"/>
+                            <constraint firstItem="JCi-uW-J1X" firstAttribute="trailing" secondItem="aKD-Ru-23l" secondAttribute="trailing" id="jJf-4H-7aB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JCi-uW-J1X"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Listagem de Moedas" id="Ris-mU-ojc">
+                        <barButtonItem key="rightBarButtonItem" image="line.horizontal.3.decrease.circle" catalog="system" id="YgH-b2-cls">
+                            <color key="tintColor" red="0.078431372550000003" green="0.2666666667" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="orderAction:" destination="6f6-NG-d0V" id="pwE-Ux-Jtp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="currenciesActivityIndicator" destination="7bV-Tx-Djd" id="KGL-dt-6C6"/>
+                        <outlet property="currenciesTableView" destination="aKD-Ru-23l" id="RF0-jW-SHs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="syv-oa-azH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1472" y="215"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bT7-F6-MKc">
+            <objects>
+                <navigationController id="fhI-jp-OST" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="N4z-ka-TSc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="104.5"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.078431372550000003" green="0.2666666667" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.078431372550000003" green="0.2666666667" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="h1c-kB-yph"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ovc-6j-ftq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-386" y="215"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.left.and.right" catalog="system" width="64" height="42"/>
+        <image name="line.horizontal.3.decrease.circle" catalog="system" width="64" height="60"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="uFW-gn-0Sj"/>
+    </inferredMetricsTieBreakers>
+</document>
