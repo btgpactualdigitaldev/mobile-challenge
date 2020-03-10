@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:background="@color/colorAccent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:elevation="10dp"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="22sp"
+                android:text="@string/lista_de_moedas"/>
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".9"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/activity_lista_moeda_EdtBusca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:hint="@string/buscar">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/activity_lista_moeda_text_busca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageButton
+                    android:id="@+id/activity_lista_moeda_btn_buscar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/activity_lista_moeda_EdtBusca"
+                    android:padding="10dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="3dp"
+                    android:src="@drawable/ic_search_black_24dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/ordenar" />
+            </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/activity_lista_moeda_btn_ordenar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:layout_margin="3dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_swap_vert_black_24dp"
+                    android:contentDescription="@string/filtrar" />
+
+            </LinearLayout>
+-->
+            <ListView
+                android:id="@+id/activity_lista_moeda_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
