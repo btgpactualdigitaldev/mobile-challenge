@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".main.ResultFragment">
+
+
+    <EditText
+            android:id="@+id/value_input"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="16dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:inputType="numberDecimal"
+            android:hint="@string/_1_000_00"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/from_currency"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+            android:id="@+id/from_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/background_button"
+            android:textColor="@android:color/white"
+            android:text="@string/usd"
+            android:drawableEnd="@drawable/ic_expand_more"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+            android:id="@+id/value_result"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/to_currency"
+            app:layout_constraintTop_toBottomOf="@id/value_input"/>
+
+    <Button
+            android:id="@+id/to_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/background_button"
+            android:textColor="@android:color/white"
+            android:drawableEnd="@drawable/ic_expand_more"
+            android:padding="10dp"
+            android:text="@string/brl"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/from_currency"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

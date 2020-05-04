@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Live Currency</string>
+    <string name="currency_layer_key">359daed36ec00b5244e6f907c493f571</string>
+    <string name="usd">USD</string>
+    <string name="brl">BRL</string>
+    <string name="_1_000_00">1,000.00</string>
+    <string name="search">Search</string>
+    <string name="sort_by_code">Sort by code</string>
+    <string name="sort_by_name">Sort by name</string>
+    <string name="type">TYPE</string>
+    <string name="code">CODE</string>
+    <string name="from">FROM</string>
+    <string name="to">TO</string>
+    <string name="selection_fragment">SelectionFragment</string>
+    <string name="connection_error">Connection Error</string>
+    <string name="fetch_data_error">Error while fetching data</string>
+</resources>
