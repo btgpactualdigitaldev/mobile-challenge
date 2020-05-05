@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cdvItemChooseCurrency"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/size_xsmall"
+    android:layout_marginEnd="@dimen/size_xsmall"
+    android:layout_marginBottom="@dimen/size_xsmall"
+    android:background="@drawable/bg_wave_effect"
+    app:cardCornerRadius="@dimen/card_corner_radius_item_currency"
+    app:cardElevation="@dimen/card_elevation_small"
+    tools:context=".view.activity.ChooseCurrencyActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="16dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imvItemChooseCurrencyIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@mipmap/ic_launcher_round" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvwItemChooseCurrencyName"
+            style="@style/TitleText.Dark"
+            android:layout_width="@dimen/size_no_dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_normal"
+            android:layout_marginEnd="@dimen/size_normal"
+            android:ellipsize="end"
+            android:maxLines="2"
+            app:layout_constraintBottom_toBottomOf="@+id/imvItemChooseCurrencyIcon"
+            app:layout_constraintEnd_toStartOf="@+id/tvwItemChooseCurrencyCode"
+            app:layout_constraintStart_toEndOf="@+id/imvItemChooseCurrencyIcon"
+            app:layout_constraintTop_toTopOf="@+id/imvItemChooseCurrencyIcon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvwItemChooseCurrencyCode"
+            style="@style/TitleText.Dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxEms="3"
+            android:maxLength="3"
+            android:text=""
+            android:textAlignment="textEnd"
+            android:textAllCaps="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

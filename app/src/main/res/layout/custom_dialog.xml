@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ctlCustomDialogRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="26dp"
+    android:layout_marginEnd="26dp"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctlCustomDialogBackgroundIcon"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:background="@drawable/circle_yellow"
+        android:translationZ="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imvCustomDialogIcon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="16dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_warning"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctlCustomDialogHeaderAndBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ctlCustomDialogTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_alertdialog_warning"
+            android:minHeight="70dp"
+            android:paddingStart="32dp"
+            android:paddingTop="32dp"
+            android:paddingEnd="32dp"
+            android:paddingBottom="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvwCustomDialogTitle"
+                style="@style/TitleText.Light"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text=""
+                android:textAlignment="center"
+                app:autoSizeMaxTextSize="16sp"
+                app:autoSizeMinTextSize="14sp"
+                app:autoSizeStepGranularity="2sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Lorem ipsum dolor sit amet" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/ice"
+            android:minHeight="90dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ctlCustomDialogTitle">
+
+            <TextView
+                android:id="@+id/tvwCustomDialogMessage"
+                style="@style/MessageDialog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_default"
+                android:layout_marginEnd="@dimen/size_default"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:letterSpacing="0.03"
+                android:maxLines="4"
+                android:text=""
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Lorem ipsum dolor sit amet Lorem ipsum dolor Lorem ipsum do sit amet dolor sit amet amet dolor sit amet" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnCustomDialogPositiveAction"
+        style="@style/ButtonYellowAlertDialog"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/positive_full_button_alertdialog_warning"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ctlCustomDialogHeaderAndBody"
+        app:layout_constraintStart_toStartOf="@+id/ctlCustomDialogHeaderAndBody"
+        app:layout_constraintTop_toBottomOf="@+id/ctlCustomDialogHeaderAndBody"
+        tools:text="@string/all_understood" />
+</androidx.constraintlayout.widget.ConstraintLayout>
