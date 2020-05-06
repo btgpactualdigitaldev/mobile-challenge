@@ -1,0 +1,12 @@
+{
+    "success": true,
+    "terms": "https://currencylayer.com/terms",
+    "privacy": "https://currencylayer.com/privacy",
+    "currencies": {
+        "AED": "United Arab Emirates Dirham",
+        "AFN": "Afghan Afghani",
+        "ALL": "Albanian Lek",
+        "AMD": "Armenian Dram",
+        "ANG": "Netherlands Antillean Guilder"
+    }
+}

@@ -1,46 +1,77 @@
-# Desafio BTG
+# Currency
 
-Seja bem-vindo! Este é o seu primeiro passo para fazer parte do time de desenvolvimento do maior banco de investimentos da América Latina.
+![App demo](https://github.com/almeidaws/mobile-challenge/blob/master/docs/demo.gif?raw=true)
 
-#### LEIA AS INSTRUÇÕES POR COMPLETO ANTES DE COMEÇAR
+**Currency** is an iOS app that presents quotes of many currencies using [Currency Layer API](https://currencylayer.com/documentation). It was created with best programming practices and high level concepts. 
 
-O Desafio consiste no desenvolvimento de um app de conversão de moedas. O app deve permitir que o usuário selecione a moeda de origem e a moeda a ser convertida, para então inserir o valor e visualizar o resultado da conversão. 
+The app has no storyboards, it was created using view coding. The framework [SnapKit](https://github.com/SnapKit/SnapKit) was used to create an abstraction layer over constraints and implement auto layout.
 
-## Requisitos
+Following is a presentation of its key points.
 
-O app deve counsumir a [API CurrencyLayer](https://currencylayer.com/documentation). Para utilizar a API será necessário fazer um cadastro no plano gratuito para obter uma chave de acesso. Como o plano gratuito da API apresenta apenas as taxas de câmbio em relação ao dólar americano (USD), caso o usuário deseje fazer uma conversão entre quaisquer outras duas moedas, será necessário primeiro converter a moeda de origem para dólar e então de dólar para a moeda desejada.  
+## Architecture
 
-* Android: _Kotlin_ | iOS: _Swift_
-* O aplicativo deve ter duas telas principais:
-   * A tela de conversão deve conter:
-      * Dois botões que permitam o usuário a escolher as moedas de origem e de destino.
-      * Um campo de entrada de texto onde o usuário possa inserir o valor a ser convertido.
-      * Uma campo de texto para apresentar o valor convertido.
-   * A tela de listagem de moedas deve conter:
-      * Uma lista das moedas disponíves para conversão, mostrando código e nome da moeda.
-    
-* A listagem de moedas deve ser mostrada obrigatóriamente em uma tela diferente da tela de conversão.
+**MVVM** was chosen to avoid the massive view controllers, define a common vocabulary and a structure for the screens. [Combine](https://developer.apple.com/documentation/combine) was used for the required reactiveness defined by the architecture.
 
-## Observações
-* Dê preferência para a não utilização de bibliotecas externas;
-* Caso opte por usar bibliotecas externas, prefira Gradle (Android) ou CocoaPods (iOS) como gerenciadores de dependência;
-* O objetivo deste desafio é avaliar o seu conhecimento técnico, estilo de código, conhecimento de arquiteturas, padrões de programação e boas práticas. Faça disso uma oportunidade pra mostrar todo o seu conhecimento.
+## Continuous Integration
 
-## Features
-### Obrigatórias:
-- [ ] As taxas de câmbio disponíveis devem ser obtidas da chamada de [API Supported Currencies (/list)](https://currencylayer.com/documentation)
-- [ ] A cotação atual deve ser obtida da chamada de [API Real-time Rates (/live)](https://currencylayer.com/documentation)
-- [ ] É necessário fazer tratamento de erros e dos fluxos de exceção, como busca vazia, carregamento e outros erros que possam ocorrer.
+Code regression is an important aspect of an application. All the tests on every module are checked with [Travis CI](https://travis-ci.org/). You can check build status clicking on the following badge:
 
-### Opcionais (não necessário, porém contam pontos):
-- [ ] Funcinalidade de busca na lista de moedas por nome ou sigla da moeda ("dólar" ou "USD").
-- [ ] Ordenação da lista de moedas por nome ou código.
-- [ ] Realizar a persistência local da lista de moedas e taxas para permitir o uso do app no caso de falta de internet.
-- [ ] Desenvolver testes unitários e/ou funcionais.
-- [ ] Desenvolver o app seguindo a arquitetura MVVM.
-- [ ] Pipeline automatizado.
+[![Build Status](https://travis-ci.org/almeidaws/mobile-challenge.svg?branch=master)](https://travis-ci.org/almeidaws/mobile-challenge)
 
-## Processo de submissão
-Para submeter o seu desafio, faça um clone deste projeto, desenvolva localmente e, no final, abra um pull request com o formato "[Plataforma] - Nome" para a master até a data limite estabelecida. Um exemplo seria "[iOS] - João da Silva".
+## Tasks management
 
-### Boa sorte.
+This was a standalone project, but there's no reason to keep all tasks in mind while coding. To solve this, a board on Trello was created. That [board is public](https://trello.com/b/3q6A7FDi/currency)
+
+![Trello Board](https://github.com/almeidaws/mobile-challenge/blob/master/docs/trello.png?raw=true)
+
+## Dependency Injection
+
+Controllers are completely independent of each other, and screens has no ideia about how data is persisted or what is used to fetch data from the Internet. In fact, on tests, an in-memory database is created and local files are read to ensure tests' quality.
+
+For accomplish this, a module called **Service** was created. It allows many dependencies to be injected in the app when it opens, therefore making mocking entities is a trivial work.
+
+**Injecting dependency**
+![Service Creation](https://github.com/almeidaws/mobile-challenge/blob/master/docs/service_creation.png?raw=true)
+
+**Using abstract dependency**
+![Service Use](https://github.com/almeidaws/mobile-challenge/blob/master/docs/service_use.png?raw=true)
+
+## Design
+
+App's design was created on [Adobe XD](https://www.adobe.com/products/xd.html). iOS elements was used and as a consequence the app really looks like an iOS app. So the user feels comfortable using common patterns like pulling down lists to update and swipe to right for popping view controllers.
+
+![Design on Adobe XD](https://github.com/almeidaws/mobile-challenge/blob/master/docs/adobe_xd.png?raw=true)
+
+## Structure
+
+Creating scalable apps is important, that means creating an entire app in one project is not a good ideia. Therefore, a workspace was created  with 5 projects inside of it managing a specific concern of the entire application.
+
+All modules have tests.
+
+![Structure Diagram](https://github.com/almeidaws/mobile-challenge/blob/master/docs/structure_diagram.png?raw=true)
+
+- **Models**: contains value-type oriented entities used by the other modules. Using this approach allows a graceful communication between modules avoiding short-living entities when mapping data.
+- **Service**: define utility methods used by other modules that make tasks like persistence and networking become highly decoupled.
+- **Storage**: abstracts how data is persisted exposing an interface that permits, for example, creating an in-memory database whose is useful for testing purposes.
+- **Networking**: abstracts how data is fetched from the Internet. There's no callbacks or delegates on this modules. The communication is entirely made with [Publishers](https://developer.apple.com/documentation/combine/publisher).
+- **Screens**: main module. It contains all app's screens and also a connection with all other modules. It's more or less like the Controller of MVC.
+
+## Database
+
+Data is locally persisted so the user can access data even when there's no Internet connection. Persistence is done with [SQLite](https://www.sqlite.org/index.html). Following is a diagram of the current database.
+
+![Database Diagram](https://github.com/almeidaws/mobile-challenge/blob/master/docs/database_diagram.png?raw=true)
+
+## Dependency Manager
+
+CocoaPods was chosen for code reuse. The app has only 2 crucial dependencies:
+
+- **SnapKit**: used to working with auto layout and constraints, that is, saving time when creating screens and avoiding constraints errors.
+- **SQLite**: used for persistence creating a good User Experience when there's no Internet connection. It also avoids managing database constraints by hand.
+
+## Info.plist
+
+There's two "environment variables" in this app:
+
+- **BASE_URL_KEY**: API's host. Example `http://api.currencylayer.com`.
+- **API_KEY**: API's key. Example: `97ebe639o5f61b292896acfaecf6e0af`.

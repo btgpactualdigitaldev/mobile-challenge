@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Service/Service.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Storage/Storage.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Models/Models.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Networking/Networking.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Screens/Screens.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

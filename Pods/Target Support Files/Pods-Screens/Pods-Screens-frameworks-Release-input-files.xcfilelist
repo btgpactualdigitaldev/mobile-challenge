@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-Screens/Pods-Screens-frameworks.sh
+${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
