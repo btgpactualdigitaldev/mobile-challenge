@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">desafio btg</string>
+    <string name="moeda">moeda</string>
+    <string name="eu_tenho">eu tenho</string>
+    <string name="eu_quero">eu quero</string>
+    <string name="not_possible_refresh">Was not possible refresh</string>
+    <string name="clientError">You requested a resource which does not exist</string>
+    <string name="wrong_key">Wrong access key</string>
+    <string name="montlhy_limit">You reached the monthly API limit</string>
+    <string name="invalid_amount">You entered an invalid amount</string>
+</resources>
