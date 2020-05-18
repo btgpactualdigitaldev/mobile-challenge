@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">BTG Pactual</string>
+
+    <string name="money_convert_edit_hint_filter">Filtro</string>
+    <string name="money_convert_edit_hint_step_one">Valor a ser convertido</string>
+    <string name="money_convert_edit_hint_step_two">Valor convertido</string>
+    <string name="acessibility_list">Lista de moedas</string>
+    <string name="acessibility_edt_money_convert_filter">Campo de filtro com %s</string>
+
+
+    <string name="acessibility_edt_money_convert_step_one">Campo de Valor a ser convertido com %s</string>
+    <string name="acessibility_edt_money_convert_step_two">Campo de Valor convertido de %s</string>
+    <string name="acessibility_btn_origin">Botão de moeda de origem</string>
+    <string name="acessibility_btn_destination">Botão de moeda de destino</string>
+
+    <string name="acessibility_txt_name">%s</string>
+
+    <string name="fail_connection">Falha na conexão</string>
+    <string name="fail_load_image">Falha ao carregar a imagem</string>
+    <string name="fail_request">serviço fora do ar</string>
+    <string name="fail_result_request">Falha na resposta do servidor</string>
+
+    <string name="error_value_origin">Ops, Houve um erro! \nO valor de origem deve ser selecionado</string>
+    <string name="error_value_recipient">Ops, Houve um erro! \nO valor de destino deve ser selecionado</string>
+
+</resources>
