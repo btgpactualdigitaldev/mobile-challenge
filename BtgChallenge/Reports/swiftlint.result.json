@@ -1,0 +1,29 @@
+[
+  {
+    "character" : 58,
+    "file" : "\/Users\/felipealexandersilvamelo\/Documents\/Projects\/Pessoal\/mobile-challenge\/BtgChallenge\/BtgChallenge\/Screens\/Base\/Components\/BtgLoadingView.swift",
+    "line" : 55,
+    "reason" : "Opening braces should be preceded by a single space and on the same line as the declaration.",
+    "rule_id" : "opening_brace",
+    "severity" : "Warning",
+    "type" : "Opening Brace Spacing"
+  },
+  {
+    "character" : 5,
+    "file" : "\/Users\/felipealexandersilvamelo\/Documents\/Projects\/Pessoal\/mobile-challenge\/BtgChallenge\/BtgChallengeTests\/Screens\/CoinList\/CoinListViewControllerTests.swift",
+    "line" : 20,
+    "reason" : "Delegates should be weak to avoid reference cycles.",
+    "rule_id" : "weak_delegate",
+    "severity" : "Warning",
+    "type" : "Weak Delegate"
+  },
+  {
+    "character" : null,
+    "file" : "\/Users\/felipealexandersilvamelo\/Documents\/Projects\/Pessoal\/mobile-challenge\/BtgChallenge\/BtgChallengeTests\/Screens\/CoinConvert\/CoinConvertViewControllerTests.swift",
+    "line" : 181,
+    "reason" : "Line should be 120 characters or less: currently 129 characters",
+    "rule_id" : "line_length",
+    "severity" : "Warning",
+    "type" : "Line Length"
+  }
+]

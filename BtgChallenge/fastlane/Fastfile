@@ -1,0 +1,79 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Run unit tests"
+  lane :test do
+    run_tests(
+      scheme: "BtgChallengeTests",
+      code_coverage: true,
+      derived_data_path: "unitTestDerivedData",
+      fail_build: true,
+      device: "iPhone 8"
+    )
+  end
+
+  desc "Run code coverage"
+  lane :cov do
+    slather(
+		build_directory: "unitTestDerivedData",
+	  	scheme: "BtgChallenge",
+	  	proj: "BtgChallenge.xcodeproj",
+		html: true,
+		verbose: true,
+		show: true,
+		ignore:[
+			"/**/*Repository*.swift",
+			"/**/*LocalStorage*.swift",
+			"/**/*Request*.swift",
+			"/**/*Response*.swift",
+			"/**/*Model*.swift"
+			]
+	)
+  end
+
+  desc "Run tests and code coverage"
+  lane :testAndCov do
+    test
+    cov
+  end
+
+  desc "Test swiftlint rules"
+  lane :lint do 
+    sh(
+	"rm", 
+	"-rf", 
+	"./Reports"
+    )
+
+    sh(
+	"mkdir", 
+	"./Reports"
+    )
+
+    swiftlint(
+    mode: :lint,                            # SwiftLint mode: :lint (default) or :autocorrect
+    executable: "Pods/SwiftLint/swiftlint", # The SwiftLint binary path (optional). Important if you've installed it via CocoaPods
+    output_file: "./Reports/swiftlint.result.json",   # The path of the output file (optional)
+    reporter: "json",                       # The custom reporter to use (optional)
+    config_file: ".swiftlint.yml",       # The path of the configuration file (optional)
+    ignore_exit_status: true,               # Allow fastlane to continue even if SwiftLint returns a non-zero exit status (Default: false)
+    quiet: false,                            # Don't print status logs like 'Linting ' & 'Done linting' (Default: false)
+    strict: false                            # Fail on warnings? (Default: false)
+)
+  end
+end

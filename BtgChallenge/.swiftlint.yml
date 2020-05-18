@@ -1,0 +1,9 @@
+opt_in_rules:
+    - force_unwrapping
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+    - Pods
+
+trailing_whitespace:
+    ignores_empty_lines: true
+    ignores_comments: true
