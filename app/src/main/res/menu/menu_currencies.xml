@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+            android:title="Search"
+            android:id="@+id/menu_toolbar_search"
+            app:showAsAction="always"
+            app:actionViewClass="android.widget.SearchView">
+    </item>
+
+    <item
+            android:title="Order"
+            android:id="@+id/menu_order"
+            app:showAsAction="always"
+            android:icon="@drawable/ic_az">
+
+        <menu>
+            <item
+                    app:showAsAction="never"
+                    android:orderInCategory="100"
+                    android:id="@+id/menu_order_code"
+                    android:title="@string/code"
+                    android:icon="@drawable/ic_eraser"/>
+            <item
+                    app:showAsAction="never"
+                    android:orderInCategory="100"
+                    android:id="@+id/menu_order_descriptiont"
+                    android:title="@string/description"
+                    android:icon="@drawable/ic_eraser"/>
+        </menu>
+
+    </item>
+
+
+</menu>
