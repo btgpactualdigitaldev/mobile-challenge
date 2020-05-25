@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_exchange"
+        android:icon="@drawable/ic_exchange_black_24dp"
+        android:title="@string/title_exchange" />
+
+    <item
+        android:id="@+id/navigation_currencies"
+        android:icon="@drawable/ic_list_24dp"
+        android:title="@string/title_currencies" />
+
+</menu>

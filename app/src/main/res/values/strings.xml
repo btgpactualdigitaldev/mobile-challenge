@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">BTG</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_exchange">Conversor</string>
+    <string name="title_currencies">Moedas</string>
+    <string name="search_hint">Busque por nome ou sigla</string>
+    <string name="no_currencies_found">Não foram encontradas moedas com essa sigla ou nome.</string>
+    <string name="iv_description">Ícone da tela exchange</string>
+    <string name="ti_hist">Digite o valor</string>
+    <string name="calculate">Calcular</string>
+    <string name="result">Resultado: </string>
+    <string name="internet_error">Ops! Verifique sua conexão com a internet e tente novamente.</string>
+    <string name="try_again">Tentar Novamente</string>
+    <string name="server_error">Ops! Tivemos um problema. Por favor, tente novamente mais tarde.</string>
+    <string name="update_error">Não foi possível recuperar dados do servidor e as cotacoes podem estar desatualizadas. Verifique sua conexão e tente novamente mais tarde.</string>
+    <string name="image_button_filter">image button filter</string>
+    <string name="order_by_name">Ordernar por nome</string>
+    <string name="order_by_initials">Ordenar por siglas</string>
+    <string name="app_error">Não foi possível carregar a página. Por favor, tente novamente mais tarde e verifique seu o app está atualizado.</string>
+</resources>
