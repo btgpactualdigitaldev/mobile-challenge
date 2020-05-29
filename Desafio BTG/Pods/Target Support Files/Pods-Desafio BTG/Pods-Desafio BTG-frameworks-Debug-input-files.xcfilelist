@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-Desafio BTG/Pods-Desafio BTG-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
