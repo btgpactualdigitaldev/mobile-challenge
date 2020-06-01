@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_0_5x">8dp</dimen>
+    <dimen name="margin_1x">16dp</dimen>
+    <dimen name="margin_2x">32dp</dimen>
+    <dimen name="margin_3x">48dp</dimen>
+
+    <dimen name="ts_small">12sp</dimen>
+    <dimen name="ts">16sp</dimen>
+    <dimen name="ts_big">24sp</dimen>
+
+    <dimen name="corner_radius">8dp</dimen>
+
+</resources>

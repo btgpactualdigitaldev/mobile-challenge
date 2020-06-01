@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AppButton">
+        <attr name="text" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="InputTextField">
+        <attr name="hint" format="string"/>
+        <attr name="maxLines" format="integer"/>
+        <attr name="textSize" format="integer"/>
+        <attr name="textAlignment" format="enum">
+            <enum name="start" value="8388611"/>
+            <enum name="center" value="1"/>
+            <enum name="end" value="8388613"/>
+        </attr>
+        <attr name="imeOptions" format="enum">
+            <enum name="actionNext" value = "5"/>
+            <enum name="actionDone" value = "6"/>
+        </attr>
+        <attr name="inputType" format="enum" >
+            <enum name="date" value="16"/>
+            <enum name="dateTime" value="0"/>
+            <enum name="time" value="32"/>
+            <enum name="number" value="2"/>
+            <enum name="phone" value="3"/>
+            <enum name="text" value="1"/>
+            <enum name="textCharacters" value="4096"/>
+            <enum name="textCapSentences" value="16384"/>
+            <enum name="textCapWords" value="8192"/>
+            <enum name="textNoSuggestions" value="524288"/>
+            <enum name="datetime" value="4"/>
+            <enum name="email" value="32"/>
+            <enum name="password" value="128"/>
+            <enum name="numberPassword" value="18"/>
+            <enum name="passwordVisible" value="144"/>
+            <enum name="textFilter" value="176"/>
+            <enum name="textMultiLine" value="20001"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

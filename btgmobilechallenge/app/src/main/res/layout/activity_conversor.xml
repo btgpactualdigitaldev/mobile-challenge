@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+    
+    <data>
+        <variable
+            name="conversorActivityVM"
+            type="br.com.cauejannini.btgmobilechallenge.activities.conversordemoeda.ConversorActivityVM" />
+    </data>
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/margin_2x"
+        tools:context=".activities.conversordemoeda.ConversorActivity">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_title"
+            android:textSize="@dimen/ts_big"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <br.com.cauejannini.btgmobilechallenge.commons.form.AppButton
+            android:id="@+id/btMoedaEntrada"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintWidth_percent=".25"
+            app:text="DE"
+            android:layout_marginTop="@dimen/margin_3x"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <br.com.cauejannini.btgmobilechallenge.commons.form.InputTextField
+            android:id="@+id/inputValorEntrada"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:textSize="@dimen/ts_big"
+            app:inputType="number"
+            app:textAlignment="center"
+            app:hint="@string/insira_o_valor_para_converter"
+            app:layout_constraintTop_toTopOf="@id/btMoedaEntrada"
+            app:layout_constraintBottom_toBottomOf="@id/btMoedaEntrada"
+            app:layout_constraintStart_toStartOf="@id/tvValorConvertido"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/whiteTranslucent"
+            app:layout_constraintTop_toBottomOf="@id/btMoedaEntrada"
+            app:layout_constraintBottom_toTopOf="@id/btMoedaSaida"/>
+
+        <br.com.cauejannini.btgmobilechallenge.commons.form.AppButton
+            android:id="@+id/btMoedaSaida"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:text="PARA"
+            app:layout_constraintWidth_percent=".25"
+            android:layout_marginTop="@dimen/margin_3x"
+            app:layout_constraintTop_toBottomOf="@id/btMoedaEntrada"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvValorConvertido"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:layout_marginStart="@dimen/margin_2x"
+            app:layout_constraintBottom_toBottomOf="@id/btMoedaSaida"
+            app:layout_constraintTop_toTopOf="@id/btMoedaSaida"
+            app:layout_constraintStart_toEndOf="@id/btMoedaSaida"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@{conversorActivityVM.valorSaidaFormatado}"
+            android:textSize="@dimen/ts_big"/>
+
+        <br.com.cauejannini.btgmobilechallenge.commons.form.AppButton
+            android:id="@+id/btConverter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:text="@string/converter"
+            android:layout_marginTop="@dimen/margin_3x"
+            app:layout_constraintTop_toBottomOf="@id/btMoedaSaida"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+</layout>

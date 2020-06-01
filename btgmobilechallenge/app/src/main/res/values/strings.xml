@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BTG Mobile Challenge</string>
+    <string name="main_title">Conversor de moeda</string>
+    <string name="valor_monetario_placeholder">0,00</string>
+    <string name="insira_o_valor_para_converter">Insira o valor</string>
+    <string name="converter">Converter</string>
+
+    <string name="escolha_uma_moeda_de_entrada">Escolha uma moeda de entrada</string>
+    <string name="escolha_uma_moeda_de_saida">Escolha uma moeda de saída</string>
+
+    <string name="erro">Ocorreu um erro</string>
+    <string name="buscar">Buscar</string>
+</resources>
