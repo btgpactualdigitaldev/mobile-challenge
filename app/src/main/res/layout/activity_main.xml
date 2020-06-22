@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+
+    tools:context=".presentation.convert.ConvertCurrencyActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container"
+        android:background="@color/gray_EEEDEF">
+
+  <TextView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/lblConvert"
+     android:layout_marginTop="8dp"
+     android:text="@string/convert_currencies_lbl_amount"
+     android:textStyle="bold"
+     android:paddingStart="16dp"
+      android:paddingEnd="16dp"
+     android:paddingTop="8dp"
+     android:paddingBottom="8dp"
+     android:textSize="18sp"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     android:textColor="@android:color/black"/>
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/edtCurrencyValue"
+       android:layout_marginStart="16dp"
+       android:inputType="numberDecimal"
+       android:fontFamily="sans-serif-thin"
+       android:layout_marginEnd="16dp"
+       android:gravity="center_vertical"
+       android:textColorHint="@android:color/black"
+       android:hint="@string/convert_currencies_edt_hint"
+       android:background="@drawable/edt_bordered"
+       android:layout_marginTop="8dp"
+       android:padding="8dp"
+       app:layout_constraintTop_toBottomOf="@id/lblConvert"
+       app:layout_constraintStart_toStartOf="parent"
+       android:autofillHints="">
+   </EditText>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:id="@+id/view2"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/edtCurrencyValue" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblFrom"
+        android:layout_marginTop="24dp"
+        android:text="@string/convert_currencies_lbl_from"
+        android:textStyle="bold"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <androidx.constraintlayout.widget.Group
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/groupFrom"
+        app:constraint_referenced_ids="tvCurrencyFrom,imgCurrencyFrom" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCurrencyFrom"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/convert_currencies_txt_choose_coin"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/lblFrom" />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/imgCurrencyFrom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvCurrencyFrom"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCurrencyFrom"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@android:color/white"
+        android:src="@drawable/ic_arrow_drop_down_black_24dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:id="@+id/view1"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/tvCurrencyFrom" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblTo"
+        android:layout_marginTop="16dp"
+        android:text="@string/convert_currencies_lbl_to"
+        android:textStyle="bold"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCurrencyTo"
+        android:background="?android:attr/selectableItemBackground"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/convert_currencies_txt_choose_coin"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTo" />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/imgCurrencyTo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCurrencyTo"
+        app:layout_constraintTop_toTopOf="@+id/tvCurrencyTo"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@android:color/white"
+        android:src="@drawable/ic_arrow_drop_down_black_24dp" />
+
+ <androidx.constraintlayout.widget.Group
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/groupTo"
+     app:constraint_referenced_ids="tvCurrencyTo,imgCurrencyTo" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:id="@+id/view"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/tvCurrencyTo" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnConvert"
+        android:text="@string/convert_currencies_btn_convert"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif-thin"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblResult"
+        android:layout_marginTop="24dp"
+        android:text="@string/convert_currencies_lbl_result"
+        android:textStyle="bold"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textSize="18sp"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/btnConvert" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFromResult"
+        tools:text="1.0000 BRZ = "
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblResult" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvToResult"
+        tools:text="448,51 USD"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-thin"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/tvFromResult"
+        app:layout_constraintTop_toBottomOf="@+id/tvFromResult" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pbList"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/lblResult"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
