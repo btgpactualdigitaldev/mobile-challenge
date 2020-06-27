@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Conversor de Moedas</string>
+    <!--Global Strings-->
+    <string name="global_try_again">Tentar novamente</string>
+    <string name="global_ok">OK</string>
+    <string name="global_send">Enviar</string>
+    <string name="global_error">Erro</string>
+    <string name="global_cancel">Cancelar</string>
+    <!--Error Strings-->
+    <string name="error_title">Oops!</string>
+    <string name="error_socket_timeout">Não foi possível completar a operação. Conexão expirada.</string>
+    <string name="error_not_found">Não foi possível completar a operação. Destino não encontrado</string>
+    <string name="error_internal_server">Não foi possível completar a operação. Houve um erro interno</string>
+    <string name="error_bad_request">Não foi possível completar a operação. A requisição falhou</string>
+    <string name="error_conflict">Não foi possível completar a operação. Houve conflitos nos dados</string>
+    <string name="error_forbidden">Não foi possível completar a operação. Acesso proibido</string>
+    <string name="error_unauthorized">Não foi possível completar a operação. É necessário renovar o cadastro</string>
+    <string name="error_unexpected">Não foi possível completar a operação. Houve um erro inesperado</string>
+    <string name="error_unprocessable_entity">Não foi possível completar a operação. Verifique as informações</string>
+    <string name="error_unknown">Não foi possível completar a operação. Tente novamente mais tarde.</string>
+    <string name="error_network">Não foi possível completar a operação. Verifique sua conexão e tente novamente.</string>
+    <!--List Currency-->
+    <string name="list_currency_title">Escolha uma moeda</string>
+    <string name="hint_origin_currency">Escolha uma moeda de origem</string>
+    <string name="hint_destination_currency">Escolha uma moeda de destino</string>
+    <string name="action_search">Procurar</string>
+    <string name="action_filter">Filtrar</string>
+    <string name="filter_by_name">Filtrar por nome</string>
+    <string name="filter_by_code">Filtrar por código</string>
+    <string name="sort_by_name">Ordenar por nome</string>
+    <string name="sort_by_code">Ordenar por código</string>
+    <!--Convert Currency-->
+    <string name="currency_template">%s (%s)</string>
+    <string name="converted_value_hint">0</string>
+    <string name="origin_currency_hint">Moeda Origem</string>
+    <string name="destination_currency_hint">Moeda de destino</string>
+    <string name="button_convert_text">Converter</string>
+    <string name="conversion_value_hint">Valor a ser convertido</string>
+    <string name="empty_fields_error_title">Campos vazios</string>
+    <string name="empty_currencies_error">Por favor, escolha uma moeda de origem e uma de destino</string>
+    <string name="empty_value_error">Por favor, insira o valor a ser convertido</string>
+    <string name="conversion_error">Houve um erro na conversão. Por favor, tente novamente</string>
+    <string name="current_quotes_error">Houve um erro ao pegar as cotações atuais. Por favor, tente novamente</string>
+    <string name="currency_list_error">Houve um erro ao pegar a lista de moedas. Por favor, tente novamente</string>
+</resources>
