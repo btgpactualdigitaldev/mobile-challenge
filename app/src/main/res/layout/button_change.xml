@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/btnInitials"
+        android:layout_width="100dp"
+        android:layout_height="56dp"
+        style="?android:attr/buttonBarButtonStyle"
+        android:background="@drawable/shape_on_left"
+        android:text="@string/btn_initials"
+        android:textColor="@color/colorText"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnName"
+        android:layout_width="100dp"
+        android:layout_height="56dp"
+        style="?android:attr/buttonBarButtonStyle"
+        android:background="@drawable/shape_off_right"
+        android:text="@string/btn_name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnInitials"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</LinearLayout>

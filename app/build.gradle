@@ -1,0 +1,87 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+
+    signingConfigs {
+        release {
+            storeFile file("../coinsKey")
+            storePassword 'coins2020'
+            keyAlias 'key0'
+            keyPassword 'coins2020'
+        }
+    }
+
+    compileSdkVersion 29
+
+    defaultConfig {
+        applicationId "br.com.tiago.conversormoedas"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            testCoverageEnabled = true
+        }
+        release {
+            debuggable false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    compileOptions {
+        targetCompatibility = "1.8"
+        sourceCompatibility = "1.8"
+    }
+
+    dexOptions {
+        maxProcessCount 3
+        javaMaxHeapSize "2g"
+    }
+
+    packagingOptions {
+        exclude 'META-INF/atomicfu.kotlin_module'
+    }
+}
+
+ext {
+    supportVersion = '1.1.0'
+    retrofitVersion = '2.7.1'
+    moshiVersion = '1.9.2'
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.0'
+    implementation "androidx.appcompat:appcompat:$supportVersion"
+    implementation "androidx.constraintlayout:constraintlayout:1.1.3"
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-moshi:$retrofitVersion"
+    implementation "com.squareup.moshi:moshi:$moshiVersion"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    kapt("com.squareup.moshi:moshi-kotlin-codegen:$moshiVersion")
+
+    implementation 'androidx.core:core-ktx:1.3.0'
+    testImplementation 'junit:junit:4.12'
+
+    testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0"
+    testImplementation "android.arch.core:core-testing:1.1.1"
+
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+}

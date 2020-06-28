@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Conversor Moedas</string>
+    <string name="img_coin">Image coin</string>
+    <string name="txt_origin">Origem</string>
+    <string name="txt_destiny">Destino</string>
+    <string name="txt_value">Valor</string>
+    <string name="select_coin">Selecione sua moeda</string>
+    <string name="btn_conversion">Calcular</string>
+    <string name="btn_initials">Sigla</string>
+    <string name="btn_name">Nome</string>
+    <string name="coins_title">Moedas</string>
+    <string name="conversion_title">Cotação do dia</string>
+    <string name="coins_error_401">Não autorizado</string>
+    <string name="coins_error_400_generic">Erro não tratado</string>
+    <string name="coins_error_500_generic">Erro catastrófico</string>
+    <string name="value_hint">1.0</string>
+    <string name="search">Busca</string>
+    <string name="result">%1$s</string>
+
+    <string name="select_coin_origin">Selecione uma moeda de origem</string>
+    <string name="select_coin_destiny">Selecione uma moeda de destino</string>
+    <string name="value_null_or_zero">Digite um valor maior que zero</string>
+</resources>
