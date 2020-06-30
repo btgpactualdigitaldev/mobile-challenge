@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Converter Moedas</string>
+    <string name="namelist">Moedas</string>
+
+    <string name="lable_ok">OK</string>
+    <string name="not_found">O item não foi encontrado!</string>
+
+    <!-- ERROR -->
+    <string name="error_not_exchange_rates">As taxas de câmbio não estão disponíveis!</string>
+    <string name="field_required">Este campo é obrigatório</string>
+    <string name="not_internet">O dispositivo não possui internet</string>
+    <string name="error">Dados indisponíveis no momento!</string>
+
+
+</resources>
