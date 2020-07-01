@@ -1,0 +1,4 @@
+Release Notes - Version v1.0.0
+
+Story
+   * First version

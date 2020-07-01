@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000317">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="1: Switch to ios private_deploy_firebase lane" time="0.000177">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: ensure_git_status_clean" time="0.013521">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="3: get_info_plist_value" time="0.005018">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="4: get_info_plist_value" time="0.005253">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="5: Switch to ios define_changelog lane" time="0.000209">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="6: Switch to ios define_scheme lane" time="0.000152">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="7: prompt" time="3.763248">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="8: push_to_git_remote" time="4.411608">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="9: build_app" time="181.629591">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>

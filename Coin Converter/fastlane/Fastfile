@@ -1,0 +1,190 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+###################################################
+## PUBLIC LANES
+###################################################
+
+platform :ios do
+  before_all do
+    ENV["SLACK_URL"] = "https://hooks.slack.com/services/"
+  end
+
+  desc "Deploy a new beta version to Firebase"
+  lane :deploy_firebase do
+    private_deploy_firebase()
+  end
+
+  desc "Deploy a new beta version to Firebase with Jenkins"
+  lane :deploy_firebase_jenkins do
+    private_deploy_firebase(isJenkins: true, isDebug: true)
+  end
+
+  desc "Deploy a new beta version to Test Flight"
+  lane :deploy_testflight do
+    private_deploy_testflight()
+  end
+
+  desc "Run project's UI tests"
+  lane :run_ui_tests do
+    private_run_unit_tests()
+  end
+
+  ###################################################
+  ## PRIVATE LANES
+  ###################################################
+
+  desc "Private implementation to deploy a new beta version to Firebase"
+  private_lane :private_deploy_firebase do |options|
+
+    isJenkins = options[:isJenkins]
+    isDebug = options[:isDebug]
+
+    if isJenkins
+      setup_jenkins
+      reset_git_repo(force: true)
+    end
+
+    # Ensure that your git status is not dirty.
+    ensure_git_status_clean
+
+    # Creates a tag for this version.
+    path = "Coin Converter/App/Info.plist"
+    version_number = get_info_plist_value(path: path, key: "CFBundleShortVersionString")
+    build_number = get_info_plist_value(path: path, key: "CFBundleVersion")
+
+    # Defines changelog
+    changelog = define_changelog(isReadFile: true)
+
+    # Defines scheme configuration
+    configuration = define_scheme(isJenkins: isJenkins, isDebug: isDebug)
+
+    # Push the previously commit.
+    if isJenkins
+      push_to_git_remote(remote: "origin", local_branch: "HEAD", remote_branch: "beta", tags: false)
+    else
+      push_to_git_remote(tags: false)
+    end
+
+    # Build and archive the application.
+    build_app(export_method: "development", configuration: configuration, scheme: "Coin Converter")
+
+    # Upload the application on the Fabric.
+    firebase_app_distribution(
+        app: "[APP-ID]",
+	      firebase_cli_token: "[FIREBASE-TOKEN]",
+        groups: "Beta",
+        release_notes: changelog,
+        debug: true
+    )
+
+    reset_git_repo(force: true)
+
+    # Creates a tag for this version.
+    version = "#{version_number} (#{build_number})"
+    add_git_tag(tag: "homolog/v#{version_number}_#{build_number}")
+
+    # Push the created tag.
+    if isJenkins
+      push_to_git_remote(remote: "origin", local_branch: "HEAD", remote_branch: "beta", tags: true)
+    else
+      push_to_git_remote(tags: false)
+    end
+
+    # Sends a custom message on the #ios-integrations channel.
+    slack(message: "*Nova versão Beta*\n#{version}\n*Changelog*\n#{changelog}", channel: "#ios-integrations")
+  end
+
+
+  desc "Private implementation to deploy a new beta version to Test Flight"
+  private_lane :private_deploy_testflight do |options|
+
+    # Ensure that your git status is not dirty.
+    ensure_git_status_clean
+
+    changelog = define_changelog(isReadFile: true)
+
+    # Build and archive the application.
+    build_app(export_method: "app-store", configuration: "Release", scheme: "Coin Converter")
+
+    # Uploads the previously created binary to TestFlight.
+    upload_to_testflight(changelog: changelog)
+
+    # Creates a tag for this version.
+    path = "Coin Converter/App/Info.plist"
+    version_number = get_info_plist_value(path: path, key: "CFBundleShortVersionString")
+    build_number = get_info_plist_value(path: path, key: "CFBundleVersion")
+
+    add_git_tag(tag: "release/v#{version_number}_#{build_number}")
+
+    push_to_git_remote(tags: false)
+
+    # Sends a custom message on the #ios-integrations channel.
+    version = "#{version_number} (#{build_number})"
+    slack(message: "*Nova versão TestFlight*\n#{version}\n*Changelog*\n#{changelog}", channel: "#ios-integrations")
+  end
+
+  desc "Private implementation to run project's tests"
+  private_lane :private_run_unit_tests do |options|
+
+      # Ensure that git status is not dirty.
+      ensure_git_status_clean
+
+      # Run the tests
+      run_tests(
+      	project: "Coin Converter.xcodeproj",
+        scheme: "Coin Converter",
+        slack_url: ENV["SLACK_URL"],
+        slack_channel: "#ios-integrations",
+        slack_message: "Running unit Tests",
+        device: "iPhone 8",
+        force_quit_simulator: true,
+        prelaunch_simulator: true
+      )
+  end
+
+  desc "Method created to define changelog"
+  private_lane :define_changelog do |isReadFile|
+    if isReadFile
+      changelog = File.read("./changelog.txt")
+    else
+      changelog = prompt(text: "Describe the changes on this version: ", multi_line_end_keyword: "END")
+    end
+  end
+
+  desc "Method created to define scheme"
+  private_lane :define_scheme do
+    # Defines a default scheme build configuration.
+    if isJenkins
+      # Setting build configuration
+      configuration = "Release"
+      if isDebug
+        configuration = "Debug"
+      end
+    else
+      # Asks for scheme build configuration option.
+      config = prompt(text: "\nPlease, select the scheme build configuration option:\n1) Release\n2) QA\n")
+      if config == "1"
+        configuration = "Release"
+      elsif config == "2"
+        configuration = "Debug"
+      else
+        UI.user_error!("Invalid option.")
+      end
+    end
+  end
+end
