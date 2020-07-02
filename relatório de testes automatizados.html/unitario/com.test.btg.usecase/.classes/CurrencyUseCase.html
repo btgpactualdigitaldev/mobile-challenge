@@ -1,0 +1,98 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: CurrencyUseCase</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">com.test.btg.usecase</a> ]
+</div>
+
+<h1>Coverage Summary for Class: CurrencyUseCase (com.test.btg.usecase)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">CurrencyUseCase</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/ 2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/ 2)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package com.test.btg.usecase
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import com.test.btg.repository.CurrencyRepository
+<i>4</i>&nbsp;import com.test.core.model.Lives
+<i>5</i>&nbsp;import io.reactivex.disposables.Disposable
+<i>6</i>&nbsp;
+<b class="fc"><i>7</i>&nbsp;class CurrencyUseCase(private val repository: CurrencyRepository) {</b>
+<i>8</i>&nbsp;
+<i>9</i>&nbsp;    fun requestLive(
+<i>10</i>&nbsp;        successListener: (model: Lives?) -&gt; Unit,
+<i>11</i>&nbsp;        failureListener: (exception: Throwable) -&gt; Unit
+<i>12</i>&nbsp;    ): Disposable {
+<b class="fc"><i>13</i>&nbsp;        return repository.searchLive(successListener, failureListener)</b>
+<i>14</i>&nbsp;    }
+<i>15</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2020-06-30 15:01</div>
+</div>
+</body>
+</html>

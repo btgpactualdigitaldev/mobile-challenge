@@ -1,0 +1,128 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: CurrencyRemoteRepository</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">com.test.btg.repository</a> ]
+</div>
+
+<h1>Coverage Summary for Class: CurrencyRemoteRepository (com.test.btg.repository)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">CurrencyRemoteRepository</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/ 2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (4/ 4)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">CurrencyRemoteRepository$searchLive$1</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/ 3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (5/ 5)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package com.test.btg.repository
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import com.test.core.doRemoteStorageRequest
+<i>4</i>&nbsp;import com.test.core.model.Lives
+<i>5</i>&nbsp;import com.test.core.request.createApi
+<i>6</i>&nbsp;import io.reactivex.disposables.Disposable
+<i>7</i>&nbsp;
+<b class="fc"><i>8</i>&nbsp;class CurrencyRemoteRepository : CurrencyRepository {</b>
+<i>9</i>&nbsp;
+<i>10</i>&nbsp;    override fun searchLive(
+<i>11</i>&nbsp;        successListener: (model: Lives?) -&gt; Unit,
+<i>12</i>&nbsp;        failureListener: (exception: Throwable) -&gt; Unit
+<i>13</i>&nbsp;    ): Disposable {
+<b class="fc"><i>14</i>&nbsp;        return doRemoteStorageRequest(</b>
+<b class="fc"><i>15</i>&nbsp;            { createApi&lt;CurrencyApi&gt;().requestLive() },</b>
+<b class="fc"><i>16</i>&nbsp;            successListener, failureListener</b>
+<i>17</i>&nbsp;        )
+<i>18</i>&nbsp;    }
+<i>19</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2020-06-30 15:01</div>
+</div>
+</body>
+</html>

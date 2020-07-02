@@ -1,0 +1,4 @@
+rootProject.name='BTG'
+include ':app'
+include ':core'
+include ':navigation'

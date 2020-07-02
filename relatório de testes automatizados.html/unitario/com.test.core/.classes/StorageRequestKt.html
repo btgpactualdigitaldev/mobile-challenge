@@ -1,0 +1,155 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: StorageRequestKt</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">com.test.core</a> ]
+</div>
+
+<h1>Coverage Summary for Class: StorageRequestKt (com.test.core)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">StorageRequestKt</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (4/ 4)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">StorageRequestKt$doRemoteStorageRequest$1</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (5/ 5)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">StorageRequestKt$doRemoteStorageRequest$2</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/ 2)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/ 3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (11/ 11)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package com.test.core
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import com.test.core.extension.alternateThreadAndBackToMain
+<i>4</i>&nbsp;import io.reactivex.Observable
+<i>5</i>&nbsp;import io.reactivex.disposables.Disposable
+<i>6</i>&nbsp;import retrofit2.Response
+<i>7</i>&nbsp;
+<i>8</i>&nbsp;fun &lt;T&gt; doRemoteStorageRequest(
+<i>9</i>&nbsp;    callStorageRequest: () -&gt; Observable&lt;Response&lt;T&gt;&gt;,
+<i>10</i>&nbsp;    successListener: (model: T?) -&gt; Unit,
+<i>11</i>&nbsp;    failureListener: (exception: Throwable) -&gt; Unit
+<i>12</i>&nbsp;): Disposable {
+<i>13</i>&nbsp;
+<b class="fc"><i>14</i>&nbsp;    return callStorageRequest()</b>
+<b class="fc"><i>15</i>&nbsp;        .alternateThreadAndBackToMain()</b>
+<b class="fc"><i>16</i>&nbsp;        .subscribe({</b>
+<b class="fc"><i>17</i>&nbsp;            if (it.isSuccessful) {</b>
+<b class="fc"><i>18</i>&nbsp;                successListener(it.body())</b>
+<i>19</i>&nbsp;            } else {
+<b class="fc"><i>20</i>&nbsp;                failureListener(ResponseCodeException(it.code()))</b>
+<b class="fc"><i>21</i>&nbsp;            }</b>
+<i>22</i>&nbsp;
+<b class="fc"><i>23</i>&nbsp;        }) {</b>
+<b class="fc"><i>24</i>&nbsp;            failureListener(it)</b>
+<b class="fc"><i>25</i>&nbsp;        }</b>
+<i>26</i>&nbsp;}
+<i>27</i>&nbsp;
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2020-06-30 15:01</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,216 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: CurrencyAnswer</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">com.test.btg.viewmodel</a> ]
+</div>
+
+<h1>Coverage Summary for Class: CurrencyAnswer (com.test.btg.viewmodel)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">CurrencyAnswer</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">CurrencyAnswer$CurrencyLives</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">CurrencyAnswer$Error</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">CurrencyAnswer$LoadingStatus</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (4/ 4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (4/ 4)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package com.test.btg.viewmodel
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import android.view.View
+<i>4</i>&nbsp;import androidx.lifecycle.MutableLiveData
+<i>5</i>&nbsp;import androidx.lifecycle.ViewModel
+<i>6</i>&nbsp;import com.test.btg.repository.CurrencyRemoteRepository
+<i>7</i>&nbsp;import com.test.btg.usecase.CurrencyUseCase
+<i>8</i>&nbsp;import com.test.core.model.Lives
+<i>9</i>&nbsp;import io.reactivex.disposables.Disposable
+<i>10</i>&nbsp;
+<i>11</i>&nbsp;class CurrencyViewModel(
+<i>12</i>&nbsp;    private val useCaseRemote: CurrencyUseCase = CurrencyUseCase(
+<i>13</i>&nbsp;        CurrencyRemoteRepository()
+<i>14</i>&nbsp;    )
+<i>15</i>&nbsp;) : ViewModel() {
+<i>16</i>&nbsp;
+<i>17</i>&nbsp;    val answers by lazy { MutableLiveData&lt;CurrencyAnswer&gt;() }
+<i>18</i>&nbsp;    val loadingStatus by lazy { MutableLiveData&lt;CurrencyAnswer.LoadingStatus&gt;() }
+<i>19</i>&nbsp;    private lateinit var disposable: Disposable
+<i>20</i>&nbsp;
+<i>21</i>&nbsp;    fun interact(action: CurrencyInteracts) {
+<i>22</i>&nbsp;        when (action) {
+<i>23</i>&nbsp;            CurrencyInteracts.CreatedActivity -&gt; createdActivity()
+<i>24</i>&nbsp;        }
+<i>25</i>&nbsp;    }
+<i>26</i>&nbsp;
+<i>27</i>&nbsp;    private fun createdActivity(
+<i>28</i>&nbsp;        successCallbackLives: (it: Lives?) -&gt; Unit = createSuccessCallbackLives(),
+<i>29</i>&nbsp;        failureCallbackLives: (it: Throwable) -&gt; Unit = createFailureCallbackLives()
+<i>30</i>&nbsp;    ) {
+<i>31</i>&nbsp;        loadingStatus.postValue(CurrencyAnswer.LoadingStatus(View.VISIBLE))
+<i>32</i>&nbsp;
+<i>33</i>&nbsp;        disposable = useCaseRemote.requestLive(successCallbackLives, failureCallbackLives)
+<i>34</i>&nbsp;    }
+<i>35</i>&nbsp;
+<i>36</i>&nbsp;    fun createFailureCallbackLives() = { it: Throwable -&gt;
+<i>37</i>&nbsp;        loadingStatus.postValue(CurrencyAnswer.LoadingStatus(View.GONE))
+<i>38</i>&nbsp;        answers.postValue(CurrencyAnswer.Error(it.message.orEmpty()))
+<i>39</i>&nbsp;    }
+<i>40</i>&nbsp;
+<i>41</i>&nbsp;    fun createSuccessCallbackLives(): (it: Lives?) -&gt; Unit = {
+<i>42</i>&nbsp;        loadingStatus.postValue(CurrencyAnswer.LoadingStatus(View.GONE))
+<i>43</i>&nbsp;
+<i>44</i>&nbsp;        it?.let {
+<i>45</i>&nbsp;            answers.postValue(CurrencyAnswer.CurrencyLives(it))
+<i>46</i>&nbsp;        }
+<i>47</i>&nbsp;    }
+<i>48</i>&nbsp;
+<i>49</i>&nbsp;    override fun onCleared() {
+<i>50</i>&nbsp;        if(::disposable.isInitialized &amp;&amp; !disposable.isDisposed) {
+<i>51</i>&nbsp;            disposable.dispose()
+<i>52</i>&nbsp;        }
+<i>53</i>&nbsp;
+<i>54</i>&nbsp;        super.onCleared()
+<i>55</i>&nbsp;    }
+<i>56</i>&nbsp;
+<i>57</i>&nbsp;}
+<i>58</i>&nbsp;
+<i>59</i>&nbsp;
+<i>60</i>&nbsp;sealed class CurrencyInteracts {
+<i>61</i>&nbsp;    object CreatedActivity : CurrencyInteracts()
+<i>62</i>&nbsp;}
+<i>63</i>&nbsp;
+<b class="fc"><i>64</i>&nbsp;sealed class CurrencyAnswer {</b>
+<i>65</i>&nbsp;
+<b class="fc"><i>66</i>&nbsp;    data class Error(val message: String) : CurrencyAnswer()</b>
+<b class="fc"><i>67</i>&nbsp;    data class CurrencyLives(val lives: Lives) : CurrencyAnswer()</b>
+<b class="fc"><i>68</i>&nbsp;    data class LoadingStatus(val visibility: Int) : CurrencyAnswer()</b>
+<i>69</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2020-06-30 15:01</div>
+</div>
+</body>
+</html>
