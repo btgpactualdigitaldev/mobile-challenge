@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">DesafioBTG</string>
+    <string name="title_start">Selecione a moeda de origem</string>
+    <string name="title_toolbar">Desafio BTG</string>
+    <string name="hint_input_value">0</string>
+    <string name="start_value">Moeda de origem</string>
+    <string name="end_value">Moeda de destino</string>
+    <string name="action_search">Pesquisar</string>
+
+    <!--    API-->
+
+<!--    <string name="key_api">fb4792af9ed2fde0a3dd138c597e574a</string>-->
+    <string name="key_api">e93376195ad4534b5cb11b7bd72d58f5</string>
+    <string name="api_url">http://api.currencylayer.com</string>
+    <string name="live">%s/live?access_key=</string>
+    <string name="list">%s/list?format=1&amp;access_key=</string>
+    <string name="message_alert">Selecionar moedas</string>
+
+</resources>
