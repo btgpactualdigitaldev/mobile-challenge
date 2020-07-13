@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "gel.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

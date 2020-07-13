@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CurrencyModel" representedClassName="CurrencyModel" syncable="YES" codeGenerationType="class">
+        <attribute name="currency" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="quotes" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+    </entity>
+    <elements>
+        <element name="CurrencyModel" positionX="-63" positionY="-18" width="128" height="88"/>
+    </elements>
+</model>
