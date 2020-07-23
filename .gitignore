@@ -1,0 +1,47 @@
+CoinConversion/CoinConversion.xcworkspace/contents.xcworkspacedata
+CoinConversion/CoinConversion.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+CoinConversion/CoinConversion.xcworkspace/xcuserdata/ronilsonbatista.xcuserdatad/UserInterfaceState.xcuserstate
+CoinConversion/Pods/Alamofire/LICENSE
+CoinConversion/Pods/Alamofire/README.md
+CoinConversion/Pods/Alamofire/Source/AFError.swift
+CoinConversion/Pods/Alamofire/Source/Alamofire.swift
+CoinConversion/Pods/Alamofire/Source/DispatchQueue+Alamofire.swift
+CoinConversion/Pods/Alamofire/Source/MultipartFormData.swift
+CoinConversion/Pods/Alamofire/Source/NetworkReachabilityManager.swift
+CoinConversion/Pods/Alamofire/Source/Notifications.swift
+CoinConversion/Pods/Alamofire/Source/ParameterEncoding.swift
+CoinConversion/Pods/Alamofire/Source/Request.swift
+CoinConversion/Pods/Alamofire/Source/Response.swift
+CoinConversion/Pods/Alamofire/Source/ResponseSerialization.swift
+CoinConversion/Pods/Alamofire/Source/Result.swift
+CoinConversion/Pods/Alamofire/Source/ServerTrustPolicy.swift
+CoinConversion/Pods/Alamofire/Source/SessionDelegate.swift
+CoinConversion/Pods/Alamofire/Source/SessionManager.swift
+CoinConversion/Pods/Alamofire/Source/TaskDelegate.swift
+CoinConversion/Pods/Alamofire/Source/Timeline.swift
+CoinConversion/Pods/Alamofire/Source/Validation.swift
+CoinConversion/Pods/Manifest.lock
+CoinConversion/Pods/Pods.xcodeproj/project.pbxproj
+CoinConversion/Pods/Pods.xcodeproj/xcuserdata/ronilsonbatista.xcuserdatad/xcschemes/Alamofire.xcscheme
+CoinConversion/Pods/Pods.xcodeproj/xcuserdata/ronilsonbatista.xcuserdatad/xcschemes/Pods-CoinConversion.xcscheme
+CoinConversion/Pods/Pods.xcodeproj/xcuserdata/ronilsonbatista.xcuserdatad/xcschemes/xcschememanagement.plist
+CoinConversion/Pods/Target Support Files/Alamofire/Alamofire-Info.plist
+CoinConversion/Pods/Target Support Files/Alamofire/Alamofire-dummy.m
+CoinConversion/Pods/Target Support Files/Alamofire/Alamofire-prefix.pch
+CoinConversion/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h
+CoinConversion/Pods/Target Support Files/Alamofire/Alamofire.debug.xcconfig
+CoinConversion/Pods/Target Support Files/Alamofire/Alamofire.modulemap
+CoinConversion/Pods/Target Support Files/Alamofire/Alamofire.release.xcconfig
+CoinConversion/Pods/Target Support Files/Pods-CoinConversion/Pods-CoinConversion-Info.plist
+CoinConversion/Pods/Target Support Files/Pods-CoinConversion/Pods-CoinConversion-acknowledgements.markdown
+CoinConversion/Pods/Target Support Files/Pods-CoinConversion/Pods-CoinConversion-acknowledgements.plist
+CoinConversion/Pods/Target Support Files/Pods-CoinConversion/Pods-CoinConversion-dummy.m
+CoinConversion/Pods/Target Support Files/Pods-CoinConversion/Pods-CoinConversion-frameworks-Debug-input-files.xcfilelist
+CoinConversion/Pods/Target Support Files/Pods-CoinConversion/Pods-CoinConversion-frameworks-Debug-output-files.xcfilelist
+CoinConversion/Pods/Target Support Files/Pods-CoinConversion/Pods-CoinConversion-frameworks-Release-input-files.xcfilelist
+CoinConversion/Pods/Target Support Files/Pods-CoinConversion/Pods-CoinConversion-frameworks-Release-output-files.xcfilelist
+CoinConversion/Pods/Target Support Files/Pods-CoinConversion/Pods-CoinConversion-frameworks.sh
+CoinConversion/Pods/Target Support Files/Pods-CoinConversion/Pods-CoinConversion-umbrella.h
+CoinConversion/Pods/Target Support Files/Pods-CoinConversion/Pods-CoinConversion.debug.xcconfig
+CoinConversion/Pods/Target Support Files/Pods-CoinConversion/Pods-CoinConversion.modulemap
+CoinConversion/Pods/Target Support Files/Pods-CoinConversion/Pods-CoinConversion.release.xcconfig
