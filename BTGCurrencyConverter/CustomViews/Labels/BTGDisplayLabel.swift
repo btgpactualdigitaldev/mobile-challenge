@@ -1,0 +1,38 @@
+//
+//  BTGDisplayLabel.swift
+//  BTGCurrencyConverter
+//
+//  Created by Ian McDonald on 22/07/20.
+//  Copyright © 2020 Ian McDonald. All rights reserved.
+//
+
+import UIKit
+
+class BTGDisplayLabel: UILabel {
+   override init(frame: CGRect) {
+        super.init(frame: frame)
+        configure()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func configure() {
+        layer.cornerRadius = 8
+        layer.borderWidth = 1
+        layer.borderColor = UIColor(named: .highlight).cgColor
+        clipsToBounds = true
+        
+        textColor = UIColor(named: .label)
+        tintColor = UIColor(named: .label)
+        textAlignment = .center
+        font = UIFont.preferredFont(forTextStyle: .title3)
+        adjustsFontForContentSizeCategory = true
+        lineBreakMode = .byTruncatingMiddle
+        
+        backgroundColor = UIColor(named: .main)
+        
+        translatesAutoresizingMaskIntoConstraints = false
+    }
+}
