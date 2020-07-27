@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ChallengeCPQI</string>
+    <string name="title_list">List</string>
+    <string name="title_conversion">Conversion</string>
+    <string name="title_settings">Settings</string>
+    <string name="from">De:</string>
+    <string name="choose_here_destiny_coin">Escolha aqui o destino da moeda</string>
+    <string name="to">Para:</string>
+    <string name="choose_here_origin_coin">Escolha aqui a origem da moeda</string>
+    <string name="insert_value_here">Insira o valor aqui:</string>
+    <string name="result">Resultado: %s</string>
+    <string name="last_update">última atualização: %s</string>
+    <string name="order_coin">Ordernar por moeda</string>
+    <string name="order_initial">Ordernar por sigla</string>
+    <string name="search">Pesquisar</string>
+    <string name="not_network">Você está sem internet</string>
+</resources>

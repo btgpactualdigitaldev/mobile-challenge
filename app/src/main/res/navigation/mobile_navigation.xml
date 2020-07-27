@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_settings">
+
+    <fragment
+        android:id="@+id/navigation_conversion"
+        android:name="com.example.challengecpqi.ui.conversion.ConversionFragment"
+        android:label="@string/title_conversion"
+        tools:layout="@layout/fragment_conversion">
+        <action
+            android:id="@+id/action_navigation_conversion_to_navigation_list"
+            app:destination="@id/navigation_list" />
+        <argument
+            android:name="value"
+            android:defaultValue="FROM"
+            app:argType="com.example.challengecpqi.model.SelectCurrency" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_list"
+        android:name="com.example.challengecpqi.ui.listCurrency.ListCurrencyFragment"
+        android:label="@string/title_list"
+        tools:layout="@layout/fragment_list_currency" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.challengecpqi.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>
