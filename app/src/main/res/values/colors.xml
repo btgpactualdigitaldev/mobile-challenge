@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorBackground">#D3D3D3</color>
+    <color name="colorOpacity">#95000000</color>
+    <color name="colorBlueOpacity">#553700B3</color>
+    <color name="colorText">#363636</color>
+    <color name="colorItemText">#363636</color>
+    <color name="colorItemShadow">#808080</color>
+    <color name="colorField">@color/colorText</color>
+</resources>

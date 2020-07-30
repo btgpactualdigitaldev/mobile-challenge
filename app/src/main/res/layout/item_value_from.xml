@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hint_field3"
+        style="@style/item" />
+    <EditText
+        android:id="@+id/editValueFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:selectAllOnFocus="true"
+        android:text="@string/txt_default_value"
+        android:textColor="@drawable/edit_text_selector"
+        android:textColorHint="@color/colorField"
+        android:textSize="16sp"
+        android:inputType="numberDecimal"
+        android:imeOptions="actionDone"
+        android:backgroundTint="@color/colorField" />
+</LinearLayout>

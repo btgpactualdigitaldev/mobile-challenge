@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hint_field2"
+        style="@style/item" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/editItemTo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:enabled="false"
+            android:textColor="@drawable/edit_text_selector"
+            android:textColorHint="@color/colorField"
+            android:textSize="16sp"
+            android:inputType="textCapCharacters"
+            android:backgroundTint="@color/colorField" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top|end"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/btnItemTo"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_list"
+                android:tint="@color/colorField"
+                tools:ignore="contentDescription" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

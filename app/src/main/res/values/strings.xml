@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Mobile Challenge</string>
+    <string name="progress_wait">Aguarde&#8230;</string>
+    <string name="activity_title1">Currency conversion</string>
+    <string name="content_description_logo">CurrencyLayer</string>
+    <string name="txt_item">Item</string>
+    <string name="content_description_end_icon">Custom Icon</string>
+    <string name="btn_error">ERRO</string>
+    <string name="btn_convert">CONVERTER</string>
+    <string name="txt_zero">$0.00</string>
+    <string name="txt_default_value">0.00</string>
+
+    <string name="hint_field1">Selecione a moeda origem:</string>
+    <string name="hint_field2">Selecione a moeda destino:</string>
+    <string name="hint_field3">Digite o valor a ser convertido:</string>
+    <string name="hint_field4">Valor convertido:</string>
+
+    <string name="txt_error1">Favor informar o valor a ser convertido</string>
+    <string name="txt_error2">Favor informar a moeda origem</string>
+    <string name="txt_error3">Favor informar a moeda destino</string>
+    <string name="action_clear">Clear Fields</string>
+</resources>
