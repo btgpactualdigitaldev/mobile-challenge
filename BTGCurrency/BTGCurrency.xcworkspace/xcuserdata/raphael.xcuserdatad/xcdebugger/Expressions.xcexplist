@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "closure #1 in HttpClient.request&lt;A&gt;(method:completion:):HttpClient.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "T.self">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CurrenciesListViewController.configTableViews():CurrenciesListViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "CurrencyViewCell.className">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ExchangeViewModel.convertLocalToForeign(value:):ExchangeViewModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "localCurrency.usdQuote">
+            </PersistentString>
+            <PersistentString
+               value = "foreignCurrency">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SplashViewModel.checkLastUpdate():SplashViewModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "isStoredDataExpirationTimeValid()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CurrenciesListViewModel.saveFavorites(localCurrency:foreignCurrency:):CurrenciesListViewModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "foreignCurrency.abbreviation">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ExchangeViewController.textField(_:shouldChangeCharactersIn:replacementString:):ExchangeViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Double(&quot;1..&quot;)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
