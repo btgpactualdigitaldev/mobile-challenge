@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">CoinMaster</string>
+    <string name="clear">limpar</string>
+    <string name="how_much">Quanto deseja trocar?</string>
+    <string name="hint_zero">$ 0,000</string>
+    <string name="result_value_label">Valor convertido:</string>
+    <string name="back">voltar</string>
+    <string name="coins_list">Lista de Moedas</string>
+    <string name="choose_your_coin">Escolha qual moeda deseja converter</string>
+    <string name="initials">sigla</string>
+    <string name="coin">moeda</string>
+    <string name="generic_error">Ops! Ocorreu um erro inesperado</string>
+    <string name="try_again">tentar novamente</string>
+    <string name="coin_source">Moeda de origem</string>
+    <string name="coin_target">Moeda de destino</string>
+    <string name="choose_coin_target">Escolha a moeda de destino</string>
+    <string name="welcome_message">Escolha uma moeda de origem e uma de destino!</string>
+    <string name="coin_master_title">Mestre das Moedas</string>
+    <string name="welcome_info_header">Seja bem vido, para utilizar o aplicativo você deve selecionar uma <b>moeda de origem</b> e uma <b>moeda de destino</b> para que possa ser feito a conversão entre as duas moedas.</string>
+</resources>
