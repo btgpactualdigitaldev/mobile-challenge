@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:textAlignment="gravity"
+    tools:context=".view.converter.ConverterActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/main_title_accessibility"
+        android:text="@string/main_title"
+        android:textAlignment="center"
+        android:textIsSelectable="false"
+        android:textSize="30sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vwConverterFrom"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvFrom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/main_from"
+        android:text="@string/main_from"
+        android:textAlignment="textStart"
+        android:textIsSelectable="false"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="@+id/vwConverterFrom"
+        app:layout_constraintStart_toStartOf="@+id/vwConverterFrom"
+        app:layout_constraintTop_toTopOf="@+id/vwConverterFrom" />
+
+    <Button
+        android:id="@+id/btnFrom"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/main_bt_change"
+        android:text="@string/main_bt_change"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/vwConverterFrom"
+        app:layout_constraintStart_toStartOf="@+id/vwConverterFrom"
+        app:layout_constraintTop_toBottomOf="@+id/tvFrom" />
+
+    <EditText
+        android:id="@+id/edtxFrom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="@string/main_from_text_value"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/vwConverterFrom"
+        app:layout_constraintEnd_toEndOf="@+id/vwConverterFrom"
+        app:layout_constraintStart_toEndOf="@+id/btnFrom"
+        app:layout_constraintTop_toBottomOf="@+id/tvFrom" />
+
+    <View
+        android:id="@+id/vwConverterTo"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vwConverterFrom" />
+
+    <TextView
+        android:id="@+id/tvTo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/main_to"
+        android:text="@string/main_to"
+        android:textAlignment="textStart"
+        android:textIsSelectable="false"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="@+id/vwConverterTo"
+        app:layout_constraintStart_toStartOf="@+id/vwConverterTo"
+        app:layout_constraintTop_toTopOf="@+id/vwConverterTo" />
+
+    <Button
+        android:id="@+id/btTo"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/main_bt_change"
+        android:text="@string/main_bt_change"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/vwConverterTo"
+        app:layout_constraintStart_toStartOf="@+id/vwConverterTo"
+        app:layout_constraintTop_toBottomOf="@+id/tvTo" />
+
+    <TextView
+        android:id="@+id/edtxTo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:enabled="false"
+        android:gravity="center"
+        android:textAlignment="gravity"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/vwConverterTo"
+        app:layout_constraintEnd_toEndOf="@+id/vwConverterTo"
+        app:layout_constraintStart_toEndOf="@+id/btTo"
+        app:layout_constraintTop_toBottomOf="@+id/tvTo" />
+
+    <Button
+        android:id="@+id/btnConverter"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/main_btn_converter_text"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vwConverterTo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

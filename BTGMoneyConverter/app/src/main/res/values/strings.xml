@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">BTG Money Converter</string>
+
+    <!-- Principal -->
+    <string name="main_title">Selecione as moedas\npara conversão</string>
+    <string name="main_title_accessibility">Selecione as moedas para conversão</string>
+    <string name="main_from">De: -</string>
+    <string name="main_from_text">De:</string>
+    <string name="main_from_text_value">Digite o valor</string>
+    <string name="main_to">Para: -</string>
+    <string name="main_to_text">Para:</string>
+    <string name="main_btn_converter_text">CONVERTER</string>
+    <string name="main_bt_change">Trocar</string>
+
+    <!-- Listagem -->
+    <string name="list_title">Moedas Disponiveis</string>
+    <string name="search_hint">Digite o nome ou a Sigla para buscar.</string>
+    <string name="list_loading_text">Carregando moedas…</string>
+
+    <!-- Erros -->
+    <string name="update_api">Dados atualizados com sucesso.</string>
+    <string name="error_empty_text">Insira um valor para conversão.</string>
+    <string name="error_value_null">Valor precisa ser maior que 0.</string>
+    <string name="error_api">Houve um problema no carregamento.\nVerifique a conexão e tente novamente.</string>
+    <string name="error_api_load_offline">Houve um problema no carregamento.\nCarregando dados offline.</string>
+
+</resources>
