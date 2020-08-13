@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Mobile Challenge - Cassio</string>
+
+    <string name="titleTextView">Conversor de Moedas</string>
+    <string name="descriptionTextView">Insira o valor e selecione as moedas de origem e destino</string>
+    <string name="valueEntryHint">Valor monetário</string>
+    <string name="buttonFrom">Moeda origem</string>
+    <string name="buttonTo">Moeda destino</string>
+    <string name="resultPlaceHolder">Aguardando conversão...</string>
+</resources>
