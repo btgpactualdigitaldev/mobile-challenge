@@ -1,0 +1,50 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/list_item_coin"
+    android:padding="15dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/item_coin_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="COIN CODE: " />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/item_coin_code_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@id/item_coin_code"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="XXX" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/item_coin_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary_text"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/item_coin_code"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="COIN NAME: " />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/item_coin_name_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary_text"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/item_coin_code"
+        app:layout_constraintLeft_toRightOf="@id/item_coin_name"
+        android:text="Name PLACEHOLDER" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
