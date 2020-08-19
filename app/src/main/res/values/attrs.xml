@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoadingButton">
+        <attr name="title" format="string"/>
+        <attr name="showProgress" format="boolean"/>
+        <attr name="enabled" format="boolean"/>
+    </declare-styleable>
+</resources>
