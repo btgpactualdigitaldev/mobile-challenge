@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="YR5-7j-Myt" customClass="LoadingView" customModule="AppCambio" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="1a3-xL-QgY">
+                    <rect key="frame" x="141.5" y="221.5" width="37" height="37"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBr-Xx-tvB">
+                    <rect key="frame" x="8" y="266.5" width="304" height="17.5"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="bBr-Xx-tvB" firstAttribute="leading" secondItem="nPf-Pd-3Pd" secondAttribute="leading" constant="8" id="9Xf-4t-a9B"/>
+                <constraint firstItem="nPf-Pd-3Pd" firstAttribute="trailing" secondItem="bBr-Xx-tvB" secondAttribute="trailing" constant="8" id="Aad-DZ-rtZ"/>
+                <constraint firstItem="bBr-Xx-tvB" firstAttribute="top" secondItem="1a3-xL-QgY" secondAttribute="bottom" constant="8" id="aGw-ew-RQb"/>
+                <constraint firstItem="1a3-xL-QgY" firstAttribute="centerY" secondItem="YR5-7j-Myt" secondAttribute="centerY" id="afO-ll-bur"/>
+                <constraint firstItem="1a3-xL-QgY" firstAttribute="centerX" secondItem="YR5-7j-Myt" secondAttribute="centerX" id="cfm-au-pO3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="nPf-Pd-3Pd"/>
+            <connections>
+                <outlet property="activityIndicator" destination="1a3-xL-QgY" id="J9I-LM-zsy"/>
+                <outlet property="lblInfo" destination="bBr-Xx-tvB" id="O84-YT-zYB"/>
+            </connections>
+            <point key="canvasLocation" x="-303" y="107"/>
+        </view>
+    </objects>
+</document>
