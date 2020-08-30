@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7899087B-8763-48EF-9FB7-6CCB1F5B51D4"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "51D2BA11-197E-401A-A4A8-25FF5F3B5B43"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "conversor_moeda/Controllers/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "converterButtonClick(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "79E18E2A-D1E6-49AA-BABA-B1EF5F0B0059"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "conversor_moeda/Controllers/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "converterButtonClick(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "50F50DD9-CB83-4912-BEB2-632BF188F5A4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "conversor_moeda/Controllers/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "converterButtonClick(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "02A1AA0A-887D-4370-8CBD-BA4D50C5F249"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "conversor_moeda/Controllers/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "converterButtonClick(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "02A1AA0A-887D-4370-8CBD-BA4D50C5F249 - fd6a66a7cd8b6c0b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;Swift.Double&gt;, conversor_moeda.PresenterError) -&gt; () in conversor_moeda.ViewController.converterButtonClick(__C.UIButton) -&gt; ()"
+                  moduleName = "conversor_moeda"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/soneric/Desktop/Conversor_moedas_git/convertesor_moedas/conversor_moeda/Controllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "582">
+               </Location>
+               <Location
+                  uuid = "02A1AA0A-887D-4370-8CBD-BA4D50C5F249 - d6d3b6ad782d6da0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #2 (Swift.Optional&lt;Swift.Double&gt;, conversor_moeda.PresenterError) -&gt; () in conversor_moeda.ViewController.converterButtonClick(__C.UIButton) -&gt; ()"
+                  moduleName = "conversor_moeda"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/soneric/Desktop/Conversor_moedas_git/convertesor_moedas/conversor_moeda/Controllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6822A056-B563-4C9D-ADE3-6C3BE35F68C8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "conversor_moeda/Controllers/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "converterButtonClick(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6822A056-B563-4C9D-ADE3-6C3BE35F68C8 - fd6a66a7cd8b6c0b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;Swift.Double&gt;, conversor_moeda.PresenterError) -&gt; () in conversor_moeda.ViewController.converterButtonClick(__C.UIButton) -&gt; ()"
+                  moduleName = "conversor_moeda"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/soneric/Desktop/Conversor_moedas_git/convertesor_moedas/conversor_moeda/Controllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "1226">
+               </Location>
+               <Location
+                  uuid = "6822A056-B563-4C9D-ADE3-6C3BE35F68C8 - ab7d2042fa7237a1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in closure #2 (Swift.Optional&lt;Swift.Double&gt;, conversor_moeda.PresenterError) -&gt; () in conversor_moeda.ViewController.converterButtonClick(__C.UIButton) -&gt; ()"
+                  moduleName = "conversor_moeda"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/soneric/Desktop/Conversor_moedas_git/convertesor_moedas/conversor_moeda/Controllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
