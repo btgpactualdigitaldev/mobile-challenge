@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/conversorFragment">
+
+    <fragment android:id="@+id/conversorFragment"
+        android:name="com.br.btg.ui.fragments.ConversorFragment"
+        tools:layout="@layout/fragment_conversor" >
+
+        <action
+            android:id="@+id/action_conversorFragment_to_listCoinsFragment"
+            app:destination="@id/listCoinsFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/listCoinsFragment"
+        android:name="com.br.btg.ui.fragments.ListCoinsFragment"
+        tools:layout="@layout/fragment_list_coins" />
+
+
+</navigation>

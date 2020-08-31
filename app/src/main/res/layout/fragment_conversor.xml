@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <include
+            android:id="@+id/toolbar_fragment_conversor"
+            layout="@layout/toolbar" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:padding="@dimen/margin_normal"
+            android:layout_margin="@dimen/margin_normal"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_fragment_conversor">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_descriptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layout_marginHorizontal="@dimen/margin_normal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/margin_small"
+                        android:textSize="@dimen/letter_11sp"
+                        android:text="Selecione moeda origem"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/margin_small"
+                        android:textSize="@dimen/letter_11sp"
+                        android:text="Selecione moeda destino"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_select_coins"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_marginHorizontal="@dimen/margin_normal"
+                    android:layout_below="@+id/linearlayout_descriptions">
+
+                    <Button
+                        android:id="@+id/button_coin_origem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:spinnerMode="dialog"
+                        android:layout_margin="@dimen/margin_small"/>
+
+
+                    <Button
+                        android:id="@+id/button_coin_destination"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:spinnerMode="dialog"
+                        android:dropDownSelector="@color/colorAccent"
+                        android:layout_margin="@dimen/margin_small"
+                        />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edittext_valor_converter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_normal"
+                    android:hint="R$ 0.00"
+                    android:inputType="numberDecimal"
+                    android:layout_below="@+id/linearlayout_select_coins"/>
+
+                <LinearLayout
+                    android:id="@+id/oooo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edittext_valor_converter"
+                    android:layout_marginHorizontal="@dimen/margin_normal"
+                    android:layout_marginVertical="@dimen/margin_large">
+
+                    <TextView
+                        android:id="@+id/textview_coin_origem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center|center_vertical"
+                        android:textSize="@dimen/letter_14sp"
+                        tools:text="USD"/>
+
+                    <ImageView
+                        android:id="@+id/textview_arrow_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_action_right"/>
+
+                    <TextView
+                        android:id="@+id/textview_coin_destiny"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center|center_vertical"
+                        android:textSize="@dimen/letter_14sp"
+                        tools:text="USD"/>
+
+                    <TextView
+                        android:id="@+id/textview_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="end|right|center|center_vertical"
+                        android:textColor="@color/colorAccent_result"
+                        android:textSize="@dimen/letter_16sp"
+                        android:text="0.00"/>
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
