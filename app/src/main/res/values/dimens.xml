@@ -1,0 +1,5 @@
+<resources>
+	<dimen name="margin_default_bottom">16dp</dimen>
+	<dimen name="margin_default_side">16dp</dimen>
+	<dimen name="margin_default_top">16dp</dimen>
+</resources>

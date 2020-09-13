@@ -1,0 +1,9 @@
+<resources>
+	<string name="app_name">Conversor de Moeda</string>
+	<string name="conn_error">Erro de conexão!</string>
+	<string name="currency_source">Moeda Origem</string>
+	<string name="currency_target">Moeda Destino</string>
+	<string name="currency_value">Valor</string>
+	<string name="currency_convert">Converter</string>
+	<string name="currency_search">Procurar</string>
+</resources>

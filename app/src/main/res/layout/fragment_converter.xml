@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ConverterFragment">
+
+    <data>
+        <variable name="service" type="br.com.rcp.currencyconverter.fragments.viewmodels.ConverterViewModel" />
+        <variable name="source" type="br.com.rcp.currencyconverter.database.entities.Currency" />
+        <variable name="target" type="br.com.rcp.currencyconverter.database.entities.Currency" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/currency_source"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_default_top"
+                android:layout_marginStart="@dimen/margin_default_side"
+                android:layout_marginEnd="@dimen/margin_default_side"
+                android:hint="@string/currency_source"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/currency_target"
+                android:clickable="true"
+                android:focusable="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/source_cur"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:focusableInTouchMode="false"
+                    android:text="@{source.description}"
+                    android:onClick="@{view -> service.sourceCurrencyButton(view)}"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/currency_target"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_default_top"
+                android:layout_marginStart="@dimen/margin_default_side"
+                android:layout_marginEnd="@dimen/margin_default_side"
+                android:hint="@string/currency_target"
+                app:layout_constraintTop_toBottomOf="@id/currency_source"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/target_cur"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:focusableInTouchMode="false"
+                    android:text="@={target.description}"
+                    android:onClick="@{view -> service.sourceCurrencyButton(view)}"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/currency_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_default_top"
+                android:layout_marginStart="@dimen/margin_default_side"
+                android:layout_marginEnd="@dimen/margin_default_side"
+                android:hint="@string/currency_value"
+                app:layout_constraintTop_toBottomOf="@id/currency_target"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/value_cur"
+                    android:text="@={service.value}"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="@dimen/margin_default_side"
+                android:layout_marginEnd="@dimen/margin_default_side"
+                android:layout_marginTop="@dimen/margin_default_top"
+                android:layout_marginBottom="@dimen/margin_default_bottom"
+                android:gravity="center"
+                android:text="@={service.result}"
+                app:layout_constraintTop_toBottomOf="@id/currency_value"
+                app:layout_constraintBottom_toTopOf="@id/currency_convert"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:autoSizeMaxTextSize="100sp"
+                app:autoSizeMinTextSize="6sp"
+                app:autoSizeStepGranularity="10sp"
+                app:autoSizeTextType="uniform"/>
+
+            <Button
+                android:id="@+id/currency_convert"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_default_bottom"
+                android:layout_marginStart="@dimen/margin_default_side"
+                android:layout_marginEnd="@dimen/margin_default_side"
+                android:text="@string/currency_convert"
+                android:onClick="@{() -> service.convert(source, target)}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+</layout>

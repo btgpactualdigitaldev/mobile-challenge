@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/graph_main"
+    app:startDestination="@id/converter">
+
+    <fragment
+        android:id="@+id/converter"
+        android:name="br.com.rcp.currencyconverter.fragments.ConverterFragment"
+        tools:layout="@layout/fragment_converter">
+
+        <action
+            android:id="@+id/toSelectionList"
+            app:destination="@id/selection"
+            app:popUpTo="@+id/converter" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/selection"
+        android:name="br.com.rcp.currencyconverter.fragments.SelectorFragment"
+        tools:layout="@layout/fragment_selector">
+        <argument
+            android:name="identifier"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

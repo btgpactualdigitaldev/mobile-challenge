@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+    <data>
+        <variable name="service" type="br.com.rcp.currencyconverter.fragments.viewmodels.SelectorViewModel" />
+    </data>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".fragments.SelectorFragment">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/currencies"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:data="@{service.currencies}"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    </FrameLayout>
+</layout>
