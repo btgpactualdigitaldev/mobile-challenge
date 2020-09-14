@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bLW-9G-IpM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Currency Search View Controller-->
+        <scene sceneID="rhb-dd-9hk">
+            <objects>
+                <viewController storyboardIdentifier="CurrencySearchViewController" id="bLW-9G-IpM" customClass="CurrencySearchViewController" customModule="btg_challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B4G-zt-xqT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CmX-ba-cDA">
+                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CurrencyTableViewCell" rowHeight="94" id="hHM-Rv-NCP" customClass="CurrencyTableViewCell" customModule="btg_challenge" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="94"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hHM-Rv-NCP" id="sDi-Ju-s1t">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="94"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qu1-Jq-NVd">
+                                                    <rect key="frame" x="16" y="0.0" width="382" height="94"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWT-87-JTn">
+                                                            <rect key="frame" x="0.0" y="0.0" width="92" height="94"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gno-qk-rb9">
+                                                            <rect key="frame" x="92" y="0.0" width="290" height="94"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="qu1-Jq-NVd" secondAttribute="bottom" id="3dm-v3-hgc"/>
+                                                <constraint firstAttribute="trailing" secondItem="qu1-Jq-NVd" secondAttribute="trailing" constant="16" id="OdJ-LP-CcH"/>
+                                                <constraint firstItem="qu1-Jq-NVd" firstAttribute="leading" secondItem="sDi-Ju-s1t" secondAttribute="leading" constant="16" id="Wnz-vX-6uQ"/>
+                                                <constraint firstItem="gno-qk-rb9" firstAttribute="width" secondItem="sDi-Ju-s1t" secondAttribute="width" multiplier="0.7" id="ZSM-4H-aZV"/>
+                                                <constraint firstItem="qu1-Jq-NVd" firstAttribute="top" secondItem="sDi-Ju-s1t" secondAttribute="top" id="uPe-KB-oIM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="currencyCodeLabel" destination="cWT-87-JTn" id="3WE-hz-sbe"/>
+                                            <outlet property="currencyNameLabel" destination="gno-qk-rb9" id="5FB-YK-1nM"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="GCW-iG-5WZ">
+                                <rect key="frame" x="0.0" y="418" width="414" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="GUk-LY-7c2"/>
+                                </constraints>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="JEH-CL-ocS">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GCW-iG-5WZ" firstAttribute="centerY" secondItem="B4G-zt-xqT" secondAttribute="centerY" id="01B-pa-8N5"/>
+                            <constraint firstItem="Quh-gt-8k3" firstAttribute="bottom" secondItem="CmX-ba-cDA" secondAttribute="bottom" id="1gi-B5-gnv"/>
+                            <constraint firstItem="Quh-gt-8k3" firstAttribute="trailing" secondItem="CmX-ba-cDA" secondAttribute="trailing" id="HaV-hm-yC7"/>
+                            <constraint firstItem="CmX-ba-cDA" firstAttribute="leading" secondItem="Quh-gt-8k3" secondAttribute="leading" id="Lly-yD-ejd"/>
+                            <constraint firstItem="GCW-iG-5WZ" firstAttribute="leading" secondItem="Quh-gt-8k3" secondAttribute="leading" id="Xpv-Wi-bXT"/>
+                            <constraint firstItem="GCW-iG-5WZ" firstAttribute="trailing" secondItem="Quh-gt-8k3" secondAttribute="trailing" id="ZjD-zT-nIa"/>
+                            <constraint firstItem="JEH-CL-ocS" firstAttribute="top" secondItem="Quh-gt-8k3" secondAttribute="top" id="ghp-5W-M3a"/>
+                            <constraint firstItem="JEH-CL-ocS" firstAttribute="trailing" secondItem="Quh-gt-8k3" secondAttribute="trailing" id="h8q-nY-8ec"/>
+                            <constraint firstItem="JEH-CL-ocS" firstAttribute="leading" secondItem="Quh-gt-8k3" secondAttribute="leading" id="jZf-Ob-QHK"/>
+                            <constraint firstItem="CmX-ba-cDA" firstAttribute="top" secondItem="JEH-CL-ocS" secondAttribute="bottom" id="qpo-2K-oza"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Quh-gt-8k3"/>
+                    </view>
+                    <connections>
+                        <outlet property="currenciesTableView" destination="CmX-ba-cDA" id="BBS-6A-6At"/>
+                        <outlet property="searchBar" destination="JEH-CL-ocS" id="fBr-3s-3Q4"/>
+                        <outlet property="spinner" destination="GCW-iG-5WZ" id="flL-E1-3Bv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4R1-zJ-8oq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134.78260869565219" y="94.419642857142847"/>
+        </scene>
+    </scenes>
+</document>
