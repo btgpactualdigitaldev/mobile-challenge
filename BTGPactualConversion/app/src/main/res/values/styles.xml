@@ -1,0 +1,21 @@
+<resources>
+    <!-- Base application theme. -->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+    </style>
+    <style name="CustomAppTheme" parent="AppTheme">
+        <item name="android:textViewStyle">@style/OpenSansTextViewStyleLight</item>
+    </style>
+    <style name= "OpenSansTextViewStyleBold" parent= "android:Widget.TextView" >
+        <item name= "android:fontFamily" > @font/open_sans_bold </item>
+    </style>
+    <style name= "OpenSansTextViewStyleLight" parent= "android:Widget.TextView" >
+        <item name= "android:fontFamily" > @font/open_sans_light </item>
+    </style>
+
+</resources>

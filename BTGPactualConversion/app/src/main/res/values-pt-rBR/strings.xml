@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BTGPactualConversion</string>
+
+    <string name="currency_not_choosen">TBD</string>
+    <string name="converted_to">vale</string>
+    <string name="default_value">1.00</string>
+    <string name="search_value">   Pesquise uma moeda...</string>
+</resources>
