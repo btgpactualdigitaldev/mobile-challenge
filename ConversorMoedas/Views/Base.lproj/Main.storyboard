@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Exchange View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ExchangeViewController" customModule="ConversorMoedas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conversor de moedas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HI4-P8-epd">
+                                <rect key="frame" x="16" y="64" width="382" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="hNu-oh-fvx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giY-Oh-wgE">
+                                <rect key="frame" x="16" y="324" width="382" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="qLI-Sc-7Wb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                <state key="normal" title="Moeda Destino">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapDestinyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9O1-GG-OXJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qyr-7M-9m0">
+                                <rect key="frame" x="80" y="498" width="254" height="119.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Valor" textAlignment="center" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="uCr-nn-fDh">
+                                <rect key="frame" x="80" y="394" width="254" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="254" id="Rxh-uy-aOM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efq-n7-DOb">
+                                <rect key="frame" x="80" y="459.5" width="254" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Converter">
+                                    <color key="titleColor" red="0.0092487262468376255" green="0.018966738521627245" blue="0.2897565038071066" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapToConvert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uIw-NT-gH3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScX-0e-tZN">
+                                <rect key="frame" x="16" y="244" width="382" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4k1-WA-jSk"/>
+                                    <constraint firstAttribute="width" constant="382" id="DhC-aV-8HG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                <state key="normal" title="Moeda Origem">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapOriginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2jN-gW-sMy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DfI-VD-giZ">
+                                <rect key="frame" x="196" y="292" width="22" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="R7N-lR-8Cz"/>
+                                    <constraint firstAttribute="height" constant="24" id="kxe-NW-G72"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="arrows"/>
+                                <connections>
+                                    <action selector="didTapChangeCurrencies:" destination="BYZ-38-t0r" eventType="touchUpInside" id="odO-BE-tRj"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cambio" translatesAutoresizingMaskIntoConstraints="NO" id="6Fl-hH-MkI">
+                                <rect key="frame" x="153.5" y="120" width="107" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="duf-0P-7g8"/>
+                                    <constraint firstAttribute="height" constant="74" id="fA4-AY-oLm"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0088544823230000003" green="0.5153288841" blue="0.37253153319999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="giY-Oh-wgE" firstAttribute="top" secondItem="DfI-VD-giZ" secondAttribute="bottom" constant="8" id="AdJ-9a-IXm"/>
+                            <constraint firstItem="HI4-P8-epd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Eiy-Jr-9H6"/>
+                            <constraint firstItem="giY-Oh-wgE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gdq-U4-GOJ"/>
+                            <constraint firstItem="giY-Oh-wgE" firstAttribute="leading" secondItem="ScX-0e-tZN" secondAttribute="leading" id="Gre-xp-dyz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HI4-P8-epd" secondAttribute="trailing" constant="16" id="IA7-YD-dUY"/>
+                            <constraint firstItem="ScX-0e-tZN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J5p-JM-bXq"/>
+                            <constraint firstItem="6Fl-hH-MkI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mze-n1-mDt"/>
+                            <constraint firstItem="giY-Oh-wgE" firstAttribute="trailing" secondItem="ScX-0e-tZN" secondAttribute="trailing" id="NAU-RS-X68"/>
+                            <constraint firstItem="DfI-VD-giZ" firstAttribute="top" secondItem="ScX-0e-tZN" secondAttribute="bottom" constant="8" id="Q9L-m6-Peq"/>
+                            <constraint firstItem="ScX-0e-tZN" firstAttribute="top" secondItem="6Fl-hH-MkI" secondAttribute="bottom" constant="50" id="R6g-WL-3Rz"/>
+                            <constraint firstItem="efq-n7-DOb" firstAttribute="leading" secondItem="uCr-nn-fDh" secondAttribute="leading" id="Yfh-1h-i4l"/>
+                            <constraint firstItem="qyr-7M-9m0" firstAttribute="top" secondItem="uCr-nn-fDh" secondAttribute="bottom" constant="70" id="bsa-P0-nos"/>
+                            <constraint firstItem="DfI-VD-giZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cGG-jR-sfZ"/>
+                            <constraint firstItem="qyr-7M-9m0" firstAttribute="leading" secondItem="uCr-nn-fDh" secondAttribute="leading" id="e6C-5u-Y9C"/>
+                            <constraint firstItem="HI4-P8-epd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="ezm-ks-hAH"/>
+                            <constraint firstItem="uCr-nn-fDh" firstAttribute="top" secondItem="giY-Oh-wgE" secondAttribute="bottom" constant="30" id="hxg-mW-puc"/>
+                            <constraint firstItem="efq-n7-DOb" firstAttribute="top" secondItem="uCr-nn-fDh" secondAttribute="bottom" constant="31.5" id="iX5-Ah-0pG"/>
+                            <constraint firstItem="qyr-7M-9m0" firstAttribute="trailing" secondItem="uCr-nn-fDh" secondAttribute="trailing" id="jNR-yL-yFU"/>
+                            <constraint firstItem="uCr-nn-fDh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lDS-uz-6Mz"/>
+                            <constraint firstItem="efq-n7-DOb" firstAttribute="trailing" secondItem="uCr-nn-fDh" secondAttribute="trailing" id="np3-S6-8bL"/>
+                            <constraint firstItem="HI4-P8-epd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ycK-zR-dvx"/>
+                            <constraint firstItem="6Fl-hH-MkI" firstAttribute="top" secondItem="HI4-P8-epd" secondAttribute="bottom" constant="22" id="zzP-YT-zXr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="dollarsign.circle" catalog="system" id="FLk-SW-U7d"/>
+                    <connections>
+                        <outlet property="btDestiny" destination="giY-Oh-wgE" id="xWe-B7-eOK"/>
+                        <outlet property="btOrigin" destination="ScX-0e-tZN" id="4rQ-T9-MDf"/>
+                        <outlet property="lbResult" destination="qyr-7M-9m0" id="3D1-lY-hqw"/>
+                        <outlet property="tfInputValue" destination="uCr-nn-fDh" id="olL-bn-Vfn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="676.81159420289862" y="-537.05357142857144"/>
+        </scene>
+        <!--List View Controller-->
+        <scene sceneID="lsv-jW-b9w">
+            <objects>
+                <viewController storyboardIdentifier="list" modalPresentationStyle="fullScreen" id="7yl-h3-WrH" customClass="ListViewController" customModule="ConversorMoedas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JeV-Zo-ggY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="VFi-GN-TSe">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="7yl-h3-WrH" id="nhU-Tv-Lu0"/>
+                                </connections>
+                            </searchBar>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="azJ-aJ-dLc">
+                                <rect key="frame" x="326.5" y="110" width="51" height="31"/>
+                                <connections>
+                                    <action selector="didSwitchSearchType:" destination="7yl-h3-WrH" eventType="valueChanged" id="mVI-BO-ilV"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bf4-mB-4CW">
+                                <rect key="frame" x="326.5" y="151" width="51" height="31"/>
+                                <connections>
+                                    <action selector="didSwitchOrderTap:" destination="7yl-h3-WrH" eventType="valueChanged" id="Jy3-ul-3Sd"/>
+                                </connections>
+                            </switch>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Jlv-yd-YUZ">
+                                <rect key="frame" x="0.0" y="190" width="414" height="672"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="y6p-7d-o3g">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="qqn-oH-9WQ" customClass="CurrencyCollectionViewCell" customModule="ConversorMoedas" customModuleProvider="target">
+                                        <rect key="frame" x="35" y="0.0" width="344" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="fgI-c3-LDh">
+                                            <rect key="frame" x="0.0" y="0.0" width="344" height="39"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHG-qs-jbk">
+                                                    <rect key="frame" x="16" y="10" width="312" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <size key="shadowOffset" width="2" height="-1"/>
+                                                </label>
+                                                <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gpa-3a-mgW">
+                                                    <rect key="frame" x="0.0" y="38" width="344" height="1"/>
+                                                    <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="94f-U8-gck"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <constraints>
+                                                <constraint firstItem="kHG-qs-jbk" firstAttribute="leading" secondItem="fgI-c3-LDh" secondAttribute="leading" constant="16" id="4wQ-Yg-7DT"/>
+                                                <constraint firstAttribute="trailing" secondItem="gpa-3a-mgW" secondAttribute="trailing" id="5qS-kK-QM9"/>
+                                                <constraint firstItem="kHG-qs-jbk" firstAttribute="top" secondItem="fgI-c3-LDh" secondAttribute="top" constant="8" id="6Nd-Xn-2hz"/>
+                                                <constraint firstItem="gpa-3a-mgW" firstAttribute="leading" secondItem="fgI-c3-LDh" secondAttribute="leading" id="BFL-dO-LeB"/>
+                                                <constraint firstAttribute="trailing" secondItem="kHG-qs-jbk" secondAttribute="trailing" constant="16" id="SiK-J4-PZa"/>
+                                                <constraint firstAttribute="bottom" secondItem="gpa-3a-mgW" secondAttribute="bottom" id="arf-H8-zY2"/>
+                                                <constraint firstAttribute="bottom" secondItem="kHG-qs-jbk" secondAttribute="bottom" constant="10" id="g6F-db-Rv1"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <size key="customSize" width="344" height="39"/>
+                                        <connections>
+                                            <outlet property="label" destination="kHG-qs-jbk" id="0BG-Gy-dET"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sigla" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RuO-aP-HKx">
+                                <rect key="frame" x="267.5" y="115" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A - Z" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2GR-Po-dJI">
+                                <rect key="frame" x="267.5" y="156" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0082999784500000003" green="0.52732354400000003" blue="0.36076229809999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="2GR-Po-dJI" firstAttribute="top" secondItem="RuO-aP-HKx" secondAttribute="bottom" constant="20" id="27a-Se-DZb"/>
+                            <constraint firstItem="RuO-aP-HKx" firstAttribute="centerX" secondItem="JeV-Zo-ggY" secondAttribute="centerX" constant="80" id="8Rr-lH-EoB"/>
+                            <constraint firstItem="7ES-9D-thW" firstAttribute="trailing" secondItem="Jlv-yd-YUZ" secondAttribute="trailing" id="Jzz-CY-bxu"/>
+                            <constraint firstItem="Bf4-mB-4CW" firstAttribute="leading" secondItem="azJ-aJ-dLc" secondAttribute="leading" id="PxO-X6-zJj"/>
+                            <constraint firstItem="2GR-Po-dJI" firstAttribute="trailing" secondItem="RuO-aP-HKx" secondAttribute="trailing" id="Q8y-gk-Xi3"/>
+                            <constraint firstItem="VFi-GN-TSe" firstAttribute="leading" secondItem="7ES-9D-thW" secondAttribute="leading" id="V2p-Pr-TT4"/>
+                            <constraint firstItem="Bf4-mB-4CW" firstAttribute="centerY" secondItem="2GR-Po-dJI" secondAttribute="centerY" id="XiI-Jp-aBS"/>
+                            <constraint firstItem="Jlv-yd-YUZ" firstAttribute="top" secondItem="VFi-GN-TSe" secondAttribute="bottom" constant="90" id="cnj-AC-Rvu"/>
+                            <constraint firstItem="7ES-9D-thW" firstAttribute="bottom" secondItem="Jlv-yd-YUZ" secondAttribute="bottom" id="f2J-Kv-HZR"/>
+                            <constraint firstItem="VFi-GN-TSe" firstAttribute="top" secondItem="7ES-9D-thW" secondAttribute="top" id="nVA-g2-gZK"/>
+                            <constraint firstItem="RuO-aP-HKx" firstAttribute="top" secondItem="VFi-GN-TSe" secondAttribute="bottom" constant="15" id="rLs-Uu-c7k"/>
+                            <constraint firstItem="azJ-aJ-dLc" firstAttribute="leading" secondItem="RuO-aP-HKx" secondAttribute="trailing" constant="20" id="ufH-1V-z7j"/>
+                            <constraint firstItem="Jlv-yd-YUZ" firstAttribute="leading" secondItem="7ES-9D-thW" secondAttribute="leading" id="vk9-2B-JAS"/>
+                            <constraint firstItem="2GR-Po-dJI" firstAttribute="leading" secondItem="RuO-aP-HKx" secondAttribute="leading" id="wun-In-coe"/>
+                            <constraint firstItem="VFi-GN-TSe" firstAttribute="trailing" secondItem="7ES-9D-thW" secondAttribute="trailing" id="xsi-MU-0Ji"/>
+                            <constraint firstItem="azJ-aJ-dLc" firstAttribute="centerY" secondItem="RuO-aP-HKx" secondAttribute="centerY" id="xwk-Yz-YtV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7ES-9D-thW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Toe-xO-6Mg"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Jlv-yd-YUZ" id="pvD-ZA-Cii"/>
+                        <outlet property="lbSwitchOrder" destination="2GR-Po-dJI" id="ReD-0j-5Nh"/>
+                        <outlet property="lbSwitchSearchType" destination="RuO-aP-HKx" id="4Z7-2j-6n1"/>
+                        <outlet property="searchBar" destination="VFi-GN-TSe" id="8lj-P9-2RF"/>
+                        <outlet property="switchOrder" destination="Bf4-mB-4CW" id="6Co-Kw-Ksa"/>
+                        <outlet property="switchSearchType" destination="azJ-aJ-dLc" id="S6h-nn-2Mv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bpF-GC-dm4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1430.4347826086957" y="-537.05357142857144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrows" width="512" height="512"/>
+        <image name="cambio" width="512" height="512"/>
+        <image name="dollarsign.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
