@@ -1,3 +1,10 @@
+# Instruções de execução
+* Adicione a API key para [API CurrencyLayer](https://currencylayer.com/documentation) em br.com.convertify.api.Constants alterando a constatante API_KEY (dica: busque por "CURRENCY_LAYER_ACCESS_KEY").
+* Execute os testes unitarios com o seguinte comando  ``` ./gradlew test``` (bash), ou ```gradlew test``` Windows.
+
+Qualquer duvida, pode contatar no email: franalves1923@gmail.com
+
+-----
 # Desafio BTG
 
 Seja bem-vindo! Este é o seu primeiro passo para fazer parte do time de desenvolvimento do maior banco de investimentos da América Latina.

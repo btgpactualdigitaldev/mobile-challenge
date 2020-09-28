@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/lightGreen</item>
+
+    </style>
+
+    <style name="AppTheme.ValueTextField" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense" >
+        <item name="boxStrokeColor">@color/text_input_box_stroke</item>
+    </style>
+
+</resources>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Convertify</string>
+    <string name="origin_button_label">Origin currency</string>
+    <string name="currency_flow_indication">to</string>
+    <string name="destination_button_label">Target currency</string>
+    <string name="value_hint">Type the value here</string>
+    <string name="icon_warn">Exclamation icon</string>
+    <string name="missing_value_convert">Please provide some value to convert</string>
+    <string name="missing_origin_currency">Please provide origin currency</string>
+    <string name="missing_target_currency">Please provide target currency</string>
+    <string name="conversion_unexpected_error">Unexpected error</string>
+    <string name="try_again">Retry</string>
+    <string name="fail_fetching_currency_data">Fail fetching currency data</string>
+    <string name="initial_value">0.00</string>
+    <string name="empty_space">Just empty space</string>
+    <string name="no_currency_items_found">No currency found</string>
+</resources>
