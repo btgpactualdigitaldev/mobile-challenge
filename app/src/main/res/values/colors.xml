@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccentLight">#607d8b</color>
+    <color name="colorAccentDark">#263238</color>
+
+    <color name="colorPrimary">#1a3784</color>
+    <color name="colorPrimaryDark">#001d62</color>
+    <color name="colorPrimaryDarker">#001d62</color>
+    <color name="colorAccent">#455a64</color>
+
+    <!--Common-->
+    <color name="activity_background">#EEEEEE</color>
+    <color name="white">#fafafa</color>
+    <color name="base">#AAAAAA</color>
+</resources>

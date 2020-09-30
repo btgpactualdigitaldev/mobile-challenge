@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+
+    <string name="button_continue">Continue</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_try_again">Try again</string>
+    <string name="button_ok">OK</string>
+
+    <!-- CurrencyViewModel -->
+    <string name="currency_view_model_date_hour_last_update">Currency last updated on %1$s</string>
+    <string name="currency_view_model_error_conversion_save_failed">The conversion could not be saved. Verify the input values and try again.</string>
+    <string name="currency_view_model_error_conversion_input_bigger_then_max_value">The input value is bigger than the max value for conversions. Please input a number with less than %1$d digits.</string>
+    <string name="currency_view_model_error_conversion_output_bigger_then_max_value">The result value of the conversion is bigger than the max value for conversions. Please input a smaller number. The max result number has %1$d digits.</string>
+
+    <!-- OpeningViewModel -->
+    <string name="opening_view_model_error_no_internet_connection_allow_continue">No internet connection available. Do you want to continue with no internet access?</string>
+    <string name="opening_view_model_error_no_internet_connection_block_continue">Please verify your internet connection and try again!</string>
+    <string name="opening_view_model_error_request_allow_continue">Server request failed. Do you want to continue without the latest data?</string>
+    <string name="opening_view_model_error_request_block_continue">Server request failed. Please try again later.</string>
+
+    <!-- OpeningActivity -->
+    <string name="opening_activity_dialog_title_generic">Alert</string>
+
+    <!-- toolbar -->
+    <string name="fragment_currency_conversion_label">Conversion</string>
+    <string name="fragment_currency_list_label">Currency list</string>
+    <string name="activity_opening_label">Opening</string>
+
+    <!-- NetworkConnectionInterceptor -->
+    <string name="network_connection_interceptor_no_internet_error">Make sure you have an active data connection</string>
+
+    <!-- fragment_currency_conversion -->
+    <string name="fragment_currency_conversion_tv_currency_update_date_hour">18/09/2020 – 17:13</string>
+    <string name="fragment_currency_conversion_tv_initial_currency_code">UKN</string>
+    <string name="fragment_currency_conversion_tiet_initial_currency_value">Value</string>
+    <string name="fragment_currency_conversion_tv_final_currency">UKN</string>
+    <string name="fragment_currency_conversion_tiet_final_currency_value">Value</string>
+    <string name="fragment_currency_conversion_tv_list_empty">No conversion has been saved yet!</string>
+    <string name="fragment_currency_conversion_efab_save">Save</string>
+    <!-- fragment_currency_list -->
+    <string name="fragment_currency_list_tiet_search">Search</string>
+    <!-- item_currency -->
+    <string name="item_currency_tv_code">UKN</string>
+    <string name="item_currency_tv_name">Unknown Currency</string>
+    <!-- item_currency_conversion -->
+    <string name="item_currency_conversion_tv_initial_currency_value">1234567890 UKN</string>
+    <string name="item_currency_conversion_tv_final_currency_value">1234567890 UKN</string>
+    <string name="item_currency_conversion_tv_last_update_date">20/09/2020</string>
+    <string name="item_currency_conversion_tv_last_update_hour">17:13</string>
+
+</resources>

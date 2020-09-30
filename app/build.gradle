@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: "androidx.navigation.safeargs.kotlin"
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.0"
+
+    defaultConfig {
+        applicationId "com.btgpactual.currencyconverter"
+        minSdkVersion 24
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+dependencies {
+//    Base libraries
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    implementation 'androidx.core:core-ktx:1.3.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.2.1'
+
+    def lib_lifecycle_version = "2.0.0"
+    implementation "androidx.lifecycle:lifecycle-extensions:$lib_lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lib_lifecycle_version"
+
+    def lib_navigation_version = "2.3.0"
+    implementation "androidx.navigation:navigation-fragment-ktx:$lib_navigation_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$lib_navigation_version"
+
+//    Room Database libraries
+    def lib_room_version = "2.2.5"
+    kapt "androidx.room:room-compiler:$lib_room_version"
+    implementation "androidx.room:room-runtime:$lib_room_version"
+    implementation "androidx.room:room-ktx:$lib_room_version"
+
+//    Retrofit libraries
+    def lib_retrofit_version = "2.6.0"
+    implementation "com.squareup.retrofit2:converter-moshi:$lib_retrofit_version"
+    implementation "com.squareup.retrofit2:retrofit:$lib_retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$lib_retrofit_version"
+
+    def lib_moshi_version = "1.9.2"
+    implementation "com.squareup.moshi:moshi-kotlin:$lib_moshi_version"
+    kapt "com.squareup.moshi:moshi-kotlin-codegen:$lib_moshi_version"
+
+}

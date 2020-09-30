@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Conversor de moedas</string>
+
+    <string name="button_continue">Continuar</string>
+    <string name="button_cancel">Cancelar</string>
+    <string name="button_try_again">Tentar novamente</string>
+    <string name="button_ok">OK</string>
+
+    <!-- CurrencyViewModel -->
+    <string name="currency_view_model_date_hour_last_update">Última atualização da moeda em %1$s</string>
+    <string name="currency_view_model_error_conversion_save_failed">A conversão não pôde ser salva. Verifique os valores digitados e tente novamente.</string>
+    <string name="currency_view_model_error_conversion_input_bigger_then_max_value">O valor inserido é maior que o valor máximo para conversões. Por favor, digite um valor menor que %1$d digitos.</string>
+    <string name="currency_view_model_error_conversion_output_bigger_then_max_value">O valor resultante é maior que o valor máximo para conversões. Por favor, digite um valor menor. A quantidade máxima de digitos é de %1$d.</string>
+
+    <!-- OpeningViewModel -->
+    <string name="opening_view_model_error_no_internet_connection_allow_continue">Sem conexão com a internet. Gostaria de continuar sem acesso à internet?</string>
+    <string name="opening_view_model_error_no_internet_connection_block_continue">Verifique sua conexão com a internet e tente novamente!</string>
+    <string name="opening_view_model_error_request_allow_continue">Falha na comunicação com o servidor. Gostaria de continuar sem os dados mais atuais?</string>
+    <string name="opening_view_model_error_request_block_continue">Falha na comunicação com o servidor. Tente novamente mais tarde.</string>
+    <!-- OpeningActivity -->
+    <string name="opening_activity_dialog_title_generic">Alerta</string>
+
+    <!-- toolbar -->
+    <string name="fragment_currency_conversion_label">Conversão</string>
+    <string name="fragment_currency_list_label">Lista de moedas</string>
+    <string name="activity_opening_label">Abertura</string>
+
+    <!-- NetworkConnectionInterceptor -->
+    <string name="network_connection_interceptor_no_internet_error">Verifique se há uma conexão ativa com a internet</string>
+
+    <!-- fragment_currency_conversion -->
+    <string name="fragment_currency_conversion_tv_currency_update_date_hour">Última atualização em 18/09/2020 – 17:13</string>
+    <string name="fragment_currency_conversion_tv_initial_currency_code">DES</string>
+    <string name="fragment_currency_conversion_tiet_initial_currency_value">Valor</string>
+    <string name="fragment_currency_conversion_tv_final_currency">DES</string>
+    <string name="fragment_currency_conversion_tiet_final_currency_value">Valor</string>
+    <string name="fragment_currency_conversion_tv_list_empty">Nenhuma conversão foi cadastrada!</string>
+    <string name="fragment_currency_conversion_efab_save">Salvar</string>
+    <!-- fragment_currency_list -->
+    <string name="fragment_currency_list_tiet_search">Consultar</string>
+    <!-- item_currency -->
+    <string name="item_currency_tv_code">DES</string>
+    <string name="item_currency_tv_name">Moeda desconhecida</string>
+    <!-- item_currency_conversion -->
+    <string name="item_currency_conversion_tv_initial_currency_value">1234567890 DES</string>
+    <string name="item_currency_conversion_tv_final_currency_value">1234567890 DES</string>
+    <string name="item_currency_conversion_tv_last_update_date">20/09/2020</string>
+    <string name="item_currency_conversion_tv_last_update_hour">17:13</string>
+
+</resources>

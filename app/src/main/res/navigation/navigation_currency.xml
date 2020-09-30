@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/currencyConversionFragment">
+
+    <fragment
+        android:id="@+id/currencyConversionFragment"
+        android:name="com.btgpactual.currencyconverter.ui.fragment.CurrencyConversionFragment"
+        android:label="@string/fragment_currency_conversion_label"
+        tools:layout="@layout/fragment_currency_conversion" >
+        <action
+            android:id="@+id/action_conversionFragment_to_currencyListFragment"
+            app:destination="@id/currencyListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/currencyListFragment"
+        android:name="com.btgpactual.currencyconverter.ui.fragment.CurrencyListFragment"
+        android:label="@string/fragment_currency_list_label" />
+</navigation>
