@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+    <string name="from_currency">from currency</string>
+    <string name="to_currency">to currency</string>
+    <string name="value_to_convert">value to convert</string>
+    <string name="conversion_result">conversion result</string>
+    <string name="message_empty_list">Listagem de dados vazia, tente novamente mais tarde</string>
+    <string name="retry_again">tentar novamente</string>
+    <string name="message_error">Não foi possível requisitar os dados, verifique sua conexão com internet e tente novamente</string>
+    <string name="empty_result">0,00</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="currency_list_view_holder_between">4dp</dimen>
+    <dimen name="currency_list_first_view_holder_top">16dp</dimen>
+    <dimen name="currency_list_last_view_holder_bottom">16dp</dimen>
+    <dimen name="currency_list_view_holder_st_end_margin">4dp</dimen>
+</resources>
