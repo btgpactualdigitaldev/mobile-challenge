@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CurrencyListViewController" customModule="mobile_challenge" customModuleProvider="target">
+            <connections>
+                <outlet property="searchCurrencies" destination="NfD-CU-s92" id="R5a-Pu-YIQ"/>
+                <outlet property="segmentedControl" destination="z2v-H6-OVR" id="aBL-QP-3zy"/>
+                <outlet property="tableView" destination="nM2-qC-GUB" id="UVo-0u-S02"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="z2v-H6-OVR">
+                    <rect key="frame" x="10" y="96" width="394" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="vPp-5w-NTy"/>
+                    </constraints>
+                    <segments>
+                        <segment title="Código"/>
+                        <segment title="Descrição"/>
+                    </segments>
+                    <color key="selectedSegmentTintColor" name="AccentColor"/>
+                </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nM2-qC-GUB">
+                    <rect key="frame" x="0.0" y="144" width="414" height="718"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                    <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Pesquise por código ou descrição" id="NfD-CU-s92">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </searchBar>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="nM2-qC-GUB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="48n-Wy-zQj"/>
+                <constraint firstItem="nM2-qC-GUB" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="5Hz-Fi-LNp"/>
+                <constraint firstItem="nM2-qC-GUB" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="PyV-fu-MEZ"/>
+                <constraint firstItem="nM2-qC-GUB" firstAttribute="top" secondItem="z2v-H6-OVR" secondAttribute="bottom" constant="8" id="W7R-n4-5vS"/>
+                <constraint firstItem="z2v-H6-OVR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="mxz-Np-d6o"/>
+                <constraint firstItem="z2v-H6-OVR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="nkN-fI-hL4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="z2v-H6-OVR" secondAttribute="trailing" constant="10" id="nle-dg-JOs"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="2.8985507246376816" y="51.5625"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
