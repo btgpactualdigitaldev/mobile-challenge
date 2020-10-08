@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  CurrencyConverter
+
+  Created by Augusto Henrique de Almeida Silva on 08/10/20.
+  
+*/
+
+"title_conversion_view_controller" = "Currency Converter";
+"title_conversion_list_view_controller" = "List of Coins";
+
+
+"error" = "Error";
+"understand" = "understand";
+
+"save_local_error" = "Erro to save local data.";
+"load_local_error" = "Erro to load local data.";
+"last_update" = "Last update: ";
+"local_data_empty" = "Local data is empty.";
+"please_wait" = "Please wait...";

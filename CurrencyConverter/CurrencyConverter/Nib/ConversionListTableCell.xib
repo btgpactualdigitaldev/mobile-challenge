@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ggv-na-2WP" customClass="ConversionListTableCell" customModule="CurrencyConverter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ggv-na-2WP" id="0gB-FA-mzo">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2v-yK-WRe">
+                        <rect key="frame" x="12" y="12" width="50" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="DTa-Rj-Swx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLl-7s-4v1">
+                        <rect key="frame" x="74" y="12" width="340" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="P2v-yK-WRe" firstAttribute="top" secondItem="0gB-FA-mzo" secondAttribute="top" constant="12" id="1H1-aQ-tgb"/>
+                    <constraint firstAttribute="bottom" secondItem="TLl-7s-4v1" secondAttribute="bottom" constant="12" id="61v-NL-XWa"/>
+                    <constraint firstAttribute="bottom" secondItem="P2v-yK-WRe" secondAttribute="bottom" constant="12" id="C2W-Lg-fkS"/>
+                    <constraint firstAttribute="trailing" secondItem="TLl-7s-4v1" secondAttribute="trailing" id="MAE-u5-BgM"/>
+                    <constraint firstItem="TLl-7s-4v1" firstAttribute="leading" secondItem="P2v-yK-WRe" secondAttribute="trailing" constant="12" id="g7k-JF-r02"/>
+                    <constraint firstItem="TLl-7s-4v1" firstAttribute="top" secondItem="0gB-FA-mzo" secondAttribute="top" constant="12" id="gP3-d2-aAi"/>
+                    <constraint firstItem="P2v-yK-WRe" firstAttribute="leading" secondItem="0gB-FA-mzo" secondAttribute="leading" constant="12" id="smG-rK-Jzc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="coinNameLabel" destination="TLl-7s-4v1" id="Yzi-PD-79u"/>
+                <outlet property="initialsLabel" destination="P2v-yK-WRe" id="pPZ-Vb-Wmw"/>
+            </connections>
+            <point key="canvasLocation" x="3" y="15"/>
+        </tableViewCell>
+    </objects>
+</document>
