@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ConversaoDeMoeda</string>
+    <string name="conversao_de_moeda">Conversão de Moeda</string>
+    <string name="lista_de_moedas">Lista de Moedas</string>
+    <string name="valor_a_converter">Informe o valor a converter</string>
+    <string name="moeda_de_origem">Moeda de Origem</string>
+    <string name="moeda_de_destino">Moeda de Destino</string>
+    <string name="conversao">Conversão</string>
+</resources>
