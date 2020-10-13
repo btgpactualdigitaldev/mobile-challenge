@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ListCurrencyViewController.tableView(_:didSelectRowAt:):ListCurrencyViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "CurrencyConvertViewController.checkCurrencyType():CurrencyConvertViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "btnOriginCurrency.currentTitle">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CurrencyConvertViewController.setCurrency(_:):CurrencyConvertViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ListCurrencyViewController.tableView(_:cellForRowAt:):ListCurrencyViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "currencies">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ListCurrencyViewController.searchBar(_:textDidChange:):ListCurrencyViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "currencies">
+            </PersistentString>
+            <PersistentString
+               value = "filteredDataSource">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CurrencyConvertViewController.formatCurrency(string:):CurrencyConvertViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "(Locale.current as NSLocale)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ListCurrencyViewController.tableView(_:numberOfRowsInSection:):ListCurrencyViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "searchActive">
+            </PersistentString>
+            <PersistentString
+               value = "txtSearchCurrency.text!.count">
+            </PersistentString>
+            <PersistentString
+               value = "filteredDataSource.count">
+            </PersistentString>
+            <PersistentString
+               value = "currencies.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in CurrencyConvertViewController.loadCurrencyValues():CurrencyConvertViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "quotes">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in ApiService.getListCurrency(completion:):ApiService.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ListCurrencyViewController.loadCurrencies():ListCurrencyViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "currencies">
+            </PersistentString>
+            <PersistentString
+               value = "result.currencies">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CurrencyConvertViewController.convertCurrency():CurrencyConvertViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "quotes">
+            </PersistentString>
+            <PersistentString
+               value = "String(format: &quot;%.2f&quot;, &quot;\(newValue)&quot;)">
+            </PersistentString>
+            <PersistentString
+               value = "origin == &quot;USD&quot;">
+            </PersistentString>
+            <PersistentString
+               value = "String(format: &quot;%.2f&quot;, newValue)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CurrencyConvertViewController.changeCurrency(_:):CurrencyConvertViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "sender.currentTitle">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
