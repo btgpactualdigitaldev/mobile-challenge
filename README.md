@@ -40,7 +40,10 @@ O app deve counsumir a [API CurrencyLayer](https://currencylayer.com/documentati
 - [ ] Desenvolver o app seguindo a arquitetura MVVM.
 - [ ] Pipeline automatizado.
 
-## Processo de submissão
-Para submeter o seu desafio, faça um clone deste projeto, desenvolva localmente e, no final, abra um pull request com o formato "[Plataforma] - Nome" para a master até a data limite estabelecida. Um exemplo seria "[iOS] - João da Silva".
-
-### Boa sorte.
+| Biblioteca | Versao |
+|------------|--------|
+| Coroutines | 1.3.6  |
+| Dagger     | 2.27   |
+| Lifecycle  | 2.2.0  |
+| Moshi      | 1.9.2  |
+| Retrofit   | 2.6.4  |

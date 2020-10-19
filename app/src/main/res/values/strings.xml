@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Conversor de Moedas</string>
+    <string name="baseUrl">http://api.currencylayer.com/</string>
+    <string name="database_name">currency.db</string>
+    <string name="database_version">1</string>
+    <string name="loading">Carregando ...</string>
+    <string name="error_loading">Erro ao carregar informações</string>
+    <string name="from">De</string>
+    <string name="title_last_sync">Última Atualização</string>
+    <string name="title_current_quotation">Converter</string>
+    <string name="convert">Converter</string>
+    <string name="label_value_to_be_converted">Digite o valor a ser convertido</string>
+    <string name="to">Para</string>
+</resources>

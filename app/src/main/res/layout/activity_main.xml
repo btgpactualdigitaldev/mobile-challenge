@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.main.MainActivity">
+
+        <TextView
+            android:id="@+id/txtTitleLastSyncDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/roboto_slab_bold"
+            android:text="@string/title_last_sync"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtLastSyncDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/roboto_slab"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/txtTitleLastSyncDate"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="01/01/2000 12:00:00" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/roboto_slab"
+            android:labelFor="@id/etEntryValue"
+            android:text="@string/label_value_to_be_converted"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitleLastSyncDate" />
+
+        <EditText
+            android:id="@+id/etEntryValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/roboto_slab"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            android:text="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/txtTitleFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab_bold"
+            android:text="@string/from"
+            android:textSize="24sp"
+            app:flow_verticalBias="0.5"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btOrigin"
+            app:layout_constraintEnd_toStartOf="@+id/btOrigin"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="@+id/etEntryValue" />
+
+        <Button
+            android:id="@+id/btOrigin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/roboto_slab"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/txtTitleTo"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtTitleFrom"
+            app:layout_constraintTop_toBottomOf="@+id/etEntryValue"
+            tools:text="USD" />
+
+        <Button
+            android:id="@+id/btTarget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/roboto_slab"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/etEntryValue"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtTitleTo"
+            app:layout_constraintTop_toBottomOf="@+id/etEntryValue"
+            tools:text="BRL" />
+
+        <TextView
+            android:id="@+id/txtTitleTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab_bold"
+            android:text="@string/to"
+            android:textSize="24sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btTarget"
+            app:layout_constraintEnd_toStartOf="@+id/btTarget"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btOrigin" />
+
+        <TextView
+            android:id="@+id/txtConvertedValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="64dp"
+            android:fontFamily="@font/roboto_slab_bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitleTo"
+            tools:text="123123456.7891230" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
