@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".view.list.CurrencyConverterFragment">
+
+                <TextView
+                    android:id="@+id/tvTargetLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/currency_label_source"
+                    app:layout_constraintEnd_toEndOf="@+id/btnSource"
+                    app:layout_constraintStart_toStartOf="@+id/btnSource"
+                    app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+                <Button
+                    android:id="@+id/btnSource"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:enabled="false"
+                    android:text="@string/select_currency"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTargetLabel" />
+
+                <TextView
+                    android:id="@+id/tvSourceLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/currency_label_target"
+                    app:layout_constraintEnd_toEndOf="@+id/btnTarget"
+                    app:layout_constraintStart_toStartOf="@+id/btnTarget"
+                    app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+                <Button
+                    android:id="@+id/btnTarget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:enabled="false"
+                    android:text="@string/select_currency"
+                    app:layout_constraintStart_toStartOf="@+id/guideline"
+                    app:layout_constraintTop_toBottomOf="@+id/tvSourceLabel" />
+
+                <EditText
+                    android:id="@+id/etValue"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="@+id/btnSource"
+                    app:layout_constraintTop_toBottomOf="@+id/btnSource"
+                    tools:text="15" />
+
+                <EditText
+                    android:id="@+id/etQuotation"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:textAlignment="center"
+                    app:layout_constraintStart_toStartOf="@+id/btnTarget"
+                    app:layout_constraintTop_toBottomOf="@+id/btnTarget"
+                    tools:text="12,58" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.35" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</layout>

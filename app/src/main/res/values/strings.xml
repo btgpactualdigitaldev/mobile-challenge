@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">CurrencyConverter</string>
+    <string name="title_activity_currency">CurrencyActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <string name="tab_name_currency_converter">Convert currencies</string>
+    <string name="tab_name_currency_list">All currencies</string>
+    <string name="invalid_search_term">Invalid search term</string>
+    <string name="not_internet">It looks like you don\'t have internet access</string>
+    <string name="service_error">We are experiencing problems with our services</string>
+    <string name="default_error">Something wrong occurred, please try again later</string>
+    <string name="select_target">Please selected target currency</string>
+    <string name="select_source">Please select source currency</string>
+    <string name="select_currencies">Please select target and source currency</string>
+    <string name="currency_symbol">"Symbol: "</string>
+    <string name="currency_name">"Name: "</string>
+    <string name="select_currency">Select</string>
+    <string name="currency_label_target">Target</string>
+    <string name="currency_label_source">Source</string>
+    <string name="please_wait_message">Please wait</string>
+</resources>
