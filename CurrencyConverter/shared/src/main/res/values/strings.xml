@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name" translatable="false">Currency Converter</string>
+    <string name="app_name_splash" translatable="false">converter</string>
+    <string name="title_splash" translatable="false">Splash</string>
+    <string name="title_converter" translatable="false">Converter</string>
+    <string name="title_list" translatable="false">Currencies</string>
+    <string name="title_error" translatable="false">Error</string>
+    <string name="button_leave_text">Leave</string>
+    <string name="search_currency_hint">Search currency</string>
+    <string name="last_update">Data updated at %s</string>
+    <string name="header_cod">COD</string>
+    <string name="header_name">CURRENCY</string>
+
+    <string name="error_connection_title">Connection error</string>
+    <string name="error_api_server_title">Request error</string>
+    <string name="error_load_data">Currency quotes could not be loaded into the database.</string>
+    <string name="error_api_server_message">Error requesting data from the server!</string>
+    <string name="error_connection_message">Please check your internet connection!</string>
+    <string name="warning_not_found_title">No results found!</string>
+    <string name="warning_not_found_message">We can\'t find any item matching your search!</string>
+</resources>

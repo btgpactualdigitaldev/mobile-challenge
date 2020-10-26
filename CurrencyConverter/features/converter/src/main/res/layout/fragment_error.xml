@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:background="@color/gray_screen_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/errorTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_90sdp"
+            android:fontFamily="@font/sansproregular"
+            android:text="@string/error_connection_title"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_28ssp" />
+
+        <ImageView
+            android:id="@+id/errorImage"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_connection_error"
+            app:tint="@color/blue" />
+
+        <TextView
+            android:id="@+id/message1"
+            style="@style/MessageTextStyle"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:text="@string/error_load_data" />
+
+        <TextView
+            android:id="@+id/message2"
+            style="@style/MessageTextStyle"
+            android:text="@string/error_connection_message" />
+
+        <Button
+            android:id="@+id/leaveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:background="@drawable/btn_selector"
+            android:fontFamily="@font/prometo_light"
+            android:text="@string/button_leave_text"
+            android:textAllCaps="false"
+            android:textColor="@color/btn_text_color"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</layout>

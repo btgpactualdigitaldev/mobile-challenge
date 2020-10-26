@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="button_leave_text">Sair</string>
+    <string name="search_currency_hint">Procurar moeda</string>
+    <string name="last_update">Dados atualizados às %s</string>
+    <string name="header_cod">COD</string>
+    <string name="header_name">MOEDA</string>
+
+    <string name="error_connection_title">Erro de conexão</string>
+    <string name="error_api_server_title">Erro de requisição</string>
+    <string name="error_load_data">Não foi possível carregar as cotações no banco de dados.</string>
+    <string name="error_api_server_message">Erro ao requisitar os dados do servidor!</string>
+    <string name="error_connection_message">Por favor, verifique sua conexão com a internet!</string>
+    <string name="warning_not_found_title">Nenhum resultado encontrado!</string>
+    <string name="warning_not_found_message">Não encontramos nenhum item que corresponda à sua pesquisa!</string>
+</resources>

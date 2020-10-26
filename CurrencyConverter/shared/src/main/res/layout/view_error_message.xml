@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal"
+        android:fontFamily="@font/sansproregular"
+        android:gravity="center"
+        android:padding="@dimen/_2sdp"
+        android:text="@string/error_connection_message"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp" />
+</LinearLayout>
+
