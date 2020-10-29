@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.fragment.MainFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/currency_converter_cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/cardview_default_radius"
+            app:cardElevation="@dimen/cardview_default_elevation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:background="@color/white"
+
+                android:minHeight="?android:attr/listPreferredItemHeight"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_weight="20"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="4dp"
+                    android:minHeight="?android:attr/listPreferredItemHeight"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="16dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/currency_primary_ib"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="USD"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:layout_weight="4"
+                        android:layout_marginEnd="12dp"
+                        android:background="@color/design_default_color_primary"
+                        android:backgroundTint="@color/design_default_color_primary_dark"
+                        android:textColor="@color/white"
+                        android:scaleType="fitCenter" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/currency_converter_first_value_til"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:gravity="center_horizontal"
+                        android:textColorHint="@color/black"
+                        app:boxStrokeColor="@color/black"
+                        app:hintTextColor="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/currency_converter_first_value_tiet"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/black"
+                            android:hint="@string/value"
+                            android:digits="0123456789"
+                            android:inputType="numberDecimal" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="20"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="4dp"
+                    android:minHeight="?android:attr/listPreferredItemHeight"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="16dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/currency_secondary_ib"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="BRL"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:layout_weight="4"
+                        android:layout_marginEnd="12dp"
+                        android:background="@color/design_default_color_primary"
+                        android:backgroundTint="@color/design_default_color_primary_dark"
+                        android:textColor="@color/white"
+                        android:scaleType="fitCenter" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/currency_converter_second_value_til"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:textColorHint="@color/black"
+                        app:boxStrokeColor="@color/black"
+                        app:hintTextColor="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/currency_converter_second_value_tiet"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/black"
+                            android:hint="@string/value"
+                            android:digits="0123456789"
+                            android:inputType="numberDecimal" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

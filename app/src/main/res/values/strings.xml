@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+
+    <string name="currency_converter_title">Currency Converter</string>
+    <string name="item_currency_code_tv">UNK</string>
+    <string name="item_currency_name_tv">Unknown Currency</string>
+    <string name="value">value</string>
+</resources>
