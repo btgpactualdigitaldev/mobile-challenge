@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">BTG Currency Converter</string>
+
+    <string name="currency_list_title">Currency List</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_conversion">ConversionActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="convert_from">Convert From</string>
+    <string name="conversion_title">Currency Conversion</string>
+    <string name="convert_to">To</string>
+    <string name="number_zero">0.00</string>
+    <string name="selected_currency">Selected Currency</string>
+    <string name="title_activity_currency">CurrencyActivity</string>
+
+    <string name="conversion_quote_rate">1 %s\n= \n%s %s</string>
+    <string name="logo_btg">Logo BTG</string>
+    <string name="splash_error_message">Error loading the app</string>
+</resources>

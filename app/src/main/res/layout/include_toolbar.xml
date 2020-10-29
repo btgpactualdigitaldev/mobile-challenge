@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarMain"
+        android:layout_width="match_parent"
+        android:theme="@style/ThemeOverlay.AppCompat"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/primary"
+        app:titleTextColor="@color/accent_text"
+        tools:title="Currency Converter" />
+</com.google.android.material.appbar.AppBarLayout>
