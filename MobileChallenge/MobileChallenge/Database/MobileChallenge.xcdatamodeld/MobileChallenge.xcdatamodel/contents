@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19G2021" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CurrencyExchangeCD" representedClassName="CurrencyExchangeCD" syncable="YES">
+        <attribute name="code" attributeType="String"/>
+        <attribute name="exchange" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="CurrencyNameCD" representedClassName="CurrencyNameCD" syncable="YES">
+        <attribute name="code" attributeType="String"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="CurrencyNameCD" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="CurrencyExchangeCD" positionX="-54" positionY="-9" width="128" height="88"/>
+    </elements>
+</model>
