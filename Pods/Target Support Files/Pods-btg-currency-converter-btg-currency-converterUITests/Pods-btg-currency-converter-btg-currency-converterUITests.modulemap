@@ -1,0 +1,6 @@
+framework module Pods_btg_currency_converter_btg_currency_converterUITests {
+  umbrella header "Pods-btg-currency-converter-btg-currency-converterUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
