@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/main_tv_destino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/moeda_destino"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/main_bt_destino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/moeda_destino"
+            app:layout_constraintTop_toBottomOf="@id/main_tv_destino" />
+
+        <TextView
+            android:id="@+id/main_tv_origem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/moeda_origem"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/main_bt_destino" />
+
+        <Button
+            android:id="@+id/main_bt_origem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/moeda_origem"
+            app:layout_constraintTop_toBottomOf="@id/main_tv_origem" />
+
+        <EditText
+            android:id="@+id/main_et_valor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/valor_ini"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/main_bt_origem" />
+
+        <Button
+            android:id="@+id/main_bt_calc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/converter_moeda"
+            app:layout_constraintTop_toBottomOf="@id/main_et_valor" />
+
+        <TextView
+            android:id="@+id/main_tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/main_bt_calc"
+            tools:hint="Result" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

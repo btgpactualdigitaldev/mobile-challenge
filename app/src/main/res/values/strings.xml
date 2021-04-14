@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Desafio BTG</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tentar_novamente">Tentar novamente</string>
+    <string name="utilizar_list_offline">Utilizar offline</string>
+    <string name="currency">Currency</string>
+    <string name="valor_ini">Valor a ser convertido</string>
+    <string name="campo_vazio">Ainda ha campo vazio!</string>
+    <string name="voltar">Voltar</string>
+    <string name="moeda_origem">Moeda Origem</string>
+    <string name="moeda_destino">Moeda Destino</string>
+    <string name="converter_moeda">Converter Moeda</string>
+</resources>
