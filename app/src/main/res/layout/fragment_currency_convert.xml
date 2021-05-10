@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.CurrencyConvertFragment"
+    android:padding="16dp">
+
+    <ProgressBar
+        android:id="@+id/convertProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/amountLabel"
+        android:text="@string/label_currency_value"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/convertFromBtn"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/amountEdt"
+        app:layout_constraintTop_toBottomOf="@id/amountLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="numberDecimal"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/convertFromLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/amountEdt"
+        android:layout_marginTop="@dimen/medium_space"
+        android:text="@string/label_currency_from"
+        android:textSize="@dimen/big_text" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/convertToLabel"
+        app:layout_constraintStart_toStartOf="@id/convertToBtn"
+        app:layout_constraintTop_toBottomOf="@id/amountEdt"
+        android:layout_marginTop="@dimen/medium_space"
+        android:text="@string/label_currency_to"
+        android:textSize="@dimen/big_text" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/convertFromBtn"
+        android:layout_marginEnd="@dimen/small_space"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/convertFromLabel"
+        app:layout_constraintEnd_toStartOf="@id/convertToBtn"
+        tools:text="USD"
+        android:textSize="@dimen/medium_text"
+        android:drawableEnd="@drawable/ic_baseline_arrow_drop_down"
+        android:background = "@color/purple_500"
+        android:textColor="@color/white"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/convertToBtn"
+        tools:text="BRL"
+        android:background = "@color/purple_500"
+        android:textColor="@color/white"
+        android:drawableEnd="@drawable/ic_baseline_arrow_drop_down"
+        android:layout_marginStart="@dimen/small_space"
+        android:textSize="@dimen/medium_text"
+        app:layout_constraintStart_toEndOf="@id/convertFromBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/convertToLabel"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/amountConverted"
+        android:layout_marginTop="40dp"
+        tools:text="50.3"
+        android:textSize="60sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/convertToBtn"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/amountCode"
+        android:layout_marginTop="40dp"
+        tools:text="BRL"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@id/amountConverted"
+        app:layout_constraintStart_toEndOf="@id/amountConverted"
+        app:layout_constraintBottom_toBottomOf="@id/amountConverted"
+        app:layout_constraintVertical_bias="0.8"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/convertBtn"
+        android:text="@string/convert_current_btn_text"
+        android:layout_marginTop="40dp"
+        android:background = "@color/purple_500"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/amountConverted"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

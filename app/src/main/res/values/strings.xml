@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CurrencyConverter</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_search_currency">código, nome da moeda</string>
+    <string name="label_search_currency">Selecione uma moeda</string>
+    <string name="item_menu_converter">Converter</string>
+    <string name="item_menu_list_currency">Lista de moedas</string>
+    <string name="no_network_warning">Rede desconectada, conecte-se a uma rede para obter a contação atualizada</string>
+    <string name="currency_list_no_network_warning">Rede desconectada, conecte-se a uma rede para obter as moedas disponíveis atualizadas</string>
+    <string name="label_currency_value">Informe o valor</string>
+    <string name="label_currency_from">De</string>
+    <string name="label_currency_to">Para</string>
+    <string name="convert_current_btn_text">Converter</string>
+</resources>

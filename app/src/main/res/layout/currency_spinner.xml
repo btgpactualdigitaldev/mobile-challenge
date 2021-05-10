@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/small_space">
+
+        <ProgressBar
+            android:id="@+id/spnListProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/spnSelectLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_space"
+            android:gravity="center"
+            android:text="@string/label_search_currency"
+            android:textSize="20sp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/spnSearchCurrencyEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/small_space"
+            android:layout_marginStart="@dimen/small_space"
+            android:layout_marginTop="@dimen/medium_space"
+            android:hint="@string/hint_search_currency"
+            android:layout_below="@id/spnSelectLabel"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/spnCurrenciesRv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/medium_space"
+            android:layout_below="@id/spnSearchCurrencyEt"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/medium_space"
+            tools:listitem="@layout/currency_list_item"/>
+</RelativeLayout>
