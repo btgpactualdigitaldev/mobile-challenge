@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Conversor de Moedas</string>
+
+    <!--    main activity view-->
+    <string name="main_title">Converta as moedas selecionadas</string>
+    <string name="currency_I_have">Moeda que eu tenho</string>
+    <string name="currency_I_want">Moeda que eu quero ter</string>
+    <string name="button_change_currency">Alterar</string>
+    <string name="value_to_convert">Valor para conversão</string>
+    <string name="converted_value_title">Valor convertido:</string>
+
+    <string name="default_currency_I_have">BRL</string>
+    <string name="default_currency_I_want">USD</string>
+    <string name="default_converted_value">0.00</string>
+
+    <string name="currency_I_have_image_description">Bandeira da moeda que eu tenho</string>
+    <string name="currency_I_want_image_description">Bandeira da moeda que eu quero ter</string>
+    <string name="invert_coins_image_description">Inverta as moedas selecionadas</string>
+
+    <!--    currency list activity view-->
+    <string name="default_currency_list_title">Selecione a moeda</string>
+    <string name="search_coins_label">Buscar moedas...</string>
+    <string name="empty_currency_recycler_view">Tente digitar algo diferente...</string>
+
+    <!--    currency recycler view-->
+    <string name="default_list_currency_coin">EUR</string>
+    <string name="default_list_currency_description">Euro</string>
+
+</resources>

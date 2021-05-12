@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/main_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/loading_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                        <ProgressBar
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:indeterminate="true" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/main_layout"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/main_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="32dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:text="@string/main_title" />
+
+                    <include
+                        android:id="@+id/layout_I_have"
+                        app:label="@{@string/currency_I_have}"
+                        layout="@layout/currency_item_layout"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginBottom="32dp">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="32dp"
+                            android:layout_weight="1">
+
+                            <com.leonardo.convertcoins.views.CustomTextInputEditText
+                                android:id="@+id/input_to_convert"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:inputType="numberDecimal"
+                                android:digits="0123456789,"
+                                android:hint="@string/value_to_convert" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <ImageButton
+                            android:id="@+id/invert_coins_image"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:onClick="invertCoins"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/invert_coins_image_description"
+                            android:background="@drawable/change_positions_selector" />
+
+                    </LinearLayout>
+
+
+                    <include android:id="@+id/layout_I_want"
+                        app:label="@{@string/currency_I_want}"
+                        layout="@layout/currency_item_layout"/>
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:gravity="center"
+                        android:text="@string/converted_value_title"/>
+
+                    <TextView
+                        android:id="@+id/final_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:textSize="24sp"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:text="@string/default_converted_value"/>
+                </LinearLayout>
+            </LinearLayout>
+    </ScrollView>
+</layout>
+
+

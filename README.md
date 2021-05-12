@@ -1,46 +1,43 @@
-# Desafio BTG
+## CONVERT COINS
 
-Seja bem-vindo! Este é o seu primeiro passo para fazer parte do time de desenvolvimento do maior banco de investimentos da América Latina.
 
-#### LEIA AS INSTRUÇÕES POR COMPLETO ANTES DE COMEÇAR
 
-O Desafio consiste no desenvolvimento de um app de conversão de moedas. O app deve permitir que o usuário selecione a moeda de origem e a moeda a ser convertida, para então inserir o valor e visualizar o resultado da conversão. 
 
-## Requisitos
 
-O app deve counsumir a [Mobile Challenge API](https://btg-mobile-challenge.herokuapp.com), criada somente com o propósito desse desafio e portanto não apresenta dados reais. A API apresenta apenas as taxas de câmbio em relação a uma moeda de referência (dólar americano - `USD`), caso o usuário deseje fazer uma conversão entre quaisquer outras duas moedas, será necessário primeiro converter a moeda de origem para dólar e então de dólar para a moeda desejada.  
+|Home Screen|Currencies List|Converted Value|Searching Currency
+|----|-------|-------|--------|
+|<img width=400 src="https://user-images.githubusercontent.com/17517057/117727661-b72cc800-b1be-11eb-95ba-1f041d2d4b0f.png"/>|<img width=400 src="https://user-images.githubusercontent.com/17517057/117729096-c0b72f80-b1c0-11eb-9ca0-13d92bd8cfc8.png">|<img width=400 src="https://user-images.githubusercontent.com/17517057/117729344-14c21400-b1c1-11eb-9656-8a621dd725ab.png"/>|<img width=400 src="https://user-images.githubusercontent.com/17517057/117729429-315e4c00-b1c1-11eb-9a8c-183c6d04ed05.png">
 
-* Android: _Kotlin_ | iOS: _Swift_
-* O aplicativo deve ter duas telas principais:
-   * A tela de conversão deve conter:
-      * Dois botões que permitam o usuário a escolher as moedas de origem e de destino.
-      * Um campo de entrada de texto onde o usuário possa inserir o valor a ser convertido.
-      * Uma campo de texto para apresentar o valor convertido.
-   * A tela de listagem de moedas deve conter:
-      * Uma lista das moedas disponíves para conversão, mostrando código e nome da moeda.
-    
-* A listagem de moedas deve ser mostrada obrigatóriamente em uma tela diferente da tela de conversão.
 
-## Observações
-* Dê preferência para a não utilização de bibliotecas externas;
-* Caso opte por usar bibliotecas externas, prefira Gradle (Android) ou CocoaPods (iOS) como gerenciadores de dependência;
-* O objetivo deste desafio é avaliar o seu conhecimento técnico, estilo de código, conhecimento de arquiteturas, padrões de programação e boas práticas. Faça disso uma oportunidade pra mostrar todo o seu conhecimento.
+This app is a platform that allows you to convert all kind of coins and see it's current value related to another.
 
-## Features
-### Obrigatórias:
-- [ ] As taxas de câmbio disponíveis devem ser obtidas da chamada de [API Supported Currencies (/list)](https://currencylayer.com/documentation)
-- [ ] A cotação atual deve ser obtida da chamada de [API Real-time Rates (/live)](https://currencylayer.com/documentation)
-- [ ] É necessário fazer tratamento de erros e dos fluxos de exceção, como busca vazia, carregamento e outros erros que possam ocorrer.
+It uses this concept in order to show Kotlin programming and serves as a example on how to use the following features:
 
-### Opcionais (não necessário, porém contam pontos):
-- [ ] Funcinalidade de busca na lista de moedas por nome ou sigla da moeda ("dólar" ou "USD").
-- [ ] Ordenação da lista de moedas por nome ou código.
-- [ ] Realizar a persistência local da lista de moedas e taxas para permitir o uso do app no caso de falta de internet.
-- [ ] Desenvolver testes unitários e/ou funcionais.
-- [ ] Desenvolver o app seguindo a arquitetura MVVM.
-- [ ] Pipeline automatizado.
+    * Shared preferences to keep user last currencies choice
+    * SQLite to save last quotes and last available coins
+    * Compatible with dark theme
 
-## Processo de submissão
-Para submeter o seu desafio, faça um clone deste projeto, desenvolva localmente e, no final, abra um pull request com o formato "[Plataforma] - Nome" para a master até a data limite estabelecida. Um exemplo seria "[iOS] - João da Silva".
 
-### Boa sorte.
+All live data is retrieved from https://currencylayer.com/ and it's public API. You can set a paid subscription API KEY
+and your code will work as expected too. Keep in mind that if you use a free API KEY your app will have a limit on the number of calls, so it will stop working with live data in the future.
+
+As mentioned, you need a API KEY for the app to work. To insert that information on the code, check the following steps:
+
+    1) generate one on https://currencylayer.com/
+    2) past it inside native-lib.cpp file changing <YOUR_API_KEY_HERE> with the value of your API KEY
+    3) run git update-index --assume-unchanged app/src/main/cpp/native-lib.cpp to never upload this changes
+
+Feel free to enjoy the app :)
+
+# references
+- currency layer: https://currencylayer.com/documentation
+- cpp api_key: https://www.codementor.io/blog/kotlin-apikeys-7o0g54qk5b
+- recycler view: https://www.raywenderlich.com/1560485-android-recyclerview-tutorial-with-kotlin
+- extensions: https://antonioleiva.com/kotlin-android-extensions/
+- RecyclerView Empty Observer: https://stackoverflow.com/a/43953603/10526869
+- Scroll view to bottom without loosing focus: https://stackoverflow.com/a/34866634/10526869
+- View tags: https://stackoverflow.com/a/15021758/10526869
+- ImageButton: https://developer.android.com/reference/android/widget/ImageButton
+- Data binding:
+    https://developer.android.com/topic/libraries/data-binding/index.html#includes
+    https://developer.android.com/topic/libraries/view-binding#activities
