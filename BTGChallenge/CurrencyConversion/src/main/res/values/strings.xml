@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BTG Challenge</string>
+    <string name="currency_conversion">Conversor de moeda</string>
+    <string name="select_currency">Selecione uma moeda</string>
+    <string name="select_another_currency">Selecione uma outra moeda</string>
+    <string name="convert">Digite um valor</string>
+    <string name="no_data_found">Nenhuma informação foi encontrada</string>
+    <string name="type_valid_value">Digite um valor válido!</string>
+    <string name="currencies_not_selected">Selecione duas moedas para fazer sua conversão</string>
+</resources>

@@ -1,0 +1,3 @@
+include ':Network'
+include ':CurrencyConversion'
+rootProject.name = "BTG Challenge"
