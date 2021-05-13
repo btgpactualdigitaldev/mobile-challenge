@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ConverterCurrency</string>
+
+    <string name="state_no_connection_title">Sem conexão</string>
+    <string name="state_no_connection_subtitle">Você não está conectado à internet</string>
+    <string name="state_error_title">Algo deu errado</string>
+    <string name="state_error_subtitle"> Ocorreu um erro. Tente novamente.</string>
+    <string name="state_button_text">Tentar novamente</string>
+    <string name="unauthorized_user_title">Usuário não logado!</string>
+    <string name="unauthorized_user_subtitle">Verifique suas credenciais ou faça o login novamente.</string>
+
+
+    <string name="state_error_api_title">Nâo foi possivel iniciar o sistema</string>
+    <string name="state_error_api_subtitle">Houve um problema ao acessar a lista de cotações. Contate o atendimento informando o erro ou tente novamente mais tarde.</string>
+
+    <string name="state_error_update_title">Nâo foi possivel atualizar as cotações</string>
+    <string name="state_error_update_subtitle">O sistema não foi iniciado. Tente novamente mais tarde.</string>
+
+    <string name="state_error_refresh_quotes_title">Nâo foi possivel atualizar as cotações</string>
+    <string name="state_error_refresh_quotes_subtitle">As cotacoes ja estao atualizada para esse periodo. As cotações são atualizadas a cada dia.</string>
+
+
+    <string name="json_list_currency">
+
+    </string>
+
+</resources>

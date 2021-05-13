@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="custom_margin_elements_large">32dp</dimen>
+    <dimen name="custom_margin_elements_small">8dp</dimen>
+    <dimen name="custom_font_size_widgets">16sp</dimen>
+    <dimen name="custom_margin_elements_middle">16dp</dimen>
+    <dimen name="custom_margin_elements_medium">24dp</dimen>
+    <dimen name="custom_top_description">16dp</dimen>
+    <dimen name="stateview_button_border_radius">28dp</dimen>
+    <dimen name="stateview_button_height">56dp</dimen>
+    <dimen name="stateview_image_size">180dp</dimen>
+    <dimen name="text_small">13</dimen>
+
+
+    <dimen name="default_margin_scream">8dp</dimen>
+
+</resources>
