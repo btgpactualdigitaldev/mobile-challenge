@@ -1,3 +1,33 @@
+# XCurrency - iOS
+![](https://travis-ci.org/viniciusnadin/mobile-challenge.svg?branch=master)
+
+O aplicativo desenvolvido para o desafio foi o XCurrency, app de conversão de moedas utilizando a api CurrencyLayer, arquitetura MVVM e sem a utilização de Pods. 
+
+# Requisitos
+- [x] As taxas de câmbio disponíveis devem ser obtidas da chamada de [API Supported Currencies (/list)](https://currencylayer.com/documentation)
+- [x] A cotação atual deve ser obtida da chamada de [API Real-time Rates (/live)](https://currencylayer.com/documentation)
+- [x] É necessário fazer tratamento de erros e dos fluxos de exceção, como busca vazia, carregamento e outros erros que possam ocorrer.
+- [x] Funcinalidade de busca na lista de moedas por nome ou sigla da moeda ("dólar" ou "USD").
+- [x] Ordenação da lista de moedas por nome ou código.
+- [x] Realizar a persistência local da lista de moedas e taxas para permitir o uso do app no caso de falta de internet.
+- [x] Desenvolver testes unitários e/ou funcionais.
+- [x] Desenvolver o app seguindo a arquitetura MVVM.
+- [x] Pipeline automatizado.
+- [x] O aplicativo deve ter duas telas principais:
+- [x] A listagem de moedas deve ser mostrada obrigatóriamente em uma tela diferente da tela de conversão.
+
+# Especificações
+- Arquitetura da parte de Network inspirada em um projeto de [DonnyWals](https://www.donnywals.com/architecting-a-robust-networking-layer-with-protocols/
+)
+- Design do app inspirado em [Ashish Patel](https://www.uplabs.com/posts/currency-converter-app-design-f9150d50-1cad-42b4-93d5-686df7c0a5d5
+)
+
+# Design do App
+<img src="Screenshots/MainScreen.png" width="300" /> <img src="Screenshots/CurrenciesList.png" width="300" /> <img src="Screenshots/CurrenciesSearch.png" width="300" />
+
+-----
+
+
 # Desafio BTG
 
 Seja bem-vindo! Este é o seu primeiro passo para fazer parte do time de desenvolvimento do maior banco de investimentos da América Latina.
