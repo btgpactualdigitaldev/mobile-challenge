@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BottomViewController" customModule="DesafioBTG" customModuleProvider="target">
+            <connections>
+                <outlet property="dismissButton" destination="qSn-6S-n1r" id="TXR-yO-zB9"/>
+                <outlet property="pikerView" destination="66c-EQ-Gm4" id="hSN-rg-pgX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QFt-YL-iMf">
+                    <rect key="frame" x="0.0" y="562" width="414" height="300"/>
+                    <subviews>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="66c-EQ-Gm4">
+                            <rect key="frame" x="0.0" y="84" width="414" height="216"/>
+                        </pickerView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSn-6S-n1r">
+                            <rect key="frame" x="353" y="16" width="45" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="99h-az-kfh"/>
+                                <constraint firstAttribute="height" constant="45" id="FDs-Gg-Ad8"/>
+                            </constraints>
+                            <state key="normal" title="X"/>
+                            <connections>
+                                <action selector="dismiss:" destination="-1" eventType="touchUpInside" id="Sr7-ba-QOB"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="66c-EQ-Gm4" secondAttribute="trailing" id="F6c-is-5af"/>
+                        <constraint firstItem="66c-EQ-Gm4" firstAttribute="leading" secondItem="QFt-YL-iMf" secondAttribute="leading" id="R7H-JI-Wb6"/>
+                        <constraint firstAttribute="bottom" secondItem="66c-EQ-Gm4" secondAttribute="bottom" id="RWK-Zt-5dK"/>
+                        <constraint firstItem="qSn-6S-n1r" firstAttribute="top" secondItem="QFt-YL-iMf" secondAttribute="top" constant="16" id="cqi-5O-UuB"/>
+                        <constraint firstAttribute="trailing" secondItem="qSn-6S-n1r" secondAttribute="trailing" constant="16" id="ew4-a1-8BL"/>
+                        <constraint firstAttribute="height" constant="300" id="u1K-K4-IfC"/>
+                    </constraints>
+                </view>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fug-Fo-ACM">
+                    <rect key="frame" x="0.0" y="44" width="414" height="518"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pd9-8f-uUw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="518"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="0.31679137323943662" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <vibrancyEffect style="tertiaryFill">
+                        <blurEffect style="dark"/>
+                    </vibrancyEffect>
+                </visualEffectView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QFt-YL-iMf" secondAttribute="trailing" id="Dt8-9M-GCw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fug-Fo-ACM" secondAttribute="trailing" id="Jqx-H0-nw3"/>
+                <constraint firstItem="QFt-YL-iMf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="YyE-q1-g6D"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="QFt-YL-iMf" secondAttribute="bottom" id="cyW-Z1-oVE"/>
+                <constraint firstItem="QFt-YL-iMf" firstAttribute="top" secondItem="fug-Fo-ACM" secondAttribute="bottom" id="jda-nV-WSI"/>
+                <constraint firstItem="fug-Fo-ACM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kjB-KY-mLI"/>
+                <constraint firstItem="fug-Fo-ACM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="yBI-nX-OkW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="84"/>
+        </view>
+    </objects>
+</document>
