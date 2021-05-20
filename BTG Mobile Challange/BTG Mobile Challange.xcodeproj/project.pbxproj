@@ -1,0 +1,720 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B56E289251E7F5F002409A7 /* CurrencyListSortModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B56E288251E7F5F002409A7 /* CurrencyListSortModalViewController.swift */; };
+		7B56E28D251E7F90002409A7 /* CurrencyListSortModalViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B56E28C251E7F90002409A7 /* CurrencyListSortModalViewController.storyboard */; };
+		7B56E293251E9150002409A7 /* CurrencyListSortEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B56E292251E9150002409A7 /* CurrencyListSortEnum.swift */; };
+		7B56E299251E9BD7002409A7 /* CurrencyListSortProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B56E298251E9BD7002409A7 /* CurrencyListSortProtocol.swift */; };
+		7B5EC4F3251C09880020FF6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EC4F2251C09880020FF6F /* AppDelegate.swift */; };
+		7B5EC4F5251C09880020FF6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EC4F4251C09880020FF6F /* SceneDelegate.swift */; };
+		7B5EC4FA251C09880020FF6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5EC4F8251C09880020FF6F /* Main.storyboard */; };
+		7B5EC4FC251C098B0020FF6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B5EC4FB251C098B0020FF6F /* Assets.xcassets */; };
+		7B5EC4FF251C098B0020FF6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5EC4FD251C098B0020FF6F /* LaunchScreen.storyboard */; };
+		7B5EC50A251C098B0020FF6F /* BTG_Mobile_ChallangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EC509251C098B0020FF6F /* BTG_Mobile_ChallangeTests.swift */; };
+		7B5EC516251C0B520020FF6F /* DismissKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EC515251C0B520020FF6F /* DismissKeyboardExtension.swift */; };
+		7B5EC51D251C0BF20020FF6F /* CurrencyConverterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EC51C251C0BF20020FF6F /* CurrencyConverterModel.swift */; };
+		7B5EC51F251C0C170020FF6F /* CurrencyListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EC51E251C0C170020FF6F /* CurrencyListModel.swift */; };
+		7B5EC522251C0C420020FF6F /* ModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EC521251C0C420020FF6F /* ModelError.swift */; };
+		7B5EC526251C100B0020FF6F /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EC525251C100B0020FF6F /* ApiError.swift */; };
+		7B5EC528251C101D0020FF6F /* ApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EC527251C101D0020FF6F /* ApiHelper.swift */; };
+		7B5EC52A251C102F0020FF6F /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EC529251C102F0020FF6F /* ApiKey.swift */; };
+		7B5EC52C251C10BD0020FF6F /* api_key.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B5EC52B251C10BD0020FF6F /* api_key.plist */; };
+		7B5EC52F251C11310020FF6F /* CurrencyListServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EC52E251C11310020FF6F /* CurrencyListServiceProtocol.swift */; };
+		7B5EC531251C11400020FF6F /* CurrencyListServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EC530251C11400020FF6F /* CurrencyListServiceProvider.swift */; };
+		7B5EC534251C12280020FF6F /* CurrencyConverterServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EC533251C12280020FF6F /* CurrencyConverterServiceProtocol.swift */; };
+		7B5EC536251C12350020FF6F /* CurrencyConverterServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EC535251C12350020FF6F /* CurrencyConverterServiceProvider.swift */; };
+		7B5EC53C251C13130020FF6F /* CurrencyListErrorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EC53A251C13130020FF6F /* CurrencyListErrorTableViewCell.swift */; };
+		7B5EC53D251C13130020FF6F /* CurrencyListErrorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B5EC53B251C13130020FF6F /* CurrencyListErrorTableViewCell.xib */; };
+		7B5EC540251C13400020FF6F /* CurrencyListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EC53E251C13400020FF6F /* CurrencyListItemTableViewCell.swift */; };
+		7B5EC541251C13400020FF6F /* CurrencyListItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B5EC53F251C13400020FF6F /* CurrencyListItemTableViewCell.xib */; };
+		7B5EC543251C13790020FF6F /* CurrencyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EC542251C13790020FF6F /* CurrencyListViewController.swift */; };
+		7B5EC546251C13C50020FF6F /* CurrencyConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EC545251C13C50020FF6F /* CurrencyConverterViewController.swift */; };
+		7B5EC54A251C141E0020FF6F /* CurrencyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EC549251C141E0020FF6F /* CurrencyListViewModel.swift */; };
+		7B5EC54D251C144E0020FF6F /* CurrencyConverterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5EC54C251C144E0020FF6F /* CurrencyConverterViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B5EC506251C098B0020FF6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B5EC4E7251C09880020FF6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B5EC4EE251C09880020FF6F;
+			remoteInfo = "BTG Mobile Challange";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7B56E288251E7F5F002409A7 /* CurrencyListSortModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListSortModalViewController.swift; sourceTree = "<group>"; };
+		7B56E28C251E7F90002409A7 /* CurrencyListSortModalViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CurrencyListSortModalViewController.storyboard; sourceTree = "<group>"; };
+		7B56E292251E9150002409A7 /* CurrencyListSortEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListSortEnum.swift; sourceTree = "<group>"; };
+		7B56E298251E9BD7002409A7 /* CurrencyListSortProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListSortProtocol.swift; sourceTree = "<group>"; };
+		7B5EC4EF251C09880020FF6F /* BTG Mobile Challange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BTG Mobile Challange.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B5EC4F2251C09880020FF6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7B5EC4F4251C09880020FF6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7B5EC4F9251C09880020FF6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7B5EC4FB251C098B0020FF6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B5EC4FE251C098B0020FF6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7B5EC500251C098B0020FF6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B5EC505251C098B0020FF6F /* BTG Mobile ChallangeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BTG Mobile ChallangeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B5EC509251C098B0020FF6F /* BTG_Mobile_ChallangeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTG_Mobile_ChallangeTests.swift; sourceTree = "<group>"; };
+		7B5EC50B251C098B0020FF6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B5EC515251C0B520020FF6F /* DismissKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissKeyboardExtension.swift; sourceTree = "<group>"; };
+		7B5EC51C251C0BF20020FF6F /* CurrencyConverterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterModel.swift; sourceTree = "<group>"; };
+		7B5EC51E251C0C170020FF6F /* CurrencyListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListModel.swift; sourceTree = "<group>"; };
+		7B5EC521251C0C420020FF6F /* ModelError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelError.swift; sourceTree = "<group>"; };
+		7B5EC525251C100B0020FF6F /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		7B5EC527251C101D0020FF6F /* ApiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelper.swift; sourceTree = "<group>"; };
+		7B5EC529251C102F0020FF6F /* ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
+		7B5EC52B251C10BD0020FF6F /* api_key.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = api_key.plist; sourceTree = "<group>"; };
+		7B5EC52E251C11310020FF6F /* CurrencyListServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListServiceProtocol.swift; sourceTree = "<group>"; };
+		7B5EC530251C11400020FF6F /* CurrencyListServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListServiceProvider.swift; sourceTree = "<group>"; };
+		7B5EC533251C12280020FF6F /* CurrencyConverterServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterServiceProtocol.swift; sourceTree = "<group>"; };
+		7B5EC535251C12350020FF6F /* CurrencyConverterServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterServiceProvider.swift; sourceTree = "<group>"; };
+		7B5EC53A251C13130020FF6F /* CurrencyListErrorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListErrorTableViewCell.swift; sourceTree = "<group>"; };
+		7B5EC53B251C13130020FF6F /* CurrencyListErrorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyListErrorTableViewCell.xib; sourceTree = "<group>"; };
+		7B5EC53E251C13400020FF6F /* CurrencyListItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListItemTableViewCell.swift; sourceTree = "<group>"; };
+		7B5EC53F251C13400020FF6F /* CurrencyListItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyListItemTableViewCell.xib; sourceTree = "<group>"; };
+		7B5EC542251C13790020FF6F /* CurrencyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListViewController.swift; sourceTree = "<group>"; };
+		7B5EC545251C13C50020FF6F /* CurrencyConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterViewController.swift; sourceTree = "<group>"; };
+		7B5EC549251C141E0020FF6F /* CurrencyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListViewModel.swift; sourceTree = "<group>"; };
+		7B5EC54C251C144E0020FF6F /* CurrencyConverterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B5EC4EC251C09880020FF6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B5EC502251C098B0020FF6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B56E290251E912D002409A7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7B5EC515251C0B520020FF6F /* DismissKeyboardExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7B56E291251E9137002409A7 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				7B56E292251E9150002409A7 /* CurrencyListSortEnum.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		7B56E29C251E9BDE002409A7 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				7B56E298251E9BD7002409A7 /* CurrencyListSortProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		7B5EC4E6251C09880020FF6F = {
+			isa = PBXGroup;
+			children = (
+				7B5EC4F1251C09880020FF6F /* BTG Mobile Challange */,
+				7B5EC508251C098B0020FF6F /* BTG Mobile ChallangeTests */,
+				7B5EC4F0251C09880020FF6F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B5EC4F0251C09880020FF6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B5EC4EF251C09880020FF6F /* BTG Mobile Challange.app */,
+				7B5EC505251C098B0020FF6F /* BTG Mobile ChallangeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B5EC4F1251C09880020FF6F /* BTG Mobile Challange */ = {
+			isa = PBXGroup;
+			children = (
+				7B5EC514251C0B2E0020FF6F /* Core */,
+				7B5EC517251C0BB00020FF6F /* Model */,
+				7B5EC523251C0FE60020FF6F /* Services */,
+				7B5EC537251C127E0020FF6F /* View */,
+				7B5EC547251C13FF0020FF6F /* ViewModel */,
+				7B5EC4F2251C09880020FF6F /* AppDelegate.swift */,
+				7B5EC4F4251C09880020FF6F /* SceneDelegate.swift */,
+				7B5EC4FB251C098B0020FF6F /* Assets.xcassets */,
+				7B5EC500251C098B0020FF6F /* Info.plist */,
+			);
+			path = "BTG Mobile Challange";
+			sourceTree = "<group>";
+		};
+		7B5EC508251C098B0020FF6F /* BTG Mobile ChallangeTests */ = {
+			isa = PBXGroup;
+			children = (
+				7B5EC509251C098B0020FF6F /* BTG_Mobile_ChallangeTests.swift */,
+				7B5EC50B251C098B0020FF6F /* Info.plist */,
+			);
+			path = "BTG Mobile ChallangeTests";
+			sourceTree = "<group>";
+		};
+		7B5EC514251C0B2E0020FF6F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7B56E29C251E9BDE002409A7 /* Protocol */,
+				7B56E291251E9137002409A7 /* Enums */,
+				7B56E290251E912D002409A7 /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7B5EC517251C0BB00020FF6F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B5EC519251C0BC90020FF6F /* CurrencyConverter */,
+				7B5EC518251C0BC10020FF6F /* CurrencyList */,
+				7B5EC520251C0C260020FF6F /* Error */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7B5EC518251C0BC10020FF6F /* CurrencyList */ = {
+			isa = PBXGroup;
+			children = (
+				7B5EC51E251C0C170020FF6F /* CurrencyListModel.swift */,
+			);
+			path = CurrencyList;
+			sourceTree = "<group>";
+		};
+		7B5EC519251C0BC90020FF6F /* CurrencyConverter */ = {
+			isa = PBXGroup;
+			children = (
+				7B5EC51C251C0BF20020FF6F /* CurrencyConverterModel.swift */,
+			);
+			path = CurrencyConverter;
+			sourceTree = "<group>";
+		};
+		7B5EC520251C0C260020FF6F /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				7B5EC521251C0C420020FF6F /* ModelError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		7B5EC523251C0FE60020FF6F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7B5EC532251C12050020FF6F /* CurrencyConverter */,
+				7B5EC52D251C11160020FF6F /* CurrencyList */,
+				7B5EC524251C0FF70020FF6F /* Infrastructure */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7B5EC524251C0FF70020FF6F /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				7B5EC525251C100B0020FF6F /* ApiError.swift */,
+				7B5EC527251C101D0020FF6F /* ApiHelper.swift */,
+				7B5EC529251C102F0020FF6F /* ApiKey.swift */,
+				7B5EC52B251C10BD0020FF6F /* api_key.plist */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		7B5EC52D251C11160020FF6F /* CurrencyList */ = {
+			isa = PBXGroup;
+			children = (
+				7B5EC52E251C11310020FF6F /* CurrencyListServiceProtocol.swift */,
+				7B5EC530251C11400020FF6F /* CurrencyListServiceProvider.swift */,
+			);
+			path = CurrencyList;
+			sourceTree = "<group>";
+		};
+		7B5EC532251C12050020FF6F /* CurrencyConverter */ = {
+			isa = PBXGroup;
+			children = (
+				7B5EC533251C12280020FF6F /* CurrencyConverterServiceProtocol.swift */,
+				7B5EC535251C12350020FF6F /* CurrencyConverterServiceProvider.swift */,
+			);
+			path = CurrencyConverter;
+			sourceTree = "<group>";
+		};
+		7B5EC537251C127E0020FF6F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7B5EC544251C13B70020FF6F /* CurrencyConverter */,
+				7B5EC539251C12ED0020FF6F /* CurrencyList */,
+				7B5EC538251C12AB0020FF6F /* Storyboards */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7B5EC538251C12AB0020FF6F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7B5EC4FD251C098B0020FF6F /* LaunchScreen.storyboard */,
+				7B5EC4F8251C09880020FF6F /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7B5EC539251C12ED0020FF6F /* CurrencyList */ = {
+			isa = PBXGroup;
+			children = (
+				7B5EC53A251C13130020FF6F /* CurrencyListErrorTableViewCell.swift */,
+				7B5EC53B251C13130020FF6F /* CurrencyListErrorTableViewCell.xib */,
+				7B5EC53E251C13400020FF6F /* CurrencyListItemTableViewCell.swift */,
+				7B5EC53F251C13400020FF6F /* CurrencyListItemTableViewCell.xib */,
+				7B5EC542251C13790020FF6F /* CurrencyListViewController.swift */,
+				7B56E288251E7F5F002409A7 /* CurrencyListSortModalViewController.swift */,
+				7B56E28C251E7F90002409A7 /* CurrencyListSortModalViewController.storyboard */,
+			);
+			path = CurrencyList;
+			sourceTree = "<group>";
+		};
+		7B5EC544251C13B70020FF6F /* CurrencyConverter */ = {
+			isa = PBXGroup;
+			children = (
+				7B5EC545251C13C50020FF6F /* CurrencyConverterViewController.swift */,
+			);
+			path = CurrencyConverter;
+			sourceTree = "<group>";
+		};
+		7B5EC547251C13FF0020FF6F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7B5EC54B251C14430020FF6F /* CurrencyConverter */,
+				7B5EC548251C140A0020FF6F /* CurrencyList */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7B5EC548251C140A0020FF6F /* CurrencyList */ = {
+			isa = PBXGroup;
+			children = (
+				7B5EC549251C141E0020FF6F /* CurrencyListViewModel.swift */,
+			);
+			path = CurrencyList;
+			sourceTree = "<group>";
+		};
+		7B5EC54B251C14430020FF6F /* CurrencyConverter */ = {
+			isa = PBXGroup;
+			children = (
+				7B5EC54C251C144E0020FF6F /* CurrencyConverterViewModel.swift */,
+			);
+			path = CurrencyConverter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B5EC4EE251C09880020FF6F /* BTG Mobile Challange */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B5EC50E251C098B0020FF6F /* Build configuration list for PBXNativeTarget "BTG Mobile Challange" */;
+			buildPhases = (
+				7B5EC4EB251C09880020FF6F /* Sources */,
+				7B5EC4EC251C09880020FF6F /* Frameworks */,
+				7B5EC4ED251C09880020FF6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BTG Mobile Challange";
+			productName = "BTG Mobile Challange";
+			productReference = 7B5EC4EF251C09880020FF6F /* BTG Mobile Challange.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7B5EC504251C098B0020FF6F /* BTG Mobile ChallangeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B5EC511251C098B0020FF6F /* Build configuration list for PBXNativeTarget "BTG Mobile ChallangeTests" */;
+			buildPhases = (
+				7B5EC501251C098B0020FF6F /* Sources */,
+				7B5EC502251C098B0020FF6F /* Frameworks */,
+				7B5EC503251C098B0020FF6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B5EC507251C098B0020FF6F /* PBXTargetDependency */,
+			);
+			name = "BTG Mobile ChallangeTests";
+			productName = "BTG Mobile ChallangeTests";
+			productReference = 7B5EC505251C098B0020FF6F /* BTG Mobile ChallangeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B5EC4E7251C09880020FF6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "Uriel Barbosa Pinheiro";
+				TargetAttributes = {
+					7B5EC4EE251C09880020FF6F = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					7B5EC504251C098B0020FF6F = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 7B5EC4EE251C09880020FF6F;
+					};
+				};
+			};
+			buildConfigurationList = 7B5EC4EA251C09880020FF6F /* Build configuration list for PBXProject "BTG Mobile Challange" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B5EC4E6251C09880020FF6F;
+			productRefGroup = 7B5EC4F0251C09880020FF6F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B5EC4EE251C09880020FF6F /* BTG Mobile Challange */,
+				7B5EC504251C098B0020FF6F /* BTG Mobile ChallangeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B5EC4ED251C09880020FF6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B5EC4FF251C098B0020FF6F /* LaunchScreen.storyboard in Resources */,
+				7B5EC52C251C10BD0020FF6F /* api_key.plist in Resources */,
+				7B5EC53D251C13130020FF6F /* CurrencyListErrorTableViewCell.xib in Resources */,
+				7B5EC4FC251C098B0020FF6F /* Assets.xcassets in Resources */,
+				7B56E28D251E7F90002409A7 /* CurrencyListSortModalViewController.storyboard in Resources */,
+				7B5EC4FA251C09880020FF6F /* Main.storyboard in Resources */,
+				7B5EC541251C13400020FF6F /* CurrencyListItemTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B5EC503251C098B0020FF6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B5EC4EB251C09880020FF6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B5EC543251C13790020FF6F /* CurrencyListViewController.swift in Sources */,
+				7B5EC536251C12350020FF6F /* CurrencyConverterServiceProvider.swift in Sources */,
+				7B5EC52F251C11310020FF6F /* CurrencyListServiceProtocol.swift in Sources */,
+				7B5EC52A251C102F0020FF6F /* ApiKey.swift in Sources */,
+				7B5EC54D251C144E0020FF6F /* CurrencyConverterViewModel.swift in Sources */,
+				7B5EC51F251C0C170020FF6F /* CurrencyListModel.swift in Sources */,
+				7B5EC51D251C0BF20020FF6F /* CurrencyConverterModel.swift in Sources */,
+				7B5EC528251C101D0020FF6F /* ApiHelper.swift in Sources */,
+				7B5EC4F3251C09880020FF6F /* AppDelegate.swift in Sources */,
+				7B5EC4F5251C09880020FF6F /* SceneDelegate.swift in Sources */,
+				7B5EC53C251C13130020FF6F /* CurrencyListErrorTableViewCell.swift in Sources */,
+				7B56E289251E7F5F002409A7 /* CurrencyListSortModalViewController.swift in Sources */,
+				7B56E293251E9150002409A7 /* CurrencyListSortEnum.swift in Sources */,
+				7B5EC54A251C141E0020FF6F /* CurrencyListViewModel.swift in Sources */,
+				7B5EC526251C100B0020FF6F /* ApiError.swift in Sources */,
+				7B5EC546251C13C50020FF6F /* CurrencyConverterViewController.swift in Sources */,
+				7B5EC534251C12280020FF6F /* CurrencyConverterServiceProtocol.swift in Sources */,
+				7B56E299251E9BD7002409A7 /* CurrencyListSortProtocol.swift in Sources */,
+				7B5EC531251C11400020FF6F /* CurrencyListServiceProvider.swift in Sources */,
+				7B5EC516251C0B520020FF6F /* DismissKeyboardExtension.swift in Sources */,
+				7B5EC522251C0C420020FF6F /* ModelError.swift in Sources */,
+				7B5EC540251C13400020FF6F /* CurrencyListItemTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B5EC501251C098B0020FF6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B5EC50A251C098B0020FF6F /* BTG_Mobile_ChallangeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B5EC507251C098B0020FF6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B5EC4EE251C09880020FF6F /* BTG Mobile Challange */;
+			targetProxy = 7B5EC506251C098B0020FF6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7B5EC4F8251C09880020FF6F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B5EC4F9251C09880020FF6F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7B5EC4FD251C098B0020FF6F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B5EC4FE251C098B0020FF6F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B5EC50C251C098B0020FF6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7B5EC50D251C098B0020FF6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B5EC50F251C098B0020FF6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GAQAM8PW76;
+				INFOPLIST_FILE = "BTG Mobile Challange/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arousal.bribe.BTG-Mobile-Challange";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B5EC510251C098B0020FF6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GAQAM8PW76;
+				INFOPLIST_FILE = "BTG Mobile Challange/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arousal.bribe.BTG-Mobile-Challange";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7B5EC512251C098B0020FF6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GAQAM8PW76;
+				INFOPLIST_FILE = "BTG Mobile ChallangeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arousal.bribe.BTG-Mobile-ChallangeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BTG Mobile Challange.app/BTG Mobile Challange";
+			};
+			name = Debug;
+		};
+		7B5EC513251C098B0020FF6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GAQAM8PW76;
+				INFOPLIST_FILE = "BTG Mobile ChallangeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arousal.bribe.BTG-Mobile-ChallangeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BTG Mobile Challange.app/BTG Mobile Challange";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B5EC4EA251C09880020FF6F /* Build configuration list for PBXProject "BTG Mobile Challange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B5EC50C251C098B0020FF6F /* Debug */,
+				7B5EC50D251C098B0020FF6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B5EC50E251C098B0020FF6F /* Build configuration list for PBXNativeTarget "BTG Mobile Challange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B5EC50F251C098B0020FF6F /* Debug */,
+				7B5EC510251C098B0020FF6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B5EC511251C098B0020FF6F /* Build configuration list for PBXNativeTarget "BTG Mobile ChallangeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B5EC512251C098B0020FF6F /* Debug */,
+				7B5EC513251C098B0020FF6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B5EC4E7251C09880020FF6F /* Project object */;
+}
