@@ -8,7 +8,7 @@ O Desafio consiste no desenvolvimento de um app de conversão de moedas. O app d
 
 ## Requisitos
 
-O app deve counsumir a [Mobile Challenge API](https://btg-mobile-challenge.herokuapp.com), criada somente com o propósito desse desafio e portanto não apresenta dados reais. A API apresenta apenas as taxas de câmbio em relação a uma moeda de referência (dólar americano - `USD`), caso o usuário deseje fazer uma conversão entre quaisquer outras duas moedas, será necessário primeiro converter a moeda de origem para dólar e então de dólar para a moeda desejada.  
+O app deve counsumir a [API CurrencyLayer](https://currencylayer.com/documentation). Para utilizar a API será necessário fazer um cadastro no plano gratuito para obter uma chave de acesso. Como o plano gratuito da API apresenta apenas as taxas de câmbio em relação ao dólar americano (USD), caso o usuário deseje fazer uma conversão entre quaisquer outras duas moedas, será necessário primeiro converter a moeda de origem para dólar e então de dólar para a moeda desejada.  
 
 * Android: _Kotlin_ | iOS: _Swift_
 * O aplicativo deve ter duas telas principais:

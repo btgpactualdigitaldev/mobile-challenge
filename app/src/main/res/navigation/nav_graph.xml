@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/convertCurrenciesFragment">
+    <fragment
+        android:id="@+id/convertCurrenciesFragment"
+        android:name="com.renderson.currency_converter.ui.convert.ConvertCurrencyFragment"
+        android:label="Converter Moeda"
+        tools:layout="@layout/fragment_convert_currency">
+        <action
+            android:id="@+id/action_covertCurrency_to_conversion_result"
+            app:destination="@+id/conversionResult"/>
+    </fragment>
+    <fragment
+        android:id="@+id/coinsListFragment"
+        android:name="com.renderson.currency_converter.ui.currencyList.CurrencyListFragment"
+        android:label="Lista Moedas"
+        tools:layout="@layout/fragment_currency_list"/>
+    <dialog
+        android:id="@+id/conversionResult"
+        android:name="com.renderson.currency_converter.ui.result.ConversionResultFragment"
+        android:label="Resultado"
+        tools:layout="@layout/fragment_conversion_result">
+        <argument
+            android:name="conversionResult"
+            app:argType="com.renderson.currency_converter.models.ConversionResult"/>
+    </dialog>
+</navigation>

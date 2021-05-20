@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Currency</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="result">%1$s %2$s = %3$s %4$s em converção</string>
+    <string name="label_insert_amount">Por favor insira um valor!</string>
+    <string name="label_error_server">Error Servidor</string>
+</resources>
