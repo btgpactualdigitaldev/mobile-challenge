@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".view.currencies.activity.CurrenciesActivity"
+    android:background="@color/btg_gray_background">
+
+    <Toolbar
+        android:id="@+id/toolbar_currencies_list"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/btg_gray_background"
+
+        android:navigationIcon="@drawable/abc_vector_test"
+        android:subtitle="BTG Mobile Challenge"
+
+        android:subtitleTextColor="@color/white"
+        android:title="All Currencies"
+
+        android:titleTextColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/currencies_reciclerview"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+
+</LinearLayout>

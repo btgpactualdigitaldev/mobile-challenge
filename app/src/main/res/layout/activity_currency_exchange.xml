@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/btg_gray_background"
+    android:orientation="vertical">
+
+
+    <Toolbar
+        android:id="@+id/toolbar_exchange"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/btg_gray_background"
+
+        android:subtitle="Mobile Challenge"
+
+        android:subtitleTextColor="@color/white"
+        android:title="BTG"
+
+        android:titleTextColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_exchange"
+
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/btg_logo_card"
+
+        android:padding="4dp"
+        app:cardBackgroundColor="@color/btg_blue_card_background"
+        app:cardCornerRadius="16dp"
+
+        app:cardElevation="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+
+                android:adjustViewBounds="true"
+                android:src="@drawable/btg_logo_card"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.8"
+
+
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/exchange_title"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="8dp"
+                android:padding="4dp"
+
+                android:text="Exchange"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.05" />
+
+            <TextView
+                android:id="@+id/exchange_value"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="8dp"
+                android:text="0.00"
+                android:textColor="@color/white"
+
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.08"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:layout_constraintVertical_bias="0.5" />
+
+            <TextView
+                android:id="@+id/exchange_current_currency"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="8dp"
+                android:gravity="left"
+
+                android:text="USD"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toBottomOf="@id/exchange_value"
+                app:layout_constraintStart_toEndOf="@id/exchange_value"
+                app:layout_constraintTop_toTopOf="@id/exchange_value" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!--    Seekbar e textview não utilizados-->
+<!--    <SeekBar-->
+<!--        android:id="@+id/seekbar_amount"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:layout_marginLeft="16dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginRight="16dp"-->
+<!--        android:layout_marginBottom="4dp"-->
+<!--        android:visibility="gone" />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:layout_marginLeft="16dp"-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        android:layout_marginRight="16dp"-->
+<!--        android:layout_marginBottom="16dp"-->
+
+<!--        android:padding="8dp"-->
+
+<!--        android:text="Amount to exchange"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="16sp"-->
+<!--        android:visibility="gone" />-->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/white">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/amount_text_layout"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_margin="16dp"
+            android:hint="Amount"
+
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="@color/black"
+
+
+            app:endIconCheckable="true"
+            app:helperText="Type the amount to exchange"
+            app:helperTextTextColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.00">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/amount_value"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:inputType="numberDecimal"
+
+
+                android:maxLines="1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintVertical_bias="0.3">
+
+            <TextView
+                android:id="@+id/from_text"
+
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentTop="true"
+
+                android:layout_margin="16dp"
+                android:padding="8dp"
+
+                android:gravity="center"
+
+                android:background="@drawable/black_border_black_background_2dpcorner"
+                android:fontFamily="@font/maven_pro"
+
+                android:text="From"
+
+                android:textColor="@color/white"
+
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/from_spinner"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="16dp"
+
+                android:background="@drawable/black_border_white_background_2dpcorner"
+                android:tooltipText="Choose currency"
+
+                android:layout_toRightOf="@id/from_text"
+                android:layout_alignTop="@id/from_text"
+                android:layout_alignBottom="@id/from_text"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintVertical_bias="0.45">
+
+            <TextView
+                android:id="@+id/to_text"
+
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="16dp"
+                android:padding="8dp"
+
+                android:background="@drawable/black_border_black_background_2dpcorner"
+
+                android:gravity="center"
+
+                android:text="To"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/to_spinner"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="16dp"
+
+                android:background="@drawable/black_border_white_background_2dpcorner"
+                android:tooltipText="Choose currency"
+
+                android:layout_toRightOf="@id/to_text"
+                android:layout_alignTop="@id/to_text"
+                android:layout_alignBottom="@id/to_text"/>
+
+
+        </RelativeLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/calculate_button"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="16dp"
+
+            android:backgroundTint="@color/black"
+
+            android:fontFamily="@font/maven_pro"
+
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:text="Calculate"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintVertical_bias="0.65" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/all_currencies_button"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="16dp"
+            android:backgroundTint="@color/black"
+
+            android:fontFamily="@font/maven_pro"
+
+            android:padding="16dp"
+
+            android:text="All currencies"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="4dp"
+
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintVertical_bias="0.95" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

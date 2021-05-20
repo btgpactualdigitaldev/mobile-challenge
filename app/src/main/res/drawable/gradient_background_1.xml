@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient
+                android:angle="0"
+                android:startColor="@color/btg_blue_card_background"
+                android:endColor="@color/btg_green_logo"
+                android:type="linear"
+                />
+        </shape>
+    </item>
+
+</selector>
