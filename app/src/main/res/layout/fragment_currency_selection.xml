@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.albertomagalhaes.btgcurrencies.activity.MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_close"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="28dp"
+        android:src="@drawable/ic_baseline_clear_24"
+        android:tint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:clickable="true"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="48dp"
+        android:text="@string/currency_selection"
+        android:gravity="right"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/primary_text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_close"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="24dp"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="12dp"
+        android:src="@drawable/ic_baseline_clear_all_24"
+        android:tint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        android:clickable="true"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_sort"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingVertical="24dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="24dp"
+        android:src="@drawable/ic_sort_asc_24dps_0dpp_black"
+        app:layout_constraintStart_toEndOf="@id/iv_clear"
+        app:layout_constraintTop_toTopOf="@+id/iv_clear"
+        app:layout_constraintBottom_toBottomOf="@id/iv_clear"
+        android:clickable="true"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fragment_currency_list_til_search"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginRight="12dp"
+        app:boxStrokeColor="@color/primary"
+        app:hintTextColor="@color/primary"
+        app:layout_constraintBottom_toBottomOf="@id/iv_sort"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_sort"
+        app:layout_constraintTop_toTopOf="@id/iv_sort">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fragment_currency_list_tiet_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_baseline_search_24"
+            android:drawableTint="@color/secondary_text"
+            android:hint="@string/search"
+            android:inputType="text"
+            android:maxLength="20" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:id="@+id/fragment_currency_selection_rv"
+        android:paddingTop="12dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/iv_sort"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:itemCount="30"
+        tools:listitem="@layout/item_currency_selection"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="28dp"
+        android:src="@drawable/ic_baseline_check_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

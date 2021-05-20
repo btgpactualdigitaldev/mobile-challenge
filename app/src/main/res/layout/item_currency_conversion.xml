@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="8dp"
+    android:focusable="true"
+    android:paddingHorizontal="24dp"
+    android:clickable="true"
+    tools:context="br.com.albertomagalhaes.btgcurrencies.activity.MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/item_currency_conversion_iv_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/currency_brl"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/item_currency_conversion_tv_code"
+        style="bold"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:gravity="left"
+        tools:text="BRL"
+        android:textColor="@color/primary_text"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/item_currency_conversion_iv_flag"
+        app:layout_constraintStart_toEndOf="@+id/item_currency_conversion_iv_flag"
+        app:layout_constraintTop_toTopOf="@+id/item_currency_conversion_iv_flag" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/item_currency_conversion_tv_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingVertical="6dp"
+        tools:text="12345123456.2"
+        android:gravity="right"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_currency_conversion_tv_code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

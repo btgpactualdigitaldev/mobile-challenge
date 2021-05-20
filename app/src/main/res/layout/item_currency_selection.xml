@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingVertical="16dp"
+    android:paddingHorizontal="24dp"
+    tools:context="br.com.albertomagalhaes.btgcurrencies.activity.MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/item_currency_selection_iv_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/currency_brl"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/item_currency_selection_iv_flag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_currency_selection_iv_flag"
+        app:layout_constraintTop_toTopOf="@+id/item_currency_selection_iv_flag"
+        android:layout_marginLeft="24dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_currency_selection_tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Real Brasileiro"
+            android:textSize="18sp"
+            android:textColor="@color/primary_text"
+            app:layout_constraintBottom_toBottomOf="@+id/item_currency_selection_iv_flag"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/item_currency_selection_iv_flag"
+            app:layout_constraintTop_toTopOf="@+id/item_currency_selection_iv_flag" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_currency_selection_tv_code"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BRL"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/primary_text"
+            app:layout_constraintBottom_toBottomOf="@+id/item_currency_selection_iv_flag"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/item_currency_selection_iv_flag"
+            app:layout_constraintTop_toTopOf="@+id/item_currency_selection_iv_flag" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

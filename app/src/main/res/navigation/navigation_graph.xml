@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/currency_conversion_fragment">
+
+    <fragment
+        android:id="@+id/currency_selection_fragment"
+        android:name="br.com.albertomagalhaes.btgcurrencies.fragment.CurrencySelectionFragment"
+        android:label="Currency selection">
+
+        <action
+            android:id="@+id/to_currency_conversion_fragment"
+            app:destination="@id/currency_conversion_fragment"/>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/currency_conversion_fragment"
+        android:name="br.com.albertomagalhaes.btgcurrencies.fragment.CurrencyConversionFragment"
+        android:label="Currency conversion">
+
+        <action
+            android:id="@+id/to_currency_selection_fragment"
+            app:destination="@id/currency_selection_fragment"/>
+    </fragment>
+
+</navigation>

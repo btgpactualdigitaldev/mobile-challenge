@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">BTG Currencies</string>
+
+    <string name="welcome_title">Welcome!</string>
+    <string name="loading">Loading</string>
+    <string name="welcome_description">Through BTG Currencies you will be able to convert up to 5 currencies simultaneously.</string>
+    <string name="welcome_end_text">Please select the currencies you would like to convert.</string>
+
+    <!-- NetworkConnectionInterceptor -->
+    <string name="network_interceptor_error">Verify your network connection.</string>
+    <string name="alert">Alert</string>
+    <string name="no_internet_message">No internet connection found. Please verify and try again.</string>
+    <string name="service_unavailable_message">Service unavailable. Please try again later.</string>
+    <string name="currency_list_selected_cleared">Selection cleared.</string>
+    <string name="try_again">Try again</string>
+    <string name="exit">Exit</string>
+    <string name="ok">Ok</string>
+    <string name="use_default">Use default</string>
+    <string name="select_currencies">Select currencies</string>
+    <string name="currency_selected">Currency selected</string>
+    <string name="value">Value</string>
+    <string name="converted_currencies">Converted currencies</string>
+    <string name="edit_currencies">Edit currencies</string>
+    <string name="logo">Logo</string>
+    <string name="search">Search</string>
+    <string name="currency_selection">Currency selection</string>
+    <string name="select_two_currencies">Select at least two currencies.</string>
+    <string name="select_max_five_currencies">You can select only five currencies!</string>
+    <string name="last_currency_update">Last update at %1$s</string>
+    <string name="synchronizing_currencies">Synchronizing currencies.</string>
+</resources>

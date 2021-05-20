@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="br.com.albertomagalhaes.btgcurrencies.activity.MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_brand"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_margin="24dp"
+        android:src="@drawable/btg_currencies_brand"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/logo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/fragment_currency_conversion_tv_last_update"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="48dp"
+        tools:text="Last update at 2021/03/29 - 22:34"
+        android:textAlignment="center"
+        android:paddingVertical="6dp"
+        android:textColor="@color/primary"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_brand" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/fragment_currency_conversion_tv_currency_selected"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="48dp"
+        android:text="@string/currency_selected"
+        android:textAlignment="center"
+        android:paddingVertical="6dp"
+        android:textColor="@color/primary_text"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_currency_conversion_tv_last_update" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/fragment_currency_conversion_iv_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/currency_brl"
+        android:paddingVertical="24dp"
+        android:paddingLeft="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_currency_conversion_tv_currency_selected" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/fragment_currency_conversion_tv_code"
+        style="bold"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:gravity="left"
+        tools:text="BRL"
+        android:textColor="@color/primary_text"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_currency_conversion_iv_flag"
+        app:layout_constraintStart_toEndOf="@+id/fragment_currency_conversion_iv_flag"
+        app:layout_constraintTop_toTopOf="@+id/fragment_currency_conversion_iv_flag" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/primary"
+        app:hintTextColor="@color/primary"
+        android:paddingRight="24dp"
+        android:hint="@string/value"
+        android:id="@+id/fragment_currency_conversion_til_value"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_currency_conversion_iv_flag"
+        app:layout_constraintStart_toEndOf="@+id/fragment_currency_conversion_tv_code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fragment_currency_conversion_iv_flag">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fragment_currency_conversion_tiet_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTint="@color/secondary_text"
+            android:gravity="right"
+            android:digits="0123456789"
+            android:inputType="numberDecimal"
+            android:maxLength="15" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/fragment_currency_conversion_tv_converted_currencies"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="48dp"
+        android:paddingVertical="6dp"
+        android:text="@string/converted_currencies"
+        android:textAlignment="center"
+        android:textColor="@color/primary_text"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_currency_conversion_iv_flag" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:id="@+id/fragment_currency_conversion_rv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/fragment_currency_conversion_tv_converted_currencies"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:itemCount="4"
+        tools:listitem="@layout/item_currency_conversion"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/fragment_currency_conversion_bap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:backgroundTint="@color/white"
+            app:fabAlignmentMode="end">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/fragment_currency_conversion_iv_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                app:tint="@color/primary_text"
+                android:src="@drawable/ic_baseline_refresh_24"
+                android:focusable="true"
+                android:clickable="true"/>
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fragment_currency_conversion_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_edit_24"
+            app:layout_anchor="@id/fragment_currency_conversion_bap"
+            android:contentDescription="@string/edit_currencies"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
