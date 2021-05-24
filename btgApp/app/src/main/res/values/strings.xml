@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CurrencyApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="initials_name">Sigla</string>
+    <string name="currency_name">Nome Moeda</string>
+    <string name="search_currency">Buscar Moeda</string>
+    <string name="input_money">$ 0.00</string>
+    <string name="currency_initial">USD</string>
+    <string name="to">Para:</string>
+    <string name="by">Converter de:</string>
+    <string name="converter">Converter</string>
+    <string name="toolbar_app_title">Currency App</string>
+    <string name="empty_currency_list">Não foi possível carregar a lista de moedas!</string>
+</resources>
