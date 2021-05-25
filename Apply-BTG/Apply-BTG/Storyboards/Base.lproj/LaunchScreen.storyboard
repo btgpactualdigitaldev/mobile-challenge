@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l5z-uS-swk">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="H6j-bL-17e">
+            <objects>
+                <viewController id="l5z-uS-swk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3cs-Pf-lAk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BTG logo" translatesAutoresizingMaskIntoConstraints="NO" id="m9C-aG-aPl">
+                                <rect key="frame" x="20" y="186" width="374" height="141"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KqT-zG-dKb">
+                                <rect key="frame" x="20" y="103" width="374" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="SBQ-wM-hY7"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Processo Seletivo ">
+                                        <attributes>
+                                            <font key="NSFont" size="36" name="DraftWerk-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdM-a1-duN">
+                                <rect key="frame" x="20" y="399" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="uu3-yu-hUf"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Oportunidade: Desenvolvedor iOS">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="DraftWerk-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktc-Hr-kSD">
+                                <rect key="frame" x="20" y="469" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="PcZ-uq-BGs"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Candidato: Adriano Rodrigues">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="DraftWerk-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fb0-iZ-dle">
+                                <rect key="frame" x="20" y="807" width="374" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="926-Go-ccY"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="24 de maio de 2021">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="DraftWerk-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nDU-ZA-zF2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nDU-ZA-zF2" firstAttribute="trailing" secondItem="KqT-zG-dKb" secondAttribute="trailing" constant="20" id="3ad-KW-one"/>
+                            <constraint firstItem="Fb0-iZ-dle" firstAttribute="leading" secondItem="nDU-ZA-zF2" secondAttribute="leading" constant="20" id="4MB-as-rUA"/>
+                            <constraint firstItem="UdM-a1-duN" firstAttribute="top" secondItem="m9C-aG-aPl" secondAttribute="bottom" constant="72" id="8we-JO-qMg"/>
+                            <constraint firstItem="nDU-ZA-zF2" firstAttribute="trailing" secondItem="Fb0-iZ-dle" secondAttribute="trailing" constant="20" id="DW2-gk-bSj"/>
+                            <constraint firstItem="m9C-aG-aPl" firstAttribute="leading" secondItem="nDU-ZA-zF2" secondAttribute="leading" constant="20" id="Mtb-Wu-7Qc"/>
+                            <constraint firstItem="UdM-a1-duN" firstAttribute="leading" secondItem="nDU-ZA-zF2" secondAttribute="leading" constant="20" id="Oyd-hb-umJ"/>
+                            <constraint firstItem="nDU-ZA-zF2" firstAttribute="bottom" secondItem="Fb0-iZ-dle" secondAttribute="bottom" constant="35" id="Qsx-v3-D3i"/>
+                            <constraint firstItem="ktc-Hr-kSD" firstAttribute="leading" secondItem="nDU-ZA-zF2" secondAttribute="leading" constant="20" id="ULG-TW-K0J"/>
+                            <constraint firstItem="nDU-ZA-zF2" firstAttribute="trailing" secondItem="UdM-a1-duN" secondAttribute="trailing" constant="20" id="URg-8f-I43"/>
+                            <constraint firstItem="KqT-zG-dKb" firstAttribute="top" secondItem="nDU-ZA-zF2" secondAttribute="top" constant="59" id="iU9-NY-ah4"/>
+                            <constraint firstItem="nDU-ZA-zF2" firstAttribute="trailing" secondItem="m9C-aG-aPl" secondAttribute="trailing" constant="20" id="qMo-qG-jaK"/>
+                            <constraint firstItem="ktc-Hr-kSD" firstAttribute="top" secondItem="UdM-a1-duN" secondAttribute="bottom" constant="20" id="sJ1-cR-Vie"/>
+                            <constraint firstItem="m9C-aG-aPl" firstAttribute="top" secondItem="KqT-zG-dKb" secondAttribute="bottom" constant="8" symbolic="YES" id="t0E-fY-V9a"/>
+                            <constraint firstItem="KqT-zG-dKb" firstAttribute="leading" secondItem="nDU-ZA-zF2" secondAttribute="leading" constant="20" id="vc3-V9-wzV"/>
+                            <constraint firstItem="nDU-ZA-zF2" firstAttribute="trailing" secondItem="ktc-Hr-kSD" secondAttribute="trailing" constant="20" id="x6Y-ms-cpy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vYY-yB-noS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="618.84057971014499" y="-141.29464285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BTG logo" width="357" height="141"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
