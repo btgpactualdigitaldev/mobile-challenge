@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- App -->
+
+    <style name="Widget.Theme.BTGChallenge.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <!-- Texts -->
+
+    <style name="DefaultTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="BoldTextViewStyle" parent="DefaultTextViewStyle">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextViewBigStyle" parent="android:Widget.TextView">
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="TextViewTitleStyle" parent="android:Widget.TextView">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>

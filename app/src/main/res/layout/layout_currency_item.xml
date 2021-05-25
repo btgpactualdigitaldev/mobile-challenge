@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="itemView"
+            type="com.vald3nir.btg_challenge.items_view.CurrencyItemView" />
+
+        <variable
+            name="listener"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:onClick="@{listener}">
+
+        <ImageView
+            android:id="@+id/imvCurrencyFlag"
+            loadImage="@{itemView.url}"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/flag_image_view" />
+
+        <TextView
+            android:id="@+id/txvCurrencyCode"
+            style="@style/BoldTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:singleLine="true"
+            android:text="@{itemView.code}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imvCurrencyFlag"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txvCurrencyDescription"
+            style="@style/DefaultTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:singleLine="true"
+            android:text="@{itemView.description}"
+            app:layout_constraintBottom_toBottomOf="@id/txvCurrencyCode"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txvCurrencyCode"
+            app:layout_constraintTop_toTopOf="@+id/txvCurrencyCode" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

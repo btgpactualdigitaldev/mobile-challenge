@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.vald3nir.btg_challenge.ui.home.HomeViewModel" />
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        tools:context=".ui.home.HomeActivity">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilInputValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:endIconDrawable="@drawable/ic_close"
+            app:endIconMode="custom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/input_value"
+                android:inputType="numberDecimal"
+                android:maxLength="20" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/txvInputCurrency"
+            style="@style/TextViewTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="@string/input_currency"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tilInputValue" />
+
+        <LinearLayout
+            android:id="@+id/llInputCurrency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txvInputCurrency">
+
+            <ImageView
+                loadImage="@{model.inputCurrencyItemView.url}"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:onClick="@{model.selectInputCurrencyListener}" />
+
+            <TextView
+                style="@style/DefaultTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:text="@{model.inputCurrencyItemView.description}" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imvChangeCurrencies"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/change_currencies"
+            android:padding="12dp"
+            android:rotation="90"
+            android:src="@drawable/ic_replace"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llInputCurrency" />
+
+        <TextView
+            android:id="@+id/txvOutputCurrency"
+            style="@style/TextViewTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/output_currency"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imvChangeCurrencies" />
+
+        <LinearLayout
+            android:id="@+id/llOutputCurrency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txvOutputCurrency">
+
+            <ImageView
+                loadImage="@{model.outputCurrencyItemView.url}"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:onClick="@{model.selectOutputCurrencyListener}" />
+
+            <TextView
+                style="@style/DefaultTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:text="@{model.outputCurrencyItemView.description}" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txvLabelValueConverted"
+            style="@style/TextViewTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/value_converted"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llOutputCurrency" />
+
+        <TextView
+            android:id="@+id/txvValueConverted"
+            style="@style/TextViewBigStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            app:drawableStartCompat="@drawable/ic_money"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txvLabelValueConverted" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
