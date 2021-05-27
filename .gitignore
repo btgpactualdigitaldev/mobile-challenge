@@ -1,0 +1,32 @@
+## Build generated
+build/
+DerivedData/
+.DS_Store
+Pods/
+Podfile.lock
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/readme.md
