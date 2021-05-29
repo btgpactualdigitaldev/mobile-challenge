@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='mobile-challengeUITests.xctest' tests='7' failures='0'>
+  <testsuite name='mobile_challengeTests.QuotationViewControllerTests' tests='1' failures='0'>
+    <testcase classname='mobile_challengeTests.QuotationViewControllerTests' name='test_convertText' time='0.003'/>
+  </testsuite>
+  <testsuite name='mobile_challengeTests.QuotationViewModelTests' tests='2' failures='0'>
+    <testcase classname='mobile_challengeTests.QuotationViewModelTests' name='test_convert' time='0.001'/>
+    <testcase classname='mobile_challengeTests.QuotationViewModelTests' name='test_groupCurrencyQuotationInfo' time='0.003'/>
+  </testsuite>
+  <testsuite name='mobile_challengeTests.mobile_challengeTests' tests='2' failures='0'>
+    <testcase classname='mobile_challengeTests.mobile_challengeTests' name='testExample' time='0.001'/>
+    <testcase classname='mobile_challengeTests.mobile_challengeTests' name='testPerformanceExample' time='0.351'/>
+  </testsuite>
+  <testsuite name='mobile_challengeUITests.mobile_challengeUITests' tests='2' failures='0'>
+    <testcase classname='mobile_challengeUITests.mobile_challengeUITests' name='testExample' time='1.926'/>
+    <testcase classname='mobile_challengeUITests.mobile_challengeUITests' name='testLaunchPerformance' time='15.566'/>
+  </testsuite>
+</testsuites>
