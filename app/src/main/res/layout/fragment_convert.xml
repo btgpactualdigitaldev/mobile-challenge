@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.convert.ConvertFragment">
+
+    <TextView
+        android:id="@+id/tvMainCurrency"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:gravity="center_horizontal"
+        android:includeFontPadding="false"
+        android:text="@string/select_main_currency"
+        android:textAlignment="center"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/guideline1"
+        />
+
+    <TextView
+        android:id="@+id/tvDesireCurrency"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:gravity="center_horizontal"
+        android:includeFontPadding="false"
+        android:text="@string/select_final_currency"
+        android:textAlignment="center"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/guideline1"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/mainCurrency"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_150sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/guideline1"
+        />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/currencyToBeConverted"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_150sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        app:layout_constraintLeft_toRightOf="@id/guideline1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/valueToBeConverted"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/convertedValue"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:hint="@string/insert_amount_to_be_converted"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintTop_toBottomOf="@id/mainCurrency"
+        app:layout_constraintLeft_toLeftOf="@id/mainCurrency"
+        app:layout_constraintRight_toLeftOf="@id/guideline1"
+        />
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:background="@drawable/button_bg"
+        android:includeFontPadding="false"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/convert"
+        app:layout_constraintBottom_toBottomOf="@id/valueToBeConverted"
+        app:layout_constraintStart_toEndOf="@id/valueToBeConverted"
+        app:layout_constraintTop_toTopOf="@id/valueToBeConverted" />
+
+    <TextView
+        android:id="@+id/convertedValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:includeFontPadding="false"
+        android:text="@string/converted_value"
+        android:textAlignment="center"
+        android:textSize="@dimen/_20ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/valueToBeConverted" />
+
+    <Button
+        android:id="@+id/btnShowList"
+        android:layout_width="@dimen/_189sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_15sdp"
+        android:background="@drawable/button_bg"
+        android:text="@string/see_currency_list"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/convertedValue" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

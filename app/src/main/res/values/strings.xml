@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">DesafioBtg</string>
+
+    <string name="select_main_currency">Select Main Currency</string>
+    <string name="select_final_currency">Select final Currency</string>
+    <string name="insert_amount_to_be_converted">Insert value to be converted</string>
+    <string name="convert">Convert</string>
+    <string name="converted_value">Converted value</string>
+    <string name="see_currency_list">See Currencies List</string>
+    <string name="currencies_list">Currencies List</string>
+    <string name="code">code:</string>
+    <string name="brl">BRL</string>
+    <string name="brazilian_real">Brazilian Real</string>
+</resources>
