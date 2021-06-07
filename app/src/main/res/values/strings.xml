@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Exchange</string>
+    <string name="conversion">Realizar Conversão</string>
+    <string name="coin">Listar Moedas</string>
+    <string name="welcome">Olá, seja bem vindo!</string>
+    <string name="abbreviation">BRL</string>
+    <string name="complete">Brazilian Real</string>
+    <string name="initials">Sigla</string>
+    <string name="description">Descrição</string>
+    <string name="search">Pesquisar por sigla ou descrição...</string>
+    <string name="origin">Selecione a moeda de origem:</string>
+    <string name="destiny">Selecione a moeda de destino:</string>
+    <string name="result">Resultado</string>
+    <string name="options">Escolha uma moeda</string>
+    <string name="value">$</string>
+    <string name="title_dialog">Ops... Tivemos um problema</string>
+    <string name="message_dialog">Não foi possível obter dados do servidor</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    <string name="alert">Aviso</string>
+    <string name="exit">Você deseja sair dessa aplicação?</string>
+</resources>

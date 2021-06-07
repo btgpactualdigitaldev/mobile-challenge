@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--> Text <-->
+    <dimen name="text_size_answer">70sp</dimen>
+    <dimen name="text_size_spinner_item">18sp</dimen>
+    <dimen name="text_value">40sp</dimen>
+    <dimen name="text_input_value">30sp</dimen>
+    <dimen name="text_result_value">18sp</dimen>
+    <dimen name="text_subtitle">14sp</dimen>
+
+    <!--> Margin <-->
+    <dimen name="margin_small">10dp</dimen>
+    <dimen name="margin_medium">32dp</dimen>
+    <dimen name="margin_large">58dp</dimen>
+
+    <!--> Width <-->
+    <dimen name="width_medium">105dp</dimen>
+    <dimen name="width_large">200dp</dimen>
+    <dimen name="width_input_value_coin">240dp</dimen>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.CoinFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_half_screen_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.33" />
+
+        <TextView
+            android:id="@+id/textview_abbreviation"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="#555"
+            android:drawableEnd="@drawable/ic_sort"
+            android:gravity="center_vertical|center"
+            android:paddingEnd="@dimen/margin_small"
+            android:text="@string/initials"
+            android:textAllCaps="true"
+            android:textColor="#FFF"
+            app:layout_constraintEnd_toStartOf="@id/guideline_half_screen_vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textview_description"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@drawable/border_left_white"
+            android:drawableEnd="@drawable/ic_sort"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/margin_medium"
+            android:paddingEnd="@dimen/margin_small"
+            android:text="@string/description"
+            android:textAllCaps="true"
+            android:textColor="#FFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline_half_screen_vertical"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_coin"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/edittext_search"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_description"
+            tools:itemCount="20"
+            tools:listitem="@layout/recycler_item" />
+
+        <EditText
+            android:id="@+id/edittext_search"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:hint="@string/search"
+            android:inputType="text"
+            android:maxLines="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar_coin"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_vertical|center"
+        android:visibility="gone" />
+
+</FrameLayout>
