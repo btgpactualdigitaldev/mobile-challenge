@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragment.CConverterFragment">
+
+    <TextView
+        android:id="@+id/fromTV"
+        style="@style/cConvertFragTV"
+        android:text="@string/fromTV"
+        app:layout_constraintEnd_toEndOf="@id/fromBt"
+        app:layout_constraintStart_toStartOf="@id/fromBt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/fromBt"
+        style="@style/cConvertFragBt.from"
+        app:layout_constraintEnd_toStartOf="@id/toBt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fromTV"
+        tools:text="@string/idTV" />
+
+    <TextView
+        android:id="@+id/toTV"
+        style="@style/cConvertFragTV"
+        android:layout_marginTop="@dimen/c_convert_fragment_margin"
+        android:text="@string/toTV"
+        app:layout_constraintEnd_toEndOf="@id/toBt"
+        app:layout_constraintStart_toStartOf="@id/toBt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/toBt"
+        style="@style/cConvertFragBt.to"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fromBt"
+        app:layout_constraintTop_toBottomOf="@id/toTV"
+        tools:text="@string/toBt" />
+
+    <EditText
+        android:id="@+id/valueET"
+        style="@style/cConvertFragET"
+        android:hint="@string/labelTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toBt"
+        app:layout_constraintBottom_toTopOf="@id/resultLTV"
+        />
+
+    <TextView
+        android:id="@+id/resultLTV"
+        style="@style/cConvertFragTV.noMargin"
+        android:text="@string/resultLTV"
+        app:layout_constraintEnd_toStartOf="@+id/resultTV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/valueET"
+        app:layout_constraintBottom_toBottomOf="@id/loading"/>
+
+    <TextView
+        android:id="@+id/resultTV"
+        style="@style/cConvertFragTV.noMargin"
+        android:text="@string/resultTV"
+        android:textAlignment="gravity"
+        android:textSize="50sp"
+        app:layout_constraintStart_toEndOf="@id/resultLTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/valueET"
+        app:layout_constraintBottom_toBottomOf="@id/loading"
+        />
+
+
+    <include
+        android:id="@+id/loading"
+        layout="@layout/state_view"
+        android:visibility="invisible" />
+
+
+
+    <include
+        android:id="@+id/error"
+        layout="@layout/error_view"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"/>
+
+    <!--<include
+        android:id="@+id/empty"
+        layout="@layout/empty_view"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

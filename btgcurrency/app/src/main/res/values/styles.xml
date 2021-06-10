@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="cConvertFragBt" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="cConvertFragBt.from" parent="cConvertFragBt">
+        <item name="android:layout_marginStart">6dp</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="cConvertFragBt.to" parent="cConvertFragBt.from">
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:layout_marginEnd">6dp</item>
+    </style>
+
+    <style name="cConvertFragTV" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/c_convert_fragment_margin</item>
+    </style>
+
+    <style name="cConvertFragTV.noMargin" parent="cConvertFragTV">
+        <item name="android:layout_margin">0dp</item>
+    </style>
+
+    <style name="cConvertFragET" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginStart">30dp</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginEnd">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+
+    </style>
+
+    <style name="errorTV" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

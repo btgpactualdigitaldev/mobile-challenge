@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="c_list_vh_between_size">5dp</dimen>
+    <dimen name="c_list_vh_top_size_first">18dp</dimen>
+    <dimen name="c_list_vh_bottom_size_last">18dp</dimen>
+    <dimen name="c_list_vh_ste_margin">6dp</dimen>
+    <dimen name="c_convert_fragment_margin">18dp</dimen>
+</resources>
