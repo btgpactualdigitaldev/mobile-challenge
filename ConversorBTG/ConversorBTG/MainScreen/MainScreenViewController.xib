@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainScreenViewController" customModule="ConversorBTG" customModuleProvider="target">
+            <connections>
+                <outlet property="currencyButton1" destination="XW9-fD-LfY" id="izr-4G-BOu"/>
+                <outlet property="currencyButton2" destination="qay-6J-zn6" id="OIv-jl-I22"/>
+                <outlet property="finalValueLabel" destination="JOC-e6-BuQ" id="f7h-ex-Apl"/>
+                <outlet property="finalValueView" destination="tML-VX-9h8" id="NcW-of-gEs"/>
+                <outlet property="makeAConversionButton" destination="5aq-NT-lhf" id="Lc7-dB-GxJ"/>
+                <outlet property="valueTextField" destination="PAo-Mc-3bl" id="AHy-hB-5AI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aq-NT-lhf">
+                    <rect key="frame" x="157" y="702.5" width="100" height="50"/>
+                    <color key="backgroundColor" name="main"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Nfc-ir-ESr"/>
+                        <constraint firstAttribute="height" constant="50" id="aup-cZ-z9V"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="repeat" catalog="system">
+                        <color key="titleColor" red="0.38765498999999998" green="0.49538147449999997" blue="0.55973327159999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                            <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                        </preferredSymbolConfiguration>
+                    </state>
+                    <connections>
+                        <action selector="convert:" destination="-1" eventType="touchUpInside" id="QnX-qc-xSE"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="money" translatesAutoresizingMaskIntoConstraints="NO" id="f5L-ug-078">
+                    <rect key="frame" x="10" y="330.5" width="394" height="175"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="175" id="9Fn-Hx-zll"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XW9-fD-LfY">
+                    <rect key="frame" x="30" y="248.5" width="354" height="42"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                    <state key="normal" title="Select first currency">
+                        <color key="titleColor" name="main"/>
+                    </state>
+                    <connections>
+                        <action selector="chooseCurrency1:" destination="-1" eventType="touchUpInside" id="hDc-xr-m5k"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qay-6J-zn6">
+                    <rect key="frame" x="30" y="545.5" width="354" height="42"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                    <state key="normal" title="Select second currency">
+                        <color key="titleColor" name="second"/>
+                    </state>
+                    <connections>
+                        <action selector="chooseCurrency2:" destination="-1" eventType="touchUpInside" id="023-fM-BLS"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the amount to be converted" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PAo-Mc-3bl">
+                    <rect key="frame" x="30" y="184" width="354" height="39.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="go"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tML-VX-9h8">
+                    <rect key="frame" x="30" y="612.5" width="354" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="RJr-DC-0YC"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOC-e6-BuQ">
+                    <rect key="frame" x="30" y="612.5" width="354" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="XW9-fD-LfY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="4W2-s0-bIA"/>
+                <constraint firstItem="f5L-ug-078" firstAttribute="top" secondItem="XW9-fD-LfY" secondAttribute="bottom" constant="40" id="8kD-Hq-Dhn"/>
+                <constraint firstItem="JOC-e6-BuQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="9bC-xa-K4D"/>
+                <constraint firstItem="5aq-NT-lhf" firstAttribute="top" secondItem="JOC-e6-BuQ" secondAttribute="bottom" constant="40" id="AJJ-OM-Ux5"/>
+                <constraint firstItem="qay-6J-zn6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="DU1-yp-5a4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JOC-e6-BuQ" secondAttribute="trailing" constant="30" id="HyP-gx-LGp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="f5L-ug-078" secondAttribute="trailing" constant="10" id="L1c-s0-Gp0"/>
+                <constraint firstItem="tML-VX-9h8" firstAttribute="leading" secondItem="JOC-e6-BuQ" secondAttribute="leading" id="OVk-gf-u3F"/>
+                <constraint firstItem="f5L-ug-078" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-30" id="PWb-d7-L1D"/>
+                <constraint firstItem="tML-VX-9h8" firstAttribute="top" secondItem="JOC-e6-BuQ" secondAttribute="top" id="Qm2-xc-2Qu"/>
+                <constraint firstItem="tML-VX-9h8" firstAttribute="bottom" secondItem="JOC-e6-BuQ" secondAttribute="bottom" id="T0p-Rg-nHU"/>
+                <constraint firstItem="tML-VX-9h8" firstAttribute="trailing" secondItem="JOC-e6-BuQ" secondAttribute="trailing" id="T4Q-1X-FsG"/>
+                <constraint firstItem="PAo-Mc-3bl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Tq5-Gj-Tu6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PAo-Mc-3bl" secondAttribute="trailing" constant="30" id="XfJ-I5-Wnf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XW9-fD-LfY" secondAttribute="trailing" constant="30" id="YOp-Rw-sdw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qay-6J-zn6" secondAttribute="trailing" constant="30" id="YPL-JG-rfj"/>
+                <constraint firstItem="5aq-NT-lhf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="c6c-zQ-pII"/>
+                <constraint firstItem="qay-6J-zn6" firstAttribute="top" secondItem="f5L-ug-078" secondAttribute="bottom" constant="40" id="j4d-8F-LzY"/>
+                <constraint firstItem="f5L-ug-078" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="lMl-by-W7J"/>
+                <constraint firstItem="XW9-fD-LfY" firstAttribute="top" secondItem="PAo-Mc-3bl" secondAttribute="bottom" constant="25" id="mGo-Sp-FGk"/>
+                <constraint firstItem="JOC-e6-BuQ" firstAttribute="top" secondItem="qay-6J-zn6" secondAttribute="bottom" constant="25" id="syx-s2-WkG"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="115.84821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="money" width="512" height="512"/>
+        <image name="repeat" catalog="system" width="128" height="99"/>
+        <namedColor name="main">
+            <color red="0.18609339" green="0.78672575950000001" blue="0.32485666870000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="second">
+            <color red="0.98588067290000003" green="0.61638361220000004" blue="0.49501556159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
