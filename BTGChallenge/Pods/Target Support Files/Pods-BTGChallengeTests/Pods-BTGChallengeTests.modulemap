@@ -1,0 +1,6 @@
+module Pods_BTGChallengeTests {
+  umbrella header "Pods-BTGChallengeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

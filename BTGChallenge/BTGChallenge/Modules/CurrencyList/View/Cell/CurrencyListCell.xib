@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIText-Bold.ttf">
+            <string>SFUIText-Bold</string>
+        </array>
+        <array key="SFUIText-Light.ttf">
+            <string>SFUIText-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="CurrencyListCell" id="mgr-u2-jje" customClass="CurrencyListCell" customModule="BTGChallenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mgr-u2-jje" id="IM1-WI-2SD">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="w33-lE-6j2">
+                        <rect key="frame" x="16" y="8" width="382" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ll-M5-I4Q">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="UAI-Sw-Mqf"/>
+                                    <constraint firstAttribute="width" constant="50" id="jL8-gb-gsr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIText-Bold" family="SF UI Text" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dN-0S-X4H">
+                                <rect key="frame" x="66" y="0.0" width="316" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="NZi-ed-tyf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="w33-lE-6j2" firstAttribute="top" secondItem="IM1-WI-2SD" secondAttribute="top" constant="8" id="Aoe-kP-nSt"/>
+                    <constraint firstItem="w33-lE-6j2" firstAttribute="leading" secondItem="IM1-WI-2SD" secondAttribute="leading" constant="16" id="Ufy-Et-4tv"/>
+                    <constraint firstAttribute="bottom" secondItem="w33-lE-6j2" secondAttribute="bottom" constant="8" id="gbz-iV-FPN"/>
+                    <constraint firstAttribute="trailing" secondItem="w33-lE-6j2" secondAttribute="trailing" constant="16" id="lAK-Hf-1YO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="currencyCodeLbl" destination="8Ll-M5-I4Q" id="tuK-r2-XWz"/>
+                <outlet property="currencyNameLbl" destination="7dN-0S-X4H" id="kY5-Ed-sd9"/>
+            </connections>
+            <point key="canvasLocation" x="11" y="-175"/>
+        </tableViewCell>
+    </objects>
+</document>

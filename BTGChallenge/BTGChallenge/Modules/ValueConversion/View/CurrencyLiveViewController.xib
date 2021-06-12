@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIText-Light.ttf">
+            <string>SFUIText-Light</string>
+        </array>
+        <array key="SFUIText-Medium.ttf">
+            <string>SFUIText-Medium</string>
+        </array>
+        <array key="SFUIText-Semibold.ttf">
+            <string>SFUIText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CurrencyLiveViewController">
+            <connections>
+                <outlet property="buttonConvert" destination="wPh-vn-GIx" id="SiN-0u-Eba"/>
+                <outlet property="buttonFromCurrency" destination="6dH-rY-8fY" id="KZJ-qp-Xqq"/>
+                <outlet property="buttonToCurrency" destination="fHJ-RZ-dJ0" id="5RM-0F-UtX"/>
+                <outlet property="currencyTextField" destination="jQf-Rd-aRj" id="JyZ-Ex-GHG"/>
+                <outlet property="toCurrencyLbl" destination="ef7-o8-qru" id="C6Q-Up-TGN"/>
+                <outlet property="view" destination="iN0-l3-epB" id="O3w-UQ-PeE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="oe3-Zk-uXM">
+                    <rect key="frame" x="16" y="84" width="382" height="154"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="XEW-p4-OV5">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="60"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TXz-sm-o2E">
+                                    <rect key="frame" x="0.0" y="15.5" width="310" height="29"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jQf-Rd-aRj">
+                                            <rect key="frame" x="0.0" y="0.0" width="310" height="28"/>
+                                            <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                            <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="22"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                            <connections>
+                                                <action selector="currencyText:" destination="-1" eventType="editingChanged" id="NrK-Ue-oxu"/>
+                                            </connections>
+                                        </textField>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3dh-X7-25r">
+                                            <rect key="frame" x="0.0" y="28" width="310" height="1"/>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="gYm-VS-tud"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dH-rY-8fY" customClass="CustomButton" customModule="BTGChallenge" customModuleProvider="target">
+                                    <rect key="frame" x="322" y="0.0" width="60" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="d51-Df-nf4"/>
+                                        <constraint firstAttribute="width" constant="60" id="kHt-1p-o3m"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="22"/>
+                                    <state key="normal" title="EUR"/>
+                                    <connections>
+                                        <action selector="openCurrencyListToBeConverted:" destination="-1" eventType="touchUpInside" id="DEd-12-WF5"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="VFf-uK-Q3S">
+                            <rect key="frame" x="0.0" y="94" width="382" height="60"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,13" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ef7-o8-qru">
+                                    <rect key="frame" x="0.0" y="17" width="310" height="26.5"/>
+                                    <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="22"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHJ-RZ-dJ0" customClass="CustomButton" customModule="BTGChallenge" customModuleProvider="target">
+                                    <rect key="frame" x="322" y="0.0" width="60" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="GhV-Xv-mgG"/>
+                                        <constraint firstAttribute="width" constant="60" id="XeK-wl-lgP"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="22"/>
+                                    <state key="normal" title="USD"/>
+                                    <connections>
+                                        <action selector="openCurrencyListToConvert:" destination="-1" eventType="touchUpInside" id="jex-T8-PGu"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPh-vn-GIx" customClass="CustomButton" customModule="BTGChallenge" customModuleProvider="target">
+                    <rect key="frame" x="142" y="300" width="130" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="130" id="A8A-2L-Bhb"/>
+                        <constraint firstAttribute="height" constant="36" id="VVh-Mg-2sL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIText-Medium" family="SF UI Text" pointSize="22"/>
+                    <state key="normal" title="Converter"/>
+                    <connections>
+                        <action selector="convertAction:" destination="-1" eventType="touchUpInside" id="Vqg-sh-W0q"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="oe3-Zk-uXM" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="40" id="BJn-oX-b6D"/>
+                <constraint firstItem="wPh-vn-GIx" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="GQD-v2-dTD"/>
+                <constraint firstItem="oe3-Zk-uXM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="IGL-Ga-h4H"/>
+                <constraint firstItem="wPh-vn-GIx" firstAttribute="top" secondItem="ef7-o8-qru" secondAttribute="bottom" constant="78.5" id="esw-Ol-8PU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="oe3-Zk-uXM" secondAttribute="trailing" constant="16" id="fbl-rB-PuI"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="125"/>
+        </view>
+    </objects>
+</document>

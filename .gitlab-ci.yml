@@ -1,0 +1,10 @@
+stages:
+    - build
+build_project:
+    stage: build
+    script:
+        - xcodebuild clean -project CI-Demo-iOS/CI-Demo-iOS.xcodeproj -scheme CI-Demo-iOS
+        - xcodebuild test -project CI-Demo-iOS/CI-Demo-iOS.xcodeproj -scheme CI-Demo-iOS -destination 'platform=iOS Simulator,name=iPhone XR,OS=12.0'
+    tags:
+        - ios_12-1
+        - xcode_10-2

@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-BTGChallenge/Pods-BTGChallenge-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire-framework/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Moya-framework/Moya.framework
+${BUILT_PRODUCTS_DIR}/Result-framework/Result.framework
