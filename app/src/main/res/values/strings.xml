@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">coin converter</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="selecione_sua_cidade">Selecione sua cidade</string>
+    <string name="valor_a_ser_convertido">Valor a ser Convertido</string>
+    <string name="converter">Converter</string>
+    <string name="resultado">Resultado</string>
+    <string name="value_to_convert_empty">É necessário digitar um valor</string>
+</resources>
