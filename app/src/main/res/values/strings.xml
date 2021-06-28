@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">BTGCambio</string>
+    <string name="currency_item_name">(%1$s) - %2$s</string>
+    <string name="pick_currency">Selecione a moeda desejada</string>
+    <string name="from_currency_button_label">Converter de %1$s - (%2$s)</string>
+    <string name="to_currency_button_label">Para %1$s - (%2$s)</string>
+    <string name="empty_currencyTO_button_label">Escolha para qual moeda será convertido o valor</string>
+    <string name="empty_currencyFROM_button_label">Escolha a moeda de origem</string>
+    <string name="amout_to_convert">Digite o valor a ser convertido</string>
+    <string name="convert_currency_label_button">Converter</string>
+    <string name="order_by_name">Ordernar por Nome</string>
+    <string name="order_by_code">Ordenar por código</string>
+    <string name="search">Buscar</string>
+    <string name="menu_refresh">Atualizar</string>
+
+    <string name="no_connectivity_exception">Sem rede disponível, por favor, verifique seu WiFi ou conexão de dados</string>
+    <string name="no_internet_exception">Sem Internet disponível, verifique seu WIFi ou dados conectado</string>
+    <string name="no_data_available">Não foi possível carregar os dados</string>
+</resources>
