@@ -1,3 +1,25 @@
+# Currency Buddy
+
+Como resultado do desafio, criei o Currency Buddy, um app que faz a conversão de moedas utilizando a [API CurrencyLayer](https://currencylayer.com/documentation). Para a resolução utilizei a arquitetura MVC com uma camada separada de Networking, já que o app posui somente 2 telas com 2 chamadas distintas do mesmo serviço. Utilizei a lib externa Moya, para organizar melhor as chamadas da API extrna.
+
+## Abrindo o App
+Para rodar o app no simulador do XCode ou no seu dispositivo iOS, basta clonar o progeto usando `git clone` e executar o comando `pod install` para instalar as dependências.
+
+<img src="./Screenshots/Screenshot 1.png" width="300" />
+<img src="./Screenshots/Screenshot 2.png" width="300" />
+
+## Funções Pricipais
+- Conversão entre duas moedas
+- Listagem de moedas (em tela modal)
+
+## Funções Secundarias
+- Busca na lista de moedas
+- Tratamento de erros de networking e formatação
+- Persistência nas moedas selecionadas (com user defaults)
+## Observações
+Fiz também um ícone e trabalhei em cima do design. Para exemplos de projetos meus utilizando MVVM, SwiftUI e Objective-C, você pode acessar [meu perfil do github](https://github.com/rodrigowoulddo).
+
+_____
 # Desafio BTG
 
 Seja bem-vindo! Este é o seu primeiro passo para fazer parte do time de desenvolvimento do maior banco de investimentos da América Latina.

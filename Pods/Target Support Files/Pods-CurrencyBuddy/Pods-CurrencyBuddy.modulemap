@@ -1,0 +1,6 @@
+framework module Pods_CurrencyBuddy {
+  umbrella header "Pods-CurrencyBuddy-umbrella.h"
+
+  export *
+  module * { export * }
+}
