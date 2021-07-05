@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_converter"
+        android:icon="@drawable/ic_converter"
+        android:title="@string/title_converter" />
+
+
+    <item
+        android:id="@+id/navigation_currency_list"
+        android:icon="@drawable/ic_currency_list"
+        android:title="@string/title_currency_list" />
+
+</menu>

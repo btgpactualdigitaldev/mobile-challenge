@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CurrencyConverter</string>
+    <string name="title_converter">Conversor</string>
+    <string name="title_currency_list">Cotações</string>
+
+    <string name="number">0,00</string>
+    <string name="convert">Converter</string>
+    <string name="search">Buscar</string>
+    <string name="convert_from">Converter de</string>
+    <string name="convert_to">Para</string>
+    <string name="result">Resultado da conversão</string>
+    <string name="reload">Recarregar</string>
+
+    <string name="edt_error">Campo não pode estar vazio ou zerado</string>
+    <string name="spinner_error">As moedas para conversão não podem ser iguais!</string>
+    <string name="empty_list">Lista de moedas não carregadas</string>
+    <string name="empty_search">Não há resultados para a pesquisa</string>
+</resources>
