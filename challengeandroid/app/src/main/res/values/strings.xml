@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">challengeandroid</string>
+    <string name="home_label_value">Informe o valor em dolar para conversão</string>
+    <string name="home_hint_value">$</string>
+    <string name="item_coin_btn_select">Selecionar</string>
+
+    <string name="list_hint_source_coin">Moeda de origem</string>
+    <string name="list_hint_destiny_coin">Moeda de destino</string>
+</resources>
