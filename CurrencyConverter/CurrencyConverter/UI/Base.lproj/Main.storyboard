@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FgJ-w2-eBu">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Currency Converter-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CurrencyConversionViewController" customModule="CurrencyConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="US$0,00" borderStyle="roundedRect" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="sL4-mO-4Tk">
+                                <rect key="frame" x="20" y="139" width="280" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="MSi-Bj-2TZ"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcP-a4-yJa">
+                                <rect key="frame" x="20" y="104" width="280" height="30"/>
+                                <state key="normal" title="United States Dolar (USD)"/>
+                                <connections>
+                                    <action selector="showSupportedCurrencies:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fw7-B6-82h"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" tag="1" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="R$0,00" borderStyle="roundedRect" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="TE0-65-TJc">
+                                <rect key="frame" x="20" y="290" width="280" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            </textField>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sC-Ql-h4X">
+                                <rect key="frame" x="20" y="255" width="280" height="30"/>
+                                <state key="normal" title="Brazilian Real (BRL)"/>
+                                <connections>
+                                    <action selector="showSupportedCurrencies:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6bt-ZE-sNM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzz-Cu-vOO">
+                                <rect key="frame" x="20" y="195" width="280" height="50"/>
+                                <state key="normal" image="trade_currency"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="TE0-65-TJc" firstAttribute="trailing" secondItem="7sC-Ql-h4X" secondAttribute="trailing" id="4Nu-nv-3WR"/>
+                            <constraint firstItem="TE0-65-TJc" firstAttribute="leading" secondItem="7sC-Ql-h4X" secondAttribute="leading" id="89O-kT-Vqa"/>
+                            <constraint firstItem="7sC-Ql-h4X" firstAttribute="top" secondItem="dzz-Cu-vOO" secondAttribute="bottom" constant="10" id="H1U-6y-s1X"/>
+                            <constraint firstItem="dzz-Cu-vOO" firstAttribute="top" secondItem="sL4-mO-4Tk" secondAttribute="bottom" constant="10" id="IWT-bM-Y9L"/>
+                            <constraint firstItem="7sC-Ql-h4X" firstAttribute="leading" secondItem="dzz-Cu-vOO" secondAttribute="leading" id="McV-Ux-WpR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sL4-mO-4Tk" secondAttribute="trailing" constant="20" id="Nvm-AI-oTO"/>
+                            <constraint firstItem="7sC-Ql-h4X" firstAttribute="trailing" secondItem="dzz-Cu-vOO" secondAttribute="trailing" id="Pfl-VY-eDA"/>
+                            <constraint firstItem="sL4-mO-4Tk" firstAttribute="top" secondItem="wcP-a4-yJa" secondAttribute="bottom" constant="5" id="R1N-Ot-Vse"/>
+                            <constraint firstItem="TE0-65-TJc" firstAttribute="top" secondItem="7sC-Ql-h4X" secondAttribute="bottom" constant="5" id="VEU-u8-Rjb"/>
+                            <constraint firstItem="sL4-mO-4Tk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZHG-3b-W5O"/>
+                            <constraint firstItem="dzz-Cu-vOO" firstAttribute="trailing" secondItem="sL4-mO-4Tk" secondAttribute="trailing" id="ZWZ-je-rYj"/>
+                            <constraint firstItem="wcP-a4-yJa" firstAttribute="leading" secondItem="sL4-mO-4Tk" secondAttribute="leading" id="dIN-6C-F2R"/>
+                            <constraint firstItem="wcP-a4-yJa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="glL-5X-jgu"/>
+                            <constraint firstItem="wcP-a4-yJa" firstAttribute="trailing" secondItem="sL4-mO-4Tk" secondAttribute="trailing" id="vfB-r7-KIi"/>
+                            <constraint firstItem="dzz-Cu-vOO" firstAttribute="leading" secondItem="sL4-mO-4Tk" secondAttribute="leading" id="wZz-wR-Lze"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Currency Converter" id="pJW-AO-cCN">
+                        <barButtonItem key="backBarButtonItem" title=" " id="SDd-dS-SSh"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="ngw-n5-0ka">
+                            <connections>
+                                <action selector="refreshDataFromServer:" destination="BYZ-38-t0r" id="MCP-FC-BOB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="resultCurrencyButton" destination="7sC-Ql-h4X" id="PwS-2o-6x3"/>
+                        <outlet property="resultValueTextField" destination="TE0-65-TJc" id="ixr-lc-Xop"/>
+                        <outlet property="sourceCurrencyButton" destination="wcP-a4-yJa" id="CID-Ax-Nnc"/>
+                        <outlet property="sourceValueTextField" destination="sL4-mO-4Tk" id="B6r-EG-Q3x"/>
+                        <segue destination="dEh-I2-a6Y" kind="show" identifier="SupportedCurrencies" id="Y5O-BZ-3iM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2056.875" y="137.32394366197184"/>
+        </scene>
+        <!--Supported Currencies-->
+        <scene sceneID="lye-qc-4rZ">
+            <objects>
+                <viewController id="dEh-I2-a6Y" customClass="SupportedCurrenciesViewController" customModule="CurrencyConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZWd-wv-qFL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cte-yQ-AQk">
+                                <rect key="frame" x="0.0" y="100" width="320" height="468"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="lAM-HU-LSB">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </view>
+                                <connections>
+                                    <outlet property="dataSource" destination="dEh-I2-a6Y" id="9Zv-pl-2X7"/>
+                                    <outlet property="delegate" destination="dEh-I2-a6Y" id="k2p-qW-gzE"/>
+                                </connections>
+                            </tableView>
+                            <searchBar clipsSubviews="YES" contentMode="redraw" placeholder="Currency name or initials" translatesAutoresizingMaskIntoConstraints="NO" id="0AL-zB-MKG">
+                                <rect key="frame" x="0.0" y="44" width="320" height="56"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="search" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="dEh-I2-a6Y" id="XEf-6O-WLu"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cte-yQ-AQk" firstAttribute="leading" secondItem="3L5-ta-YdK" secondAttribute="leading" id="9Wp-sB-LXL"/>
+                            <constraint firstItem="cte-yQ-AQk" firstAttribute="top" secondItem="0AL-zB-MKG" secondAttribute="bottom" symbolic="YES" id="KZc-a3-6OT"/>
+                            <constraint firstItem="0AL-zB-MKG" firstAttribute="trailing" secondItem="3L5-ta-YdK" secondAttribute="trailing" id="P0v-aN-i6u"/>
+                            <constraint firstItem="3L5-ta-YdK" firstAttribute="trailing" secondItem="cte-yQ-AQk" secondAttribute="trailing" id="QjT-Hr-hQh"/>
+                            <constraint firstItem="3L5-ta-YdK" firstAttribute="bottom" secondItem="cte-yQ-AQk" secondAttribute="bottom" id="Vla-dP-SW1"/>
+                            <constraint firstItem="0AL-zB-MKG" firstAttribute="top" secondItem="3L5-ta-YdK" secondAttribute="top" id="gCJ-E9-4GR"/>
+                            <constraint firstItem="0AL-zB-MKG" firstAttribute="leading" secondItem="3L5-ta-YdK" secondAttribute="leading" id="qJb-UH-36R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3L5-ta-YdK"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Supported Currencies" id="9Dx-dy-u57"/>
+                    <connections>
+                        <outlet property="searchBar" destination="0AL-zB-MKG" id="lV5-cU-c15"/>
+                        <outlet property="tableView" destination="cte-yQ-AQk" id="xM3-dK-0x3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hJQ-SC-krn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2988.75" y="137.32394366197184"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2sM-eX-mtV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FgJ-w2-eBu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="M5N-ZL-uqY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="barTintColor" red="0.088486536729368334" green="0.47415398316062174" blue="0.093003457687452967" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jm8-4b-QOV">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5dI-wj-0ZT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fky-Gf-E7u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1059.375" y="137.32394366197184"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="trade_currency" width="50" height="50"/>
+    </resources>
+</document>

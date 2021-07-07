@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19D76" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CoreDataExchangeRates" representedClassName="CoreDataExchangeRates" syncable="YES">
+        <attribute name="quotes" optional="YES" attributeType="Transformable"/>
+        <attribute name="source" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="CoreDataSupportedCurrencies" representedClassName="CoreDataSupportedCurrencies" syncable="YES">
+        <attribute name="currencies" optional="YES" attributeType="Transformable"/>
+    </entity>
+    <elements>
+        <element name="CoreDataSupportedCurrencies" positionX="-63" positionY="-18" width="128" height="58"/>
+        <element name="CoreDataExchangeRates" positionX="-54" positionY="-9" width="128" height="73"/>
+    </elements>
+</model>
