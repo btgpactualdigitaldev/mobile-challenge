@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Currency" representedClassName="Currency" syncable="YES" codeGenerationType="class">
+        <attribute name="key" optional="YES" attributeType="String"/>
+        <attribute name="value" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Quotes" representedClassName="Quotes" syncable="YES" codeGenerationType="class">
+        <attribute name="key" optional="YES" attributeType="String" spotlightIndexingEnabled="YES"/>
+        <attribute name="value" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="Currency" positionX="-59.66015625" positionY="-20.73828125" width="128" height="73"/>
+        <element name="Quotes" positionX="-357.13671875" positionY="-14.015625" width="128" height="73"/>
+    </elements>
+</model>
