@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_navigation"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="br.net.easify.currencydroid.view.HomeFragment"
+        tools:layout="@layout/fragment_home"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/actionCurrencies"
+            app:destination="@id/currenciesFragment"
+            app:enterAnim="@anim/slide_in_from_left"
+            app:exitAnim="@anim/slide_out_to_right"/>
+
+        <action
+            android:id="@+id/actionError"
+            app:destination="@id/errorFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+
+        <argument
+            android:name="currencyId"
+            android:defaultValue="0L"
+            app:argType="long" />
+
+        <argument
+            android:name="currencyDestination"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/currenciesFragment"
+        android:name="br.net.easify.currencydroid.view.CurrenciesFragment"
+        tools:layout="@layout/fragment_currencies"
+        android:label="CurrenciesFragment" >
+        <action
+            android:id="@+id/actionHome"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/main_navigation"
+            app:popUpToInclusive="true"/>
+
+        <argument
+            android:name="currencyDestination"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/errorFragment"
+        tools:layout="@layout/fragment_error"
+        android:name="br.net.easify.currencydroid.view.ErrorFragment"
+        android:label="ErrorFragment" >
+        <action
+            android:id="@+id/actionBackHome"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/main_navigation"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

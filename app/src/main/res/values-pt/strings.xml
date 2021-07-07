@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CurrencyDroid</string>
+    <string name="rates_in_usd">COTAÇÕES EM USD</string>
+    <string name="last_update">ATUALIZADO EM</string>
+    <string name="from">DE</string>
+    <string name="to">PARA</string>
+    <string name="type_here">Valor</string>
+    <string name="calculate">Calcular</string>
+    <string name="cancel">Cancelar</string>
+    <string name="search">Procurar</string>
+    <string name="try_again">Tentar novamente</string>
+    <string name="internet_error">Verifique sua conexão de internet. Não foi possível receber os dados do servidor.</string>
+</resources>

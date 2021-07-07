@@ -44,3 +44,27 @@ O app deve counsumir a [Mobile Challenge API](https://btg-mobile-challenge.herok
 Para submeter o seu desafio, faça um fork deste projeto para sua conta no github, realize o clone e desenvolva localmente, no final, abra um pull request com o formato "[Plataforma] - Nome" para a master até a data limite estabelecida. Um exemplo seria "[iOS] - João da Silva".
 
 ### Boa sorte.
+
+
+# CurrencyDroid
+
+![](readme_images/screenshots.png)
+
+## Sobre
+
+CurrencyDroid é um aplicativo de conversão de moedas desenvolvido em Kotlin.
+
+Neste app foi implementado os seguintes componentes/conceitos:
+
+* Retrofit
+* Room
+* Dagger
+* Navigation
+* LiveData
+* Internacionalização
+* Modularização
+* MV-VM
+
+## Licenses
+
+[MIT](https://choosealicense.com/licenses/mit/)

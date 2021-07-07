@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CurrencyDroid</string>
+    <string name="rates_in_usd">RATES IN USD</string>
+    <string name="last_update">LAST UPDATE</string>
+    <string name="from">FROM</string>
+    <string name="to">TO</string>
+    <string name="type_here">Value</string>
+    <string name="calculate">Calculate</string>
+    <string name="cancel">Cancel</string>
+    <string name="search">Search</string>
+    <string name="try_again">Try again</string>
+    <string name="internet_error">Check your internet connection. Couldn\'t retrieve currency data from server.</string>
+</resources>

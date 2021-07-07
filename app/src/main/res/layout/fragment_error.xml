@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.ErrorFragment">
+
+        <ImageView
+            android:id="@+id/imageWiFi"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/wifi"
+            android:layout_margin="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/errorMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_mono_bold"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/internet_error"
+            android:textColor="@color/secondary"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/imageWiFi"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tryAgainButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/custom_button"
+            android:padding="18dp"
+            android:text="@string/try_again"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

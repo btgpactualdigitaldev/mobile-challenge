@@ -1,0 +1,4 @@
+include ':api'
+include ':database'
+include ':app'
+rootProject.name = "CurrencyDroid"
