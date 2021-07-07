@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Conversor de moedas</string>
+    <string name="conversor_title">Conversor de moedas</string>
+    <string name="selector_title">Seletor de moedas</string>
+    <string name="input_value">Valor de entrada</string>
+    <string name="output_value">Valor de saída</string>
+    <string name="value">Valor</string>
+    <string name="zero">0$</string>
+    <string name="coin_input">Moeda de entrada</string>
+    <string name="coin_output">Moeda de saída</string>
+
+    <string name="error_401_list">Não autorizado - Lista de Dados</string>
+    <string name="error_401_live">Não autorizado - Lista de Valores</string>
+    <string name="error_server_list">Erro no servidor - Lista de Dados</string>
+    <string name="error_server_live">Erro no servidor - Lista de Valores</string>
+    <string name="error_generico_list">Erro não tratado - Lista de Dados</string>
+    <string name="error_generico_live">Erro não tratado - Lista de Valores</string>
+
+    <string name="error_104">Your monthly usage limit has been reached. Please upgrade your Subscription Plan.</string>
+
+    <string name="api_key">eab8dae1f01e7d851435fe6c99f756f6</string>
+    <string name="search_hint">Pesquise Pelo nome da moeda</string>
+    <string name="data_do_valor">Data da cotação</string>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.base.BaseActivity">
+
+    <include layout="@layout/include_toolbar" />
+
+    <LinearLayout
+            android:id="@+id/center_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintVertical_bias="0.25"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarMain"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <Button
+                    android:id="@+id/button_input"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@android:color/holo_orange_light"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="@string/coin_input" />
+
+            <Button
+                    android:id="@+id/button_output"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@android:color/holo_orange_light"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="@string/coin_output" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <EditText
+                    android:id="@+id/edit_text_value"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:layout_margin="16dp"
+                    android:layout_marginTop="0dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/value"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    tools:text="@string/value" />
+
+            <TextView
+                    android:id="@+id/label_out_value"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:layout_margin="16dp"
+                    android:layout_marginTop="0dp"
+                    android:paddingLeft="4dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/zero"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/label_date_of_values"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:layout_margin="16dp"
+                android:layout_marginTop="0dp"
+                android:paddingLeft="4dp"
+                android:gravity="center"
+                android:text="data do valor - em breve"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                tools:text="data do valor"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
