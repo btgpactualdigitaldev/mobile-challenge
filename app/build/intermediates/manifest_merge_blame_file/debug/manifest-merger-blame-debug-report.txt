@@ -1,0 +1,70 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="leandro.com.leandroteste"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->C:\Users\soraia\Desktop\LeandroTeste\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\soraia\Desktop\LeandroTeste\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\soraia\Desktop\LeandroTeste\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\soraia\Desktop\LeandroTeste\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->C:\Users\soraia\Desktop\LeandroTeste\app\src\main\AndroidManifest.xml:6:5-79
+12-->C:\Users\soraia\Desktop\LeandroTeste\app\src\main\AndroidManifest.xml:6:22-76
+13
+14    <application
+14-->C:\Users\soraia\Desktop\LeandroTeste\app\src\main\AndroidManifest.xml:8:5-26:19
+15        android:allowBackup="true"
+15-->C:\Users\soraia\Desktop\LeandroTeste\app\src\main\AndroidManifest.xml:9:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.2.0] C:\Users\soraia\.gradle\caches\transforms-2\files-2.1\cdd0f8267b1e86c0b6cf530636e70ef0\core-1.2.0\AndroidManifest.xml:24:18-86
+17        android:debuggable="true"
+18        android:icon="@mipmap/ic_launcher"
+18-->C:\Users\soraia\Desktop\LeandroTeste\app\src\main\AndroidManifest.xml:10:9-43
+19        android:label="@string/app_name"
+19-->C:\Users\soraia\Desktop\LeandroTeste\app\src\main\AndroidManifest.xml:11:9-41
+20        android:roundIcon="@mipmap/ic_launcher_round"
+20-->C:\Users\soraia\Desktop\LeandroTeste\app\src\main\AndroidManifest.xml:12:9-54
+21        android:supportsRtl="true"
+21-->C:\Users\soraia\Desktop\LeandroTeste\app\src\main\AndroidManifest.xml:13:9-35
+22        android:theme="@style/AppTheme" >
+22-->C:\Users\soraia\Desktop\LeandroTeste\app\src\main\AndroidManifest.xml:14:9-40
+23        <activity android:name="leandro.com.leandroteste.ui.CurrencyListActivity" />
+23-->C:\Users\soraia\Desktop\LeandroTeste\app\src\main\AndroidManifest.xml:15:9-70
+23-->C:\Users\soraia\Desktop\LeandroTeste\app\src\main\AndroidManifest.xml:15:19-58
+24        <activity
+24-->C:\Users\soraia\Desktop\LeandroTeste\app\src\main\AndroidManifest.xml:17:9-25:20
+25            android:name="leandro.com.leandroteste.ui.MainActivity"
+25-->C:\Users\soraia\Desktop\LeandroTeste\app\src\main\AndroidManifest.xml:18:13-44
+26            android:screenOrientation="fullSensor" >
+26-->C:\Users\soraia\Desktop\LeandroTeste\app\src\main\AndroidManifest.xml:19:13-51
+27            <intent-filter>
+27-->C:\Users\soraia\Desktop\LeandroTeste\app\src\main\AndroidManifest.xml:20:13-24:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->C:\Users\soraia\Desktop\LeandroTeste\app\src\main\AndroidManifest.xml:21:17-69
+28-->C:\Users\soraia\Desktop\LeandroTeste\app\src\main\AndroidManifest.xml:21:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->C:\Users\soraia\Desktop\LeandroTeste\app\src\main\AndroidManifest.xml:23:17-77
+30-->C:\Users\soraia\Desktop\LeandroTeste\app\src\main\AndroidManifest.xml:23:27-74
+31            </intent-filter>
+32        </activity>
+33
+34        <provider
+34-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\soraia\.gradle\caches\transforms-2\files-2.1\ed04e41f04f9b50606f7d5fe71342b2b\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+35            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+35-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\soraia\.gradle\caches\transforms-2\files-2.1\ed04e41f04f9b50606f7d5fe71342b2b\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+36            android:authorities="leandro.com.leandroteste.lifecycle-process"
+36-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\soraia\.gradle\caches\transforms-2\files-2.1\ed04e41f04f9b50606f7d5fe71342b2b\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+37            android:exported="false"
+37-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\soraia\.gradle\caches\transforms-2\files-2.1\ed04e41f04f9b50606f7d5fe71342b2b\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+38            android:multiprocess="true" />
+38-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\soraia\.gradle\caches\transforms-2\files-2.1\ed04e41f04f9b50606f7d5fe71342b2b\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+39    </application>
+40
+41</manifest>

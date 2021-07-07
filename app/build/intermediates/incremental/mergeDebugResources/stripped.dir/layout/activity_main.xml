@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                  
+                                          
+
+    
+
+                 
+                            
+                                                                         
+
+                                           
+           
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/fundo"
+        android:orientation="vertical" android:tag="layout/activity_main_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" tools:context=".view.ui.MainActivity">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/main_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/currency_converter"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/main_title">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/main_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="@dimen/margin_20dp"
+                android:tag="binding_1"            
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="25sp"
+                                                                                               
+                tools:text="@string/convertion_error" />
+
+            <LinearLayout
+                android:id="@+id/main_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:tag="binding_2"                                                        >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="25dp"
+                    android:text="@string/from"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:background="@color/transparent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginEnd="@dimen/margin_20dp"
+                        app:cardCornerRadius="@dimen/margin10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/margin10dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:id="@+id/convert_from_info"
+                                android:layout_width="match_parent"
+                                android:layout_height="65dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="11">
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/convert_from_initials"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:autoSizeTextType="uniform"
+                                        android:tag="binding_3"                 
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="22sp"
+                                        android:textStyle="bold"
+                                        tools:text="@string/currency_initials_hint" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/convert_from_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="35dp"
+                                        android:autoSizeTextType="uniform"
+                                        android:tag="binding_4"             
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="25sp"
+                                        tools:text="@string/currency_name_hint" />
+                                </LinearLayout>
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="@dimen/margin10dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:src="@drawable/ic_edit" />
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin10dp"
+                                android:background="@color/colorAccent" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="65dp"
+                                android:layout_alignParentBottom="true">
+
+                                <androidx.appcompat.widget.AppCompatEditText
+                                    android:id="@+id/convert_from_value_edt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:hint="@string/currency_value_hint"
+                                    android:inputType="numberDecimal"
+                                    android:singleLine="true"
+                                    android:textSize="36sp"
+                                    android:textStyle="bold"
+                                    android:theme="@style/EditText.Convert" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="@dimen/margin_content_40dp"
+                                    android:layout_height="@dimen/margin_content_40dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_money_04" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin30dp"
+                    android:layout_marginStart="@dimen/margin25dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/to"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginEnd="@dimen/margin_20dp"
+                        android:background="@color/colorPrimary"
+                        app:cardCornerRadius="@dimen/margin10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/margin10dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:id="@+id/convert_to_info"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/margin_content_65dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="11">
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/convert_to_initials"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/margin24dp"
+                                        android:autoSizeTextType="uniform"
+                                        android:tag="binding_5"               
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="22sp"
+                                        android:textStyle="bold"
+                                        tools:text="@string/currency_initials_hint" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/convert_to_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="35dp"
+                                        android:autoSizeTextType="uniform"
+                                        android:tag="binding_6"           
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="25sp"
+                                        tools:text="@string/currency_name_hint" />
+                                </LinearLayout>
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="@dimen/margin24dp"
+                                    android:layout_height="@dimen/margin24dp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="@dimen/margin10dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:src="@drawable/ic_edit" />
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin10dp"
+                                android:background="@color/colorAccent" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/margin_content_65dp"
+                                android:layout_alignParentBottom="true">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/convert_to_value_edt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentStart="true"
+                                    android:clickable="false"
+                                    android:focusable="false"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:tag="binding_7"            
+                                    android:textColor="@color/white"
+                                    android:textSize="36sp"
+                                    android:textStyle="bold"
+                                    tools:hint="@string/currency_value_hint" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="@dimen/margin_content_40dp"
+                                    android:layout_height="@dimen/margin_content_40dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_money_04" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/convert_btn"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/selector_button"
+                    android:text="@string/button"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="binding_8"                                                        >
+
+            <ProgressBar
+                android:layout_width="@dimen/margin_content_70dp"
+                android:layout_height="@dimen/margin_content_70dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+         

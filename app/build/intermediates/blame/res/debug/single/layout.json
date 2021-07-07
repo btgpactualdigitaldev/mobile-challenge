@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\soraia\\Desktop\\LeandroTeste\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\currency_item.xml",
+        "source": "C:\\Users\\soraia\\Desktop\\LeandroTeste\\app\\src\\main\\res\\layout\\currency_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\soraia\\Desktop\\LeandroTeste\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\soraia\\Desktop\\LeandroTeste\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\soraia\\Desktop\\LeandroTeste\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_currency_list.xml",
+        "source": "C:\\Users\\soraia\\Desktop\\LeandroTeste\\app\\src\\main\\res\\layout\\activity_currency_list.xml"
+    }
+]

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="margin10dp">10dp</dimen>
+    <dimen name="margin24dp">24dp</dimen>
+    <dimen name="margin25dp">25dp</dimen>
+
+    <dimen name="margin30dp">30dp</dimen>
+
+
+    <dimen name="margin_content_40dp">40dp</dimen>
+
+    <dimen name="margin_content_160dp">160dp</dimen>
+    <dimen name="margin_content_65dp">65dp</dimen>
+    <dimen name="margin_content_70dp">70dp</dimen>
+
+</resources>

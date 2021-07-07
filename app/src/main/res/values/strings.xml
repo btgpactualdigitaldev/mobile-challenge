@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">LeandroTeste</string>
+
+    <!--  Main Activity  -->
+    <string name="currency_converter">CONVERSOR DE MOEDAS</string>
+    <string name="from">DE</string>
+    <string name="to">PARA</string>
+    <string name="button">Converter</string>
+    <!--  Convert card  -->
+    <string name="currency_initials_hint">AED</string>
+    <string name="currency_name_hint">United Arab Emirates Dirham</string>
+    <string name="currency_value_hint">10.00</string>
+    <string name="convertion_error">Houve algum problema na conversão, por favor tente mais tarde. </string>
+    <!--  Currency List  -->
+    <string name="currency_list_title">LISTA DE MOEDAS</string>
+    <string name="currencies_not_found">Não foram encontradas informações sobre as moedas</string>
+    <string name="currency_search_hint">Pesquisar moeda</string>
+    <string name="currency_list_order_by">Ordenar por: </string>
+    <string name="order_by_initials">Sigla</string>
+    <string name="order_by_name">Nome</string>
+</resources>

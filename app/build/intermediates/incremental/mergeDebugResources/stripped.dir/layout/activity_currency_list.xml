@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                  
+                                                  
+
+    
+
+                 
+                            
+                                                                              
+
+                                           
+           
+
+    <LinearLayout
+        android:id="@+id/currency_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/fundo"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical" android:tag="layout/activity_currency_list_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" tools:context=".view.ui.CurrencyListActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/currency_list_back"
+                android:layout_width="45dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_back" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/rounded_button"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/currency_list_search_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@color/transparent"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/currency_search_hint"
+                    android:singleLine="true"
+                    android:theme="@style/EditText.Convert" />
+
+                <RelativeLayout
+                    android:id="@+id/currency_list_search_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_search" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/currency_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/currency_list_title"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:gravity="center"
+                android:text="@string/currency_list_order_by"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:gravity="center"
+                android:text="@string/order_by_initials"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Switch
+                android:id="@+id/currency_list_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/order_by_name"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/currency_list_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:tag="binding_1"            
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                                                                                               
+                tools:text="@string/currencies_not_found" />
+
+            <ProgressBar
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+                android:tag="binding_2"                                                         />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/currency_list_items"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:tag="binding_3"                                                         />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+         

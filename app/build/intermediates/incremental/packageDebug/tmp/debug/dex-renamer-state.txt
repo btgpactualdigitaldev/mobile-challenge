@@ -1,0 +1,7 @@
+#Wed Apr 29 11:29:17 BRT 2020
+base.0=C\:\\Users\\soraia\\Desktop\\LeandroTeste\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=C\:\\Users\\soraia\\Desktop\\LeandroTeste\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
