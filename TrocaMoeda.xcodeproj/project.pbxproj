@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0411BB0724A4EB5500C6EF66 /* Dynamics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411BB0624A4EB5500C6EF66 /* Dynamics.swift */; };
+		0411BB0924A5566900C6EF66 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411BB0824A5566900C6EF66 /* CurrencyTextField.swift */; };
+		0411BB0C24A6245F00C6EF66 /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411BB0A24A6245F00C6EF66 /* CurrencyCell.swift */; };
+		0411BB0D24A6245F00C6EF66 /* CurrencyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0411BB0B24A6245F00C6EF66 /* CurrencyCell.xib */; };
+		0411BB0F24A6883E00C6EF66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0411BB0E24A6883D00C6EF66 /* Assets.xcassets */; };
+		04FC77F624A146F000973D75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FC77F524A146F000973D75 /* AppDelegate.swift */; };
+		04FC77F824A146F000973D75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FC77F724A146F000973D75 /* SceneDelegate.swift */; };
+		04FC77FA24A146F000973D75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FC77F924A146F000973D75 /* ViewController.swift */; };
+		04FC77FD24A146F000973D75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FC77FB24A146F000973D75 /* Main.storyboard */; };
+		04FC780024A146F000973D75 /* TrocaMoeda.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04FC77FE24A146F000973D75 /* TrocaMoeda.xcdatamodeld */; };
+		04FC780524A146F300973D75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FC780324A146F300973D75 /* LaunchScreen.storyboard */; };
+		04FC781024A146F400973D75 /* TrocaMoedaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FC780F24A146F400973D75 /* TrocaMoedaTests.swift */; };
+		04FC781B24A146F400973D75 /* TrocaMoedaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FC781A24A146F400973D75 /* TrocaMoedaUITests.swift */; };
+		04FC782C24A24AF600973D75 /* CurrencyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FC782B24A24AF600973D75 /* CurrencyListView.swift */; };
+		04FC782E24A265E300973D75 /* CurrencyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FC782D24A265E300973D75 /* CurrencyListViewModel.swift */; };
+		04FC783124A2664800973D75 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FC783024A2664700973D75 /* Constants.swift */; };
+		04FC783424A267EF00973D75 /* CurrencyRates.json in Resources */ = {isa = PBXBuildFile; fileRef = 04FC783224A267EC00973D75 /* CurrencyRates.json */; };
+		04FC783524A267EF00973D75 /* CurrencyList.json in Resources */ = {isa = PBXBuildFile; fileRef = 04FC783324A267EF00973D75 /* CurrencyList.json */; };
+		04FC783724A2683300973D75 /* CurrencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FC783624A2683300973D75 /* CurrencyList.swift */; };
+		04FC783924A2D77D00973D75 /* TranslatedCurrencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FC783824A2D77D00973D75 /* TranslatedCurrencies.swift */; };
+		04FC783B24A2D7B800973D75 /* CurrencyCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FC783A24A2D7B800973D75 /* CurrencyCodes.swift */; };
+		04FC783D24A2D8A500973D75 /* CurrencyRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FC783C24A2D8A500973D75 /* CurrencyRates.swift */; };
+		04FC783F24A2ED4100973D75 /* APIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FC783E24A2ED4100973D75 /* APIUtils.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04FC780C24A146F400973D75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04FC77EA24A146F000973D75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04FC77F124A146F000973D75;
+			remoteInfo = TrocaMoeda;
+		};
+		04FC781724A146F400973D75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04FC77EA24A146F000973D75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04FC77F124A146F000973D75;
+			remoteInfo = TrocaMoeda;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0411BB0624A4EB5500C6EF66 /* Dynamics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamics.swift; sourceTree = "<group>"; };
+		0411BB0824A5566900C6EF66 /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
+		0411BB0A24A6245F00C6EF66 /* CurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCell.swift; sourceTree = "<group>"; };
+		0411BB0B24A6245F00C6EF66 /* CurrencyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyCell.xib; sourceTree = "<group>"; };
+		0411BB0E24A6883D00C6EF66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04FC77F224A146F000973D75 /* TrocaMoeda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrocaMoeda.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FC77F524A146F000973D75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04FC77F724A146F000973D75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		04FC77F924A146F000973D75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04FC77FC24A146F000973D75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04FC77FF24A146F000973D75 /* TrocaMoeda.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TrocaMoeda.xcdatamodel; sourceTree = "<group>"; };
+		04FC780424A146F300973D75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04FC780624A146F300973D75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04FC780B24A146F400973D75 /* TrocaMoedaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrocaMoedaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FC780F24A146F400973D75 /* TrocaMoedaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrocaMoedaTests.swift; sourceTree = "<group>"; };
+		04FC781124A146F400973D75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04FC781624A146F400973D75 /* TrocaMoedaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrocaMoedaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FC781A24A146F400973D75 /* TrocaMoedaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrocaMoedaUITests.swift; sourceTree = "<group>"; };
+		04FC781C24A146F400973D75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04FC782B24A24AF600973D75 /* CurrencyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListView.swift; sourceTree = "<group>"; };
+		04FC782D24A265E300973D75 /* CurrencyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListViewModel.swift; sourceTree = "<group>"; };
+		04FC783024A2664700973D75 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		04FC783224A267EC00973D75 /* CurrencyRates.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CurrencyRates.json; sourceTree = "<group>"; };
+		04FC783324A267EF00973D75 /* CurrencyList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CurrencyList.json; sourceTree = "<group>"; };
+		04FC783624A2683300973D75 /* CurrencyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyList.swift; sourceTree = "<group>"; };
+		04FC783824A2D77D00973D75 /* TranslatedCurrencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatedCurrencies.swift; sourceTree = "<group>"; };
+		04FC783A24A2D7B800973D75 /* CurrencyCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCodes.swift; sourceTree = "<group>"; };
+		04FC783C24A2D8A500973D75 /* CurrencyRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRates.swift; sourceTree = "<group>"; };
+		04FC783E24A2ED4100973D75 /* APIUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUtils.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04FC77EF24A146F000973D75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FC780824A146F400973D75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FC781324A146F400973D75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04FC77E924A146F000973D75 = {
+			isa = PBXGroup;
+			children = (
+				04FC77F424A146F000973D75 /* TrocaMoeda */,
+				04FC780E24A146F400973D75 /* TrocaMoedaTests */,
+				04FC781924A146F400973D75 /* TrocaMoedaUITests */,
+				04FC77F324A146F000973D75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04FC77F324A146F000973D75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04FC77F224A146F000973D75 /* TrocaMoeda.app */,
+				04FC780B24A146F400973D75 /* TrocaMoedaTests.xctest */,
+				04FC781624A146F400973D75 /* TrocaMoedaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04FC77F424A146F000973D75 /* TrocaMoeda */ = {
+			isa = PBXGroup;
+			children = (
+				0411BB0E24A6883D00C6EF66 /* Assets.xcassets */,
+				04FC782824A147B900973D75 /* Model */,
+				04FC782F24A2663C00973D75 /* Utils */,
+				04FC782A24A147CE00973D75 /* View */,
+				04FC782924A147C000973D75 /* ViewModel */,
+				04FC77F524A146F000973D75 /* AppDelegate.swift */,
+				04FC77F724A146F000973D75 /* SceneDelegate.swift */,
+				04FC780324A146F300973D75 /* LaunchScreen.storyboard */,
+				04FC780624A146F300973D75 /* Info.plist */,
+				04FC77FE24A146F000973D75 /* TrocaMoeda.xcdatamodeld */,
+			);
+			path = TrocaMoeda;
+			sourceTree = "<group>";
+		};
+		04FC780E24A146F400973D75 /* TrocaMoedaTests */ = {
+			isa = PBXGroup;
+			children = (
+				04FC780F24A146F400973D75 /* TrocaMoedaTests.swift */,
+				04FC781124A146F400973D75 /* Info.plist */,
+			);
+			path = TrocaMoedaTests;
+			sourceTree = "<group>";
+		};
+		04FC781924A146F400973D75 /* TrocaMoedaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04FC781A24A146F400973D75 /* TrocaMoedaUITests.swift */,
+				04FC781C24A146F400973D75 /* Info.plist */,
+			);
+			path = TrocaMoedaUITests;
+			sourceTree = "<group>";
+		};
+		04FC782824A147B900973D75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04FC783624A2683300973D75 /* CurrencyList.swift */,
+				04FC783824A2D77D00973D75 /* TranslatedCurrencies.swift */,
+				04FC783A24A2D7B800973D75 /* CurrencyCodes.swift */,
+				04FC783C24A2D8A500973D75 /* CurrencyRates.swift */,
+				0411BB0624A4EB5500C6EF66 /* Dynamics.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04FC782924A147C000973D75 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				04FC782D24A265E300973D75 /* CurrencyListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		04FC782A24A147CE00973D75 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04FC77FB24A146F000973D75 /* Main.storyboard */,
+				04FC77F924A146F000973D75 /* ViewController.swift */,
+				04FC782B24A24AF600973D75 /* CurrencyListView.swift */,
+				0411BB0824A5566900C6EF66 /* CurrencyTextField.swift */,
+				0411BB0A24A6245F00C6EF66 /* CurrencyCell.swift */,
+				0411BB0B24A6245F00C6EF66 /* CurrencyCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04FC782F24A2663C00973D75 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				04FC783324A267EF00973D75 /* CurrencyList.json */,
+				04FC783224A267EC00973D75 /* CurrencyRates.json */,
+				04FC783024A2664700973D75 /* Constants.swift */,
+				04FC783E24A2ED4100973D75 /* APIUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04FC77F124A146F000973D75 /* TrocaMoeda */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04FC781F24A146F400973D75 /* Build configuration list for PBXNativeTarget "TrocaMoeda" */;
+			buildPhases = (
+				04FC77EE24A146F000973D75 /* Sources */,
+				04FC77EF24A146F000973D75 /* Frameworks */,
+				04FC77F024A146F000973D75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrocaMoeda;
+			productName = TrocaMoeda;
+			productReference = 04FC77F224A146F000973D75 /* TrocaMoeda.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04FC780A24A146F400973D75 /* TrocaMoedaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04FC782224A146F400973D75 /* Build configuration list for PBXNativeTarget "TrocaMoedaTests" */;
+			buildPhases = (
+				04FC780724A146F400973D75 /* Sources */,
+				04FC780824A146F400973D75 /* Frameworks */,
+				04FC780924A146F400973D75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04FC780D24A146F400973D75 /* PBXTargetDependency */,
+			);
+			name = TrocaMoedaTests;
+			productName = TrocaMoedaTests;
+			productReference = 04FC780B24A146F400973D75 /* TrocaMoedaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04FC781524A146F400973D75 /* TrocaMoedaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04FC782524A146F400973D75 /* Build configuration list for PBXNativeTarget "TrocaMoedaUITests" */;
+			buildPhases = (
+				04FC781224A146F400973D75 /* Sources */,
+				04FC781324A146F400973D75 /* Frameworks */,
+				04FC781424A146F400973D75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04FC781824A146F400973D75 /* PBXTargetDependency */,
+			);
+			name = TrocaMoedaUITests;
+			productName = TrocaMoedaUITests;
+			productReference = 04FC781624A146F400973D75 /* TrocaMoedaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04FC77EA24A146F000973D75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Saulo Freire";
+				TargetAttributes = {
+					04FC77F124A146F000973D75 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					04FC780A24A146F400973D75 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 04FC77F124A146F000973D75;
+					};
+					04FC781524A146F400973D75 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 04FC77F124A146F000973D75;
+					};
+				};
+			};
+			buildConfigurationList = 04FC77ED24A146F000973D75 /* Build configuration list for PBXProject "TrocaMoeda" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04FC77E924A146F000973D75;
+			productRefGroup = 04FC77F324A146F000973D75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04FC77F124A146F000973D75 /* TrocaMoeda */,
+				04FC780A24A146F400973D75 /* TrocaMoedaTests */,
+				04FC781524A146F400973D75 /* TrocaMoedaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04FC77F024A146F000973D75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FC783424A267EF00973D75 /* CurrencyRates.json in Resources */,
+				04FC780524A146F300973D75 /* LaunchScreen.storyboard in Resources */,
+				04FC783524A267EF00973D75 /* CurrencyList.json in Resources */,
+				0411BB0D24A6245F00C6EF66 /* CurrencyCell.xib in Resources */,
+				0411BB0F24A6883E00C6EF66 /* Assets.xcassets in Resources */,
+				04FC77FD24A146F000973D75 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FC780924A146F400973D75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FC781424A146F400973D75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04FC77EE24A146F000973D75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0411BB0C24A6245F00C6EF66 /* CurrencyCell.swift in Sources */,
+				04FC783F24A2ED4100973D75 /* APIUtils.swift in Sources */,
+				04FC77FA24A146F000973D75 /* ViewController.swift in Sources */,
+				04FC782E24A265E300973D75 /* CurrencyListViewModel.swift in Sources */,
+				04FC783724A2683300973D75 /* CurrencyList.swift in Sources */,
+				04FC783D24A2D8A500973D75 /* CurrencyRates.swift in Sources */,
+				04FC77F624A146F000973D75 /* AppDelegate.swift in Sources */,
+				0411BB0924A5566900C6EF66 /* CurrencyTextField.swift in Sources */,
+				0411BB0724A4EB5500C6EF66 /* Dynamics.swift in Sources */,
+				04FC780024A146F000973D75 /* TrocaMoeda.xcdatamodeld in Sources */,
+				04FC783B24A2D7B800973D75 /* CurrencyCodes.swift in Sources */,
+				04FC783124A2664800973D75 /* Constants.swift in Sources */,
+				04FC782C24A24AF600973D75 /* CurrencyListView.swift in Sources */,
+				04FC77F824A146F000973D75 /* SceneDelegate.swift in Sources */,
+				04FC783924A2D77D00973D75 /* TranslatedCurrencies.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FC780724A146F400973D75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FC781024A146F400973D75 /* TrocaMoedaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FC781224A146F400973D75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FC781B24A146F400973D75 /* TrocaMoedaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04FC780D24A146F400973D75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04FC77F124A146F000973D75 /* TrocaMoeda */;
+			targetProxy = 04FC780C24A146F400973D75 /* PBXContainerItemProxy */;
+		};
+		04FC781824A146F400973D75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04FC77F124A146F000973D75 /* TrocaMoeda */;
+			targetProxy = 04FC781724A146F400973D75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04FC77FB24A146F000973D75 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04FC77FC24A146F000973D75 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04FC780324A146F300973D75 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04FC780424A146F300973D75 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04FC781D24A146F400973D75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04FC781E24A146F400973D75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04FC782024A146F400973D75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TrocaMoeda/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = work.freire.saulo.TrocaMoeda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		04FC782124A146F400973D75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TrocaMoeda/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = work.freire.saulo.TrocaMoeda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		04FC782324A146F400973D75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TrocaMoedaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = work.freire.saulo.TrocaMoedaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrocaMoeda.app/TrocaMoeda";
+			};
+			name = Debug;
+		};
+		04FC782424A146F400973D75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TrocaMoedaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = work.freire.saulo.TrocaMoedaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrocaMoeda.app/TrocaMoeda";
+			};
+			name = Release;
+		};
+		04FC782624A146F400973D75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TrocaMoedaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = work.freire.saulo.TrocaMoedaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrocaMoeda;
+			};
+			name = Debug;
+		};
+		04FC782724A146F400973D75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TrocaMoedaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = work.freire.saulo.TrocaMoedaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrocaMoeda;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04FC77ED24A146F000973D75 /* Build configuration list for PBXProject "TrocaMoeda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FC781D24A146F400973D75 /* Debug */,
+				04FC781E24A146F400973D75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04FC781F24A146F400973D75 /* Build configuration list for PBXNativeTarget "TrocaMoeda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FC782024A146F400973D75 /* Debug */,
+				04FC782124A146F400973D75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04FC782224A146F400973D75 /* Build configuration list for PBXNativeTarget "TrocaMoedaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FC782324A146F400973D75 /* Debug */,
+				04FC782424A146F400973D75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04FC782524A146F400973D75 /* Build configuration list for PBXNativeTarget "TrocaMoedaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FC782624A146F400973D75 /* Debug */,
+				04FC782724A146F400973D75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		04FC77FE24A146F000973D75 /* TrocaMoeda.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04FC77FF24A146F000973D75 /* TrocaMoeda.xcdatamodel */,
+			);
+			currentVersion = 04FC77FF24A146F000973D75 /* TrocaMoeda.xcdatamodel */;
+			path = TrocaMoeda.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 04FC77EA24A146F000973D75 /* Project object */;
+}
