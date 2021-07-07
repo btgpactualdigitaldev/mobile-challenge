@@ -1,0 +1,4 @@
+rootProject.name='BTG Challenge'
+include ':data'
+include ':domain'
+include ':presentation'

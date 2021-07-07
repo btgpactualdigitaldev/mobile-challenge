@@ -1,0 +1,25 @@
+ext {
+    minSdkVersion = 19
+    targetSdkVersion = 28
+    compileSdkVersion = 28
+
+    rxJava = "io.reactivex.rxjava2:rxjava:2.1.6"
+
+    liveData = "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0"
+    liveDataExtensions = "androidx.lifecycle:lifecycle-extensions:2.2.0"
+
+    retrofit = "com.squareup.retrofit2:retrofit:2.6.0"
+    retrofitGsonConverter = "com.squareup.retrofit2:converter-gson:2.6.0"
+    retrofitLoggingInterceptors = "com.squareup.okhttp3:logging-interceptor:3.8.0"
+    retrofitRxJava2Adapter = "com.squareup.retrofit2:adapter-rxjava2:2.6.0"
+
+    koin = "org.koin:koin-android-viewmodel:1.0.1"
+
+    viewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
+
+    coroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.8"
+    coroutinesCore = "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.8"
+
+    mockk = "io.mockk:mockk:1.10.0"
+    coreTesting = "android.arch.core:core-testing:1.1.1"
+}
