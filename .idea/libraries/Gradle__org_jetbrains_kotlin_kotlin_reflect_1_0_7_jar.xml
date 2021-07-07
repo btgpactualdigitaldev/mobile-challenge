@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jetbrains.kotlin:kotlin-reflect:1.0.7@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.0.7/6f22345ea29cd01ec1da04bd28996360bcff05ae/kotlin-reflect-1.0.7.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.0.7/ee8eb626478c3a189e7916dd8418197ba218a5df/kotlin-reflect-1.0.7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.0.7/fc64b73b35dd37bf9e200ff8a57d8260b318ec24/kotlin-reflect-1.0.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

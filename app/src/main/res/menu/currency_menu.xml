@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/orderByCode"
+            android:title="@string/currency_menu_filter_code" />
+        <item
+            android:id="@+id/orderByName"
+            android:title="@string/currency_menu_filter_name" />
+    </group>
+
+</menu>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Currency Exchange</string>
+
+    <!--    SPLASH-->
+    <string name="splash_image_description">A tela apresenta o ícone da aplicação</string>
+
+    <!--    CURRENCY ACTIVITY-->
+    <string name="activity_currency_title">Lista de Moedas</string>
+    <string name="search_currency_hint">Busque pelo código ou nome…</string>
+    <string name="search_button_content_description">Botão ilustrativo para a ação de pesquisar moedas</string>
+    <string name="currency_menu_filter_code">Ordenar por Código</string>
+    <string name="currency_menu_filter_name">Ordenar por Nome</string>
+
+    <!--    MAIN ACTIVITY-->
+    <string name="activity_main_title">Conversão de Câmbio</string>
+    <string name="origin_currency">Moeda de Origem</string>
+    <string name="currency_destiny">Moeda de Destino</string>
+    <string name="value_to_convert">Valor a Converter</string>
+    <string name="converted_value">Valor Convertido</string>
+    <string name="action_convert">Converter</string>
+    <string name="last_update">Última atualização: %s</string>
+
+    <!--    ERROR MESSAGES-->
+    <string name="action_reload">Tentar Novamente</string>
+    <string name="no_connection_error">Erro de conexão! Verifique sua internet e tente novamente.</string>
+    <string name="fetch_currency_default_error_message">Erro ao carregar moedas.</string>
+    <string name="fetch_rate_default_error_message">Erro ao atualizar as taxas de câmbio.</string>
+    <string name="invalid_amount">Insira um valor válido!</string>
+    <string name="default_empty_list_text">Nenhum resultado encontrado</string>
+</resources>
