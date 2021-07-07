@@ -1,0 +1,6 @@
+framework module Pods_EasyMoneyExchanger {
+  umbrella header "Pods-EasyMoneyExchanger-umbrella.h"
+
+  export *
+  module * { export * }
+}

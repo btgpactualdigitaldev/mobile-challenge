@@ -1,0 +1,1111 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35A5C54325822FE300F8FD84 /* Flags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A5C54225822FE300F8FD84 /* Flags.swift */; };
+		35A5C5682582879C00F8FD84 /* EasyMoneyExchanger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35A5C5662582879C00F8FD84 /* EasyMoneyExchanger.xcdatamodeld */; };
+		35A5C5DE2582AB7D00F8FD84 /* homeAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 35A5C5DD2582AB7D00F8FD84 /* homeAnimation.json */; };
+		35A5C617258315A700F8FD84 /* CurrencyExchanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A5C616258315A700F8FD84 /* CurrencyExchanges.swift */; };
+		35A5C61C258317CF00F8FD84 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A5C61B258317CF00F8FD84 /* CoreDataManager.swift */; };
+		35A5C62D2583AF4E00F8FD84 /* SupportedCurrenciesScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35A5C62C2583AF4E00F8FD84 /* SupportedCurrenciesScreen.storyboard */; };
+		35A5C6322583B07D00F8FD84 /* SupportedCurrenciesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A5C6312583B07D00F8FD84 /* SupportedCurrenciesViewModel.swift */; };
+		35A5C65D2584D6E900F8FD84 /* Exchanges+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A5C6572584D6E900F8FD84 /* Exchanges+CoreDataClass.swift */; };
+		35A5C65E2584D6E900F8FD84 /* Exchanges+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A5C6582584D6E900F8FD84 /* Exchanges+CoreDataProperties.swift */; };
+		35A5C65F2584D6E900F8FD84 /* Rates+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A5C6592584D6E900F8FD84 /* Rates+CoreDataClass.swift */; };
+		35A5C6602584D6E900F8FD84 /* Rates+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A5C65A2584D6E900F8FD84 /* Rates+CoreDataProperties.swift */; };
+		35A5C6612584D6E900F8FD84 /* Supported+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A5C65B2584D6E900F8FD84 /* Supported+CoreDataClass.swift */; };
+		35A5C6622584D6E900F8FD84 /* Supported+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A5C65C2584D6E900F8FD84 /* Supported+CoreDataProperties.swift */; };
+		35A5C6842584E79C00F8FD84 /* SupportedCurrenciesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A5C6832584E79C00F8FD84 /* SupportedCurrenciesList.swift */; };
+		35A5C68A2584E89500F8FD84 /* DataConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A5C6892584E89500F8FD84 /* DataConverter.swift */; };
+		35BD255E2586238400023ADE /* SelectItemModalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BD255D2586238400023ADE /* SelectItemModalViewModel.swift */; };
+		35BD256A2586661500023ADE /* UpdateLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BD25692586661500023ADE /* UpdateLabels.swift */; };
+		35E1208225877DCB00894CD9 /* ExchangeDataConversionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E1208125877DCB00894CD9 /* ExchangeDataConversionTests.swift */; };
+		35E1208A258785FE00894CD9 /* SelectedItemModalViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E12089258785FE00894CD9 /* SelectedItemModalViewModelTests.swift */; };
+		35E677F525811504007590F2 /* ExchangeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E677F425811504007590F2 /* ExchangeViewModel.swift */; };
+		35E677FB2581156E007590F2 /* CurrencyLayerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E677FA2581156E007590F2 /* CurrencyLayerAPI.swift */; };
+		35E6780325811647007590F2 /* CurrencySupported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E6780225811647007590F2 /* CurrencySupported.swift */; };
+		35E67808258116C6007590F2 /* CurrencyRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E67807258116C6007590F2 /* CurrencyRates.swift */; };
+		35ED5E65258574C900D74F71 /* ExchangeScreenModal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35ED5E64258574C900D74F71 /* ExchangeScreenModal.storyboard */; };
+		35ED5E732585759300D74F71 /* ExchangeModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ED5E722585759300D74F71 /* ExchangeModalViewController.swift */; };
+		35F16FD325800F0A00481772 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F16FD225800F0A00481772 /* Strings.swift */; };
+		35F6C7112587A8C1001D007E /* ButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F6C7102587A8C1001D007E /* ButtonType.swift */; };
+		35F6C7162587B2C2001D007E /* ExchangeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F6C7152587B2C2001D007E /* ExchangeAppUITests.swift */; };
+		35FA9C7A257F046900213F84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA9C79257F046900213F84 /* AppDelegate.swift */; };
+		35FA9C7E257F046900213F84 /* ExchangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA9C7D257F046900213F84 /* ExchangeViewController.swift */; };
+		35FA9C81257F046900213F84 /* ExchangeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FA9C7F257F046900213F84 /* ExchangeScreen.storyboard */; };
+		35FA9C83257F046D00213F84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35FA9C82257F046D00213F84 /* Assets.xcassets */; };
+		35FA9C86257F046D00213F84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FA9C84257F046D00213F84 /* LaunchScreen.storyboard */; };
+		35FA9C91257F046E00213F84 /* DataConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA9C90257F046E00213F84 /* DataConverterTests.swift */; };
+		35FA9CC7257F8E6900213F84 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA9CC6257F8E6900213F84 /* Coordinator.swift */; };
+		35FA9CCF257F8F2800213F84 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA9CCE257F8F2800213F84 /* Storyboarded.swift */; };
+		35FA9CD4257F909200213F84 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA9CD3257F909200213F84 /* MainCoordinator.swift */; };
+		35FA9CE1257F96AA00213F84 /* SupportedCurrenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA9CE0257F96AA00213F84 /* SupportedCurrenciesViewController.swift */; };
+		35FA9CEA257FA18900213F84 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA9CE9257FA18900213F84 /* Colors.swift */; };
+		52BE84BF5750D54D1B8C6D67 /* Pods_EasyMoneyExchanger_EasyMoneyExchangerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67D14E6FD35D4FCA8CE4A69D /* Pods_EasyMoneyExchanger_EasyMoneyExchangerUITests.framework */; };
+		B4C24EDCC71013BB5DC5CE96 /* Pods_EasyMoneyExchangerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A566ED7D57CE14909C200D4 /* Pods_EasyMoneyExchangerTests.framework */; };
+		F363644E49339B43CE755072 /* Pods_EasyMoneyExchanger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 560CAF7924CE05E90C068189 /* Pods_EasyMoneyExchanger.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35FA9C8D257F046E00213F84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35FA9C6E257F046900213F84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35FA9C75257F046900213F84;
+			remoteInfo = EasyMoneyExchanger;
+		};
+		35FA9C98257F046E00213F84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35FA9C6E257F046900213F84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35FA9C75257F046900213F84;
+			remoteInfo = EasyMoneyExchanger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00D3E337A5E6D8312E19D03A /* Pods-EasyMoneyExchangerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyMoneyExchangerTests.debug.xcconfig"; path = "Target Support Files/Pods-EasyMoneyExchangerTests/Pods-EasyMoneyExchangerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		35A5C54225822FE300F8FD84 /* Flags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flags.swift; sourceTree = "<group>"; };
+		35A5C5672582879C00F8FD84 /* EasyMoneyExchanger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EasyMoneyExchanger.xcdatamodel; sourceTree = "<group>"; };
+		35A5C5DD2582AB7D00F8FD84 /* homeAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homeAnimation.json; sourceTree = "<group>"; };
+		35A5C616258315A700F8FD84 /* CurrencyExchanges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyExchanges.swift; sourceTree = "<group>"; };
+		35A5C61B258317CF00F8FD84 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		35A5C62C2583AF4E00F8FD84 /* SupportedCurrenciesScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SupportedCurrenciesScreen.storyboard; sourceTree = "<group>"; };
+		35A5C6312583B07D00F8FD84 /* SupportedCurrenciesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportedCurrenciesViewModel.swift; sourceTree = "<group>"; };
+		35A5C6572584D6E900F8FD84 /* Exchanges+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Exchanges+CoreDataClass.swift"; path = " CoreData/Exchanges+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		35A5C6582584D6E900F8FD84 /* Exchanges+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Exchanges+CoreDataProperties.swift"; path = " CoreData/Exchanges+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		35A5C6592584D6E900F8FD84 /* Rates+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Rates+CoreDataClass.swift"; path = " CoreData/Rates+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		35A5C65A2584D6E900F8FD84 /* Rates+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Rates+CoreDataProperties.swift"; path = " CoreData/Rates+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		35A5C65B2584D6E900F8FD84 /* Supported+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Supported+CoreDataClass.swift"; path = " CoreData/Supported+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		35A5C65C2584D6E900F8FD84 /* Supported+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Supported+CoreDataProperties.swift"; path = " CoreData/Supported+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		35A5C6832584E79C00F8FD84 /* SupportedCurrenciesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportedCurrenciesList.swift; sourceTree = "<group>"; };
+		35A5C6892584E89500F8FD84 /* DataConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConverter.swift; sourceTree = "<group>"; };
+		35BD255D2586238400023ADE /* SelectItemModalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectItemModalViewModel.swift; sourceTree = "<group>"; };
+		35BD25692586661500023ADE /* UpdateLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateLabels.swift; sourceTree = "<group>"; };
+		35E1208125877DCB00894CD9 /* ExchangeDataConversionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDataConversionTests.swift; sourceTree = "<group>"; };
+		35E12089258785FE00894CD9 /* SelectedItemModalViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedItemModalViewModelTests.swift; sourceTree = "<group>"; };
+		35E677F425811504007590F2 /* ExchangeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeViewModel.swift; sourceTree = "<group>"; };
+		35E677FA2581156E007590F2 /* CurrencyLayerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyLayerAPI.swift; sourceTree = "<group>"; };
+		35E6780225811647007590F2 /* CurrencySupported.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySupported.swift; sourceTree = "<group>"; };
+		35E67807258116C6007590F2 /* CurrencyRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRates.swift; sourceTree = "<group>"; };
+		35ED5E64258574C900D74F71 /* ExchangeScreenModal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExchangeScreenModal.storyboard; sourceTree = "<group>"; };
+		35ED5E722585759300D74F71 /* ExchangeModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeModalViewController.swift; sourceTree = "<group>"; };
+		35F16FD225800F0A00481772 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		35F6C7102587A8C1001D007E /* ButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonType.swift; sourceTree = "<group>"; };
+		35F6C7152587B2C2001D007E /* ExchangeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeAppUITests.swift; sourceTree = "<group>"; };
+		35FA9C76257F046900213F84 /* EasyMoneyExchanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyMoneyExchanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35FA9C79257F046900213F84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		35FA9C7D257F046900213F84 /* ExchangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeViewController.swift; sourceTree = "<group>"; };
+		35FA9C80257F046900213F84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ExchangeScreen.storyboard; sourceTree = "<group>"; };
+		35FA9C82257F046D00213F84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35FA9C85257F046D00213F84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		35FA9C87257F046D00213F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35FA9C8C257F046E00213F84 /* EasyMoneyExchangerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyMoneyExchangerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35FA9C90257F046E00213F84 /* DataConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConverterTests.swift; sourceTree = "<group>"; };
+		35FA9C92257F046E00213F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35FA9C97257F046E00213F84 /* EasyMoneyExchangerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyMoneyExchangerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35FA9C9D257F046E00213F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35FA9CC6257F8E6900213F84 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		35FA9CCE257F8F2800213F84 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		35FA9CD3257F909200213F84 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		35FA9CE0257F96AA00213F84 /* SupportedCurrenciesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportedCurrenciesViewController.swift; sourceTree = "<group>"; };
+		35FA9CE9257FA18900213F84 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		560CAF7924CE05E90C068189 /* Pods_EasyMoneyExchanger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyMoneyExchanger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A7D9EC7BC82807C2A551A58 /* Pods-EasyMoneyExchanger-EasyMoneyExchangerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyMoneyExchanger-EasyMoneyExchangerUITests.debug.xcconfig"; path = "Target Support Files/Pods-EasyMoneyExchanger-EasyMoneyExchangerUITests/Pods-EasyMoneyExchanger-EasyMoneyExchangerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		611DB02194DC3614EC9D0D87 /* Pods-EasyMoneyExchanger-EasyMoneyExchangerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyMoneyExchanger-EasyMoneyExchangerUITests.release.xcconfig"; path = "Target Support Files/Pods-EasyMoneyExchanger-EasyMoneyExchangerUITests/Pods-EasyMoneyExchanger-EasyMoneyExchangerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		67D14E6FD35D4FCA8CE4A69D /* Pods_EasyMoneyExchanger_EasyMoneyExchangerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyMoneyExchanger_EasyMoneyExchangerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C19E873B27D8AE2D6ADB2E6 /* Pods-EasyMoneyExchanger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyMoneyExchanger.release.xcconfig"; path = "Target Support Files/Pods-EasyMoneyExchanger/Pods-EasyMoneyExchanger.release.xcconfig"; sourceTree = "<group>"; };
+		76473044AEFAE107CD861828 /* Pods-EasyMoneyExchanger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyMoneyExchanger.debug.xcconfig"; path = "Target Support Files/Pods-EasyMoneyExchanger/Pods-EasyMoneyExchanger.debug.xcconfig"; sourceTree = "<group>"; };
+		7A566ED7D57CE14909C200D4 /* Pods_EasyMoneyExchangerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyMoneyExchangerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3D0D5000B23953F1606E14E /* Pods-EasyMoneyExchangerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyMoneyExchangerTests.release.xcconfig"; path = "Target Support Files/Pods-EasyMoneyExchangerTests/Pods-EasyMoneyExchangerTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35FA9C73257F046900213F84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F363644E49339B43CE755072 /* Pods_EasyMoneyExchanger.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35FA9C89257F046E00213F84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4C24EDCC71013BB5DC5CE96 /* Pods_EasyMoneyExchangerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35FA9C94257F046E00213F84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52BE84BF5750D54D1B8C6D67 /* Pods_EasyMoneyExchanger_EasyMoneyExchangerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35A5C5902582942F00F8FD84 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				35A5C62325837F4B00F8FD84 /* Extensions */,
+				35A5C5662582879C00F8FD84 /* EasyMoneyExchanger.xcdatamodeld */,
+				35A5C61B258317CF00F8FD84 /* CoreDataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		35A5C62325837F4B00F8FD84 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				35A5C6572584D6E900F8FD84 /* Exchanges+CoreDataClass.swift */,
+				35A5C6582584D6E900F8FD84 /* Exchanges+CoreDataProperties.swift */,
+				35A5C6592584D6E900F8FD84 /* Rates+CoreDataClass.swift */,
+				35A5C65A2584D6E900F8FD84 /* Rates+CoreDataProperties.swift */,
+				35A5C65B2584D6E900F8FD84 /* Supported+CoreDataClass.swift */,
+				35A5C65C2584D6E900F8FD84 /* Supported+CoreDataProperties.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		35BD25622586300B00023ADE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				35A5C6892584E89500F8FD84 /* DataConverter.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		35E677EF25810FC8007590F2 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				35A5C5DD2582AB7D00F8FD84 /* homeAnimation.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		35E677F025810FD2007590F2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				35FA9C82257F046D00213F84 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		35E677F925811533007590F2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				35E677FA2581156E007590F2 /* CurrencyLayerAPI.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		35ED5E932585A3CE00D74F71 /* SelectItemModal */ = {
+			isa = PBXGroup;
+			children = (
+				35ED5E9F2585A4D900D74F71 /* View */,
+				35ED5EA22585A4ED00D74F71 /* ViewModel */,
+				35ED5EA12585A4E600D74F71 /* Storyboard */,
+			);
+			path = SelectItemModal;
+			sourceTree = "<group>";
+		};
+		35ED5E942585A3EF00D74F71 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				35F6C6FB25879565001D007E /* Utils */,
+				35BD25622586300B00023ADE /* Extensions */,
+				35FA9CB5257F8D3100213F84 /* SupportedCurrenciesScreen */,
+				35FA9CAD257F279B00213F84 /* ExchangeScreen */,
+				35ED5E932585A3CE00D74F71 /* SelectItemModal */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		35ED5E9F2585A4D900D74F71 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				35ED5E722585759300D74F71 /* ExchangeModalViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		35ED5EA12585A4E600D74F71 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				35ED5E64258574C900D74F71 /* ExchangeScreenModal.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		35ED5EA22585A4ED00D74F71 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				35BD255D2586238400023ADE /* SelectItemModalViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		35F16FCC257FD94B00481772 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				35E677F025810FD2007590F2 /* Images */,
+				35E677EF25810FC8007590F2 /* Animations */,
+				35FA9C84257F046D00213F84 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		35F6C6FB25879565001D007E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				35BD25692586661500023ADE /* UpdateLabels.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		35FA9C6D257F046900213F84 = {
+			isa = PBXGroup;
+			children = (
+				35FA9C78257F046900213F84 /* EasyMoneyExchanger */,
+				35FA9C8F257F046E00213F84 /* EasyMoneyExchangerTests */,
+				35FA9C9A257F046E00213F84 /* EasyMoneyExchangerUITests */,
+				35FA9C77257F046900213F84 /* Products */,
+				831ED7C9185A2F50CE76F230 /* Pods */,
+				71A49C76CD522B683287546E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		35FA9C77257F046900213F84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35FA9C76257F046900213F84 /* EasyMoneyExchanger.app */,
+				35FA9C8C257F046E00213F84 /* EasyMoneyExchangerTests.xctest */,
+				35FA9C97257F046E00213F84 /* EasyMoneyExchangerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35FA9C78257F046900213F84 /* EasyMoneyExchanger */ = {
+			isa = PBXGroup;
+			children = (
+				35ED5E942585A3EF00D74F71 /* Screens */,
+				35A5C5902582942F00F8FD84 /* CoreData */,
+				35FA9CAC257F06D000213F84 /* Coordinator */,
+				35F16FCC257FD94B00481772 /* Resources */,
+				35FA9CE8257FA17600213F84 /* Constants */,
+				35FA9C79257F046900213F84 /* AppDelegate.swift */,
+				35FA9C87257F046D00213F84 /* Info.plist */,
+			);
+			path = EasyMoneyExchanger;
+			sourceTree = "<group>";
+		};
+		35FA9C8F257F046E00213F84 /* EasyMoneyExchangerTests */ = {
+			isa = PBXGroup;
+			children = (
+				35FA9C90257F046E00213F84 /* DataConverterTests.swift */,
+				35E1208125877DCB00894CD9 /* ExchangeDataConversionTests.swift */,
+				35E12089258785FE00894CD9 /* SelectedItemModalViewModelTests.swift */,
+				35FA9C92257F046E00213F84 /* Info.plist */,
+			);
+			path = EasyMoneyExchangerTests;
+			sourceTree = "<group>";
+		};
+		35FA9C9A257F046E00213F84 /* EasyMoneyExchangerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				35F6C7152587B2C2001D007E /* ExchangeAppUITests.swift */,
+				35FA9C9D257F046E00213F84 /* Info.plist */,
+			);
+			path = EasyMoneyExchangerUITests;
+			sourceTree = "<group>";
+		};
+		35FA9CAC257F06D000213F84 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				35FA9CC6257F8E6900213F84 /* Coordinator.swift */,
+				35FA9CCE257F8F2800213F84 /* Storyboarded.swift */,
+				35FA9CD3257F909200213F84 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		35FA9CAD257F279B00213F84 /* ExchangeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				35E677F925811533007590F2 /* Service */,
+				35FA9CAF257F27D100213F84 /* Model */,
+				35FA9CAE257F27CC00213F84 /* View */,
+				35FA9CB0257F27D700213F84 /* ViewModel */,
+				35FA9CB1257F27E000213F84 /* Storyboard */,
+			);
+			path = ExchangeScreen;
+			sourceTree = "<group>";
+		};
+		35FA9CAE257F27CC00213F84 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				35FA9C7D257F046900213F84 /* ExchangeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		35FA9CAF257F27D100213F84 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				35E6780225811647007590F2 /* CurrencySupported.swift */,
+				35E67807258116C6007590F2 /* CurrencyRates.swift */,
+				35A5C616258315A700F8FD84 /* CurrencyExchanges.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		35FA9CB0257F27D700213F84 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				35E677F425811504007590F2 /* ExchangeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		35FA9CB1257F27E000213F84 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				35FA9C7F257F046900213F84 /* ExchangeScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		35FA9CB5257F8D3100213F84 /* SupportedCurrenciesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				35FA9CB8257F8D6B00213F84 /* Model */,
+				35FA9CB9257F8D7100213F84 /* View */,
+				35FA9CB7257F8D5D00213F84 /* ViewModel */,
+				35FA9CB6257F8D4D00213F84 /* Storyboard */,
+			);
+			path = SupportedCurrenciesScreen;
+			sourceTree = "<group>";
+		};
+		35FA9CB6257F8D4D00213F84 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				35A5C62C2583AF4E00F8FD84 /* SupportedCurrenciesScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		35FA9CB7257F8D5D00213F84 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				35A5C6312583B07D00F8FD84 /* SupportedCurrenciesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		35FA9CB8257F8D6B00213F84 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				35A5C6832584E79C00F8FD84 /* SupportedCurrenciesList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		35FA9CB9257F8D7100213F84 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				35FA9CE0257F96AA00213F84 /* SupportedCurrenciesViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		35FA9CE8257FA17600213F84 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				35FA9CE9257FA18900213F84 /* Colors.swift */,
+				35F16FD225800F0A00481772 /* Strings.swift */,
+				35A5C54225822FE300F8FD84 /* Flags.swift */,
+				35F6C7102587A8C1001D007E /* ButtonType.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		71A49C76CD522B683287546E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				560CAF7924CE05E90C068189 /* Pods_EasyMoneyExchanger.framework */,
+				67D14E6FD35D4FCA8CE4A69D /* Pods_EasyMoneyExchanger_EasyMoneyExchangerUITests.framework */,
+				7A566ED7D57CE14909C200D4 /* Pods_EasyMoneyExchangerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		831ED7C9185A2F50CE76F230 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76473044AEFAE107CD861828 /* Pods-EasyMoneyExchanger.debug.xcconfig */,
+				6C19E873B27D8AE2D6ADB2E6 /* Pods-EasyMoneyExchanger.release.xcconfig */,
+				5A7D9EC7BC82807C2A551A58 /* Pods-EasyMoneyExchanger-EasyMoneyExchangerUITests.debug.xcconfig */,
+				611DB02194DC3614EC9D0D87 /* Pods-EasyMoneyExchanger-EasyMoneyExchangerUITests.release.xcconfig */,
+				00D3E337A5E6D8312E19D03A /* Pods-EasyMoneyExchangerTests.debug.xcconfig */,
+				A3D0D5000B23953F1606E14E /* Pods-EasyMoneyExchangerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35FA9C75257F046900213F84 /* EasyMoneyExchanger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35FA9CA0257F046E00213F84 /* Build configuration list for PBXNativeTarget "EasyMoneyExchanger" */;
+			buildPhases = (
+				F6CA3B7422C4E306DBFA857A /* [CP] Check Pods Manifest.lock */,
+				35FA9DA3257FB7E500213F84 /* ShellScript */,
+				35FA9C72257F046900213F84 /* Sources */,
+				35FA9C73257F046900213F84 /* Frameworks */,
+				35FA9C74257F046900213F84 /* Resources */,
+				353B80485785A496519FFB85 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyMoneyExchanger;
+			productName = EasyMoneyExchanger;
+			productReference = 35FA9C76257F046900213F84 /* EasyMoneyExchanger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		35FA9C8B257F046E00213F84 /* EasyMoneyExchangerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35FA9CA3257F046E00213F84 /* Build configuration list for PBXNativeTarget "EasyMoneyExchangerTests" */;
+			buildPhases = (
+				C2AB95591A25FA023DAC080A /* [CP] Check Pods Manifest.lock */,
+				35FA9C88257F046E00213F84 /* Sources */,
+				35FA9C89257F046E00213F84 /* Frameworks */,
+				35FA9C8A257F046E00213F84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35FA9C8E257F046E00213F84 /* PBXTargetDependency */,
+			);
+			name = EasyMoneyExchangerTests;
+			productName = EasyMoneyExchangerTests;
+			productReference = 35FA9C8C257F046E00213F84 /* EasyMoneyExchangerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		35FA9C96257F046E00213F84 /* EasyMoneyExchangerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35FA9CA6257F046E00213F84 /* Build configuration list for PBXNativeTarget "EasyMoneyExchangerUITests" */;
+			buildPhases = (
+				A7C1E6DAA705E406AF656B15 /* [CP] Check Pods Manifest.lock */,
+				35FA9C93257F046E00213F84 /* Sources */,
+				35FA9C94257F046E00213F84 /* Frameworks */,
+				35FA9C95257F046E00213F84 /* Resources */,
+				CC0F1A2458B9BBC4E797B803 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35FA9C99257F046E00213F84 /* PBXTargetDependency */,
+			);
+			name = EasyMoneyExchangerUITests;
+			productName = EasyMoneyExchangerUITests;
+			productReference = 35FA9C97257F046E00213F84 /* EasyMoneyExchangerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35FA9C6E257F046900213F84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					35FA9C75257F046900213F84 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					35FA9C8B257F046E00213F84 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 35FA9C75257F046900213F84;
+					};
+					35FA9C96257F046E00213F84 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 35FA9C75257F046900213F84;
+					};
+				};
+			};
+			buildConfigurationList = 35FA9C71257F046900213F84 /* Build configuration list for PBXProject "EasyMoneyExchanger" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 35FA9C6D257F046900213F84;
+			productRefGroup = 35FA9C77257F046900213F84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35FA9C75257F046900213F84 /* EasyMoneyExchanger */,
+				35FA9C8B257F046E00213F84 /* EasyMoneyExchangerTests */,
+				35FA9C96257F046E00213F84 /* EasyMoneyExchangerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35FA9C74257F046900213F84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35A5C5DE2582AB7D00F8FD84 /* homeAnimation.json in Resources */,
+				35FA9C86257F046D00213F84 /* LaunchScreen.storyboard in Resources */,
+				35A5C62D2583AF4E00F8FD84 /* SupportedCurrenciesScreen.storyboard in Resources */,
+				35FA9C83257F046D00213F84 /* Assets.xcassets in Resources */,
+				35FA9C81257F046900213F84 /* ExchangeScreen.storyboard in Resources */,
+				35ED5E65258574C900D74F71 /* ExchangeScreenModal.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35FA9C8A257F046E00213F84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35FA9C95257F046E00213F84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		353B80485785A496519FFB85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyMoneyExchanger/Pods-EasyMoneyExchanger-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyMoneyExchanger/Pods-EasyMoneyExchanger-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyMoneyExchanger/Pods-EasyMoneyExchanger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35FA9DA3257FB7E500213F84 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		A7C1E6DAA705E406AF656B15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyMoneyExchanger-EasyMoneyExchangerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2AB95591A25FA023DAC080A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyMoneyExchangerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC0F1A2458B9BBC4E797B803 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyMoneyExchanger-EasyMoneyExchangerUITests/Pods-EasyMoneyExchanger-EasyMoneyExchangerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyMoneyExchanger-EasyMoneyExchangerUITests/Pods-EasyMoneyExchanger-EasyMoneyExchangerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyMoneyExchanger-EasyMoneyExchangerUITests/Pods-EasyMoneyExchanger-EasyMoneyExchangerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6CA3B7422C4E306DBFA857A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyMoneyExchanger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35FA9C72257F046900213F84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35FA9CC7257F8E6900213F84 /* Coordinator.swift in Sources */,
+				35A5C617258315A700F8FD84 /* CurrencyExchanges.swift in Sources */,
+				35A5C65F2584D6E900F8FD84 /* Rates+CoreDataClass.swift in Sources */,
+				35A5C6602584D6E900F8FD84 /* Rates+CoreDataProperties.swift in Sources */,
+				35E677F525811504007590F2 /* ExchangeViewModel.swift in Sources */,
+				35A5C5682582879C00F8FD84 /* EasyMoneyExchanger.xcdatamodeld in Sources */,
+				35A5C61C258317CF00F8FD84 /* CoreDataManager.swift in Sources */,
+				35FA9CD4257F909200213F84 /* MainCoordinator.swift in Sources */,
+				35F16FD325800F0A00481772 /* Strings.swift in Sources */,
+				35FA9C7E257F046900213F84 /* ExchangeViewController.swift in Sources */,
+				35A5C6842584E79C00F8FD84 /* SupportedCurrenciesList.swift in Sources */,
+				35BD256A2586661500023ADE /* UpdateLabels.swift in Sources */,
+				35BD255E2586238400023ADE /* SelectItemModalViewModel.swift in Sources */,
+				35A5C54325822FE300F8FD84 /* Flags.swift in Sources */,
+				35ED5E732585759300D74F71 /* ExchangeModalViewController.swift in Sources */,
+				35FA9CEA257FA18900213F84 /* Colors.swift in Sources */,
+				35A5C6612584D6E900F8FD84 /* Supported+CoreDataClass.swift in Sources */,
+				35A5C65D2584D6E900F8FD84 /* Exchanges+CoreDataClass.swift in Sources */,
+				35FA9CE1257F96AA00213F84 /* SupportedCurrenciesViewController.swift in Sources */,
+				35E677FB2581156E007590F2 /* CurrencyLayerAPI.swift in Sources */,
+				35FA9CCF257F8F2800213F84 /* Storyboarded.swift in Sources */,
+				35E6780325811647007590F2 /* CurrencySupported.swift in Sources */,
+				35A5C6322583B07D00F8FD84 /* SupportedCurrenciesViewModel.swift in Sources */,
+				35E67808258116C6007590F2 /* CurrencyRates.swift in Sources */,
+				35F6C7112587A8C1001D007E /* ButtonType.swift in Sources */,
+				35A5C65E2584D6E900F8FD84 /* Exchanges+CoreDataProperties.swift in Sources */,
+				35A5C6622584D6E900F8FD84 /* Supported+CoreDataProperties.swift in Sources */,
+				35FA9C7A257F046900213F84 /* AppDelegate.swift in Sources */,
+				35A5C68A2584E89500F8FD84 /* DataConverter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35FA9C88257F046E00213F84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35E1208225877DCB00894CD9 /* ExchangeDataConversionTests.swift in Sources */,
+				35FA9C91257F046E00213F84 /* DataConverterTests.swift in Sources */,
+				35E1208A258785FE00894CD9 /* SelectedItemModalViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35FA9C93257F046E00213F84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35F6C7162587B2C2001D007E /* ExchangeAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35FA9C8E257F046E00213F84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35FA9C75257F046900213F84 /* EasyMoneyExchanger */;
+			targetProxy = 35FA9C8D257F046E00213F84 /* PBXContainerItemProxy */;
+		};
+		35FA9C99257F046E00213F84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35FA9C75257F046900213F84 /* EasyMoneyExchanger */;
+			targetProxy = 35FA9C98257F046E00213F84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		35FA9C7F257F046900213F84 /* ExchangeScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35FA9C80257F046900213F84 /* Base */,
+			);
+			name = ExchangeScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		35FA9C84257F046D00213F84 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35FA9C85257F046D00213F84 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		35FA9C9E257F046E00213F84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		35FA9C9F257F046E00213F84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35FA9CA1257F046E00213F84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76473044AEFAE107CD861828 /* Pods-EasyMoneyExchanger.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 298LMVZB5H;
+				INFOPLIST_FILE = EasyMoneyExchanger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leongdev.EasyMoneyExchanger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		35FA9CA2257F046E00213F84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C19E873B27D8AE2D6ADB2E6 /* Pods-EasyMoneyExchanger.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 298LMVZB5H;
+				INFOPLIST_FILE = EasyMoneyExchanger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leongdev.EasyMoneyExchanger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		35FA9CA4257F046E00213F84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00D3E337A5E6D8312E19D03A /* Pods-EasyMoneyExchangerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 298LMVZB5H;
+				INFOPLIST_FILE = EasyMoneyExchangerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leongdev.EasyMoneyExchangerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyMoneyExchanger.app/EasyMoneyExchanger";
+			};
+			name = Debug;
+		};
+		35FA9CA5257F046E00213F84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3D0D5000B23953F1606E14E /* Pods-EasyMoneyExchangerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 298LMVZB5H;
+				INFOPLIST_FILE = EasyMoneyExchangerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leongdev.EasyMoneyExchangerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyMoneyExchanger.app/EasyMoneyExchanger";
+			};
+			name = Release;
+		};
+		35FA9CA7257F046E00213F84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A7D9EC7BC82807C2A551A58 /* Pods-EasyMoneyExchanger-EasyMoneyExchangerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 298LMVZB5H;
+				INFOPLIST_FILE = EasyMoneyExchangerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leongdev.EasyMoneyExchangerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EasyMoneyExchanger;
+			};
+			name = Debug;
+		};
+		35FA9CA8257F046E00213F84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 611DB02194DC3614EC9D0D87 /* Pods-EasyMoneyExchanger-EasyMoneyExchangerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 298LMVZB5H;
+				INFOPLIST_FILE = EasyMoneyExchangerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leongdev.EasyMoneyExchangerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EasyMoneyExchanger;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35FA9C71257F046900213F84 /* Build configuration list for PBXProject "EasyMoneyExchanger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35FA9C9E257F046E00213F84 /* Debug */,
+				35FA9C9F257F046E00213F84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35FA9CA0257F046E00213F84 /* Build configuration list for PBXNativeTarget "EasyMoneyExchanger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35FA9CA1257F046E00213F84 /* Debug */,
+				35FA9CA2257F046E00213F84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35FA9CA3257F046E00213F84 /* Build configuration list for PBXNativeTarget "EasyMoneyExchangerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35FA9CA4257F046E00213F84 /* Debug */,
+				35FA9CA5257F046E00213F84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35FA9CA6257F046E00213F84 /* Build configuration list for PBXNativeTarget "EasyMoneyExchangerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35FA9CA7257F046E00213F84 /* Debug */,
+				35FA9CA8257F046E00213F84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		35A5C5662582879C00F8FD84 /* EasyMoneyExchanger.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				35A5C5672582879C00F8FD84 /* EasyMoneyExchanger.xcdatamodel */,
+			);
+			currentVersion = 35A5C5672582879C00F8FD84 /* EasyMoneyExchanger.xcdatamodel */;
+			path = EasyMoneyExchanger.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 35FA9C6E257F046900213F84 /* Project object */;
+}

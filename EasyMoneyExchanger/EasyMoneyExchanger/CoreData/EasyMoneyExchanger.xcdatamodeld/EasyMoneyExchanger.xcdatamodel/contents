@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17511" systemVersion="20B29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Exchanges" representedClassName="Exchanges" syncable="YES">
+        <attribute name="from" optional="YES" attributeType="String"/>
+        <attribute name="to" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Rates" representedClassName="Rates" syncable="YES">
+        <attribute name="quotes" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="[String: Float]"/>
+        <attribute name="timeStamp" optional="YES" attributeType="Integer 64" valueTransformerName="NSSecureUnarchiveFromData" defaultValueString="0" usesScalarValueType="YES" customClassName="TimeInterval"/>
+    </entity>
+    <entity name="Supported" representedClassName="Supported" syncable="YES">
+        <attribute name="currencies" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="[String: String]"/>
+    </entity>
+    <elements>
+        <element name="Exchanges" positionX="-18" positionY="36" width="128" height="59"/>
+        <element name="Rates" positionX="-63" positionY="-18" width="128" height="59"/>
+        <element name="Supported" positionX="-54" positionY="9" width="128" height="44"/>
+    </elements>
+</model>

@@ -1,0 +1,9 @@
+line_length: 
+  - 200 # warning
+  - 300 # error
+
+excluded:
+  - Pods
+
+identifier_name:
+  min_length: 2

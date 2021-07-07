@@ -1,0 +1,6 @@
+framework module Pods_EasyMoneyExchanger_EasyMoneyExchangerUITests {
+  umbrella header "Pods-EasyMoneyExchanger-EasyMoneyExchangerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
