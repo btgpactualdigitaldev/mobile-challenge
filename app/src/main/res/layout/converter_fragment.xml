@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/converter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    tools:context=".ui.ConverterFragment">
+
+    <EditText
+        android:id="@+id/baseValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Digite valor para converter"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColorHint="@color/ligth_gray"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/button_currency_origin"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttons_background_blue"
+        android:text="@string/moeda_de_origem"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/baseValue" />
+
+    <Button
+        android:id="@+id/button_currency_final"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/buttons_background_blue"
+        android:text="@string/moeda_destino"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_currency_origin" />
+
+    <TextView
+        android:id="@+id/val_converted"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/base"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColorHint="@color/ligth_gray"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_currency_final" />
+
+
+    <ImageView
+        android:id="@+id/ic_thermometer"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_arraow_foreground"
+        app:layout_constraintTop_toBottomOf="@+id/button_currency_origin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

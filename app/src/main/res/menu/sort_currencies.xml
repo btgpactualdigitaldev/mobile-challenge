@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/order_by_abbrev"
+        android:title="Ordenar por Sigla" />
+    <item
+        android:id="@+id/order_by_name"
+        android:title="Ordenar por Nome" />
+
+    <item
+        android:id="@+id/action_search"
+        android:title="Pesquisar"
+        app:showAsAction="collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+ </menu>

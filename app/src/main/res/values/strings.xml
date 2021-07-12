@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Currencies</string>
+    <string name="currency_Final">Choose the Buttom FINAL Currency</string>
+    <string name="NO_ROWS_TO_SHOW">Não existem cotaçoes, verifique internet.</string>
+    <string name="ERROR_UNEXPECTED">Ocorreu um Erro Inesperado.</string>
+    <string name="currencies">Currencies</string>
+    <string name="ok">OK</string>
+    <string name="null_msg"> </string>
+    <string name="no_connection">Atenção! Sem conexão de internet, cotações podem estar defasadas.</string>
+    <string name="no_update_rates">Atenção!, Não foi possível atualizar cotações.</string>
+    <string name="no_records">Atenção!!! Base de dados sem informações no momento.</string>
+    <string name="name_currency">Nome da Moeda</string>
+    <string name="abbrev">Abreviatura:</string>
+    <string name="currency_Origin">Choose the Buttom ORIGINAL Currency</string>
+    <string name="moeda_de_origem">Moeda de origem</string>
+    <string name="moeda_destino">Moeda destino</string>
+    <string name="abbrev_sort">abbrev</string>
+    <string name="no_api_found">Não foi possivel Conectar com o servidor, tente mais tarde.</string>
+    <string name="currencies_sort">currency</string>
+    <string name="no_values">Atenção! Não existe Cotação para esta Moeda.</string>
+    <string name="no_success">Atenção! Não foi possível atualizar as cotações.</string>
+</resources>
