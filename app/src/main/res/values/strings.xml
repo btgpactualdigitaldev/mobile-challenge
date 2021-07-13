@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DesafioBTG</string>
+    <string name="title_conversion">Conversão</string>
+    <string name="title_coins">Moedas</string>
+    <string name="origin_currency">Selecione a moeda que deseja converter:</string>
+    <string name="destination_currency">Selecione para qual moeda deseja converter:</string>
+    <string name="origin_value_hint">Digite o valor para converter</string>
+    <string name="converted_value">Valor convertido: </string>
+    <string name="currency_converter">Conversor de moedas</string>
+    <string name="no_internet">Verifique a sua conexão com a Internet e tente novamente.</string>
+    <string name="no_coins">Não foi possível carregar as moedas, verifique sua conexão com a internet</string>
+</resources>
