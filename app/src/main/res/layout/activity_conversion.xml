@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/insertValueTil"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        android:layout_marginTop="@dimen/vertical_margin"
+        android:layout_marginEnd="@dimen/horizontal_margin"
+        android:fontFamily="@font/google_sans"
+        android:hint="@string/conversion_insert_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/insertValueEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/google_sans"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/originBt"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="@dimen/vertical_margin"
+        android:layout_marginEnd="@dimen/horizontal_margin_small"
+        android:fontFamily="@font/google_sans"
+        android:enabled="false"
+        android:text="@string/conversion_button_origin_text"
+        app:layout_constraintEnd_toStartOf="@+id/destinyBt"
+        app:layout_constraintStart_toStartOf="@+id/insertValueTil"
+        app:layout_constraintTop_toBottomOf="@+id/insertValueTil" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/destinyBt"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginStart="@dimen/horizontal_margin_small"
+        android:layout_marginTop="@dimen/vertical_margin"
+        android:fontFamily="@font/google_sans"
+        android:enabled="false"
+        android:text="@string/conversion_button_destiny_text"
+        app:layout_constraintEnd_toEndOf="@+id/insertValueTil"
+        app:layout_constraintStart_toEndOf="@+id/originBt"
+        app:layout_constraintTop_toBottomOf="@+id/insertValueTil" />
+
+    <TextView
+        android:id="@+id/originCoinTv"
+        style="@style/TextBig"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vertical_margin"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/originBt"
+        app:layout_constraintStart_toStartOf="@+id/originBt"
+        app:layout_constraintTop_toBottomOf="@+id/originBt"
+        tools:text="BRL" />
+
+    <TextView
+        android:id="@+id/destinyCoinTv"
+        style="@style/TextBig"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vertical_margin"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/destinyBt"
+        app:layout_constraintStart_toStartOf="@+id/destinyBt"
+        app:layout_constraintTop_toBottomOf="@+id/destinyBt"
+        tools:text="USD" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/convertBt"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/button_height"
+        android:fontFamily="@font/google_sans"
+        android:layout_marginTop="@dimen/vertical_margin"
+        android:layout_marginHorizontal="@dimen/horizontal_margin"
+        android:text="@string/conversion_button_convert_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/originCoinTv" />
+
+    <TextView
+        android:id="@+id/conversionResultTitleTv"
+        style="@style/TextMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vertical_margin"
+        android:layout_marginHorizontal="@dimen/horizontal_margin"
+        android:text="@string/conversion_result_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/convertBt" />
+
+    <TextView
+        android:id="@+id/conversionResultTv"
+        style="@style/TextBig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vertical_margin"
+        android:layout_marginHorizontal="@dimen/horizontal_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conversionResultTitleTv" />
+
+    <ProgressBar
+        android:id="@+id/conversionLoadingPb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

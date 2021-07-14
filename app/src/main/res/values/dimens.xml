@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_height">60dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="horizontal_margin">16dp</dimen>
+    <dimen name="horizontal_margin_medium">24dp</dimen>
+    <dimen name="horizontal_margin_detail">4dp</dimen>
+    <dimen name="horizontal_margin_small">8dp</dimen>
+    <dimen name="horizontal_margin_large">32dp</dimen>
+    <dimen name="horizontal_margin_extra_large">64dp</dimen>
+    <dimen name="horizontal_margin_thin">2dp</dimen>
+    <dimen name="vertical_margin">16dp</dimen>
+    <dimen name="vertical_margin_thin">2dp</dimen>
+    <dimen name="vertical_margin_detail">4dp</dimen>
+    <dimen name="vertical_margin_small">8dp</dimen>
+    <dimen name="vertical_margin_small_medium">12dp</dimen>
+    <dimen name="vertical_margin_large">32dp</dimen>
+    <dimen name="vertical_margin_Xlarge">48dp</dimen>
+    <dimen name="vertical_margin_XXlarge">96dp</dimen>
+    <dimen name="vertical_margin_medium">24dp</dimen>
+    <dimen name="minimal_height">300dp</dimen>
+    <dimen name="default_margin_and_padding">16dp</dimen>
+
+    <!--TEXT SIZES-->
+    <dimen name="text_initials_login">50sp</dimen>
+    <dimen name="text_title_forgot_password">30sp</dimen>
+    <dimen name="text_display">32sp</dimen>
+    <dimen name="text_big">32sp</dimen>
+    <dimen name="text_headline_big">26sp</dimen>
+    <dimen name="text_headline">24sp</dimen>
+    <dimen name="text_title">20sp</dimen>
+    <dimen name="text_subtitle">18sp</dimen>
+    <dimen name="text_small_subtitle">12sp</dimen>
+    <dimen name="text_subheading">16sp</dimen>
+    <dimen name="textMedium">16sp</dimen>
+    <dimen name="text_body">14sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="round_focus">15dp</dimen>
+    <dimen name="qr_code_size">200dp</dimen>
+    <dimen name="qr_code_small_size">100dp</dimen>
+    <dimen name="buttonSize">60dp</dimen>
+    <dimen name="buttonSizeSmall">40dp</dimen>
+    <dimen name="arrow_size">15dp</dimen>
+</resources>

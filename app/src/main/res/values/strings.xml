@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Desafio BTG</string>
+    <!-- ACTIONS -->
+    <string name="action_ok">OK</string>
+    <string name="action_cancel">Cancelar</string>
+    <!-- BUTTONS -->
+    <string name="conversion_button_origin_text">Moeda de Origem</string>
+    <string name="conversion_button_destiny_text">Moeda de Destino</string>
+    <string name="conversion_button_convert_text">Converter Moeda</string>
+
+    <string name="conversion_insert_value">Insira um valor</string>
+    <string name="conversion_result_title">Valor Convertido</string>
+    <string name="choose_coins_title">Escolher Moeda</string>
+    <string name="error_dialog_title">Ops!</string>
+</resources>
