@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/valorOrigem"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:hint="Valor de Origem"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/originalCurrencyButton"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Moeda de Origem:"
+            android:layout_weight="2"
+            android:onClick="onOriginalCurrencyButtonClick"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logo_conversao"/>
+
+
+    <LinearLayout
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/convertedValueTextView"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="40sp"/>
+
+        <Button
+            android:id="@+id/convertedCurrencyButton"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Moeda de Destino:"
+            android:layout_weight="2"
+            android:onClick="onConvertedCurrencyButtonClick"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_margin="24dp"
+        android:id="@+id/convertButton"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="32dp"
+        android:text="Converter Valor"
+        android:onClick="onConvertButtonClick"/>
+
+</LinearLayout>
