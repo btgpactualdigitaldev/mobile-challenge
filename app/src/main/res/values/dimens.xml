@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- MARGIN -->
+    <dimen name="size_no_dp">0dp</dimen>
+    <dimen name="size_xxxsmall">2dp</dimen>
+    <dimen name="size_xxsmall">4dp</dimen>
+    <dimen name="size_xsmall">8dp</dimen>
+    <dimen name="size_normal">16dp</dimen>
+    <dimen name="size_default">24dp</dimen>
+    <dimen name="size_medium">32dp</dimen>
+    <dimen name="size_xxlarge">60dp</dimen>
+    <dimen name="size_small">12dp</dimen>
+
+    <!-- CARD VIEW -->
+    <dimen name="card_corner_radius">6dp</dimen>
+    <dimen name="card_corner_radius_item_currency">4dp</dimen>
+    <dimen name="card_elevation_small">3dp</dimen>
+    <dimen name="card_elevation_normal">6dp</dimen>
+    <dimen name="size_header_blue">200dp</dimen>
+</resources>

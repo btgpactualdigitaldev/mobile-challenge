@@ -1,0 +1,51 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">BTG Conversor Monetario</string>
+    <string name="all_connection_lost" tools:ignore="Typos">Rede indisponível. Você está sem sinal no momento.</string>
+
+    <string name="all_understood">Entendi</string>
+
+    <!--GENERIC-->
+    <string name="alert_title_generic">Erro desconhecido</string>
+    <string name="alert_message_generic">Nāo conseguimos achar uma causa para este problema. Tente novamente, e se o problema persistir, tente mais tarde.</string>
+    <string name="alert_textpositivebutton_generic">@string/all_understood</string>
+
+    <!--TIMEOUT-->
+    <string name="alert_title_timeout">Serviço momentâneamente instável</string>
+    <string name="alert_message_timeout">Houve uma demora na resposta com nossos servidores, tente novamente. Caso o problema persista, tente mais tarde.</string>
+    <string name="alert_textpositivebutton_timeout">@string/all_understood</string>
+
+    <!--400-->
+    <string name="alert_title_400">Erro Inesperado</string>
+
+    <!--401-->
+    <string name="alert_title_401">Nāo permitido</string>
+    <string name="alert_message_401">Você nāo possui permissāo para realizar esta açāo. Por favor, contate o seu líder direto.</string>
+    <string name="alert_textpositivebutton_401">@string/all_understood</string>
+
+    <!--404-->
+    <string name="alert_title_404">Nada encontrado</string>
+
+    <!--500-->
+    <string name="alert_title_500">Serviço indisponível</string>
+
+    <string name="by">by</string>
+    <string name="beyond">[ b e y o n d ]</string>
+    <string name="currency_converter">Conversor Monetário</string>
+    <string name="valor_origem">Valor origem</string>
+    <string name="zero">0,00</string>
+    <string name="valor_convertido">Valor convertido</string>
+    <string name="moeda_origem">Moeda origem</string>
+    <string name="moeda_destino">Moeda destino</string>
+    <string name="escolher_moeda_destino">Escolher Moeda Destino</string>
+    <string name="ordenar_lista">Ordenar lista</string>
+    <string name="ordenar_lista_por">Ordenar lista por:</string>
+    <string name="selecione">selecione</string>
+    <string name="realizando_configuracoes">Realizando configurações iniciais,\naguarde enquanto concluímos…</string>
+    <string name="hint_busca_moeda">Ex.: USD ou Dólar</string>
+    <string name="ordernar_por_codigo">Código da Moeda</string>
+    <string name="ordernar_por_nome">Nome da Moeda</string>
+    <string name="procure_pela_sigla">Procure pela sigla ou nome da moeda…</string>
+    <string name="termos_de_uso"><![CDATA[© 2020 BTG Pactual - <font color=#0A46E6><b>Termos de Uso</b></font>]]></string>
+    <string name="inverter_conversao">inverter conversão</string>
+    <string name="alert_title_dados_invalidos">Dados inválidos</string>
+</resources>

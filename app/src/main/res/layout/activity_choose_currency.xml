@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ice"
+    android:fitsSystemWindows="true"
+    tools:context=".view.activity.ChooseCurrencyActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctlChooseCurrencyHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_header_blue"
+        android:background="@color/colorPrimary"
+        android:paddingStart="@dimen/size_default"
+        android:paddingTop="@dimen/size_normal"
+        android:paddingEnd="@dimen/size_default"
+        android:paddingBottom="@dimen/size_normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imvChooseCurrencyLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/size_normal"
+            android:adjustViewBounds="true"
+            android:onClick="back"
+            android:paddingTop="@dimen/size_normal"
+            android:paddingEnd="@dimen/size_default"
+            android:paddingBottom="@dimen/size_normal"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_back_white"
+            app:layout_constraintStart_toStartOf="@+id/edtChooseCurrency"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlSymmetry" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView"
+            style="@style/TitleText.Light"
+            android:layout_width="@dimen/size_no_dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_normal"
+            android:layout_marginEnd="@dimen/size_normal"
+            android:maxLines="2"
+            android:text="@string/escolher_moeda_destino"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/imvChooseCurrencyLogo"
+            app:layout_constraintEnd_toStartOf="@+id/vewChooseCurrency"
+            app:layout_constraintStart_toEndOf="@+id/imvChooseCurrencyLogo"
+            app:layout_constraintTop_toTopOf="@+id/imvChooseCurrencyLogo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvwChooseCurrencyAmountOrigin"
+            style="@style/LabelField.Light"
+            android:layout_width="@dimen/size_no_dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_normal"
+            android:text="@string/procure_pela_sigla"
+            app:layout_constraintStart_toStartOf="@+id/edtChooseCurrency"
+            app:layout_constraintTop_toBottomOf="@+id/imvChooseCurrencyLogo" />
+
+        <View
+            android:id="@+id/vewChooseCurrency"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:adjustViewBounds="true"
+            android:onClick="back"
+            android:paddingTop="@dimen/size_normal"
+            android:paddingEnd="@dimen/size_default"
+            android:paddingBottom="@dimen/size_normal"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_back_white"
+            app:layout_constraintBottom_toBottomOf="@+id/appCompatTextView"
+            app:layout_constraintEnd_toEndOf="@+id/edtChooseCurrency"
+            app:layout_constraintTop_toTopOf="@+id/appCompatTextView"
+            tools:ignore="RtlSymmetry" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtChooseCurrency"
+            style="@style/EdittextField"
+            android:layout_width="@dimen/size_no_dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:hint="@string/hint_busca_moeda"
+            android:maxLines="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvwChooseCurrencyAmountOrigin" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctlChooseCurrencyOrderList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_xxsmall"
+        android:layout_marginEnd="16dp"
+        android:onClick="orderList"
+        android:padding="@dimen/size_normal"
+        android:text="@string/ordenar_lista"
+        android:textAlignment="textEnd"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ctlChooseCurrencyHeader">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/size_small"
+            android:layout_height="@dimen/size_small"
+            android:layout_marginEnd="@dimen/size_xxsmall"
+            android:src="@drawable/ic_filter_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/text_ordenar_lista"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_ordenar_lista"
+            style="@style/LabelField.Blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ordenar_lista"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvChooseCurrency"
+        android:layout_width="@dimen/size_no_dp"
+        android:layout_height="@dimen/size_no_dp"
+        android:layout_marginTop="@dimen/size_xxsmall"
+        android:paddingStart="@dimen/size_default"
+        android:paddingEnd="@dimen/size_default"
+        android:paddingBottom="@dimen/size_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ctlChooseCurrencyOrderList" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
