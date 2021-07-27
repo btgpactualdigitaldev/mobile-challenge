@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="presenter" type="com.hotmail.fignunes.btg.presentation.quotedollar.QuoteDollarPresenter"/>
+    </data>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/mainLayout"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".presentation.qrcode.main.MainMenuActivity">
+
+
+            <ImageView
+                    android:id="@+id/quoteDollarImage"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_currencies"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"/>
+
+            <Button
+                    android:layout_marginTop="16dp"
+                    style="@style/RoundedButtom"
+                    android:onClick="@{_ -> presenter.sourceClick()}"
+                    tools:text="@string/source"
+                    android:textAllCaps="false"
+                    android:id="@+id/buttonCurrencySource"
+                    android:layout_width="match_parent"
+                    android:text="@={presenter.source}"
+                    android:layout_height="wrap_content"/>
+
+            <Button
+                    android:layout_marginTop="16dp"
+                    style="@style/RoundedButtom"
+                    tools:text="@string/destiny"
+                    android:textAllCaps="false"
+                    android:onClick="@{_ -> presenter.destinyClick()}"
+                    android:id="@+id/buttonCurrencyDestiny"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@={presenter.destiny}"/>
+
+            <EditText
+                    android:id="@+id/quoteDollarValue"
+                    android:padding="10dp"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/line_rectangle"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textColorHint="@color/colorLight"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="16dp"
+                    android:textAlignment="center"
+                    android:textSize="18dp"
+                    android:text="@={presenter.conversionValue}"
+                    android:hint="@string/insert_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                    android:layout_marginTop="32dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                <Button
+                        android:id="@+id/quoteDollarConvertCurrencies"
+                        android:textAllCaps="false"
+                        style="@style/RoundedButtom"
+                        android:background="@color/colorPrimaryDark"
+                        android:onClick="@{_ -> presenter.currencyConverterClick()}"
+                        android:text="@string/convert_currencies"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                <ProgressBar
+                        android:id="@+id/quoteDollarProgressBar"
+                        android:indeterminateTint="@color/colorPrimary"
+                        android:indeterminateDrawable="@drawable/progress_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <TextView
+                    android:id="@+id/quoteDollarResult"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textAlignment="center"
+                    android:textSize="26dp"
+                    android:textStyle="bold"
+                    tools:text="@string/result"
+                    android:text="@={presenter.result}"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</layout>

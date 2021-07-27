@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">BTGPactual digital</string>
+
+    <!-- Quote dollar -->
+    <string name="dollar_acronym">USD</string>
+    <string name="erro_get_quote_dollar">Erro ao buscar quote dollar</string>
+    <string name="unavailable_service">Serviço indisponível</string>
+    <string name="error_unexpected">Erro inexperado</string>
+    <string name="service_unhandled_error">Erro não tratado no serviço</string>
+    <string name="without_internet_connection">Sem conexão com a internet</string>
+    <string name="currency_converter">Conversor de moedas</string>
+    <string name="choose_the_currency_of_origin">Escolha a moeda de origem</string>
+    <string name="choose_the_target_currency">Escolha a moeda de destino</string>
+    <string name="fill_in_the_original_currency">Preencha a moeda de origem</string>
+    <string name="fill_in_the_target_currency">Preencha a moeda de destino</string>
+    <string name="fill_in_the_amount">Preencha o valor</string>
+    <string name="source">Origem</string>
+    <string name="destiny">Destino</string>
+    <string name="insert_value">Insira o valor</string>
+    <string name="convert_currencies">Converter moedas</string>
+    <string name="result">Resultado</string>
+    <string name="choose_diferent_currencies">Escolha moedas diferentes</string>
+    <string name="empty_return">Retorno vazio</string>
+
+
+    <!-- Currencies -->
+    <string name="list_of_currencies">Lista de moedas</string>
+    <string name="message">Menssagem</string>
+    <string name="description">Descrição</string>
+    <string name="no_coins_found">Nenhum moeda encontrada</string>
+    <string name="insert_text">Insira o texto</string>
+    <string name="code">Código</string>
+
+</resources>

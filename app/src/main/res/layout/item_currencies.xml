@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:orientation="vertical"
+                                   app:cardCornerRadius="5dp"
+                                   app:cardElevation="5dp"
+                                   app:cardUseCompatPadding="true"
+                                   android:layout_marginStart="16dp"
+                                   android:layout_marginEnd="16dp"
+                                   android:layout_width="match_parent"
+                                   android:id="@+id/itemCurrenciesCardview"
+                                   android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:text="@string/dollar_acronym"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight="1"
+                android:id="@+id/itemCurrenciesCode"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:text="@string/description"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight="3"
+                android:id="@+id/itemCurrenciesDescription"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
