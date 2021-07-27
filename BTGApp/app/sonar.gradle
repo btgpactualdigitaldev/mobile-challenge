@@ -1,0 +1,42 @@
+apply plugin: 'jacoco'
+
+jacoco {
+    toolVersion "0.8.4"
+}
+
+task jacocoTestReport(type: JacocoReport) {
+    group = "Reporting"
+    description = "Generate Jacoco coverage reports"
+    reports {
+        xml.enabled = true
+        html.enabled = true
+        csv.enabled = true
+    }
+    def fileFilter = ['**/R.class',
+                      '**/R$*.class',
+                      '**/*$InjectAdapter.*',
+                      '**/*$ModuleAdapter.*',
+                      '**/Dao*.*',
+                      '**/*$ViewInjector*.*',
+                      '**/*$ViewBinder*.*',
+                      '**/*MembersInjector*.*',
+                      '**/BuildConfig.*',
+                      '**/Manifest*.*',
+                      '**/*$Lambda$*.',
+                      '**/*Factory*.',
+                      '**/*$Builder*',
+                      '**/*$Parcelable*.*',
+                      '**/*Activity.*',
+                      '**/*Fragment.*',
+                      '**/api',
+                      '**/android/**/*.*',
+                      '**/org/**/*.*',
+                      '**/org/**/*.*']
+
+    def debugTree = fileTree(dir: "${buildDir}/intermediates/javac/debug/classes/br", excludes: fileFilter)
+    def mainSrc = "${project.projectDir}/src/main/java/br"
+    sourceDirectories = files([mainSrc])
+    classDirectories = files([debugTree])
+    executionData = fileTree(dir: project.projectDir, includes:
+            ['**/**/*.exec', '**/**/*.ec'])
+}

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".moneyConvert.MoneyConvertFragment">
+
+    <data>
+        <import type="android.view.View"/>
+
+        <variable
+                name="moneyConvert"
+                type="com.btg.teste.viewmodel.MoneyConvert" />
+
+        <variable
+                name="click"
+                type="com.btg.teste.moneyConvert.MoneyConvertContracts.MoneyConvertClick" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+
+        <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+            <EditText
+                    android:id="@+id/edit_step_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:layout_weight="5"
+                    android:maxLength="50"
+                    android:afterTextChanged="@{click::calculate}"
+                    android:background="@drawable/background_edittext_default"
+                    android:contentDescription="@{@string/acessibility_edt_money_convert_step_one(moneyConvert.value)}"
+                    android:gravity="center"
+                    android:hint="@string/money_convert_edit_hint_step_one"
+                    android:inputType="numberDecimal"
+                    android:paddingStart="13dp"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="13dp"
+                    android:paddingBottom="15dp"
+                    android:text="@{moneyConvert.value}"
+                    android:textColorHint="@color/colorHintText"
+                    android:textSize="15sp" />
+
+            <Button
+                    android:id="@+id/btn_step_one"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_button_default"
+                    android:contentDescription="@string/acessibility_btn_origin"
+                    android:hint="@{moneyConvert.origin.currency ?? `Origem`}"
+                    android:onClick="@{click::origin}"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                    android:id="@+id/edit_step_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:layout_weight="5"
+                    android:background="@drawable/background_edittext_default"
+                    android:contentDescription="@{@string/acessibility_edt_money_convert_step_two(moneyConvert.valueFinal)}"
+                    android:gravity="center"
+                    android:hint="@string/money_convert_edit_hint_step_two"
+                    android:paddingStart="13dp"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="13dp"
+                    android:paddingBottom="15dp"
+                    android:text="@{moneyConvert.valueFinal}"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textColorHint="@color/colorHintText"
+                    android:textSize="15sp" />
+
+
+            <Button
+                    android:id="@+id/btn_step_two"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_button_default"
+                    android:contentDescription="@string/acessibility_btn_destination"
+                    android:hint="@{moneyConvert.destination.currency ?? `Destino`}"
+                    android:onClick="@{click::recipient}"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:contentDescription="@{@string/acessibility_txt_name(moneyConvert.errorMessage)}"
+                android:gravity="center"
+                android:paddingStart="13dp"
+                android:paddingTop="12dp"
+                android:paddingEnd="13dp"
+                android:paddingBottom="15dp"
+                android:lineSpacingExtra="0.6dp"
+                android:visibility="@{moneyConvert.errorMessage.isEmpty() ? View.GONE : View.VISIBLE}"
+                android:text="@{moneyConvert.errorMessage}"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

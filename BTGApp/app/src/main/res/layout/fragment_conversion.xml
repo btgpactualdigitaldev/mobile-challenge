@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="filter" type="com.btg.teste.viewmodel.MoneyConvert"/>
+        <variable name="filterAction" type="com.btg.teste.conversion.ConversionContracts.ConversionFilter"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            tools:context=".conversion.ConversionsFragment">
+
+        <EditText
+                android:id="@+id/edit_text_filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:layout_weight="5"
+                android:afterTextChanged="@{filterAction::filter}"
+                android:background="@drawable/background_edittext_default"
+                android:contentDescription="@{@string/acessibility_edt_money_convert_filter(filter.value)}"
+                android:gravity="center"
+                android:hint="@string/money_convert_edit_hint_filter"
+                android:inputType="text"
+                android:paddingStart="13dp"
+                android:paddingTop="12dp"
+                android:paddingEnd="13dp"
+                android:paddingBottom="15dp"
+                android:text="@{filter.filter}"
+                android:textColorHint="@color/colorHintText"
+                android:textSize="15sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/refrash_conversion"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_filter">
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_conversion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/acessibility_list" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
