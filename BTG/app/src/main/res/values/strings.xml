@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">BTG - Conversor de Moeda</string>
+    <string name="valor_origem">Valor Origem</string>
+    <string name="valor_convertido">Valor Convertido</string>
+    <string name="converter">Converter</string>
+    <string name="real">BRL</string>
+    <string name="eur">EUR</string>
+    <string name="buscar">Buscar</string>
+    <string name="ordenar">Ordenar</string>
+    <string name="filtrar">Filtrar</string>
+    <string name="lista_de_moedas">Lista de Moedas</string>
+
+
+
+    <!--errosHttp-->
+    <string name="erro404">O usuário solicitou um recurso que não existe.</string>
+    <string name="erro101">O usuário não forneceu uma chave de acesso ou forneceu uma chave de acesso inválida.</string>
+    <string name="erro103">O usuário solicitou uma função de API inexistente.</string>
+    <string name="erro104">O usuário atingiu ou excedeu o limite mensal de solicitações de API do seu plano de assinatura.</string>
+    <string name="erro105">O plano de assinatura atual do usuário não suporta a função API solicitada.</string>
+    <string name="erro106">A consulta do usuário não retornou nenhum resultado</string>
+    <string name="erro102">A conta do usuário não está ativa. O usuário será solicitado a entrar em contato com o Suporte ao Cliente.</string>
+    <string name="erro201">O usuário inseriu uma moeda de origem inválida.</string>
+    <string name="erro202">O usuário inseriu um ou mais códigos de moeda inválidos.</string>
+    <string name="erro301">O usuário não especificou uma data.</string>
+    <string name="erro302">O usuário digitou uma data inválida.</string>
+    <string name="erro401">O usuário digitou uma propriedade "de" inválida.</string>
+    <string name="erro402">O usuário inseriu uma propriedade "to" inválida.</string>
+    <string name="erro403">O usuário inseriu nenhuma propriedade ou uma "quantidade" inválida.</string>
+    <string name="erro501">O usuário não especificou um período de tempo.</string>
+    <string name="erro502">O usuário inseriu uma propriedade "start_date" inválida.</string>
+    <string name="erro503">O usuário inseriu uma propriedade "end_date" inválida.</string>
+    <string name="erro504">O usuário inseriu um período de tempo inválido.</string>
+    <string name="erro505">O período especificado pelo usuário é muito longo - superior a 365 dias.</string>
+    <string name="erroelse">"Erro desconhecido"</string>
+    <string name="loading">Loading</string>
+</resources>
