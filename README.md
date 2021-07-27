@@ -2,6 +2,10 @@
 
 Seja bem-vindo! Este é o seu primeiro passo para fazer parte do time de desenvolvimento do maior banco de investimentos da América Latina.
 
+Para rodar a aplicação, adicione a API key no arquivo C:/Users/[usuario]/.gradle/gradle.properties
+
+currencyApiKey=[sua chave de api]
+
 #### LEIA AS INSTRUÇÕES POR COMPLETO ANTES DE COMEÇAR
 
 O Desafio consiste no desenvolvimento de um app de conversão de moedas. O app deve permitir que o usuário selecione a moeda de origem e a moeda a ser convertida, para então inserir o valor e visualizar o resultado da conversão. 
