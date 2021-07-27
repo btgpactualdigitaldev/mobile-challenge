@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+android {
+    def globalConfiguration = rootProject.extensions.getByName("ext")
+
+    compileSdkVersion globalConfiguration["compileSDK"]
+
+    defaultConfig {
+        minSdkVersion globalConfiguration["minSDK"]
+        targetSdkVersion globalConfiguration["targetSDK"]
+        buildConfigField "String", "API_KEY", "\"${globalConfiguration["API_KEY"]}\""
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    def dependencies = rootProject.ext.dependencies
+
+    implementation project(":domain")
+
+    implementation dependencies.kotlin
+    implementation dependencies.rxJava
+
+    implementation dependencies.retrofit
+    implementation dependencies.retrofitRxAdapter
+    implementation dependencies.retrofitGsonConverter
+    implementation dependencies.gson
+
+    implementation dependencies.room
+    implementation dependencies.roomRxJava
+    kapt dependencies.roomCompiler
+
+    implementation dependencies.okhttp
+
+
+    implementation dependencies.koin
+}
