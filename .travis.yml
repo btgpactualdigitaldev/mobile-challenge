@@ -1,0 +1,5 @@
+language: objective-c
+osx_image: xcode12
+xcode_project: XCurrency/XCurrency.xcodeproj
+xcode_scheme: XCurrency
+xcode_destination: platform=iOS Simulator,OS=12.2,name=iPhone 8
