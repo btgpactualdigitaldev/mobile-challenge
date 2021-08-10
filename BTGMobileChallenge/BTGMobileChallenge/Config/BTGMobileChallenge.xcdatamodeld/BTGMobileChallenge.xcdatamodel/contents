@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19G73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AvaliableCurrenciesModel" representedClassName="AvaliableCurrenciesModel" syncable="YES" codeGenerationType="class"/>
+    <entity name="CurrentQuotesModel" representedClassName="CurrentQuotesModel" syncable="YES" codeGenerationType="class"/>
+    <elements>
+        <element name="AvaliableCurrenciesModel" positionX="-63" positionY="-18" width="128" height="43"/>
+        <element name="CurrentQuotesModel" positionX="-54" positionY="-9" width="128" height="43"/>
+    </elements>
+</model>
