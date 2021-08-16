@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Spinner">
+        <attr name="spinnerType" format="enum">
+            <enum name="none" value="0" />
+            <enum name="currencies" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="FormField">
+    <attr name="fieldType" format="enum">
+    <enum name="none" value="0" />
+    <enum name="cpf" value="1" />
+    <enum name="name" value="2" />
+    <enum name="date" value="3" />
+    <enum name="mm_yyyy" value="99" />
+    <enum name="email" value="4" />
+    <enum name="phone" value="5" />
+    <enum name="currency" value="6" />
+    <enum name="password" value="7" />
+    <enum name="cep" value="8" />
+    <enum name="currency_range" value="9" />
+    <enum name="spinner" value="11" />
+    <enum name="number" value="77" />
+    <enum name="text" value="88" />
+    <enum name="cnpj" value="10" />
+    <enum name="currency_required" value="97" />
+    <enum name="rg" value="31" />
+    <enum name="cnh" value="32" />
+    <enum name="rne" value="33" />
+    <enum name="address" value="34" />
+    <enum name="city_district" value="35" />
+    <enum name="complement" value="36" />
+    <enum name="company_name" value="55" />
+    <enum name="currency_income" value="37" />
+
+    </attr>
+        <attr name="errorType" format="enum">
+            <enum name="under" value="0" />
+            <enum name="snackbar_" value="1" />
+            <enum name="tooltip" value="2" />
+        </attr>
+        <attr name="hideTextOnError" format="reference"/>
+        <attr name="editTextToConfirmation" format="reference" />
+        <attr name="confirmationField" format="reference" />
+        <attr name="editTextStyle" format="reference" />
+        <attr name="hintFontFamily" format="enum">
+            <enum name="regular" value="0" />
+            <enum name="bold" value="1" />
+            <enum name="extra_bold" value="2" />
+            <enum name="light" value="3" />
+        </attr>
+        <attr name="textFontFamily" format="enum">
+            <enum name="regular" value="0" />
+            <enum name="bold" value="1" />
+            <enum name="extra_bold" value="2" />
+            <enum name="light" value="3" />
+        </attr>
+        <attr name="snackBarType" format="enum">
+            <enum name="none" value="0" />
+            <enum name="success" value="1" />
+            <enum name="error" value="2" />
+        </attr>
+        <attr name="snackBarIconType" format="enum">
+            <enum name="none" value="0" />
+            <enum name="fixed" value="1" />
+            <enum name="animated" value="2" />
+        </attr>
+        <attr name="maxLength" format="integer" />
+        <attr name="snackBarMessage" format="string" />
+        <attr name="snackBarDismissable" format="boolean" />
+        <attr name="snackBarTimer" format="float" />
+        <attr name="snackBarFocusChangeDismissable" format="boolean" />
+        <attr name="shouldValidateOnFocusChange" format="boolean" />
+        <attr name="placeholder" format="string" />
+        <attr name="forcedPlaceholder" format="boolean" />
+        <attr name="shouldTagValidationError" format="boolean" />
+        <attr name="isOptional" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ToolBarMain">
+        <attr name="toolBarType" format="enum">
+            <enum name="main" value="0" />
+            <enum name="main_without_back" value="1" />
+            <enum name="simple" value="2" />
+            <enum name="simple_transparent" value="3" />
+            <enum name="tracking" value="4" />
+            <enum name="products" value="5" />
+            <enum name="benefitplan" value="6" />
+            <enum name="password" value="7" />
+            <enum name="photo" value="8" />
+            <enum name="without_help" value="9"/>
+            <enum name="dialog" value="10"/>
+        </attr>
+        <attr name="titleToolbarMain" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="EditText">
+        <attr name="android:text"/>
+        <attr name="android:textSize"/>
+        <attr name="android:textColor"/>
+        <attr name="android:textAppearance"/>
+        <attr name="android:hint"/>
+        <attr name="android:textColorHint"/>
+        <attr name="android:inputType"/>
+        <attr name="android:imeOptions"/>
+        <attr name="android:enabled"/>
+        <attr name="android:background"/>
+        <attr name="android:maxLength"/>
+
+        <!-- Sets the title text -->
+        <attr name="title"/>
+        <!-- Sets background to disable state -->
+        <attr format="color" name="disabledBackground"/>
+        <!-- Sets text color to title -->
+        <attr format="color" name="titleTextColor"/>
+        <!-- Sets text color to title when on focused state -->
+        <attr format="color" name="focusedTitleTextColor"/>
+        <!-- Sets text appearance to title -->
+        <attr format="reference" name="titleTextAppearance"/>
+        <!-- Sets text appearance to title when on focused state -->
+        <attr format="reference" name="focusedTitleTextAppearance"/>
+        <!-- Sets text appearance to prefix -->
+        <attr format="reference" name="prefixTextAppearance"/>
+        <!-- Sets line color to EditText on disabled -->
+        <attr format="color" name="disableLineColor"/>
+        <!-- Sets line color to EditText on focused state -->
+        <attr format="color" name="focusedLineColor"/>
+        <!-- Sets line color -->
+        <attr format="color" name="lineColor"/>
+        <!-- Sets line height -->
+        <attr format="dimension" name="lineHeight"/>
+        <!-- Sets a prefix to the EditText -->
+        <attr format="string" name="prefix"/>
+        <!-- Sets prefix size -->
+        <attr format="dimension" name="prefix_size" />
+        <!-- Sets a content description to icon -->
+        <attr format="string" name="icon_content_description"/>
+        <!-- Sets a locale to be used on currency mask -->
+        <attr format="string" name="currencyLocale"/>
+        <!-- Sets the view error state -->
+        <attr format="boolean" name="error"/>
+        <!-- Sets the required field state -->
+        <attr format="boolean" name="required" />
+        <!-- Sets the description error if error is true -->
+        <attr format="string" name="descriptionError"/>
+        <!-- Sets the error color to the title and line when view is on the error state -->
+        <attr format="color" name="errorColor"/>
+        <!-- Sets the line height when view is on the error state -->
+        <attr format="dimension" name="errorLineHeight"/>
+        <!-- Sets the title text appearance when view is on the error state -->
+        <attr format="reference" name="errorTitleTextAppearance"/>
+        <!-- Sets the description into text input -->
+        <attr format="string" name="description"/>
+        <!-- Sets the description textSize  -->
+        <attr format="dimension" name="description_size"/>
+        <!-- Sets the textStyle for editText -->
+        <attr name="textStyle">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

@@ -28,16 +28,16 @@ O app deve counsumir a [Mobile Challenge API](https://btg-mobile-challenge.herok
 
 ## Features
 ### Obrigatórias:
-- [ ] As taxas de câmbio disponíveis devem ser obtidas da chamada de [API Supported Currencies (/list)](https://btg-mobile-challenge.herokuapp.com/list)
-- [ ] A cotação atual deve ser obtida da chamada de [API Real-time Rates (/live)](https://btg-mobile-challenge.herokuapp.com/live)
-- [ ] É necessário fazer tratamento de erros e dos fluxos de exceção, como busca vazia, carregamento e outros erros que possam ocorrer.
+- [x] As taxas de câmbio disponíveis devem ser obtidas da chamada de [API Supported Currencies (/list)](https://btg-mobile-challenge.herokuapp.com/list)
+- [x] A cotação atual deve ser obtida da chamada de [API Real-time Rates (/live)](https://btg-mobile-challenge.herokuapp.com/live)
+- [x] É necessário fazer tratamento de erros e dos fluxos de exceção, como busca vazia, carregamento e outros erros que possam ocorrer.
 
 ### Opcionais (não necessário, porém contam pontos):
-- [ ] Funcinalidade de busca na lista de moedas por nome ou sigla da moeda ("dólar" ou "USD").
-- [ ] Ordenação da lista de moedas por nome ou código.
-- [ ] Realizar a persistência local da lista de moedas e taxas para permitir o uso do app no caso de falta de internet.
+- [x] Funcinalidade de busca na lista de moedas por nome ou sigla da moeda ("dólar" ou "USD").
+- [x] Ordenação da lista de moedas por nome ou código.
+- [x] Realizar a persistência local da lista de moedas e taxas para permitir o uso do app no caso de falta de internet.
 - [ ] Desenvolver testes unitários e/ou funcionais.
-- [ ] Desenvolver o app seguindo a arquitetura MVVM.
+- [x] Desenvolver o app seguindo a arquitetura MVVM.
 - [ ] Pipeline automatizado.
 
 ## Processo de submissão

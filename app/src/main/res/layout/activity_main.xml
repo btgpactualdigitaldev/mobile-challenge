@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin_xxxsmall"
+    android:background="@color/gray_EFE9E5"
+    tools:context=".presentation.ui.MainActivity">
+
+    <com.br.cambio.customviews.LoadingView
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/EditTextMonetaryBrazil"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_margin_50_dp"
+        android:background="@drawable/shape_card_white_small"
+        android:lines="1"
+        android:imeOptions="actionDone"
+        android:paddingEnd="@dimen/margin_xsmall"
+        android:paddingStart="@dimen/margin_xsmall"
+        android:textColorHint="@color/gray_9F9F9F"
+        android:inputType="number"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="@string/digite_o_valor_para_converter" />
+
+    <com.br.cambio.customviews.Spinner
+        android:id="@+id/spFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/select_your_currencies_first"
+        app:editTextStyle="@style/EditTextMain"
+        android:background="@drawable/shape_card_white_small"
+        android:layout_marginTop="@dimen/default_margin_20_dp"
+        app:spinnerType="currencies"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextMonetaryBrazil"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.br.cambio.customviews.Spinner
+        android:id="@+id/spSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/select_your_currencies_second"
+        app:editTextStyle="@style/EditTextMain"
+        android:background="@drawable/shape_card_white_small"
+        app:spinnerType="currencies"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/spFirst"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:background="@drawable/shape_card_white_small"
+        app:layout_constraintTop_toBottomOf="@+id/spSecond"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+        <TextView
+            android:id="@+id/tvLabelResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_20_dp"
+            android:textStyle="normal"
+            android:textSize="@dimen/default_text_22_sp"
+            android:text="Resultado da conversão:"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/default_text_22_sp"
+            app:layout_constraintTop_toBottomOf="@+id/tvLabelResult"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

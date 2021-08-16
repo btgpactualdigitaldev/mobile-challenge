@@ -1,0 +1,153 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!--Default Dimens-->
+    <dimen name="default_margin_16_dp">16dp</dimen>
+    <dimen name="default_margin_20_dp">20dp</dimen>
+    <dimen name="default_margin_50_dp">50dp</dimen>
+
+    <!--Default Spinner Spacing-->
+
+    <!--Custom Dimens-->
+
+    <!--Login-->
+
+    <!--Password-->
+
+    <!--Token Slider-->
+
+    <!--Se for alterar, altera os dois-->
+
+    <!--Virtual Keyboard-->
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!--Token Coachmark-->
+
+    <!-- Notifications -->
+
+    <!-- Logged Home -->
+
+    <!-- My Manager -->
+
+    <!-- Conctact Us -->
+
+    <!--Limit ProgressBar -->
+
+    <!--Credit Cards PageIndicator-->
+
+    <!-- Transfer -->
+
+    <!-- Open Value Picker-->
+
+    <!--Widget value Picker-->
+
+    <!--Account Balance View-->
+
+    <!-- Contacts -->
+
+    <!--applications-->
+
+    <!-- About -->
+
+    <!-- Chat -->
+
+    <!--Spinner-->
+
+    <!--creditCard password-->
+
+    <!--profile exchange-->
+
+    <!--recharge_receipt-->
+
+    <!--vouchers-->
+
+    <!-- Menu -->
+
+    <!-- Tooltip -->
+
+    <!-- Payment -->
+
+    <!--Default Padding Values-->
+    <dimen name="default_size_1dp">1dp</dimen>
+    <dimen name="default_text_22_sp">22sp</dimen>
+
+    <!-- Imagens dos documentos na tela de envio de documentos -->
+
+    <!-- CampaignLayout -->
+
+
+    <!-- Redesign -->
+    <!-- Global -->
+    <!-- Fixos -->
+    <dimen name="size_fixed_minimum">48dp</dimen>
+    <dimen name="radius_fixed_card">4dp</dimen>
+    <dimen name="radius_fixed_button">4dp</dimen>
+
+    <!-- Espaçamentos -->
+    <dimen name="margin_xxxsmall">8dp</dimen>
+    <dimen name="margin_xxsmall">12dp</dimen>
+    <dimen name="margin_xsmall">16dp</dimen>
+    <dimen name="margin_small">20dp</dimen>
+    <dimen name="margin_xlarge">32dp</dimen>
+    <dimen name="margin_xxlarge">36dp</dimen>
+    <dimen name="padding_inputhint_medium">20dp</dimen>
+
+    <!-- Tamanhos de texto -->
+    <dimen name="textsize_xsmall">14sp</dimen>
+    <dimen name="textsize_xlarge">24sp</dimen>
+
+    <dimen name="textsize_input_large">20sp</dimen>
+
+    <dimen name="textsize_screentitle">22sp</dimen>
+    <dimen name="textsize_subtitle">16sp</dimen>
+    <dimen name="textsize_button">18sp</dimen>
+    <dimen name="textsize_button_dialogspinner">20sp</dimen>
+
+    <dimen name="linespacingextra_xsmall">2sp</dimen>
+
+    <dimen name="linespacingextra_screentitle">2sp</dimen>
+    <dimen name="linespacingextra_subtitle">1sp</dimen>
+    <dimen name="linespacingextra_button">6sp</dimen>
+
+    <!-- Toolbar -->
+
+    <!-- LoginActivity -->
+
+    <!-- Whatdoneed -->
+
+    <!-- ProfileForm -->
+
+    <!-- DataProfessionalForm -->
+
+    <!-- Bottom Sheet Denied Proposal-->
+
+    <!-- SnackBar -->
+
+    <!-- FormItem -->
+    <dimen name="margin_formitem_top">12dp</dimen>
+
+    <!-- RadioGroup -->
+
+    <!-- KeyboardNavigation -->
+    <dimen name="margin_keyboardnavigation">4dp</dimen>
+
+    <!-- Cover -->
+
+    <!-- Overdraft -->
+
+    <!-- FeedBack -->
+
+    <!-- Camera -->
+
+    <!-- DeviceType -->
+
+    <!-- CardPassword -->
+
+    <!-- DialogSpinner -->
+    <dimen name="height_dialogspinner_item">120dp</dimen>
+
+    <!-- Agency -->
+
+</resources>
+

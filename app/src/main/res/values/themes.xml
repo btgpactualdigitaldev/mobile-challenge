@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <item name="android:background">@color/transparent</item>
+
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <!-- colorAccent is used as the default value for colorControlActivated,
+             which is used to tint widgets -->
+        <item name="colorAccent">@color/black_464646</item>
+        <item name="colorControlNormal">@color/black_464646</item>
+        <item name="colorControlActivated">@color/black_464646</item>
+        <item name="colorControlHighlight">@color/black_464646</item>
+        <item name="android:textColorHint">@color/black_464646</item>
+        <item name="android:textColor">@color/black</item>
+
+        <!--item name="windowContentTransitions">true</item-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:statusBarColor" tools:ignore="NewApi">@color/gray_D2D2D2</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowToggle</item>
+        <item name="android:windowTranslucentStatus" tools:ignore="NewApi">false</item>
+        <item name="android:windowTranslucentNavigation" tools:ignore="NewApi">false</item>
+
+    </style>
+
+    <style name="DrawerArrowToggle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/theme_color</item>
+    </style>
+</resources>

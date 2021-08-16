@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Cambio</string>
+    <string name="select_your_currencies">selecione a sua moeda para converter</string>
+    <string name="select_your_currencies_first">Converter De</string>
+    <string name="select_your_currencies_second">Converter Para</string>
+    <string name="search_currency">pesquise a moeda</string>
+    <string name="search_not_found">ops… parece que não tem nada aqui tente outra vez</string>
+    <string name="button_search_clear">limpar</string>
+    <string name="fonts_busca_consulta"></string>
+    <string name="fonts_close"></string>
+    <string name="close">Fechar</string>
+    <string name="digite_o_valor_para_converter">Digite o valor para converter</string>
+    <string name="database">Exchange.db</string>
+</resources>

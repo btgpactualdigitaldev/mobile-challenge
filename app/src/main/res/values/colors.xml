@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Generic Colors-->
+    <color name="black_464646">#464646</color>
+    <!-- ver utilização-->
+    <color name="gray_9F9F9F">#9f9f9f</color>
+    <!--ver utilização-->
+    <color name="gray_D2D2D2">#D2D2D2</color>
+    <!-- ver util-->
+    <!--ver uso-->
+
+    <color name="gray_EFE9E5">#EFE9E5</color>
+    <color name="orange_EC7404">#EC7404</color>
+
+    <!-- colors-->
+    <color name="primary">#F6932D</color>
+    <color name="primary_dark">#EC7000</color>
+
+    <!-- Home -->
+
+    <!-- Logged Home -->
+    <color name="theme_color">#EC7000</color>
+
+    <!--Default spinner color-->
+
+    <!-- ver uso-->
+
+    <!-- CampaignLayout -->
+
+    <!--
+    Opacidade de cores
+
+    100% — FF
+    95% — F2
+    90% — E6
+    85% — D9
+    80% — CC
+    75% — BF
+    70% — B3
+    65% — A6
+    60% — 99
+    55% — 8C
+    50% — 80
+    45% — 73
+    40% — 66
+    35% — 59
+    30% — 4D
+    25% — 40
+    20% — 33
+    15% — 26
+    10% — 1A
+    5% — 0D
+    0% — 00
+    -->
+
+
+
+    <!-- Redesign -->
+    <color name="white">#FFFFFF</color>
+    <color name="sand">#EFE9E5</color>
+    <color name="dark_gray">#605751</color>
+    <color name="dark_gray_alpha">#33605751</color>
+    <color name="black">#252220</color>
+    <color name="orange">#EC7000</color>
+    <color name="blue">#007AB7</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Textos -->
+    <color name="text_main">@color/dark_gray</color>
+    <color name="text_main_alpha">@color/dark_gray_alpha</color>
+
+    <!-- Background -->
+    <color name="background_light">@color/white</color>
+
+
+    <!-- Access text-->
+
+    <!-- EditText -->
+
+    <!-- Botões -->
+    <color name="button_secondary_active">@color/white</color>
+    <color name="text_button_secondary_active">@color/blue</color>
+
+    <!-- SnackBar -->
+
+    <!-- KeyboardNavigation -->
+
+    <!-- RadioGroup -->
+
+    <!-- Toolbar -->
+
+</resources>
