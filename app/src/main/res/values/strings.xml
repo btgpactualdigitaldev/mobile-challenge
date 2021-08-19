@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Ferramenta de Conversão</string>
+    <string name="title_calculator">Calculadora</string>
+    <string name="title_currencies">Moedas</string>
+    <string name="title_favorites">Favoritos</string>
+    <string name="not_found">No value for this currency.</string>
+    <string name="online">Online</string>
+    <string name="offline">"Offline. Última sincronização: "</string>
+    <string name="currency_header">"USD$ 1 / "</string>
+    <string name="currency_header_description">Descrição</string>
+    <string name="currency_header_ID">ID</string>
+</resources>
