@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+<<<<<<< HEAD
+      location = "self:">
+=======
+      location = "self:/Users/junior/Desktop/BTG/mobile-challenge/CoinExchanger.xcodeproj">
+>>>>>>> 1096c12 (Home and search pages)
+   </FileRef>
+</Workspace>

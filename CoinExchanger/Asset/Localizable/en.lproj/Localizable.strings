@@ -1,0 +1,40 @@
+/*
+ Localizable.strings
+ CoinExchanger
+ 
+ Created by Edson Rottava on 09/06/21.
+ */
+
+// MARK: BUTTON
+"system.button.ok" = "Ok";
+"system.button.okHint" = "Botão para confirmar";
+
+// MARK: ERROR
+"system.error.connection" = "Não foi possível concluir operação";
+"system.error.storage" = "Não foi possível ler os dados";
+
+// MARK: PERMISSION
+"system.error.permission.gallery" = "Não foi possível acessar a galera, forneça a permissão para o aplicativo e tente novamente";
+
+// MARK: CONVERTER
+"coin.converter.date" = "Cotação:";
+"coin.converter.dateHint" = "Botão para atualizar os dados";
+"coin.converter.hint" = "Valor";
+"coin.converter.originCoin" = "$$$";
+"coin.converter.originCoinHint" = "Botão para escolher a moeda de origem";
+"coin.converter.originFieldHint" = "Campo para o valor na moeda de origem";
+"coin.converter.originLabel" = "Moeda de origem";
+"coin.converter.switchHint" = "Botão para inverter as moedas";
+"coin.converter.targetCoin" = "¥¥¥";
+"coin.converter.targetCoinHint" = "Botão para escolher a moeda de interesse";
+"coin.converter.targetFieldHint" = "Campo para o valor na moeda de interesse";
+"coin.converter.targetLabel" = "Moeda de interesse";
+
+// MARK: COIN LIST
+"coin.list.emptyList" = "Parece que o aplicativo não conseguiu recuperar dados do servidor, por favor tente novamente mais tarde";
+"coin.list.emptySearch" = "Parece que sua bustão não encontrou resultados, tente outra combinação";
+"coin.list.search" = "Nome da moeda";
+"coin.list.searchHint" = "Campo para filtrar moedas";
+"coin.list.title" = "Moedas";
+"coin.list.ordenateAZ" = "Botão para ordenar alfabeticamente";
+"coin.list.ordenateID" = "Botão para ordenar por id";
