@@ -1,0 +1,85 @@
+Mobile Challenge/Pods/Manifest.lock
+Mobile Challenge/Pods/Alamofire/LICENSE
+Mobile Challenge/Pods/Alamofire/README.md
+Mobile Challenge/Pods/Alamofire/Source/AFError.swift
+Mobile Challenge/Pods/Alamofire/Source/Alamofire.swift
+Mobile Challenge/Pods/Alamofire/Source/AlamofireExtended.swift
+Mobile Challenge/Pods/Alamofire/Source/AuthenticationInterceptor.swift
+Mobile Challenge/Pods/Alamofire/Source/CachedResponseHandler.swift
+Mobile Challenge/Pods/Alamofire/Source/Combine.swift
+Mobile Challenge/Pods/Alamofire/Source/DispatchQueue+Alamofire.swift
+Mobile Challenge/Pods/Alamofire/Source/EventMonitor.swift
+Mobile Challenge/Pods/Alamofire/Source/HTTPHeaders.swift
+Mobile Challenge/Pods/Alamofire/Source/HTTPMethod.swift
+Mobile Challenge/Pods/Alamofire/Source/MultipartFormData.swift
+Mobile Challenge/Pods/Alamofire/Source/MultipartUpload.swift
+Mobile Challenge/Pods/Alamofire/Source/NetworkReachabilityManager.swift
+Mobile Challenge/Pods/Alamofire/Source/Notifications.swift
+Mobile Challenge/Pods/Alamofire/Source/OperationQueue+Alamofire.swift
+Mobile Challenge/Pods/Alamofire/Source/ParameterEncoder.swift
+Mobile Challenge/Pods/Alamofire/Source/ParameterEncoding.swift
+Mobile Challenge/Pods/Alamofire/Source/Protected.swift
+Mobile Challenge/Pods/Alamofire/Source/RedirectHandler.swift
+Mobile Challenge/Pods/Alamofire/Source/Request.swift
+Mobile Challenge/Pods/Alamofire/Source/RequestInterceptor.swift
+Mobile Challenge/Pods/Alamofire/Source/RequestTaskMap.swift
+Mobile Challenge/Pods/Alamofire/Source/Response.swift
+Mobile Challenge/Pods/Alamofire/Source/ResponseSerialization.swift
+Mobile Challenge/Pods/Alamofire/Source/Result+Alamofire.swift
+Mobile Challenge/Pods/Alamofire/Source/RetryPolicy.swift
+Mobile Challenge/Pods/Alamofire/Source/ServerTrustEvaluation.swift
+Mobile Challenge/Pods/Alamofire/Source/Session.swift
+Mobile Challenge/Pods/Alamofire/Source/SessionDelegate.swift
+Mobile Challenge/Pods/Alamofire/Source/StringEncoding+Alamofire.swift
+Mobile Challenge/Pods/Alamofire/Source/URLConvertible+URLRequestConvertible.swift
+Mobile Challenge/Pods/Alamofire/Source/URLEncodedFormEncoder.swift
+Mobile Challenge/Pods/Alamofire/Source/URLRequest+Alamofire.swift
+Mobile Challenge/Pods/Alamofire/Source/URLSessionConfiguration+Alamofire.swift
+Mobile Challenge/Pods/Alamofire/Source/Validation.swift
+Mobile Challenge/Pods/Pods.xcodeproj/project.pbxproj
+Mobile Challenge/Pods/Pods.xcodeproj/xcuserdata/daives.xcuserdatad/xcschemes/Alamofire.xcscheme
+Mobile Challenge/Pods/Pods.xcodeproj/xcuserdata/daives.xcuserdatad/xcschemes/Pods-Mobile Challenge-Mobile ChallengeUITests.xcscheme
+Mobile Challenge/Pods/Pods.xcodeproj/xcuserdata/daives.xcuserdatad/xcschemes/Pods-Mobile Challenge.xcscheme
+Mobile Challenge/Pods/Pods.xcodeproj/xcuserdata/daives.xcuserdatad/xcschemes/Pods-Mobile ChallengeTests.xcscheme
+Mobile Challenge/Pods/Pods.xcodeproj/xcuserdata/daives.xcuserdatad/xcschemes/xcschememanagement.plist
+Mobile Challenge/Pods/Target Support Files/Alamofire/Alamofire-dummy.m
+Mobile Challenge/Pods/Target Support Files/Alamofire/Alamofire-Info.plist
+Mobile Challenge/Pods/Target Support Files/Alamofire/Alamofire-prefix.pch
+Mobile Challenge/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h
+Mobile Challenge/Pods/Target Support Files/Alamofire/Alamofire.debug.xcconfig
+Mobile Challenge/Pods/Target Support Files/Alamofire/Alamofire.modulemap
+Mobile Challenge/Pods/Target Support Files/Alamofire/Alamofire.release.xcconfig
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile Challenge/Pods-Mobile Challenge-acknowledgements.markdown
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile Challenge/Pods-Mobile Challenge-acknowledgements.plist
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile Challenge/Pods-Mobile Challenge-dummy.m
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile Challenge/Pods-Mobile Challenge-frameworks-Debug-input-files.xcfilelist
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile Challenge/Pods-Mobile Challenge-frameworks-Debug-output-files.xcfilelist
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile Challenge/Pods-Mobile Challenge-frameworks-Release-input-files.xcfilelist
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile Challenge/Pods-Mobile Challenge-frameworks-Release-output-files.xcfilelist
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile Challenge/Pods-Mobile Challenge-frameworks.sh
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile Challenge/Pods-Mobile Challenge-Info.plist
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile Challenge/Pods-Mobile Challenge-umbrella.h
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile Challenge/Pods-Mobile Challenge.debug.xcconfig
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile Challenge/Pods-Mobile Challenge.modulemap
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile Challenge/Pods-Mobile Challenge.release.xcconfig
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile Challenge-Mobile ChallengeUITests/Pods-Mobile Challenge-Mobile ChallengeUITests-acknowledgements.markdown
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile Challenge-Mobile ChallengeUITests/Pods-Mobile Challenge-Mobile ChallengeUITests-acknowledgements.plist
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile Challenge-Mobile ChallengeUITests/Pods-Mobile Challenge-Mobile ChallengeUITests-dummy.m
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile Challenge-Mobile ChallengeUITests/Pods-Mobile Challenge-Mobile ChallengeUITests-frameworks-Debug-input-files.xcfilelist
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile Challenge-Mobile ChallengeUITests/Pods-Mobile Challenge-Mobile ChallengeUITests-frameworks-Debug-output-files.xcfilelist
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile Challenge-Mobile ChallengeUITests/Pods-Mobile Challenge-Mobile ChallengeUITests-frameworks-Release-input-files.xcfilelist
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile Challenge-Mobile ChallengeUITests/Pods-Mobile Challenge-Mobile ChallengeUITests-frameworks-Release-output-files.xcfilelist
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile Challenge-Mobile ChallengeUITests/Pods-Mobile Challenge-Mobile ChallengeUITests-frameworks.sh
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile Challenge-Mobile ChallengeUITests/Pods-Mobile Challenge-Mobile ChallengeUITests-Info.plist
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile Challenge-Mobile ChallengeUITests/Pods-Mobile Challenge-Mobile ChallengeUITests-umbrella.h
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile Challenge-Mobile ChallengeUITests/Pods-Mobile Challenge-Mobile ChallengeUITests.debug.xcconfig
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile Challenge-Mobile ChallengeUITests/Pods-Mobile Challenge-Mobile ChallengeUITests.modulemap
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile Challenge-Mobile ChallengeUITests/Pods-Mobile Challenge-Mobile ChallengeUITests.release.xcconfig
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile ChallengeTests/Pods-Mobile ChallengeTests-acknowledgements.markdown
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile ChallengeTests/Pods-Mobile ChallengeTests-acknowledgements.plist
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile ChallengeTests/Pods-Mobile ChallengeTests-dummy.m
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile ChallengeTests/Pods-Mobile ChallengeTests-Info.plist
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile ChallengeTests/Pods-Mobile ChallengeTests-umbrella.h
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile ChallengeTests/Pods-Mobile ChallengeTests.debug.xcconfig
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile ChallengeTests/Pods-Mobile ChallengeTests.modulemap
+Mobile Challenge/Pods/Target Support Files/Pods-Mobile ChallengeTests/Pods-Mobile ChallengeTests.release.xcconfig
