@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="btg_challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4zg-R6-ZBs">
+                                <rect key="frame" x="16" y="270.5" width="382" height="355"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sau-yG-Bpi">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="54"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="fYb-2T-pEa">
+                                                <rect key="frame" x="0.0" y="0.0" width="191" height="54"/>
+                                                <state key="normal">
+                                                    <string key="title">Moeda de Origem 
+USD</string>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didPressOriginCurrencyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sbr-h8-d5c"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="JBJ-cr-ibV">
+                                                <rect key="frame" x="191" y="0.0" width="191" height="54"/>
+                                                <state key="normal">
+                                                    <string key="title">Moeda de Destino
+REAL</string>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didPressDestinyCurrencyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JUv-E7-egO"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite o valor a ser convertido" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VDe-ii-btw">
+                                        <rect key="frame" x="0.0" y="70" width="382" height="89.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5UY-5x-0dm">
+                                        <rect key="frame" x="0.0" y="175.5" width="382" height="179.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4zg-R6-ZBs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8lC-N8-BBq"/>
+                            <constraint firstItem="sau-yG-Bpi" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.06" id="Ht9-GQ-n5B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4zg-R6-ZBs" secondAttribute="trailing" constant="16" id="SrJ-1d-od9"/>
+                            <constraint firstItem="VDe-ii-btw" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="Yr0-xY-CNb"/>
+                            <constraint firstItem="5UY-5x-0dm" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="Z1H-hw-csb"/>
+                            <constraint firstItem="4zg-R6-ZBs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="v8y-ko-pbD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="currentCurrencyValueTextField" destination="VDe-ii-btw" id="Cz0-nz-2ix"/>
+                        <outlet property="destinyCurrencyButton" destination="JBJ-cr-ibV" id="jZw-N8-8gL"/>
+                        <outlet property="resultLabel" destination="5UY-5x-0dm" id="1lP-Wn-SME"/>
+                        <outlet property="sourceCurrencyButton" destination="fYb-2T-pEa" id="TiR-rg-wbQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="101"/>
+        </scene>
+    </scenes>
+</document>
