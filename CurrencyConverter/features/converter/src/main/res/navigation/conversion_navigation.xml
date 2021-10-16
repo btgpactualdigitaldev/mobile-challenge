@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/conversion_navigation"
+    app:startDestination="@+id/navigation_splash">
+
+    <fragment
+        android:id="@+id/navigation_splash"
+        android:name="com.helano.converter.ui.splash.SplashFragment"
+        android:label="@string/title_splash"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/actionStartConverter"
+            app:destination="@id/navigation_converter"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/conversion_navigation"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/actionError"
+            app:destination="@id/navigation_error"
+            app:enterAnim="@anim/slide_in_down"
+            app:exitAnim="@anim/still_out"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/conversion_navigation"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_converter"
+        android:name="com.helano.converter.ui.converter.ConverterFragment"
+        android:label="@string/title_converter"
+        tools:layout="@layout/fragment_converter">
+        <action
+            android:id="@+id/actionSearchCurrency"
+            app:destination="@id/navigation_currencies"
+            app:enterAnim="@anim/slide_in_down"
+            app:exitAnim="@anim/still_out" />
+        <argument
+            android:name="info"
+            android:defaultValue="FROM"
+            app:argType="com.helano.shared.enums.Info" />
+        <argument
+            android:name="code"
+            android:defaultValue=""
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_error"
+        android:name="com.helano.converter.ui.error.ErrorFragment"
+        android:label="@string/title_error"
+        tools:layout="@layout/fragment_error">
+        <action
+            android:id="@+id/actionStartConverter"
+            app:destination="@id/navigation_converter"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/conversion_navigation"
+            app:popUpToInclusive="true" />
+
+        <argument
+            android:name="error"
+            android:defaultValue="CONNECTION"
+            app:argType="com.helano.shared.enums.Error" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_currencies"
+        android:name="com.helano.converter.ui.currencies.CurrenciesFragment"
+        android:label="@string/title_list"
+        tools:layout="@layout/fragment_currencies">
+        <action
+            android:id="@+id/actionFoundCurrency"
+            app:destination="@id/navigation_converter"
+            app:enterAnim="@anim/still_in"
+            app:exitAnim="@anim/slide_out_down"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/conversion_navigation"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="info"
+            android:defaultValue="FROM"
+            app:argType="com.helano.shared.enums.Info" />
+    </fragment>
+</navigation>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="currency"
+            type="com.helano.shared.model.Currency" />
+
+        <variable
+            name="viewModel"
+            type="com.helano.converter.ui.currencies.CurrenciesViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/view_currency_background"
+        android:onClick="@{() -> viewModel.onCurrencySelected(currency.code)}"
+        android:paddingStart="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/currencyCode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/prometo"
+            android:gravity="center_vertical"
+            android:text="@{currency.code}"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_22ssp"
+            android:textStyle="bold"
+            tools:text="USD" />
+
+        <TextView
+            android:id="@+id/currencyName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:fontFamily="@font/sansprolight"
+            android:gravity="center_vertical"
+            android:text="@{currency.name}"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_15ssp"
+            tools:text="United States Dollar" />
+    </LinearLayout>
+</layout>
