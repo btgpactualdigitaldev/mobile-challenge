@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingStart="@dimen/dm_10"
+            android:paddingTop="@dimen/dm_10"
+            android:text="@string/value"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_currency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dm_10"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/value_to_convert"
+            android:inputType="numberDecimal">
+
+        </EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/convert_from"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm_10"
+            android:drawableEnd="@drawable/ic_expand_black"
+            android:fontFamily="sans-serif-light"
+            android:background="@drawable/back_text"
+            android:paddingBottom="16dp"
+            android:text="@string/select_currency"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/convert_to"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingBottom="16dp"
+            android:background="@drawable/back_text"
+            android:drawableEnd="@drawable/ic_expand_black"
+            android:text="@string/select_currency"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@android:color/darker_gray" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_convert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/bt_color"
+            android:textColor="@color/white"
+            android:text="@string/convert" />
+
+        <LinearLayout
+            android:id="@+id/result_container"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dm_10"
+            android:text="@string/convert_result"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:visibility="gone"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_result_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:layout_marginStart="@dimen/dm_10"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            tools:text="100,99" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
