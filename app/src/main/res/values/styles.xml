@@ -1,0 +1,9 @@
+<resources>
+    <style name="ButtonCurrency">
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:background">@drawable/background_button</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+</resources>

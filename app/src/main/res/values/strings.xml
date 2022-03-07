@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BTG Conversor</string>
+    <string name="currency_from">Moeda de Origem</string>
+    <string name="currency_to">Moeda Destino</string>
+    <string name="value">Digite o Valor</string>
+    <string name="convert">Converter</string>
+    <string name="search_currency">Buscar Moeda</string>
+    <string name="loading">Carregando</string>
+    <string name="order_desc">Ordem Decrescente</string>
+    <string name="order_asc">Ordem crescente</string>
+    <string name="invert">Inverter</string>
+</resources>
