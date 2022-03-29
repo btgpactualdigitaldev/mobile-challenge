@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "ios-snapshot-test-case",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/uber/ios-snapshot-test-case.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "71f19547d9f9d0959a10881814de41b2114a8e1c"
+      }
+    },
+    {
+      "identity" : "networkcore",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:mateusRodriguesSantos/networkCore.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "5edce46a2057998bb516d08c5e180f1eba138a91"
+      }
+    },
+    {
+      "identity" : "rxswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveX/RxSwift.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "7741a11cb4252c379c8e034508cb1b92b8b40427"
+      }
+    },
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:SnapKit/SnapKit.git",
+      "state" : {
+        "branch" : "develop",
+        "revision" : "466db39ee4ef32b0f7c8cd9f009aaf42f80beace"
+      }
+    }
+  ],
+  "version" : 2
+}
