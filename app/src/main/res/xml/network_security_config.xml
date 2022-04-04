@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">10.10.2.117</domain>
+        <domain includeSubdomains="true">10.10.2.240</domain>
+        <domain includeSubdomains="true">api.currencylayer.com</domain>
+        <domain includeSubdomains="true">srv100.teste.website</domain>
+    </domain-config>
+</network-security-config>
