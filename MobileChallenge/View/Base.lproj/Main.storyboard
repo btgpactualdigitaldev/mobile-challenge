@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0TK-Dc-ifK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="FXO-GD-rwv">
+            <objects>
+                <navigationController id="0TK-Dc-ifK" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fry-sA-MrP">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Ivx-Zy-jcE" kind="relationship" relationship="rootViewController" id="B4v-ve-nYu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uCM-fm-P8C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1341" y="254"/>
+        </scene>
+        <!--Currency-->
+        <scene sceneID="TXQ-QI-nQh">
+            <objects>
+                <viewController id="Ivx-Zy-jcE" customClass="CurrencyViewController" customModule="MobileChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Ja-nQ-blb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A99-Xg-DVm">
+                                <rect key="frame" x="156" y="168" width="102" height="30"/>
+                                <state key="normal" title="Moeda Origem"/>
+                                <connections>
+                                    <action selector="didTapMoedaOrigem:" destination="Ivx-Zy-jcE" eventType="touchUpInside" id="jpL-zW-9Li"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvG-gf-WNA">
+                                <rect key="frame" x="205" y="230" width="4.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBR-ZK-aj0">
+                                <rect key="frame" x="155" y="299" width="104" height="30"/>
+                                <state key="normal" title="Moeda Destino"/>
+                                <connections>
+                                    <action selector="didTapMoedaDestino:" destination="Ivx-Zy-jcE" eventType="touchUpInside" id="M67-jN-JMK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNU-Hl-MNw">
+                                <rect key="frame" x="205" y="361" width="4.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Valor a converter" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kBK-HK-jX5">
+                                <rect key="frame" x="32" y="414" width="350" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8W2-D4-Ph2">
+                                <rect key="frame" x="205" y="542" width="4.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3b-rr-pUP">
+                                <rect key="frame" x="172.5" y="480" width="69" height="30"/>
+                                <state key="normal" title="Converter"/>
+                                <connections>
+                                    <action selector="didTapConverter:" destination="Ivx-Zy-jcE" eventType="touchUpInside" id="p2j-lt-A5m"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lw0-bo-PLu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="A99-Xg-DVm" firstAttribute="top" secondItem="lw0-bo-PLu" secondAttribute="top" constant="80" id="6OY-GY-RIT"/>
+                            <constraint firstItem="CBR-ZK-aj0" firstAttribute="top" secondItem="dvG-gf-WNA" secondAttribute="bottom" constant="48" id="Chk-LR-fEj"/>
+                            <constraint firstItem="lw0-bo-PLu" firstAttribute="trailing" secondItem="kBK-HK-jX5" secondAttribute="trailing" constant="32" id="DPu-JF-owz"/>
+                            <constraint firstItem="aNU-Hl-MNw" firstAttribute="centerX" secondItem="4Ja-nQ-blb" secondAttribute="centerX" id="Ia4-zO-2aQ"/>
+                            <constraint firstItem="aNU-Hl-MNw" firstAttribute="top" secondItem="CBR-ZK-aj0" secondAttribute="bottom" constant="32" id="JkP-fl-C1c"/>
+                            <constraint firstItem="8W2-D4-Ph2" firstAttribute="top" secondItem="z3b-rr-pUP" secondAttribute="bottom" constant="32" id="KAy-Oh-8cN"/>
+                            <constraint firstItem="kBK-HK-jX5" firstAttribute="leading" secondItem="lw0-bo-PLu" secondAttribute="leading" constant="32" id="NrL-l3-xeU"/>
+                            <constraint firstItem="A99-Xg-DVm" firstAttribute="centerX" secondItem="4Ja-nQ-blb" secondAttribute="centerX" id="Uqp-WN-wme"/>
+                            <constraint firstItem="dvG-gf-WNA" firstAttribute="centerX" secondItem="4Ja-nQ-blb" secondAttribute="centerX" id="Yse-db-46v"/>
+                            <constraint firstItem="dvG-gf-WNA" firstAttribute="top" secondItem="A99-Xg-DVm" secondAttribute="bottom" constant="32" id="aiL-Ws-nxA"/>
+                            <constraint firstItem="z3b-rr-pUP" firstAttribute="top" secondItem="kBK-HK-jX5" secondAttribute="bottom" constant="32" id="cZn-Oz-MEI"/>
+                            <constraint firstItem="CBR-ZK-aj0" firstAttribute="centerX" secondItem="4Ja-nQ-blb" secondAttribute="centerX" id="dfl-FU-hAi"/>
+                            <constraint firstItem="8W2-D4-Ph2" firstAttribute="centerX" secondItem="4Ja-nQ-blb" secondAttribute="centerX" id="g4i-Yv-Fbj"/>
+                            <constraint firstItem="kBK-HK-jX5" firstAttribute="top" secondItem="aNU-Hl-MNw" secondAttribute="bottom" constant="32" id="jgu-0F-uOw"/>
+                            <constraint firstItem="kBK-HK-jX5" firstAttribute="centerX" secondItem="4Ja-nQ-blb" secondAttribute="centerX" id="n6Q-ue-Xou"/>
+                            <constraint firstItem="z3b-rr-pUP" firstAttribute="centerX" secondItem="4Ja-nQ-blb" secondAttribute="centerX" id="zy5-aY-0RG"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Currency" id="8aR-Xh-ysm"/>
+                    <navigationItem key="navigationItem" id="K3w-M9-Sq2"/>
+                    <connections>
+                        <outlet property="labelMoedaDestino" destination="aNU-Hl-MNw" id="waf-xl-c4D"/>
+                        <outlet property="labelMoedaOrigem" destination="dvG-gf-WNA" id="mMn-2u-bi8"/>
+                        <outlet property="moedaConvertida" destination="8W2-D4-Ph2" id="3MJ-SG-0Hk"/>
+                        <outlet property="textFieldValor" destination="kBK-HK-jX5" id="sIM-xJ-f4H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S9K-bq-Jcx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-448" y="254"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
