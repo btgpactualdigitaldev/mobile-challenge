@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CurrencyConverterViewController" customModule="mobile_challenge" customModuleProvider="target">
+            <connections>
+                <outlet property="convertedLabel" destination="ZsW-IZ-FYv" id="0FJ-BO-Vg8"/>
+                <outlet property="converterButton" destination="C4e-8V-QXA" id="GKc-pj-OHL"/>
+                <outlet property="currencyTextField" destination="Gh3-Ty-EH5" id="Zlt-WL-YuC"/>
+                <outlet property="destinyButton" destination="EEp-Vr-Ucs" id="cDB-WC-R2E"/>
+                <outlet property="originButton" destination="3ba-FM-dFR" id="Jua-fN-iD5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="NA2-J4-sOL">
+                    <rect key="frame" x="20" y="233" width="374" height="330"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ba-FM-dFR">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                            <color key="backgroundColor" name="AccentColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="kms-Kl-buh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="Selecione Origem">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="originAction:" destination="-1" eventType="touchUpInside" id="7gP-9g-iDV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEp-Vr-Ucs">
+                            <rect key="frame" x="0.0" y="60" width="374" height="40"/>
+                            <color key="backgroundColor" name="AccentColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="BaN-g3-SBN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="Selecione o Destino">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="destinyAction:" destination="-1" eventType="touchUpInside" id="LkN-U7-yxA"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite um valor para converter" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="Gh3-Ty-EH5">
+                            <rect key="frame" x="0.0" y="120" width="374" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="a83-he-akL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4e-8V-QXA">
+                            <rect key="frame" x="0.0" y="180" width="374" height="50"/>
+                            <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="HWc-ZR-OTH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="converter valor"/>
+                            <connections>
+                                <action selector="converterAction:" destination="-1" eventType="touchUpInside" id="Ujd-t6-Qog"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZsW-IZ-FYv">
+                            <rect key="frame" x="0.0" y="250" width="374" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="inc-Xx-7dR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="EEp-Vr-Ucs" secondAttribute="trailing" id="36n-71-oVz"/>
+                        <constraint firstAttribute="trailing" secondItem="ZsW-IZ-FYv" secondAttribute="trailing" id="6RV-0w-jWq"/>
+                        <constraint firstItem="ZsW-IZ-FYv" firstAttribute="top" secondItem="C4e-8V-QXA" secondAttribute="bottom" constant="20" id="79I-uG-ush"/>
+                        <constraint firstAttribute="trailing" secondItem="Gh3-Ty-EH5" secondAttribute="trailing" id="ET7-kZ-hAb"/>
+                        <constraint firstAttribute="trailing" secondItem="3ba-FM-dFR" secondAttribute="trailing" id="GBH-MA-t3d"/>
+                        <constraint firstItem="ZsW-IZ-FYv" firstAttribute="leading" secondItem="NA2-J4-sOL" secondAttribute="leading" id="IGl-r7-DMg"/>
+                        <constraint firstItem="EEp-Vr-Ucs" firstAttribute="leading" secondItem="NA2-J4-sOL" secondAttribute="leading" id="VNX-xo-Nfi"/>
+                        <constraint firstItem="C4e-8V-QXA" firstAttribute="top" secondItem="Gh3-Ty-EH5" secondAttribute="bottom" constant="20" id="a7h-a7-p4z"/>
+                        <constraint firstItem="3ba-FM-dFR" firstAttribute="top" secondItem="NA2-J4-sOL" secondAttribute="top" id="b7G-hC-cNB"/>
+                        <constraint firstAttribute="trailing" secondItem="C4e-8V-QXA" secondAttribute="trailing" id="eVh-Ld-bFz"/>
+                        <constraint firstItem="3ba-FM-dFR" firstAttribute="leading" secondItem="NA2-J4-sOL" secondAttribute="leading" id="iNI-xu-5kd"/>
+                        <constraint firstItem="Gh3-Ty-EH5" firstAttribute="leading" secondItem="NA2-J4-sOL" secondAttribute="leading" id="l7S-24-iTp"/>
+                        <constraint firstItem="Gh3-Ty-EH5" firstAttribute="top" secondItem="EEp-Vr-Ucs" secondAttribute="bottom" constant="20" id="oCZ-8M-l2T"/>
+                        <constraint firstItem="EEp-Vr-Ucs" firstAttribute="top" secondItem="3ba-FM-dFR" secondAttribute="bottom" constant="20" id="ql0-0z-qzw"/>
+                        <constraint firstItem="C4e-8V-QXA" firstAttribute="leading" secondItem="NA2-J4-sOL" secondAttribute="leading" id="zfX-yW-spL"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemGray6Color"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NA2-J4-sOL" secondAttribute="trailing" constant="20" id="L8y-zU-UpA"/>
+                <constraint firstItem="NA2-J4-sOL" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-50" id="Tp3-Sz-KZW"/>
+                <constraint firstItem="NA2-J4-sOL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="oZk-cf-Bn6"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="-91.304347826086968" y="95.758928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
