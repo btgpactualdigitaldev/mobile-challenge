@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Desafio Btg</string>
+
+    <string name="convert_currency_action_bar_title">Conversor de moedas</string>
+    <string name="convert_currencies_lbl_amount">Montante</string>
+    <string name="convert_currencies_edt_hint">Quantidade a ser convertida</string>
+    <string name="convert_currencies_lbl_from">De</string>
+    <string name="convert_currencies_lbl_to">Para</string>
+    <string name="convert_currencies_txt_choose_coin">Selecione uma moeda</string>
+    <string name="convert_currencies_btn_convert">Converter</string>
+    <string name="convert_currencies_lbl_result">Resultado</string>
+    <string name="convert_currencies_error_amount_blank_or_null">Há algum problema com a quantidade digitada</string>
+    <string name="convert_currencies_error_currencies_blank_or_null">Você esqueceu de preencher algumas das moedas de conversão :(</string>
+
+    <string name="list_currency_action_bar_title">Listagem de moedas</string>
+    <string name="list_currencies_txt_error_generic">Ocorreu um acidente aqui ok? tente novamente mais tarde</string>
+    <string name="list_currencies_message_error_list_empty">Não há como pesquisar numa base vazia. tá Okay?</string>
+
+</resources>
