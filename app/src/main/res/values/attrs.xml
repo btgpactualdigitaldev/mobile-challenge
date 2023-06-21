@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="custom_state_view">
+        <attr name="loading_res" format="reference" />
+        <attr name="image_error" format="reference" />
+        <attr name="image_empty_state" format="string" />
+        <attr name="title_text" format="string" />
+        <attr name="sub_title_text" format="string" />
+        <attr name="button_text" format="string" />
+        <attr name="need_updating" format="boolean" />
+        <attr name="exclude_views" format="enum">
+            <enum name="default_view" value="0" />
+            <enum name="title" value="1" />
+            <enum name="subtitle" value="2" />
+            <enum name="title_and_subtitle" value="3" />
+            <enum name="button" value="4" />
+            <enum name="title_and_button" value="5" />
+            <enum name="subtitle_and_button" value="6" />
+        </attr>
+    </declare-styleable>
+</resources>

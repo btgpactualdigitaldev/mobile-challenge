@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Description">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#888888</item>
+    </style>
+
+    <style name="Custom_Title">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#3D3D3D</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Custom_Headline">
+        <item name="android:textSize">@dimen/custom_font_size_widgets</item>
+        <item name="android:textColor">#3D3D3D</item>
+    </style>
+
+    <style name="RoundedButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/bg_rounded_button</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingStart">28dp</item>
+        <item name="android:paddingLeft">28dp</item>
+        <item name="android:paddingEnd">28dp</item>
+        <item name="android:paddingRight">28dp</item>
+    </style>
+
+    <style name="Title_3">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">#3D3D3D</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

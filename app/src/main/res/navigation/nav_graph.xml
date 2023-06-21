@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/currencyConverterFragment">
+
+    <fragment
+        android:id="@+id/currencyConverterFragment"
+        android:name="com.btg.convertercurrency.features.currency_converter.view.CurrencyConverterFragment"
+        android:label="CurrencyConverterFragment">
+        <action
+            android:id="@+id/action_currencyConverterFragment_to_listCurrencyFragment"
+            app:destination="@id/listCurrencyFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/listCurrencyFragment"
+        android:name="com.btg.convertercurrency.features.currency_list.view.ListCurrencyFragment"
+        android:label="ListCurrencyFragment" />
+</navigation>
