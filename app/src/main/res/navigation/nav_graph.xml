@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/convertCurrencyFragment">
+
+    <fragment
+        android:id="@+id/convertCurrencyFragment"
+        android:name="br.com.btg.mobile.challenge.ui.currency.convert.ConvertCurrencyFragment"
+        android:label="@string/title"
+        tools:layout="@layout/fragment_convert">
+        <action
+            android:id="@+id/action_convertCurrencyFragment_to_listCurrencyFragment"
+            app:destination="@id/listCurrencyFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/listCurrencyFragment"
+        android:name="br.com.btg.mobile.challenge.ui.currency.list.ListCurrencyFragment"
+        android:label="@string/title2"
+        tools:layout="@layout/fragment_coins" />
+
+</navigation>

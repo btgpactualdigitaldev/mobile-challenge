@@ -1,0 +1,18 @@
+apply plugin: 'io.gitlab.arturbosch.detekt'
+
+detekt {
+    toolVersion = "1.21.0"
+    input = files(
+            'src/main/java',
+            'src/main/kotlin'
+    )
+    parallel = true
+    config = files(file("$rootDir/detekt-config.yml"))
+    baseline = file("$rootDir/baseline.xml")
+}
+
+dependencies {
+    detekt "io.gitlab.arturbosch.detekt:detekt-cli:1.21.0"
+}
+
+tasks.detekt.jvmTarget = JavaVersion.VERSION_1_8

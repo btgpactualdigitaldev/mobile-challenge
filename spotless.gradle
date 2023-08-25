@@ -1,0 +1,21 @@
+apply plugin: 'com.diffplug.spotless'
+
+spotless {
+    format 'misc', {
+        target '**/*.gradle', '**/*.md', '**/.gitignore', '**/*.properties', '**/*.xml'
+        targetExclude 'vendor/**', '.bundle/**', 'fastlane/report.xml', '.idea/**', '**/.gradle/**', '**/build/**'
+
+        trimTrailingWhitespace()
+        indentWithSpaces()
+        endWithNewline()
+    }
+
+    kotlin {
+        target '**/*.kt'
+        ktlint("0.41.0")
+
+        trimTrailingWhitespace()
+        indentWithSpaces()
+        endWithNewline()
+    }
+}

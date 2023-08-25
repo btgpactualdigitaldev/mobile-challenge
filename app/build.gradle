@@ -1,0 +1,172 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-parcelize'
+}
+
+apply from: "$rootDir/versions.gradle"
+apply from: "${rootDir}/detekt.gradle"
+apply from: "${rootDir}/spotless.gradle"
+apply from: "${rootDir}/jacoco.gradle"
+
+android {
+    compileSdk deps.version.compileSdk
+
+    defaultConfig {
+        applicationId "br.com.btg.mobile.challenge"
+        minSdk deps.version.minSdk
+        targetSdk deps.version.targetSdk
+        versionCode Integer.valueOf(file("$rootDir/VERSION_CODE").text.trim())
+        versionName file("$rootDir/VERSION").text
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    testOptions {
+        animationsDisabled true
+        unitTests{
+            includeAndroidResources true
+            returnDefaultValues true
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            testCoverageEnabled true
+        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions 'default'
+    productFlavors {
+        dev {
+            dimension 'default'
+            applicationIdSuffix ".dev"
+            versionNameSuffix "-dev"
+            buildConfigField "String", "BASE_URL", "\"https://dev.btg-mobile-challenge.herokuapp.com\""
+        }
+
+        staging {
+            dimension 'default'
+            applicationIdSuffix ".staging"
+            versionNameSuffix "-staging"
+            buildConfigField "String", "BASE_URL", "\"https://staging.btg-mobile-challenge.herokuapp.com\""
+        }
+
+        prd {
+            dimension 'default'
+            buildConfigField "String", "BASE_URL", "\"https://btg-mobile-challenge.herokuapp.com\""
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    lintOptions {
+        abortOnError false
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    sourceSets {
+        main {
+            assets {
+                srcDirs 'src/main/assets', 'src/assets'
+            }
+        }
+        dev {
+            assets {
+                srcDirs 'src/dev/assets'
+            }
+        }
+    }
+}
+
+dependencies {
+
+    //MULTIDEX
+    implementation 'androidx.multidex:multidex:2.0.0'
+
+    //COROUTINES
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2'
+
+    //KOTLIN
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.0'
+
+    //MATERIAL
+    implementation 'com.google.android.material:material:1.6.0'
+
+    //ANDROIDX
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
+    implementation 'androidx.navigation:navigation-dynamic-features-fragment:2.5.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+
+    //KOIN
+    implementation 'io.insert-koin:koin-android:2.2.3'
+    implementation 'io.insert-koin:koin-androidx-viewmodel:2.2.3'
+
+    //MOSHI
+    implementation 'com.squareup.moshi:moshi-kotlin:1.11.0'
+    implementation 'com.squareup.moshi:moshi-adapters:1.11.0'
+
+    //RETROFIT2
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+
+    //OKHTTP3
+    implementation 'com.squareup.okhttp3:okhttp:4.9.3'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.3'
+
+    //ROOM
+    implementation "androidx.room:room-runtime:2.5.2"
+    implementation "androidx.room:room-ktx:2.5.2"
+
+    //TOOLKIT
+    implementation 'br.com.arch.toolkit:delegate:0.5.1'
+
+    //UNIT TESTS
+    testImplementation 'androidx.test:core:1.5.0'
+    testImplementation 'androidx.test:core-ktx:1.5.0'
+    testImplementation 'androidx.test.ext:junit-ktx:1.1.5'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.jetbrains.kotlin:kotlin-test-junit:1.6.0'
+    testImplementation("io.insert-koin:koin-test:2.2.3")
+    testImplementation("io.insert-koin:koin-androidx-viewmodel:2.2.3")
+    testImplementation("io.mockk:mockk:1.12.0") { exclude group: 'org.objenesis' }
+    testImplementation("io.mockk:mockk-android:1.12.0") { exclude group: 'org.objenesis' }
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4") {
+        exclude group: "org.jetbrains.kotlinx", module: "kotlinx-coroutines-debug"
+    }
+    testImplementation("androidx.arch.core:core-testing:2.2.0")
+    testImplementation "com.squareup.okhttp3:mockwebserver:4.9.3"
+
+    //INSTRUMENTAL
+    androidTestImplementation 'androidx.test:rules:1.5.0'
+    androidTestImplementation("androidx.test:runner:1.5.2")
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation("io.insert-koin:koin-test:2.2.3")
+    androidTestImplementation("androidx.arch.core:core-testing:2.2.0")
+    androidTestImplementation 'androidx.fragment:fragment-testing:1.5.7'
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    androidTestImplementation("androidx.test.espresso:espresso-contrib:3.5.1")
+    androidTestImplementation("androidx.test.espresso:espresso-intents:3.5.1")
+    androidTestImplementation("androidx.arch.core:core-testing:2.2.0")
+    androidTestImplementation("androidx.test.uiautomator:uiautomator:2.2.0")
+    androidTestImplementation 'androidx.test:core:1.5.0'
+    androidTestImplementation "androidx.test:rules:1.5.0"
+    androidTestImplementation("io.mockk:mockk:1.12.0")
+    androidTestImplementation("androidx.navigation:navigation-testing:2.5.3")
+}

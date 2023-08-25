@@ -1,0 +1,17 @@
+[
+  {
+    "price": "1.00",
+    "coin": "USD",
+    "name": "dolar americano"
+  },
+  {
+    "price": "0.20",
+    "coin": "BRL",
+    "name": "real brasileiro"
+  },
+  {
+    "price": "1.08",
+    "coin": "EUR",
+    "name": "euro europeu"
+  }
+]

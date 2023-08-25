@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_dark_color">#00796B</color>
+    <color name="primary_light_color">#B2DFDB</color>
+    <color name="primary_color">#009688</color>
+    <color name="icons_color">#FFFFFF</color>
+    <color name="accent_color">#FF9800</color>
+    <color name="primary_text_color">#212121</color>
+    <color name="secondary_text_color">#757575</color>
+    <color name="divider_color">#f8f8f8</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="chip_color">#009688</color>
+
+    <color name="ucrop_color_toolbar">@color/primary_dark_color</color>
+    <color name="ucrop_color_statusbar">@color/primary_color</color>
+    <color name="ucrop_color_widget_active">@color/primary_color</color>
+</resources>

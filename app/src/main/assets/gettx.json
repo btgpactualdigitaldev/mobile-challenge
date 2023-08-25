@@ -1,0 +1,17 @@
+[
+  {
+    "exchange_rate": 4.8816,
+    "coin": "BRL",
+    "name": "real brasileiro"
+  },
+  {
+    "exchange_rate": 0.9229,
+    "coin": "EUR",
+    "name": "euro europeu"
+  },
+  {
+    "exchange_rate": 0.7910,
+    "coin": "GBP",
+    "name": "libra esterlina"
+  }
+]

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Mobile<b>Challenge</b></string>
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Sair</string>
+
+    <string name="title">Conversão de moedas</string>
+    <string name="title2">Lista de moedas</string>
+    <string name="coin">USD - dólar americado</string>
+    <string name="value_init">1</string>
+    <string name="server_error">Por favor, aguarde um instante e tente novamente.</string>
+    <string name="okay">OK</string>
+
+</resources>
